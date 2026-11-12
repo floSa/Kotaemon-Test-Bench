@@ -1,0 +1,8 @@
+2026-11-12T21:57:56+01:00
+$ docker ps --format "{{.Names}} {{.Ports}}"
+rag-kotaemon 127.0.0.1:7860->7860/tcp
+llm-central 4000/tcp, 127.0.0.1:8080->8080/tcp
+llm-swap 127.0.0.1:8081->8080/tcp
+llm-speaches 8000/tcp
+$ docker ps --format '{{.Names}} {{.Ports}}' | grep -oE '[0-9a-f.:\[\]]+->' | grep -v '^127\.0\.0\.1:'
+(code 1 : 1 = aucune ligne, aucun port publié hors de 127.0.0.1)

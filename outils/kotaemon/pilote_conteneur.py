@@ -45,18 +45,27 @@ def fichiers_utilisateur(idx):
         return s.execute(q).all()
 
 
-def indexer(fichiers, collection=1, reglages=None):
+def nb_passages(idx, source_id):
+    Index = idx._resources["Index"]
+    with Session(engine) as s:
+        return len(s.execute(select(Index.id).where(Index.source_id == source_id)).all())
+
+
+def indexer(fichiers, collection=1, reglages=None, forcer=False):
+    """forcer : réindexe même un fichier déjà présent (« Force reindex file »). Un fichier présent sans aucun passage
+    (échec d'une lecture précédente : Kotaemon l'inscrit quand même) est réindexé d'office."""
     idx = index(collection)
     reg = {**BASE_REGLAGES, **(reglages or {})}
-    deja = {n for _, n in fichiers_utilisateur(idx)}
+    deja = {n: i for i, n in fichiers_utilisateur(idx)}
     detail = []
     for f in fichiers:
         nom = Path(f).name
-        if nom in deja:
+        vide = nom in deja and nb_passages(idx, deja[nom]) == 0
+        if nom in deja and not forcer and not vide:
             detail.append({"fichier": nom, "statut": "déjà indexé"}); continue
         t0 = time.time()
         pipe = idx.get_indexing_pipeline(reg, UID)
-        g = pipe.stream([Path(f)], reindex=False)
+        g = pipe.stream([Path(f)], reindex=forcer or vide)
         msgs = []
         try:
             while True:
@@ -118,7 +127,7 @@ for l in sys.stdin:
     try:
         c = json.loads(l)
         if c["cmd"] == "indexer":
-            sortie(indexer(c["fichiers"], c.get("collection", 1), c.get("reglages")))
+            sortie(indexer(c["fichiers"], c.get("collection", 1), c.get("reglages"), c.get("forcer", False)))
         elif c["cmd"] == "demander":
             sortie(demander(c["question"], c.get("collection", 1), c.get("reglages")))
         elif c["cmd"] == "reglages":
