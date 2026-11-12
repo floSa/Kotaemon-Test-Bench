@@ -1,0 +1,244 @@
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+RetryError[<Future at 0x7b0b1c23ad40 state=finished raised AuthenticationError>]
+Cohere API key not found. Skipping rerankings.
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+use_quick_index_mode False
+reader_mode default
+Chunk size: None, chunk overlap: None
+Using reader <kotaemon.loaders.pdf_loader.PDFThumbnailReader object at 0x7b0aaeda0b80>
+/app/.venv/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning:
+
+ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+
+Page numbers: 10
+Got 10 page thumbnails
+Adding documents to doc store
+[2026-11-12T20:33:37Z WARN  lance::dataset] No existing dataset at /app/ktem_app_data/user_data/docstore/index_1.lance, it will be created
+Getting embeddings for 20 nodes
+Adding embeddings to vector store
+indexing step took 0.9941434860229492
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+Session reasoning type simple use mindmap True use citation highlight language en
+Session LLM 
+Reasoning class <class 'ktem.reasoning.simple.FullQAPipeline'>
+Reasoning state {'app': {'regen': False}, 'pipeline': {}}
+Thinking ...
+Retrievers [DocumentRetrievalPipeline(DS=<kotaemon.storages.docstores.lancedb.LanceDBDocumentStore object at 0x7b0ab463d7b0>, FSPath=PosixPath('/app/ktem_app_data/user_data/files/index_1'), Index=<class 'ktem.index.file.index.IndexTable'>, Source=<class 'ktem.index.file.index.Source'>, VS=<kotaemon.storages.vectorstores.chroma.ChromaVectorStore object at 0x7b0ab52923b0>, get_extra_table=False, llm_scorer=LLMTrulensScoring(concurrent=True, normalize=10, prompt_template=<kotaemon.llms.prompts.template.PromptTemplate object at 0x7b0aaf647310>, system_prompt_template=<kotaemon.llms.prompts.template.PromptTemplate object at 0x7b0ab4db0670>, top_k=3, user_prompt_template=<kotaemon.llms.prompts.template.PromptTemplate object at 0x7b0ab4db2650>), mmr=False, rerankers=[CohereReranking(base_url='http://llm-central:8080', cohere_api_key='[clé masquée]', model_name='rerank')], retrieval_mode='hybrid', top_k=10, user_id='0e6518632cb84638a8b00711507d4469'), GraphRAGRetrieverPipeline(DS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, FSPath=<theflow.base.unset_ object at 0x7b0b6b9c6590>, Index=<class 'ktem.index.file.index.IndexTable'>, Source=<theflow.base.unset_ object at 0x7b0b6b9c6590>, VS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, file_ids=[], user_id=<theflow.base.unset_ object at 0x7b0b6b9c6590>), LightRAGRetrieverPipeline(DS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, FSPath=<theflow.base.unset_ object at 0x7b0b6b9c6590>, Index=<class 'ktem.index.file.index.IndexTable'>, Source=<theflow.base.unset_ object at 0x7b0b6b9c6590>, VS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, file_ids=[], search_type='local', user_id=<theflow.base.unset_ object at 0x7b0b6b9c6590>)]
+searching in doc_ids ['15dd672a-c444-4eea-b6de-b189981d93f9']
+retrieval_kwargs: dict_keys(['do_extend', 'scope', 'filters'])
+Number of requested results 100 is greater than number of elements in index 20, updating n_results = 20
+Got 20 from vectorstore
+Got 0 from docstore
+Got raw 10 retrieved documents
+thumbnail docs 3 non-thumbnail docs 7 raw-thumbnail docs 0
+retrieval step took 0.7854313850402832
+[[36m2026-11-12 20:34:05,728[0m][[32mINFO[0m] - Downloading https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin to lid.176.bin (125.2M)[0m
+  0%|          | 0.00/125M [00:00<?, ?B/s]  4%|▍         | 4.73M/125M [00:00<00:02, 49.5MB/s]  9%|▉         | 11.2M/125M [00:00<00:01, 60.1MB/s] 14%|█▎        | 16.9M/125M [00:01<00:13, 8.47MB/s] 16%|█▌        | 20.2M/125M [00:01<00:12, 9.14MB/s] 18%|█▊        | 22.6M/125M [00:02<00:10, 10.4MB/s] 21%|██        | 25.7M/125M [00:02<00:08, 12.9MB/s] 24%|██▍       | 30.2M/125M [00:02<00:05, 17.7MB/s] 28%|██▊       | 35.3M/125M [00:02<00:03, 23.8MB/s] 36%|███▌      | 45.3M/125M [00:02<00:02, 39.5MB/s] 43%|████▎     | 54.1M/125M [00:02<00:01, 50.8MB/s] 53%|█████▎    | 66.1M/125M [00:02<00:00, 68.7MB/s] 61%|██████    | 76.3M/125M [00:02<00:00, 78.4MB/s] 68%|██████▊   | 85.2M/125M [00:02<00:00, 79.0MB/s] 76%|███████▌  | 95.0M/125M [00:02<00:00, 85.3MB/s] 84%|████████▍ | 105M/125M [00:03<00:00, 90.9MB/s]  91%|█████████▏| 114M/125M [00:03<00:00, 91.2MB/s] 99%|█████████▉| 124M/125M [00:03<00:00, 94.7MB/s]100%|██████████| 125M/125M [00:03<00:00, 39.9MB/s]
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+Got 10 retrieved documents
+len (original) 4196
+len (trimmed) 4196
+Got 3 images
+Trying LLM streaming
+CitationPipeline: invoking LLM
+Error code: 429 - {'error': {'message': 'litellm.RateLimitError: RateLimitError: Hosted_vllmException - {"src":"llama-swap","error":{"message":"Too many requests","type":"rate_limit_error","param":null,"code":"concurrency_limit"}}\n\nLiteLLM: model group \'chat\' failed with the error above. No fallback was attempted.', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+User-id: None, can see public conversations: False
+User-id: None, can see public conversations: False
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+Session reasoning type simple use mindmap True use citation highlight language en
+Session LLM 
+Reasoning class <class 'ktem.reasoning.simple.FullQAPipeline'>
+Reasoning state {'app': {'regen': False}, 'pipeline': {}}
+Thinking ...
+Retrievers [DocumentRetrievalPipeline(DS=<kotaemon.storages.docstores.lancedb.LanceDBDocumentStore object at 0x7b0ab463d7b0>, FSPath=PosixPath('/app/ktem_app_data/user_data/files/index_1'), Index=<class 'ktem.index.file.index.IndexTable'>, Source=<class 'ktem.index.file.index.Source'>, VS=<kotaemon.storages.vectorstores.chroma.ChromaVectorStore object at 0x7b0ab52923b0>, get_extra_table=False, llm_scorer=LLMTrulensScoring(concurrent=True, normalize=10, prompt_template=<kotaemon.llms.prompts.template.PromptTemplate object at 0x7b0ab5be7f10>, system_prompt_template=<kotaemon.llms.prompts.template.PromptTemplate object at 0x7b0ab5be6d10>, top_k=3, user_prompt_template=<kotaemon.llms.prompts.template.PromptTemplate object at 0x7b0ab5be4820>), mmr=False, rerankers=[CohereReranking(base_url='http://llm-central:8080', cohere_api_key='[clé masquée]', model_name='rerank')], retrieval_mode='hybrid', top_k=10, user_id='0e6518632cb84638a8b00711507d4469'), GraphRAGRetrieverPipeline(DS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, FSPath=<theflow.base.unset_ object at 0x7b0b6b9c6590>, Index=<class 'ktem.index.file.index.IndexTable'>, Source=<theflow.base.unset_ object at 0x7b0b6b9c6590>, VS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, file_ids=[], user_id=<theflow.base.unset_ object at 0x7b0b6b9c6590>), LightRAGRetrieverPipeline(DS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, FSPath=<theflow.base.unset_ object at 0x7b0b6b9c6590>, Index=<class 'ktem.index.file.index.IndexTable'>, Source=<theflow.base.unset_ object at 0x7b0b6b9c6590>, VS=<theflow.base.unset_ object at 0x7b0b6b9c6590>, file_ids=[], search_type='local', user_id=<theflow.base.unset_ object at 0x7b0b6b9c6590>)]
+searching in doc_ids ['15dd672a-c444-4eea-b6de-b189981d93f9']
+retrieval_kwargs: dict_keys(['do_extend', 'scope', 'filters'])
+Number of requested results 100 is greater than number of elements in index 20, updating n_results = 20
+Got 20 from vectorstore
+Got 10 from docstore
+Got raw 10 retrieved documents
+thumbnail docs 3 non-thumbnail docs 5 raw-thumbnail docs 0
+retrieval step took 0.35685276985168457
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+list indices must be integers or slices, not str
+Got 6 retrieved documents
+len (original) 2503
+len (trimmed) 2503
+Got 3 images
+Trying LLM streaming
+CitationPipeline: invoking LLM
+Error code: 429 - {'error': {'message': 'litellm.RateLimitError: RateLimitError: Hosted_vllmException - {"src":"llama-swap","error":{"message":"Too many requests","type":"rate_limit_error","param":null,"code":"concurrency_limit"}}\n\nLiteLLM: model group \'chat\' failed with the error above. No fallback was attempted.', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+Exception in thread Thread-14 (mindmap_call):
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/qa/citation_qa.py", line 216, in mindmap_call
+    mindmap = self.create_mindmap_pipeline(context=evidence, question=question)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1097, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1088, in __call__
+    output = self.fl.exec(func, args, kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/backends/base.py", line 151, in exec
+    return run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 144, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 141, in __call__
+    _output = self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 117, in __call__
+    return self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1017, in _runx
+    return self.run(*args, **kwargs)
+  File "/app/libs/ktem/ktem/reasoning/prompt_optimization/mindmap.py", line 92, in run
+    uml_text = self.llm(messages).text
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1261, in exec
+    return child(*args, **kwargs, __fl_runstates__=__fl_runstates__)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1097, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1088, in __call__
+    output = self.fl.exec(func, args, kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/backends/base.py", line 151, in exec
+    return run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 144, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 141, in __call__
+    _output = self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 117, in __call__
+    return self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1017, in _runx
+    return self.run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/llms/base.py", line 25, in run
+    return self.invoke(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/llms/chats/openai.py", line 216, in invoke
+    resp = self.openai_response(
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/llms/chats/openai.py", line 334, in openai_response
+    return client.chat.completions.create(**params)
+  File "/app/.venv/lib/python3.10/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+  File "/app/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/app/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'litellm.RateLimitError: RateLimitError: Hosted_vllmException - {"src":"llama-swap","error":{"message":"Too many requests","type":"rate_limit_error","param":null,"code":"concurrency_limit"}}\n\nLiteLLM: model group \'chat\' failed with the error above. No fallback was attempted.', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+Exception in thread Thread-12 (generate_relevant_scores):
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/app/libs/ktem/ktem/reasoning/simple.py", line 299, in generate_relevant_scores
+    docs = self.retrievers[0].generate_relevant_scores(message, docs)
+  File "/app/libs/ktem/ktem/index/file/pipelines.py", line 221, in generate_relevant_scores
+    else self.llm_scorer(documents=documents, query=query)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1097, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1088, in __call__
+    output = self.fl.exec(func, args, kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/backends/base.py", line 151, in exec
+    return run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 144, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 141, in __call__
+    _output = self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 117, in __call__
+    return self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1017, in _runx
+    return self.run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 150, in run
+    results = [future.result() for future in futures]
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 150, in <listcomp>
+    results = [future.result() for future in futures]
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/root/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 146, in llm_call
+    return self.llm(messages).text
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1097, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1088, in __call__
+    output = self.fl.exec(func, args, kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/backends/base.py", line 151, in exec
+    return run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 144, in __call__
+    raise e from None
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 141, in __call__
+    _output = self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/middleware.py", line 117, in __call__
+    return self.next_call(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/theflow/base.py", line 1017, in _runx
+    return self.run(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/llms/base.py", line 25, in run
+    return self.invoke(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/llms/chats/openai.py", line 216, in invoke
+    resp = self.openai_response(
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/llms/chats/openai.py", line 334, in openai_response
+    return client.chat.completions.create(**params)
+  File "/app/.venv/lib/python3.10/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/app/.venv/lib/python3.10/site-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+  File "/app/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/app/.venv/lib/python3.10/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'litellm.RateLimitError: RateLimitError: Hosted_vllmException - {"src":"llama-swap","error":{"message":"Too many requests","type":"rate_limit_error","param":null,"code":"concurrency_limit"}}\n\nLiteLLM: model group \'chat\' failed with the error above. No fallback was attempted.', 'type': 'throttling_error', 'param': None, 'code': '429'}}

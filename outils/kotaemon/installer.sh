@@ -24,6 +24,14 @@ docker image inspect "$IMAGE" >/dev/null 2>&1 || docker pull "$IMAGE"
 docker image inspect --format 'image : {{index .RepoDigests 0}} {{.Size}} octets, révision {{index .Config.Labels "org.opencontainers.image.revision"}}' "$IMAGE"
 mkdir -p donnees/kotaemon/ktem_app_data
 outils/kotaemon/demarrer.sh
+# Données NLTK pour unstructured (DOCX, PPTX…) : sans elles, l'indexation de ces formats échoue avec
+# « HTTP Error 403: Forbidden » (adresse S3 intégrée à unstructured fermée). Récupérées une fois, depuis le dépôt
+# officiel NLTK (nltk.download), dans donnees/kotaemon/ktem_app_data/nltk_data.
+docker exec rag-kotaemon /app/.venv/bin/python -c "
+import nltk
+for p in ('punkt_tab', 'averaged_perceptron_tagger_eng'):
+    print(p, nltk.download(p, download_dir='/app/ktem_app_data/nltk_data', quiet=True))
+"
 docker ps --filter name=rag-kotaemon --format '{{.Names}} {{.Ports}}'
 docker ps --format '{{.Names}} {{.Ports}}' | grep -oE '[0-9a-f.:\[\]]+->' | grep -v '^127\.0\.0\.1:' && { echo "port publié hors de 127.0.0.1"; exit 1; } || echo "ports publiés : tous liés à 127.0.0.1"
 echo "durée : $(( $(date +%s) - debut )) s"

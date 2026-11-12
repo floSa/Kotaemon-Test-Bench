@@ -6,7 +6,8 @@
 #  - réseaux externes llm-net (service LLM central, http://llm-central:8080/v1) et rag-local (captures Playwright) ;
 #  - aucun serveur de modèles : l'image « full » n'embarque pas Ollama ; les entrées Ollama et VoyageAI du .env
 #    intégré à l'image sont neutralisées (LOCAL_MODEL et VOYAGE_API_KEY vides) ; télémétrie de Chroma, unstructured et
-#    Gradio coupée.
+#    Gradio coupée ;
+#  - données NLTK fournies dans le dossier de données (NLTK_DATA), l'adresse intégrée à unstructured répondant 403.
 # Les modèles (chat, embed, rerank) se déclarent ensuite dans l'interface : Resources (manuel, chapitre 03).
 name: rag-kotaemon
 
@@ -26,6 +27,9 @@ services:
       LOCAL_MODEL: ""
       LOCAL_MODEL_EMBEDDINGS: ""
       VOYAGE_API_KEY: ""
+      # Données NLTK de la bibliothèque unstructured (lecture des DOCX, PPTX…) : l'adresse de téléchargement intégrée
+      # (utic-public-cf.s3.amazonaws.com) répond 403 ; installer.sh les récupère depuis le dépôt officiel NLTK.
+      NLTK_DATA: /app/ktem_app_data/nltk_data
     # Options facultatives (ex. USE_NANO_GRAPHRAG=true) : donnees/kotaemon/options.env, lu à chaque démarrage.
     env_file:
       - path: ../../donnees/kotaemon/options.env

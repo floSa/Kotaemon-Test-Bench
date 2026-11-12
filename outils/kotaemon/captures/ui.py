@@ -87,12 +87,82 @@ class Scenario:
     def champ(self, libelle, parent=None):
         """Champ Gradio repéré par son libellé (span du label)."""
         zone = parent if parent is not None else self.page
-        return zone.get_by_label(libelle, exact=True).locator("visible=true").first
+        loc = zone.get_by_label(libelle, exact=True).locator("visible=true")
+        if loc.count():
+            return loc.first
+        # libellé Gradio suivi d'un texte d'aide : le champ est dans le même bloc que le titre
+        return zone.locator("div.block").filter(has=zone.locator(f'span[data-testid="block-info"]:text-is("{libelle}")')) \
+            .locator("textarea, input").locator("visible=true").first
 
     def bloc(self, libelle, parent=None):
         """Bloc Gradio entier (label + champ) d'un libellé : pour encadrer le composant complet."""
         zone = parent if parent is not None else self.page
         return zone.locator("div.block").filter(has=zone.get_by_text(libelle, exact=True)).locator("visible=true").last
+
+    def ligne(self, texte):
+        """Cellule d'un tableau Gradio (Dataframe) : le composant dessine un tableau de mesure caché puis le vrai
+        tableau (classe « table ») ; on vise la cellule du vrai tableau."""
+        return self.page.locator("table.table td").filter(has_text=texte).locator("visible=true").first
+
+    def attendre_fin(self, delai=600000):
+        """Attend la fin d'un traitement Gradio (plus d'indicateur de progression ni d'élément « generating »)."""
+        p = self.page
+        p.wait_for_timeout(1500)
+        p.wait_for_function("""() => !document.querySelector('.generating, .progress-text, .eta-bar, .meta-text-center')""",
+                            timeout=delai, polling=1000)
+        p.wait_for_timeout(1500)
+
+    def attendre_reponse(self, delai=600, stable=4):
+        """Attend que la dernière réponse du chat soit écrite : texte différent de « Thinking ... » et inchangé pendant
+        `stable` relevés de 2 s. Renvoie le texte (None si délai dépassé)."""
+        p, avant, n = self.page, None, 0
+        for _ in range(delai // 2):
+            p.wait_for_timeout(2000)
+            t = p.evaluate("() => ([...document.querySelectorAll('#main-chat-bot .message')].pop() || {innerText: ''}).innerText")
+            if t and t.strip() not in ("Thinking ...", "") and t == avant:
+                n += 1
+                if n >= stable:
+                    return t
+            else:
+                n = 0
+            avant = t
+        self.note(f"réponse non terminée après {delai} s : {str(avant)[:200]!r}")
+        return None
+
+    def reglage_session(self, quoi, valeur):
+        """Chat settings (accordéon sous la zone de saisie) : quoi = « Reasoning method », « Model » ou « Language »."""
+        p = self.page
+        acc = p.locator("#chat-settings-expand")
+        if not acc.get_by_text("Reasoning method", exact=True).is_visible():
+            acc.get_by_text("Chat settings", exact=True).click(); p.wait_for_timeout(1000)
+        listes = acc.locator("input[aria-label=Dropdown]").locator("visible=true")
+        rang = {"Reasoning method": 1, "Model": 2, "Language": 3}[quoi]
+        champ = listes.nth(rang)
+        champ.click(); p.wait_for_timeout(500)
+        p.get_by_role("option", name=valeur, exact=True).locator("visible=true").first.click()
+        p.wait_for_timeout(1000)
+        return champ
+
+    def poser(self, question, envoyer=True):
+        """Écrit la question dans la zone de saisie du chat et l'envoie (Entrée)."""
+        p = self.page
+        zone = p.locator("#chat-input textarea")
+        zone.fill(question)
+        if envoyer:
+            zone.press("Enter")
+            self.attendre_reponse()
+        return zone
+
+    def zone_depot(self):
+        """Zone de dépôt de fichiers Gradio visible (texte « Cliquer pour Télécharger » en locale française)."""
+        return self.page.locator("button.center, div.wrap").filter(has_text="Cliquer pour Télécharger").locator("visible=true").last
+
+    def deposer(self, fichiers):
+        """Choisit des fichiers par la fenêtre de sélection ouverte en cliquant la zone de dépôt visible."""
+        with self.page.expect_file_chooser() as fc:
+            self.zone_depot().click()
+        fc.value.set_files([str(f) for f in fichiers])
+        self.page.wait_for_timeout(2500)
 
     def toasts(self):
         try:
@@ -111,12 +181,27 @@ class Scenario:
         img = IMG / self.chapitre / f"{nom}.png"
         txt = TXT / self.chapitre / f"{nom}.txt"
         masques = list(masques) + (self._secrets_visibles() if auto else [])
-        libs = annoter.capture(self.page, img, elements, masques=masques, plein=plein, clip=clip, texte=txt)
+        n = self._voiler_cle()
+        try:
+            libs = annoter.capture(self.page, img, elements, masques=masques, plein=plein, clip=clip, texte=txt)
+        finally:
+            if n:
+                self._devoiler_cle()
         txt.write_text(CLE_RE.sub("[clé masquée]", txt.read_text()))
         self.journal.append({"capture": f"{self.chapitre}/{nom}.png", "pastilles": libs, "note": note,
                              "heure": time.strftime("%H:%M:%S")})
         self._ecrire_journal()
         return libs
+
+    def cap_souple(self, nom, elements=(), **kw):
+        """Comme cap, mais ignore (et note) les éléments introuvables ou invisibles."""
+        garde = []
+        for loc, lib in elements:
+            try:
+                loc.wait_for(state="visible", timeout=5000); garde.append((loc, lib))
+            except Exception:
+                self.note(f"{nom} : élément absent « {lib} »")
+        return self.cap(nom, garde, **kw)
 
     def _secrets_visibles(self):
         res = []
@@ -135,6 +220,31 @@ class Scenario:
                 except Exception:
                     pass
         return res
+
+    def _voiler_cle(self):
+        """Remplace, dans l'affichage seulement, la clé du service central par des astérisques dans les zones de texte
+        (spécifications YAML) : la valeur réelle reste dans l'état de Gradio et est remise juste après la capture."""
+        if len(CLE) < 7:
+            return 0
+        return self.page.evaluate("""(cle) => { let n = 0;
+          document.querySelectorAll('textarea, input[type=text]').forEach(t => { if (t.value.includes(cle)) {
+            t.dataset.vraie = t.value; t.value = t.value.split(cle).join('********'); n++; } }); return n; }""", CLE)
+
+    def _devoiler_cle(self):
+        self.page.evaluate("""() => document.querySelectorAll('[data-vraie]').forEach(t => {
+          t.value = t.dataset.vraie; delete t.dataset.vraie; })""")
+
+    def choisir(self, libelle, valeur, parent=None):
+        """Liste déroulante Gradio : ouvre la liste du bloc `libelle` et clique l'option `valeur`."""
+        champ = self.champ(libelle, parent)
+        champ.click(); self.page.wait_for_timeout(300)
+        self.page.wait_for_timeout(500)
+        opt = self.page.get_by_role("option", name=valeur, exact=True).locator("visible=true")
+        if not opt.count():
+            print("options visibles :", self.page.evaluate("() => [...document.querySelectorAll('[role=option]')].filter(e=>e.offsetParent).map(e=>JSON.stringify(e.innerText))"))
+        opt.first.click()
+        self.page.wait_for_timeout(800)
+        return champ
 
     def _ecrire_journal(self):
         f = TXT / self.chapitre / "scenario.json"

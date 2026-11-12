@@ -1,0 +1,23 @@
+2026-11-12T21:43:11+01:00
+== curl -sI https://cdn.skypack.dev/pdfjs-viewer-element
+HTTP/2 302 
+location: /new/pdfjs-viewer-element@v3.2.2/dist=es2019
+== corps renvoyé (suivi des redirections)
+/*
+ * [Package Error] "pdfjs-viewer-element@v3.2.2" could not be built. 
+ *
+ *   [1/5] Verifying package is valid…
+ *   [2/5] Installing dependencies from npm…
+ *   [3/5] Building package using esinstall…
+ *   Running esinstall...
+ *   rollup-plugin-inject: failed to parse pdfjs-viewer-element/dist/pdf.worker.min.mjs. Consider restricting the plugin to particular files via options.include
+ *   Failed to load node_modules/pdfjs-viewer-element/dist/pdf.worker.min.mjs
+ *     Unexpected token (Note that you need plugins to import files that are not JavaScript)
+ *   Install failed.
+ *   Install failed.
+ *
+ * How to fix:
+ *   - If you believe this to be an error in Skypack, file an issue here: https://github.com/skypackjs/skypack-cdn/issues
+== version antérieure (2.x)
+404 https://cdn.skypack.dev/pdfjs-viewer-element@2
+Not Found

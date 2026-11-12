@@ -1,0 +1,26 @@
+               total        used        free      shared  buff/cache   available
+Mem:           32098       10107        1226         914       22049       21991
+  bge-m3 (embedding)
+  bge-reranker-v2-m3 (rerank)
+  faster-whisper-small (audio_transcription)
+== chat (réflexion coupée pour l'essai)
+  Bonjour ! Comment puis-je vous aider aujourd'hui ?
+== embed
+  dimensions : 1024
+== rerank
+  doc 0 score 9.05
+  doc 1 score -8.63
+== transcribe (corpus/documents/message-vocal-production.mp3)
+  Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
+   {'fichier': 'contrat-batterix-scan.pdf', 'duree_s': 1.7, 'ids': ['488f2c61-0642-4214-a0b4-a8afbb7f9d2e'], 'erreurs': [], 'journal': [' => [contrat-batterix-scan.pdf] Created embedding for 4 chunks', ' => Finished indexing contrat-batterix-scan.pdf', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/contrat-batterix-scan.pdf'), 'file_name': 'contrat-batterix-scan.pdf', 'status': 'success'}"]}
+   {'fichier': 'cse-2025-10-14.md', 'duree_s': 0.6, 'ids': ['02f68b49-c5ce-4b3c-a386-b408b5e45018'], 'erreurs': [], 'journal': [' => [cse-2025-10-14.md] Created embedding for 1 chunks', ' => Finished indexing cse-2025-10-14.md', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/cse-2025-10-14.md'), 'file_name': 'cse-2025-10-14.md', 'status': 'success'}"]}
+   {'fichier': 'faq-sav.html', 'duree_s': 0.5, 'ids': ['5b25ce93-6682-4ec4-b32a-2615ed30dd7d'], 'erreurs': [], 'journal': [' => [faq-sav.html] Created embedding for 1 chunks', ' => Finished indexing faq-sav.html', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/faq-sav.html'), 'file_name': 'faq-sav.html', 'status': 'success'}"]}
+   {'fichier': 'message-vocal-production.mp3', 'duree_s': 0.4, 'ids': [], 'erreurs': ['Invalid file /app/ktem_app_data/banc/corpus/message-vocal-production.mp3. The FileType.UNK file type is not supported in partition.'], 'journal': ['Indexing [1/1]: message-vocal-production.mp3', ' => Converting message-vocal-production.mp3 to text', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/message-vocal-production.mp3'), 'file_name': 'message-vocal-production.mp3', 'status': 'failed', 'message': 'Invalid file /app/ktem_app_data/ban"]}
+   {'fichier': 'procedure-batteries.docx', 'duree_s': 0.7, 'ids': [], 'erreurs': ['HTTP Error 403: Forbidden'], 'journal': ['Indexing [1/1]: procedure-batteries.docx', ' => Converting procedure-batteries.docx to text', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/procedure-batteries.docx'), 'file_name': 'procedure-batteries.docx', 'status': 'failed', 'message': 'HTTP Error 403: Forbidden'}"]}
+   {'fichier': 'rapport-annuel-2025.pdf', 'statut': 'déjà indexé'}
+   {'fichier': 'stocks-octobre-2025.xlsx', 'duree_s': 0.7, 'ids': ['802ae5e4-b8aa-4c7b-b736-c0b1340c0c3b'], 'erreurs': [], 'journal': [' => [stocks-octobre-2025.xlsx] Created embedding for 1 chunks', ' => Finished indexing stocks-octobre-2025.xlsx', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/stocks-octobre-2025.xlsx'), 'file_name': 'stocks-octobre-2025.xlsx', 'status': 'success'}"]}
+   {'fichier': 'strategie-2026.pptx', 'duree_s': 0.4, 'ids': [], 'erreurs': ['HTTP Error 403: Forbidden'], 'journal': ['Indexing [1/1]: strategie-2026.pptx', ' => Converting strategie-2026.pptx to text', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/strategie-2026.pptx'), 'file_name': 'strategie-2026.pptx', 'status': 'failed', 'message': 'HTTP Error 403: Forbidden'}"]}
+   {'fichier': 'supplier-audit-batterix-en.pdf', 'duree_s': 0.5, 'ids': ['b3beacf8-a58f-40cc-935f-3bdcb6fe22bf'], 'erreurs': [], 'journal': [' => [supplier-audit-batterix-en.pdf] Created embedding for 2 chunks', ' => Finished indexing supplier-audit-batterix-en.pdf', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/supplier-audit-batterix-en.pdf'), 'file_name': 'supplier-audit-batterix-en.pdf', 'status': 'success'}"]}
+indexation : 5.5 s
+Q01 tableau         OK    28.2s  "Selon les documents fournis, le chiffre d'affaires de Vélanor pour l'année 2025 s'élève à "
+Q02 fait simple     OK    23.9s  'Selon les documents fournis, Vélanor a été fondée en **2014**.\n\n**Explication détaillée :*'
