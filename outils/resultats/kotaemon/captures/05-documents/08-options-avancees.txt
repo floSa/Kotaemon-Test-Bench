@@ -1,0 +1,181 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Upload Files
+Use Web Links
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Supported file types: .png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, .pptx, .csv, .html, .mhtml, .txt, .md, .zip
+Maximum file size: 1000 MB
+Advanced indexing options
+▼
+Upload and Index
+Files
+Groups
+Filter by name:
+(1) Case-insensitive. (2) Search with empty string to show all files.
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+15dd672a-c444-4eea-b6de-b189981d93f9
+	
+supplier-audit-batterix-en.pdf
+	
+52KB
+	
+1K
+	
+PDFThumbnailReader
+	
+2026-11-12 20:12:06
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+15dd672a-c444-4eea-b6de-b189981d93f9
+	
+rapport-annuel-2025.pdf
+	
+52KB
+	
+1K
+	
+PDFThumbnailReader
+	
+2026-11-12 20:12:06
+
+
+02f68b49-c5ce-4b3c-a386-b408b5e45018
+	
+cse-2025-10-14.md
+	
+548B
+	
+159
+	
+TxtReader
+	
+2026-11-12 20:47:09
+
+
+5b25ce93-6682-4ec4-b32a-2615ed30dd7d
+	
+faq-sav.html
+	
+810B
+	
+184
+	
+HtmlReader
+	
+2026-11-12 20:47:09
+
+
+802ae5e4-b8aa-4c7b-b736-c0b1340c0c3b
+	
+stocks-octobre-2025.xlsx
+	
+6KB
+	
+163
+	
+PandasExcelReader
+	
+2026-11-12 20:47:09
+
+
+b3beacf8-a58f-40cc-935f-3bdcb6fe22bf
+	
+supplier-audit-batterix-en.pdf
+	
+43KB
+	
+123
+	
+PDFThumbnailReader
+	
+2026-11-12 20:47:09
+
+
+d9b54cec-b0e0-4f6a-97b8-5df37fc9544f
+	
+procedure-batteries.docx
+	
+36KB
+	
+226
+	
+UnstructuredReader
+	
+2026-11-12 20:51:11
+
+
+6a1a2332-441a-4252-bfaf-1274bb7cba27
+	
+strategie-2026.pptx
+	
+31KB
+	
+165
+	
+UnstructuredReader
+	
+2026-11-12 20:51:11
+
+
+75b3f36a-5603-4f3d-a477-eaba18988599
+	
+message-vocal-production.mp3
+	
+144KB
+	
+-
+	
+-
+	
+2026-11-12 20:51:42
+
+
+c9e331c2-7f64-4c5a-9b57-099ac622ea82
+	
+contrat-batterix-scan.pdf
+	
+747KB
+	
+289
+	
+DoclingReader
+	
+2026-11-12 21:29:47
+
+Selected file: (please select above)
+
+Advance options
+▼
+Download all files
+Confirm delete
+Cancel
+
+version: 0.0.1

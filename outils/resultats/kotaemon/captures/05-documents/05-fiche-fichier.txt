@@ -1,0 +1,176 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Upload Files
+Use Web Links
+Input web URLs
+
+(separated by new line)
+
+Advanced indexing options
+▼
+Force reindex file
+Upload and Index
+Files
+Groups
+Filter by name:
+(1) Case-insensitive. (2) Search with empty string to show all files.
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+c9e331c2-7f64-4c5a-9b57-099ac622ea82
+	
+supplier-audit-batterix-en.pdf
+	
+747KB
+	
+1K
+	
+PDFThumbnailReader
+	
+2026-11-12 21:29:47
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+c9e331c2-7f64-4c5a-9b57-099ac622ea82
+	
+contrat-batterix-scan.pdf
+	
+747KB
+	
+289
+	
+DoclingReader
+	
+2026-11-12 21:29:47
+
+
+6a49dfa5-b6be-4047-a989-34ab63a3a40a
+	
+rapport-annuel-2025.pdf
+	
+52KB
+	
+1K
+	
+PDFThumbnailReader
+	
+2026-11-12 20:49:00
+
+
+1cbe914d-2063-4971-8fa3-60200b818393
+	
+procedure-batteries.docx
+	
+36KB
+	
+226
+	
+UnstructuredReader
+	
+2026-11-12 20:49:00
+
+
+982a949c-adcf-4768-83ba-be840087e93c
+	
+strategie-2026.pptx
+	
+31KB
+	
+165
+	
+UnstructuredReader
+	
+2026-11-12 20:49:00
+
+
+d7d2af6c-c96d-471e-bf9e-4f1ca1a99534
+	
+stocks-octobre-2025.xlsx
+	
+6KB
+	
+163
+	
+PandasExcelReader
+	
+2026-11-12 20:49:00
+
+
+91caaa40-4101-40f0-a0b7-562c4c64774e
+	
+faq-sav.html
+	
+810B
+	
+184
+	
+HtmlReader
+	
+2026-11-12 20:49:00
+
+
+044c4cf7-8575-4038-9d64-5c6fca59918b
+	
+cse-2025-10-14.md
+	
+548B
+	
+159
+	
+TxtReader
+	
+2026-11-12 20:49:00
+
+
+55b1348c-ba5b-47be-a45b-8731533675eb
+	
+supplier-audit-batterix-en.pdf
+	
+43KB
+	
+123
+	
+PDFThumbnailReader
+	
+2026-11-12 20:49:00
+Go to Chat
+Download
+Delete
+Close
+
+Selected file: strategie-2026.pptx
+
+1 chunks (1 text)
+
+Chunk type
+[1/1] (text) Stratégie 2026 Comité de direction du 20 novembre...
+
+
+Advance options
+▼
+Download all files
+Delete all files
+
+version: 0.0.1

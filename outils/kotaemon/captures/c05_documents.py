@@ -57,13 +57,16 @@ def groupes(s):
     ouvrir_files(s); s.onglet("Groups")
     s.bouton("Add").click(); p.wait_for_timeout(1500)
     s.champ("Group name").fill("Fournisseur Batterix")
-    liste = s.champ("Attached files")
+    champ = p.locator("label").filter(has_text="Attached files").locator("input").locator("visible=true").first
+    champ.click(); p.wait_for_timeout(800)
     for f in ("contrat-batterix-scan.pdf", "supplier-audit-batterix-en.pdf"):
-        liste.click(); p.wait_for_timeout(500)
-        p.get_by_role("option", name=f, exact=True).locator("visible=true").first.click(); p.wait_for_timeout(500)
-    p.keyboard.press("Escape")
+        o = p.get_by_role("option", name=f, exact=True).locator("visible=true")
+        if not o.count():
+            champ.click(); p.wait_for_timeout(800)
+        o.first.click(); p.wait_for_timeout(800)
+    p.locator("body").click(position={"x": 1300, "y": 850}); p.wait_for_timeout(600)
     s.cap_souple("06-groupe-creer", [(s.tab("Groups"), "Groups"), (s.champ("Group name"), "Group name"),
-                                     (s.bloc("Attached files"), "Attached files"), (s.bouton("Save"), "Save")])
+                                     (p.locator("label").filter(has_text="Attached files").locator("visible=true").first, "Attached files"), (s.bouton("Save"), "Save")])
     s.bouton("Save").click(); p.wait_for_timeout(2500)
     s.note("groupe : toasts " + repr(s.toasts())); s.sans_toasts()
     s.cap_souple("07-groupes-liste", [(s.ligne("Fournisseur Batterix"), "Fournisseur Batterix"), (s.bouton("Add"), "Add")])
@@ -104,6 +107,26 @@ def rapide(s):
                                           (p.locator("#index-0"), "File Collection")])
 
 
+def supprimer(s):
+    """Supprime la note du CSE (aucune confirmation n'est demandée), puis la remet par « Upload and Index »."""
+    p = s.page
+    ouvrir_files(s)
+    if not s.ligne("cse-2025-10-14.md").count():
+        s.onglet("Upload Files"); s.deposer([DOCS / "cse-2025-10-14.md"])
+        s.bouton("Upload and Index").click(); p.wait_for_timeout(3000); s.attendre_fin(); s.sans_toasts()
+        s.bouton("Clear Upload Info and Close").click(); p.wait_for_timeout(1500)
+    s.onglet("Files")
+    s.ligne("cse-2025-10-14.md").click(); p.wait_for_timeout(2500)
+    s.cap_souple("14-supprimer-fichier", [(s.texte("Selected file: cse-2025-10-14.md"), "Selected file"),
+                                          (s.bouton("Delete"), "Delete")])
+    s.bouton("Delete").click(); p.wait_for_timeout(2500)
+    s.note("suppression sans confirmation : toasts " + repr(s.toasts())); s.sans_toasts()
+    s.cap_souple("15-fichier-supprime", [(p.locator(".toast-body").first, "message"), (p.locator("table.table").locator("visible=true").first, "liste des fichiers")])
+    s.onglet("Upload Files"); s.deposer([DOCS / "cse-2025-10-14.md"])
+    s.bouton("Upload and Index").click(); p.wait_for_timeout(3000); s.attendre_fin()
+    s.note("remise : toasts " + repr(s.toasts()))
+
+
 def lecteur(s):
     """Lecteur Docling pour le PDF scanné : réglage, réindexation forcée du scan, retour au lecteur par défaut."""
     p = s.page
@@ -135,6 +158,6 @@ def lecteur(s):
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([avance, plusieurs, liens, fiche, groupes, rapide, lecteur], s)
+        etapes([avance, plusieurs, liens, fiche, groupes, rapide, supprimer, lecteur], s)
     finally:
         s.fermer()

@@ -1,0 +1,173 @@
+[
+ {
+  "capture": "07-reglages/01-mode-recherche.png",
+  "pastilles": [
+   [
+    1,
+    "Retrieval mode"
+   ],
+   [
+    2,
+    "hybrid"
+   ],
+   [
+    3,
+    "Prioritize table"
+   ],
+   [
+    4,
+    "Use MMR"
+   ]
+  ],
+  "note": "",
+  "heure": "22:32:35"
+ },
+ {
+  "capture": "07-reglages/02-recherche-graphrag.png",
+  "pastilles": [
+   [
+    1,
+    "GraphRAG Collection"
+   ],
+   [
+    2,
+    "LightRAG Collection"
+   ],
+   [
+    3,
+    "Search type"
+   ]
+  ],
+  "note": "",
+  "heure": "22:32:37"
+ },
+ {
+  "capture": "07-reglages/03-methodes.png",
+  "pastilles": [
+   [
+    1,
+    "Reasoning options"
+   ],
+   [
+    2,
+    "Create Mindmap"
+   ],
+   [
+    3,
+    "Create Embeddings Visualization"
+   ],
+   [
+    4,
+    "Use Multimodal Input"
+   ]
+  ],
+  "note": "",
+  "heure": "22:34:39"
+ },
+ {
+  "capture": "07-reglages/04-complex.png",
+  "pastilles": [
+   [
+    1,
+    "complex"
+   ],
+   [
+    2,
+    "Complex QA"
+   ],
+   [
+    3,
+    "Decompose Prompt"
+   ]
+  ],
+  "note": "",
+  "heure": "22:34:41"
+ },
+ {
+  "capture": "07-reglages/05-consignes.png",
+  "pastilles": [
+   [
+    1,
+    "System Prompt"
+   ],
+   [
+    2,
+    "QA Prompt"
+   ],
+   [
+    3,
+    "Number of interactions to include"
+   ],
+   [
+    4,
+    "Maximum message length for context rewriting"
+   ]
+  ],
+  "note": "",
+  "heure": "22:34:46"
+ },
+ {
+  "capture": "07-reglages/06-methode-conversation.png",
+  "pastilles": [
+   [
+    1,
+    "Reasoning method : complex"
+   ],
+   [
+    2,
+    "Search All"
+   ]
+  ],
+  "note": "",
+  "heure": "22:35:33"
+ },
+ {
+  "capture": "07-reglages/07-reponse-decomposee.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ],
+   [
+    2,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "22:35:48"
+ },
+ {
+  "capture": "07-reglages/08-notation-llm.png",
+  "pastilles": [
+   [
+    1,
+    "Number of document chunks to retrieve : 4"
+   ],
+   [
+    2,
+    "Use LLM relevant scoring"
+   ],
+   [
+    3,
+    "LLM for relevant scoring"
+   ],
+   [
+    4,
+    "Save & Close"
+   ]
+  ],
+  "note": "",
+  "heure": "22:36:04"
+ },
+ {
+  "capture": "07-reglages/09-alerte-pertinence.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ]
+  ],
+  "note": "",
+  "heure": "22:37:04"
+ }
+]

@@ -1,0 +1,42 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+name
+	
+vendor
+	
+default
+
+
+llm-service-rerank
+	
+CohereReranking
+	
+false
+name
+	
+vendor
+	
+default
+
+
+cohere
+	
+CohereReranking
+	
+false
+
+
+llm-service-rerank
+	
+CohereReranking
+	
+true
+
+version: 0.0.1

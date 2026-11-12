@@ -1,0 +1,30 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+Language
+Max context length (LLM)
+Reasoning-specific settings
+Reasoning options
+simple
+complex
+ReAct
+ReWOO
+
+Simple QA: Simple RAG-based question answering pipeline. This pipeline can perform both keyword search and similarity search to retrieve the context. After that it includes that context to generate the answer.
+
+Language model
+Citation style
+citation: highlight
+citation: inline
+no citation
+Create Mindmap
+Create Embeddings Visualization
+Use Multimodal Input
+System Prompt
+QA Prompt (contains {context}, {question}, {lang})
+Number of interactions to include
+Maximum message length for context rewriting
+
+version: 0.0.1

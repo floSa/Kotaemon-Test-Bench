@@ -1,0 +1,102 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+Files
+note-rapide-cse.md
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Quick Upload
+▼
+
+Indexing completed.
+
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Based on the provided context, here is a detailed summary of the document:
+
+Document Overview
+The document is titled "Compte rendu de la réunion du CSE du 14 octobre 2025," which translates to the minutes of the Social and Economic Committee (CSE) meeting held on October 14, 2025. It is explicitly noted as a fictitious document.
+
+Participants
+The meeting was attended by:
+
+Hélène Marchais (President)
+Sophie Le Gall (Secretary of the CSE)
+Seven elected members (élus)
+
+Key Decisions Made
+The document outlines three main decisions reached during the meeting:
+
+Interest Bonus (Prime d'intéressement): A bonus for 2025 is set at €1,150 per employee. This payment is scheduled to be distributed in April 2026.
+Telework Policy: Employees in compatible positions are allowed to work remotely for up to two days per week.
+Company Restaurant: A new company restaurant located at the Nantes site is planned to open in January 2026.
+
+Deferred Items
+One topic was not resolved during this meeting and has been postponed:
+
+The question regarding summer working hours for the Cholet workshop is reported (deferred) to be discussed at the December meeting.
+
+In conclusion, the document serves as a record of administrative and social decisions made by the CSE committee in late 2025, covering financial benefits, work arrangements, and facility updates, while noting that one specific operational issue remains pending for future discussion.
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Information panel
+▼
+Mindmap [Expand] [Export]
+Horaires d'été atelier Cholet : décembre
+Restaurant d'entreprise Nantes : janvier 2026
+Télétravail : jusqu'à 2 jours/semaine
+Prime d'intéressement 2025 : 1 150 euros, avril 2026
+Sept élus
+Sophie Le Gall (secrétaire)
+Hélène Marchais (présidente)
+Points reportés
+Décisions
+Participants
+Compte rendu de la réunion du CSE (14 octobre 2025)
+
+
+note-rapide-cse.md [score: 0.0]
+ Relevance score: 0.0
+
+
+
+Compte rendu de la réunion du CSE du 14 octobre 2025
+
+Document fictif.
+
+Participants
+
+Hélène Marchais (présidente), Sophie Le Gall (secrétaire du CSE), sept élus.
+
+Décisions
+
+Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.
+Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.
+Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.
+
+Points reportés
+
+La question des horaires d'été de l'atelier de Cholet est reportée à la réunion de décembre.
+
+
+
+
+version: 0.0.1

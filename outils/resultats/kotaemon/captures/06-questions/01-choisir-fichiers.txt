@@ -1,0 +1,52 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+Files
+rapport-annuel-2025.pdf
+procedure-batteries.docx
+strategie-2026.pptx
+stocks-octobre-2025.xlsx
+faq-sav.html
+supplier-audit-batterix-en.pdf
+contrat-batterix-scan.pdf
+cse-2025-10-14.md
+group: 'Fournisseur Batterix'
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+This is the beginning of a new conversation.
+Start by uploading a file or a web URL. Visit Files tab for more options (e.g: GraphRAG).
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Reasoning method
+Model
+Language
+Dropdown
+Dropdown
+Dropdown
+Information panel
+▼
+No evidence found.
+
+version: 0.0.1

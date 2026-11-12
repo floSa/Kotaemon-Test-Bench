@@ -1,0 +1,52 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Upload Files
+Use Web Links
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Supported file types: .png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, .pptx, .csv, .html, .mhtml, .txt, .md, .zip
+Maximum file size: 1000 MB
+Advanced indexing options
+▼
+Upload and Index
+Files
+Groups
+id
+	
+name
+	
+files
+	
+date_created
+
+
+b3bc9cb6-3d1c-42c3-aec7-8992bec5e49d
+	
+Fournisseur Batterix
+	
+[2 items] 'contrat-batterix-sca..', 'supplier-audit-batte..'
+	
+2026-11-12 20:49:00
+id
+	
+name
+	
+files
+	
+date_created
+
+
+b3bc9cb6-3d1c-42c3-aec7-8992bec5e49d
+	
+Fournisseur Batterix
+	
+[2 items] 'contrat-batterix-sca..', 'supplier-audit-batte..'
+	
+2026-11-12 20:49:00
+Add
+
+version: 0.0.1

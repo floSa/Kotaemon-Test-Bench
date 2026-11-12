@@ -1,0 +1,30 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+User list
+Create user
+Username
+Password
+Confirm password
+
+Username rule:
+
+Username is case-insensitive
+Username must be at least 3 characters long
+Username must be at most 32 characters long
+Username must contain only alphanumeric characters and underscores
+
+Password rule:
+
+Password must be at least 8 characters long
+Password must contain at least one uppercase letter
+Password must contain at least one lowercase letter
+Password must contain at least one digit
+Password must contain at least one special character from the following: ^ $ * . [ ] { } ( ) ? - " ! @ # % & / \ , > < ' : ; | _ ~ + =
+Create user
+
+version: 0.0.1

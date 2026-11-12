@@ -1,0 +1,154 @@
+[
+ {
+  "capture": "11-comptes/01-creer-compte.png",
+  "pastilles": [
+   [
+    1,
+    "Users"
+   ],
+   [
+    2,
+    "Create user"
+   ],
+   [
+    3,
+    "Username"
+   ],
+   [
+    4,
+    "Password"
+   ],
+   [
+    5,
+    "Confirm password"
+   ],
+   [
+    6,
+    "Create user"
+   ]
+  ],
+  "note": "",
+  "heure": "22:48:27"
+ },
+ {
+  "capture": "11-comptes/02-fiche-compte.png",
+  "pastilles": [
+   [
+    1,
+    "camille"
+   ],
+   [
+    2,
+    "Change password"
+   ],
+   [
+    3,
+    "Admin"
+   ],
+   [
+    4,
+    "Save"
+   ],
+   [
+    5,
+    "Delete"
+   ]
+  ],
+  "note": "",
+  "heure": "22:48:36"
+ },
+ {
+  "capture": "11-comptes/03-collection-partagee.png",
+  "pastilles": [
+   [
+    1,
+    "Documents partagés"
+   ],
+   [
+    2,
+    "cse-2025-10-14.md"
+   ]
+  ],
+  "note": "",
+  "heure": "22:48:52"
+ },
+ {
+  "capture": "11-comptes/04-partager-conversation.png",
+  "pastilles": [
+   [
+    1,
+    "Share this conversation"
+   ],
+   [
+    2,
+    "conversation partagée"
+   ]
+  ],
+  "note": "",
+  "heure": "22:49:41"
+ },
+ {
+  "capture": "11-comptes/05-ecran-utilisateur.png",
+  "pastilles": [
+   [
+    1,
+    "onglets (sans Resources)"
+   ],
+   [
+    2,
+    "File Collection (privée)"
+   ],
+   [
+    3,
+    "Documents partagés"
+   ]
+  ],
+  "note": "",
+  "heure": "22:49:56"
+ },
+ {
+  "capture": "11-comptes/06-collection-privee-vide.png",
+  "pastilles": [
+   [
+    1,
+    "File Collection"
+   ],
+   [
+    2,
+    "liste vide"
+   ]
+  ],
+  "note": "",
+  "heure": "22:49:59"
+ },
+ {
+  "capture": "11-comptes/07-conversation-partagee-vue.png",
+  "pastilles": [
+   [
+    1,
+    "liste des conversations"
+   ],
+   [
+    2,
+    "conversation partagée par admin"
+   ]
+  ],
+  "note": "",
+  "heure": "22:50:03"
+ },
+ {
+  "capture": "11-comptes/08-deconnexion.png",
+  "pastilles": [
+   [
+    1,
+    "Current user"
+   ],
+   [
+    2,
+    "Logout"
+   ]
+  ],
+  "note": "",
+  "heure": "22:50:05"
+ }
+]

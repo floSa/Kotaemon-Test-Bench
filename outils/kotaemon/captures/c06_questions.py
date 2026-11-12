@@ -68,12 +68,12 @@ def citations(s):
     s.cap_souple("05-citation-en-ligne", [(p.locator("#main-chat-bot .message").last, "réponse avec citations en ligne"),
                                           (p.locator("#html-info-panel"), "Information panel")])
     s.note("réponse inline : " + p.locator("#main-chat-bot .message").last.inner_text()[:500].replace("\n", " "))
-    det = p.locator("#html-info-panel details").filter(has_text="Relevance score").locator("visible=true").first
-    try:
-        det.locator("summary").first.click(); p.wait_for_timeout(800)
-    except Exception as e:
-        s.note(f"détail des scores : {e}")
-    s.cap_souple("06-detail-scores", [(det, "Relevance score (détail)")])
+    # bloc « Relevance score » (détails imbriqués dans le bloc du passage) : on l'ouvre par son titre
+    titre = p.locator("#html-info-panel details details summary").filter(has_text="Relevance score").locator("visible=true").first
+    titre.click(); p.wait_for_timeout(1000)
+    bloc = titre.locator("xpath=..")
+    s.note("détail des scores : " + bloc.inner_text()[:300].replace("\n", " | "))
+    s.cap_souple("06-detail-scores", [(titre, "Relevance score"), (bloc, "détail des notes")])
 
 
 def carte(s):

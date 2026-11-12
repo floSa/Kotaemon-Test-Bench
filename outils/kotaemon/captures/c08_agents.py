@@ -9,16 +9,16 @@ QUESTION = "Quel est le délai de livraison contractuel de Batterix et quel dél
 def reglages(s):
     p = s.page
     s.onglet("Settings"); s.onglet("Reasoning settings")
-    opts = p.locator("div.block").filter(has=p.get_by_text("Reasoning options", exact=True)).locator("visible=true").last
+    opts = p.locator("fieldset").filter(has_text="Reasoning options").locator("visible=true").first
     opts.get_by_text("ReAct", exact=True).click(); p.wait_for_timeout(1500)
     s.cap_souple("01-reglages-react", [(opts.get_by_text("ReAct", exact=True), "ReAct"), (s.champ("Language model"), "Language model"),
-                                       (s.bloc("Tools for knowledge retrieval"), "Tools for knowledge retrieval"),
+                                       (p.locator("fieldset").filter(has_text="Tools for knowledge retrieval").locator("visible=true").first, "Tools for knowledge retrieval"),
                                        (s.champ("Maximum number of iterations the LLM can go through"), "Maximum number of iterations the LLM can go through")])
     opts.get_by_text("ReWOO", exact=True).click(); p.wait_for_timeout(1500)
     s.cap_souple("02-reglages-rewoo", [(opts.get_by_text("ReWOO", exact=True), "ReWOO"), (s.champ("Language model for Planner"), "Language model for Planner"),
                                        (s.champ("Language model for Solver"), "Language model for Solver"),
                                        (p.locator("label").filter(has_text="Highlight Citation").locator("visible=true").first, "Highlight Citation"),
-                                       (s.bloc("Tools for knowledge retrieval"), "Tools for knowledge retrieval")])
+                                       (p.locator("fieldset").filter(has_text="Tools for knowledge retrieval").locator("visible=true").first, "Tools for knowledge retrieval")])
     s.note("réglages agents : " + p.locator("body").inner_text()[:1500].replace("\n", " | "))
     opts.get_by_text("simple", exact=True).click(); p.wait_for_timeout(800)
 

@@ -62,8 +62,12 @@ def equipe(s):
 
 
 if __name__ == "__main__":
-    s = Scenario(CH)
-    try:
-        etapes([fournisseur, client, equipe], s)
-    finally:
-        s.fermer()
+    import sys
+    if "equipe" in sys.argv[1:]:
+        equipe(None)  # session d'un autre compte : son propre navigateur
+    else:
+        s = Scenario(CH)
+        try:
+            etapes([fournisseur, client], s)
+        finally:
+            s.fermer()

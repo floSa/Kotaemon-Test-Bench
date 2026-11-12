@@ -1,0 +1,77 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Upload Files
+Use Web Links
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Supported file types: .png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, .pptx, .csv, .html, .mhtml, .txt, .md, .zip
+Maximum file size: 1000 MB
+Advanced indexing options
+▼
+Force reindex file
+Upload and Index
+Files
+Groups
+Filter by name:
+(1) Case-insensitive. (2) Search with empty string to show all files.
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+c9e331c2-7f64-4c5a-9b57-099ac622ea82
+	
+contrat-batterix-scan.pdf
+	
+747KB
+	
+289
+	
+DoclingReader
+	
+2026-11-12 21:29:47
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+c9e331c2-7f64-4c5a-9b57-099ac622ea82
+	
+contrat-batterix-scan.pdf
+	
+747KB
+	
+289
+	
+DoclingReader
+	
+2026-11-12 21:29:47
+
+Selected file: (please select above)
+
+Advance options
+▼
+Download all files
+Delete all files
+
+version: 0.0.1

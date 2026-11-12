@@ -1,0 +1,28 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+Configuration (JSON)
+1
+2
+3
+4
+⌄
+⌄
+{
+  "mcpServers": {
+  }
+}
+
+
+Add MCP Servers
+Available Tools
+
+Select or add an MCP server to view its tools.
+
+version: 0.0.1

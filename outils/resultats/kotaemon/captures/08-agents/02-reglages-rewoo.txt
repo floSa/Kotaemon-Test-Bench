@@ -1,0 +1,28 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+Language
+Max context length (LLM)
+Reasoning-specific settings
+Reasoning options
+simple
+complex
+ReAct
+ReWOO
+
+ReWOO Agent: Implementing ReWOO paradigm: https://arxiv.org/abs/2305.18323. The ReWOO agent makes a step by step plan in the first stage, then solves each step in the second stage. The agent can use external tools to help in the reasoning process. Once all stages are completed, the agent will summarize the answer.
+
+Language model for Planner
+Language model for Solver
+Highlight Citation
+Tools for knowledge retrieval
+Wikipedia
+Google
+LLM
+SearchDoc
+Planner Prompt
+Solver Prompt
+
+version: 0.0.1

@@ -1,0 +1,39 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+Index name
+Must be unique and non-empty.
+Index type
+Specification
+Specification of the index in YAML format.
+
+Note: After creating index, please restart the app
+
+Add
+File index to store and allow retrieval of files
+
+The file index stores files in a local folder and index them for retrieval.
+This file index provides the following infrastructure to support the indexing:
+    - SQL table Source: store the list of files that are indexed by the system
+    - Vector store: contain the embedding of segments of the files
+    - Document store: contain the text of segments of the files. Each text stored
+    in this document store is associated with a vector in the vector store.
+    - SQL table Index: store the relationship between (1) the source and the
+    docstore, and (2) the source and the vector store.
+
+Name	Default	Description
+embedding	default	The name of embedding model to use.
+supported_file_types	.pdf, .txt	The file types that can be indexed, separated by comma.
+max_file_size	1000	The maximum size of file. Set 0 to disable.
+max_number_of_files	0	The total number of files that can be indexed on the system. Set 0 to disable.
+private	False	If private, files will not be accessible across users.
+chunk_size	0	Number of tokens of each text segment. Set 0 to use developer setting.
+chunk_overlap	0	Number of tokens that consecutive text segments should overlap with each other. Set 0 to use developer setting.
+
+version: 0.0.1

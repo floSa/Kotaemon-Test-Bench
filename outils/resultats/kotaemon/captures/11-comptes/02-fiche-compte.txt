@@ -1,0 +1,53 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+User list
+Create user
+id
+	
+username
+	
+admin
+
+
+0e6518632cb84638a8b00711507d4469
+	
+camille
+	
+false
+id
+	
+username
+	
+admin
+
+
+0e6518632cb84638a8b00711507d4469
+	
+admin
+	
+true
+
+
+b0c08891fa2342b489b077e2d7b705ed
+	
+camille
+	
+false
+Username
+Change password
+Confirm change password
+Admin
+Save
+Delete
+Close
+
+version: 0.0.1
+
+Info
+User "camille" created successfully
+×

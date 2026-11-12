@@ -1,0 +1,27 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+Index name
+Must be unique and non-empty.
+Index type
+Specification
+Specification of the index in YAML format.
+
+Note: After creating index, please restart the app
+
+Add
+Spec description
+
+Select an index to view the spec description.
+
+version: 0.0.1
+
+Info
+Index "Documents partagés" created successfully. Please restart the app!
+×

@@ -119,6 +119,7 @@ def demander(question, collection=1, reglages=None):
                          "extrait": "", "score": float(score.group(1)) if score else None})
     return {"reponse": chat, "citations": cits, "duree_s": round(time.time() - t0, 2),
             "alerte_pertinence": "Context relevance score is low" in texte_info,
+            "notes": re.findall(r"(Relevance score|Vectorstore score|LLM relevant score|Reranking score):\s*(-?[\d.]+)", texte_info),
             "infos_debut": texte_info[:400]}
 
 

@@ -1,0 +1,112 @@
+[
+ {
+  "capture": "10-ressources/01-collections.png",
+  "pastilles": [
+   [
+    1,
+    "Index Collections"
+   ],
+   [
+    2,
+    "File Collection"
+   ],
+   [
+    3,
+    "Index name"
+   ],
+   [
+    4,
+    "Index config"
+   ]
+  ],
+  "note": "",
+  "heure": "22:46:52"
+ },
+ {
+  "capture": "10-ressources/02-collection-ajouter.png",
+  "pastilles": [
+   [
+    1,
+    "Add"
+   ],
+   [
+    2,
+    "Index name"
+   ],
+   [
+    3,
+    "Index type"
+   ],
+   [
+    4,
+    "Specification"
+   ],
+   [
+    5,
+    "Add"
+   ]
+  ],
+  "note": "",
+  "heure": "22:47:00"
+ },
+ {
+  "capture": "10-ressources/03-redemarrer.png",
+  "pastilles": [
+   [
+    1,
+    "message de redémarrage"
+   ]
+  ],
+  "note": "",
+  "heure": "22:47:04"
+ },
+ {
+  "capture": "10-ressources/04-supprimer-modele.png",
+  "pastilles": [
+   [
+    1,
+    "groq"
+   ],
+   [
+    2,
+    "Confirm Delete"
+   ],
+   [
+    3,
+    "Cancel"
+   ]
+  ],
+  "note": "",
+  "heure": "22:47:12"
+ },
+ {
+  "capture": "10-ressources/05-embeddings-liste.png",
+  "pastilles": [
+   [
+    1,
+    "llm-service-embed"
+   ],
+   [
+    2,
+    "cohere"
+   ]
+  ],
+  "note": "",
+  "heure": "22:47:19"
+ },
+ {
+  "capture": "10-ressources/06-rerankings-liste.png",
+  "pastilles": [
+   [
+    1,
+    "llm-service-rerank"
+   ],
+   [
+    2,
+    "cohere"
+   ]
+  ],
+  "note": "",
+  "heure": "22:47:23"
+ }
+]

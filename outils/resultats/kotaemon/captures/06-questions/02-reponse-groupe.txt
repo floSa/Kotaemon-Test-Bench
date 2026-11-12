@@ -1,0 +1,63 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+Files
+group: 'Fournisseur Batterix'
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Quel score Batterix a-t-il obtenu à l'audit, et quel prix unitaire le contrat fixe-t-il ?
+
+D'après les extraits de contexte fournis, voici la réponse détaillée :
+
+Score obtenu à l'audit : Batterix a obtenu un score global de 87 sur 100. Le document indique explicitement dans le résumé de l'audit : "Overall score: 87 out of 100."
+
+Prix unitaire du contrat : Il est impossible de répondre à cette partie de la question car l'information n'est pas présente dans le contexte fourni. Le document mentionne des détails sur les résultats de l'audit (date, auditeur, non-conformités mineures, taux de défaut cellulaire), mais il ne contient aucune donnée financière ou commerciale concernant le prix unitaire du contrat.
+
+En résumé, seul le score de 87/100 est confirmé par le texte ; le prix unitaire reste inconnu car les données ne sont pas disponibles dans les pièces jointes fournies.
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Reasoning method
+Model
+Language
+Dropdown
+Dropdown
+Dropdown
+Information panel
+▼
+Image from [Page 1] supplier-audit-batterix-en.pdf [score: 0.0] [Preview]
+ Relevance score: 2.7
+
+
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+
+version: 0.0.1

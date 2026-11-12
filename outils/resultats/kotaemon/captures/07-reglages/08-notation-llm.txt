@@ -1,0 +1,18 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+File Collection
+GraphRAG Collection
+LightRAG Collection
+File loader
+LLM for relevant scoring
+Number of document chunks to retrieve
+Retrieval mode
+Prioritize table
+Use MMR
+Use reranking
+Use LLM relevant scoring
+
+version: 0.0.1

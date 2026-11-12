@@ -1,0 +1,12 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+File Collection
+GraphRAG Collection
+LightRAG Collection
+File loader
+Search type
+
+version: 0.0.1

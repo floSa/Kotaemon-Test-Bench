@@ -1,0 +1,26 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+Language
+Max context length (LLM)
+Reasoning-specific settings
+Reasoning options
+simple
+complex
+ReAct
+ReWOO
+
+ReAct Agent: Implementing ReAct paradigm: https://arxiv.org/abs/2210.03629. ReAct agent answers the user's request by iteratively formulating plan and executing it. The agent can use multiple tools to gather information and generate the final answer.
+
+Language model
+Tools for knowledge retrieval
+Wikipedia
+Google
+LLM
+SearchDoc
+Maximum number of iterations the LLM can go through
+QA Prompt
+
+version: 0.0.1

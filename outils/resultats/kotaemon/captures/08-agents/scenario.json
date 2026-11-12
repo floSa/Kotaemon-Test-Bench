@@ -1,0 +1,105 @@
+[
+ {
+  "capture": "08-agents/03-reponse-react.png",
+  "pastilles": [
+   [
+    1,
+    "réponse de l'agent"
+   ],
+   [
+    2,
+    "étapes et sources"
+   ]
+  ],
+  "note": "",
+  "heure": "22:43:58"
+ },
+ {
+  "capture": "08-agents/01-reglages-react.png",
+  "pastilles": [
+   [
+    1,
+    "ReAct"
+   ],
+   [
+    2,
+    "Language model"
+   ],
+   [
+    3,
+    "Tools for knowledge retrieval"
+   ],
+   [
+    4,
+    "Maximum number of iterations the LLM can go through"
+   ]
+  ],
+  "note": "",
+  "heure": "22:44:16"
+ },
+ {
+  "capture": "08-agents/02-reglages-rewoo.png",
+  "pastilles": [
+   [
+    1,
+    "ReWOO"
+   ],
+   [
+    2,
+    "Language model for Planner"
+   ],
+   [
+    3,
+    "Language model for Solver"
+   ],
+   [
+    4,
+    "Highlight Citation"
+   ],
+   [
+    5,
+    "Tools for knowledge retrieval"
+   ]
+  ],
+  "note": "",
+  "heure": "22:44:19"
+ },
+ {
+  "capture": "08-agents/04-reponse-rewoo.png",
+  "pastilles": [
+   [
+    1,
+    "réponse de l'agent"
+   ],
+   [
+    2,
+    "étapes et sources"
+   ]
+  ],
+  "note": "",
+  "heure": "22:46:20"
+ },
+ {
+  "capture": "08-agents/05-mcp-ajouter.png",
+  "pastilles": [
+   [
+    1,
+    "MCP Servers"
+   ],
+   [
+    2,
+    "Add"
+   ],
+   [
+    3,
+    "Configuration (JSON)"
+   ],
+   [
+    4,
+    "Add MCP Servers"
+   ]
+  ],
+  "note": "",
+  "heure": "22:46:34"
+ }
+]

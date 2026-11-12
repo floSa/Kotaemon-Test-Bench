@@ -1,0 +1,229 @@
+[
+ {
+  "capture": "06-questions/01-choisir-fichiers.png",
+  "pastilles": [
+   [
+    1,
+    "Search In File(s)"
+   ],
+   [
+    2,
+    "Files"
+   ],
+   [
+    3,
+    "group: 'Fournisseur Batterix'"
+   ],
+   [
+    4,
+    "contrat-batterix-scan.pdf"
+   ]
+  ],
+  "note": "",
+  "heure": "22:21:53"
+ },
+ {
+  "capture": "06-questions/02-reponse-groupe.png",
+  "pastilles": [
+   [
+    1,
+    "File Collection (groupe choisi)"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "22:22:29"
+ },
+ {
+  "capture": "06-questions/03-mention-fichier.png",
+  "pastilles": [
+   [
+    1,
+    "zone de saisie avec @"
+   ]
+  ],
+  "note": "",
+  "heure": "22:22:41"
+ },
+ {
+  "capture": "06-questions/07-carte-mentale.png",
+  "pastilles": [
+   [
+    1,
+    "Mindmap (on)"
+   ],
+   [
+    2,
+    "carte mentale"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:31"
+ },
+ {
+  "capture": "06-questions/08-parcourir.png",
+  "pastilles": [
+   [
+    1,
+    "liste des conversations"
+   ],
+   [
+    2,
+    "une conversation"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:32"
+ },
+ {
+  "capture": "06-questions/09-boutons-conversation.png",
+  "pastilles": [
+   [
+    1,
+    "renommer"
+   ],
+   [
+    2,
+    "supprimer"
+   ],
+   [
+    3,
+    "nouvelle conversation"
+   ],
+   [
+    4,
+    "Suggest chat"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:36"
+ },
+ {
+  "capture": "06-questions/10-renommer.png",
+  "pastilles": [
+   [
+    1,
+    "Conversation name"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:38"
+ },
+ {
+  "capture": "06-questions/11-supprimer.png",
+  "pastilles": [
+   [
+    1,
+    "Delete"
+   ],
+   [
+    2,
+    "Cancel"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:42"
+ },
+ {
+  "capture": "06-questions/12-avis.png",
+  "pastilles": [
+   [
+    1,
+    "The answer is correct"
+   ],
+   [
+    2,
+    "The evidence is incorrect"
+   ],
+   [
+    3,
+    "More detail"
+   ],
+   [
+    4,
+    "Report"
+   ],
+   [
+    5,
+    "Share this conversation"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:44"
+ },
+ {
+  "capture": "06-questions/13-mode-sombre.png",
+  "pastilles": [
+   [
+    1,
+    "mode sombre"
+   ],
+   [
+    2,
+    "agrandir la discussion"
+   ],
+   [
+    3,
+    "agrandir le panneau d'information"
+   ]
+  ],
+  "note": "",
+  "heure": "22:27:47"
+ },
+ {
+  "capture": "06-questions/04-styles-citation.png",
+  "pastilles": [
+   [
+    1,
+    "style de citation"
+   ],
+   [
+    2,
+    "citation: inline"
+   ],
+   [
+    3,
+    "Mindmap"
+   ]
+  ],
+  "note": "",
+  "heure": "22:30:30"
+ },
+ {
+  "capture": "06-questions/05-citation-en-ligne.png",
+  "pastilles": [
+   [
+    1,
+    "réponse avec citations en ligne"
+   ],
+   [
+    2,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "22:32:18"
+ },
+ {
+  "capture": "06-questions/06-detail-scores.png",
+  "pastilles": [
+   [
+    1,
+    "Relevance score"
+   ],
+   [
+    2,
+    "détail des notes"
+   ]
+  ],
+  "note": "",
+  "heure": "22:32:20"
+ }
+]

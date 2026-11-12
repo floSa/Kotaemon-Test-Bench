@@ -1,0 +1,263 @@
+[
+ {
+  "capture": "05-documents/08-options-avancees.png",
+  "pastilles": [
+   [
+    1,
+    "Advance options"
+   ],
+   [
+    2,
+    "Download all files"
+   ],
+   [
+    3,
+    "Confirm delete"
+   ],
+   [
+    4,
+    "Cancel"
+   ]
+  ],
+  "note": "",
+  "heure": "22:09:26"
+ },
+ {
+  "capture": "05-documents/09-forcer-reindexation.png",
+  "pastilles": [
+   [
+    1,
+    "Advanced indexing options"
+   ],
+   [
+    2,
+    "Force reindex file"
+   ]
+  ],
+  "note": "",
+  "heure": "22:09:33"
+ },
+ {
+  "capture": "05-documents/01-plusieurs-fichiers.png",
+  "pastilles": [
+   [
+    1,
+    "fichiers choisis"
+   ],
+   [
+    2,
+    "Upload and Index"
+   ]
+  ],
+  "note": "",
+  "heure": "22:09:41"
+ },
+ {
+  "capture": "05-documents/02-resultat-plusieurs.png",
+  "pastilles": [
+   [
+    1,
+    "Upload result"
+   ],
+   [
+    2,
+    "Upload info"
+   ]
+  ],
+  "note": "",
+  "heure": "22:09:55"
+ },
+ {
+  "capture": "05-documents/03-liens-web.png",
+  "pastilles": [
+   [
+    1,
+    "Use Web Links"
+   ],
+   [
+    2,
+    "Input web URLs"
+   ],
+   [
+    3,
+    "Upload and Index"
+   ]
+  ],
+  "note": "",
+  "heure": "22:10:01"
+ },
+ {
+  "capture": "05-documents/04-liste-complete.png",
+  "pastilles": [
+   [
+    1,
+    "contrat-batterix-scan.pdf"
+   ],
+   [
+    2,
+    "Filter by name:"
+   ]
+  ],
+  "note": "",
+  "heure": "22:10:04"
+ },
+ {
+  "capture": "05-documents/05-fiche-fichier.png",
+  "pastilles": [
+   [
+    1,
+    "Selected file"
+   ],
+   [
+    2,
+    "Go to Chat"
+   ],
+   [
+    3,
+    "Download"
+   ],
+   [
+    4,
+    "Delete"
+   ],
+   [
+    5,
+    "Close"
+   ],
+   [
+    6,
+    "Chunk type"
+   ]
+  ],
+  "note": "",
+  "heure": "22:10:08"
+ },
+ {
+  "capture": "05-documents/06-groupe-creer.png",
+  "pastilles": [
+   [
+    1,
+    "Groups"
+   ],
+   [
+    2,
+    "Group name"
+   ],
+   [
+    3,
+    "Attached files"
+   ],
+   [
+    4,
+    "Save"
+   ]
+  ],
+  "note": "",
+  "heure": "22:15:42"
+ },
+ {
+  "capture": "05-documents/07-groupes-liste.png",
+  "pastilles": [
+   [
+    1,
+    "Fournisseur Batterix"
+   ],
+   [
+    2,
+    "Add"
+   ]
+  ],
+  "note": "",
+  "heure": "22:15:46"
+ },
+ {
+  "capture": "05-documents/10-ajout-rapide.png",
+  "pastilles": [
+   [
+    1,
+    "Quick Upload"
+   ],
+   [
+    2,
+    "zone de discussion"
+   ]
+  ],
+  "note": "",
+  "heure": "22:16:02"
+ },
+ {
+  "capture": "05-documents/11-ajout-rapide-fini.png",
+  "pastilles": [
+   [
+    1,
+    "message de fin"
+   ],
+   [
+    2,
+    "File Collection"
+   ]
+  ],
+  "note": "",
+  "heure": "22:16:37"
+ },
+ {
+  "capture": "05-documents/12-lecteur-docling.png",
+  "pastilles": [
+   [
+    1,
+    "Retrieval settings"
+   ],
+   [
+    2,
+    "File loader"
+   ],
+   [
+    3,
+    "Save & Close"
+   ]
+  ],
+  "note": "",
+  "heure": "22:16:42"
+ },
+ {
+  "capture": "05-documents/13-scan-lu-par-docling.png",
+  "pastilles": [
+   [
+    1,
+    "contrat-batterix-scan.pdf (lecteur)"
+   ],
+   [
+    2,
+    "texte lu dans le scan"
+   ]
+  ],
+  "note": "",
+  "heure": "22:17:45"
+ },
+ {
+  "capture": "05-documents/14-supprimer-fichier.png",
+  "pastilles": [
+   [
+    1,
+    "Selected file"
+   ],
+   [
+    2,
+    "Delete"
+   ]
+  ],
+  "note": "",
+  "heure": "22:21:14"
+ },
+ {
+  "capture": "05-documents/15-fichier-supprime.png",
+  "pastilles": [
+   [
+    1,
+    "liste des fichiers"
+   ]
+  ],
+  "note": "",
+  "heure": "22:21:23"
+ }
+]

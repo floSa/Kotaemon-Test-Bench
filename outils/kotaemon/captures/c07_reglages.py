@@ -23,8 +23,8 @@ def recherche(s):
 def raisonnement(s):
     p = s.page
     s.onglet("Settings"); s.onglet("Reasoning settings")
-    opts = p.locator("div.block").filter(has=p.get_by_text("Reasoning options", exact=True)).locator("visible=true").last
-    s.cap_souple("03-methodes", [(opts, "Reasoning options"), (s.champ("Citation style") if False else p.locator("label").filter(has_text="Create Mindmap").locator("visible=true").first, "Create Mindmap"),
+    opts = p.locator("fieldset").filter(has_text="Reasoning options").locator("visible=true").first
+    s.cap_souple("03-methodes", [(opts, "Reasoning options"), (p.locator("label").filter(has_text="Create Mindmap").locator("visible=true").first, "Create Mindmap"),
                                  (p.locator("label").filter(has_text="Create Embeddings Visualization").locator("visible=true").first, "Create Embeddings Visualization"),
                                  (p.locator("label").filter(has_text="Use Multimodal Input").locator("visible=true").first, "Use Multimodal Input")])
     opts.get_by_text("complex", exact=True).click(); p.wait_for_timeout(1500)

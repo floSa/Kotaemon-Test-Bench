@@ -78,8 +78,12 @@ def utilisateur(s):
 
 
 if __name__ == "__main__":
-    s = Scenario(CH)
-    try:
-        etapes([creer, liste, partager, utilisateur], s)
-    finally:
-        s.fermer()
+    import sys
+    if "utilisateur" in sys.argv[1:]:
+        utilisateur(None)  # session d'un autre compte : son propre navigateur
+    else:
+        s = Scenario(CH)
+        try:
+            etapes([creer, liste, partager], s)
+        finally:
+            s.fermer()

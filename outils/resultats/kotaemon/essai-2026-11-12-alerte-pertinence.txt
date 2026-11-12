@@ -1,0 +1,1 @@
+2026-11-12T23:42:20+01:00 pilote, question piège Q37, use_llm_reranking=true, num_retrieval=4 : alerte_pertinence=False ; notes [['Vectorstore score','0.44'],['LLM relevant score','0.0'],['Reranking score','4.11'],['LLM relevant score','0.0'],['Reranking score','1.43']] ; aucune erreur 429. Interface : même question, aucune alerte (captures/07-reglages/09-alerte-pertinence.txt).
