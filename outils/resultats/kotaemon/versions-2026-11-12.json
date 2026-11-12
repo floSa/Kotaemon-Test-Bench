@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-12T21:01:10",
+  "composants": [
+    {
+      "depot": "Cinnamon/kotaemon",
+      "derniere_stable": "v0.12.0",
+      "publiee_le": "2026-05-31",
+      "utilisee": null,
+      "a_jour": true,
+      "raison": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+== installer.sh 2026-11-12T21:11:37+01:00
+RAM disponible avant installation : 23829 Mo
+image : ghcr.io/cinnamon/kotaemon@sha256:cb4b71561e529398bacdf12f1289c32290f6c70f286b8efb7a1ed7e66d089b66 12684445661 octets, révision 9ad3e4e49aa35b8acddd235918a5d9753c1cfdf9
+ Container rag-kotaemon Creating 
+ Container rag-kotaemon Created 
+ Container rag-kotaemon Starting 
+ Container rag-kotaemon Started 
+Kotaemon prêt : http://127.0.0.1:7860 (30 s)
+rag-kotaemon 127.0.0.1:7860->7860/tcp
+ports publiés : tous liés à 127.0.0.1
+durée : 33 s
+RAM au repos : rag-kotaemon 905MiB / 31.35GiB
+disque des données : 2.3M	donnees/kotaemon

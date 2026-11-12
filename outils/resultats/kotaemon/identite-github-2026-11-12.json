@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-12T21:02:58",
+  "depot": "https://github.com/Cinnamon/kotaemon",
+  "description": "An open-source RAG-based tool for chatting with your documents.",
+  "site": "https://cinnamon.github.io/kotaemon/",
+  "etoiles": 25906,
+  "forks": 2171,
+  "licence": "Apache-2.0",
+  "langage": "Python",
+  "cree_le": "2024-03-25T08:16:42Z",
+  "dernier_push": "2026-07-14T16:53:59Z",
+  "archive": false,
+  "issues_et_pr_ouvertes": 262,
+  "commits_total_branche_defaut": 327,
+  "commits_90_derniers_jours": 0,
+  "contributeurs": 39,
+  "versions_recentes": [
+    {
+      "tag": "v0.12.0",
+      "date": "2026-05-31",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.11.3",
+      "date": "2026-03-28",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.11.2",
+      "date": "2026-03-04",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.11.1",
+      "date": "2026-02-27",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.11.0",
+      "date": "2025-07-04",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.10.6",
+      "date": "2025-04-01",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.10.4",
+      "date": "2025-03-31",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.10.3",
+      "date": "2025-02-14",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.10.2",
+      "date": "2025-02-05",
+      "prerelease": false
+    },
+    {
+      "tag": "v0.10.1",
+      "date": "2025-02-03",
+      "prerelease": false
+    }
+  ]
+}

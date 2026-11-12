@@ -1,0 +1,44 @@
+# Kotaemon v0.12.0 (image officielle « full »), d'après la commande docker run du README officiel (README.md:104-110).
+# Écarts à la commande officielle (relus dans outils/resultats/kotaemon/relecture.md) :
+#  - image ghcr.io/cinnamon/kotaemon:main-full figée par empreinte (aucune étiquette 0.12.0 publiée ; main = v0.12.0) ;
+#  - projet, conteneur et réseaux préfixés rag- ; port publié sur 127.0.0.1 seulement ;
+#  - données dans donnees/kotaemon/ktem_app_data (ignoré par git) ;
+#  - réseaux externes llm-net (service LLM central, http://llm-central:8080/v1) et rag-local (captures Playwright) ;
+#  - aucun serveur de modèles : l'image « full » n'embarque pas Ollama ; les entrées Ollama et VoyageAI du .env
+#    intégré à l'image sont neutralisées (LOCAL_MODEL et VOYAGE_API_KEY vides) ; télémétrie de Chroma, unstructured et
+#    Gradio coupée.
+# Les modèles (chat, embed, rerank) se déclarent ensuite dans l'interface : Resources (manuel, chapitre 03).
+name: rag-kotaemon
+
+services:
+  kotaemon:
+    image: ghcr.io/cinnamon/kotaemon:main-full@sha256:cb4b71561e529398bacdf12f1289c32290f6c70f286b8efb7a1ed7e66d089b66
+    container_name: rag-kotaemon
+    ports:
+      - "127.0.0.1:7860:7860"
+    environment:
+      GRADIO_SERVER_NAME: 0.0.0.0
+      GRADIO_SERVER_PORT: "7860"
+      GRADIO_ANALYTICS_ENABLED: "False"
+      ANONYMIZED_TELEMETRY: "False"
+      DO_NOT_TRACK: "true"
+      SCARF_NO_ANALYTICS: "true"
+      LOCAL_MODEL: ""
+      LOCAL_MODEL_EMBEDDINGS: ""
+      VOYAGE_API_KEY: ""
+    # Options facultatives (ex. USE_NANO_GRAPHRAG=true) : donnees/kotaemon/options.env, lu à chaque démarrage.
+    env_file:
+      - path: ../../donnees/kotaemon/options.env
+        required: false
+    volumes:
+      - ../../donnees/kotaemon/ktem_app_data:/app/ktem_app_data
+    networks:
+      - llm-net
+      - rag-local
+    restart: unless-stopped
+
+networks:
+  llm-net:
+    external: true
+  rag-local:
+    external: true
