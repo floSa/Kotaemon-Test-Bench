@@ -10,10 +10,14 @@ DOC = RACINE / "corpus/documents/rapport-annuel-2025.pdf"
 PETIT = RACINE / "corpus/documents/procedure-batteries.docx"
 
 
-def indexer(s, collection, fichier, prefixe, delai=3600):
+def indexer(s, collection, fichier, prefixe, delai=3600, forcer=False):
     p = s.page
     s.onglet("Files"); s.onglet(collection); s.onglet("Upload Files")
     s.deposer([fichier])
+    if forcer:
+        if not p.get_by_label("Force reindex file").locator("visible=true").count():
+            s.texte("Advanced indexing options", exact=True).click(); p.wait_for_timeout(800)
+        p.get_by_label("Force reindex file").locator("visible=true").first.check()
     t0 = time.time()
     s.bouton("Upload and Index").click(); p.wait_for_timeout(5000)
     s.attendre_fin(delai=delai * 1000)
@@ -28,7 +32,7 @@ def indexer(s, collection, fichier, prefixe, delai=3600):
 
 
 def lightrag(s):
-    indexer(s, "LightRAG Collection", DOC, "01-lightrag-indexation")
+    indexer(s, "LightRAG Collection", DOC, "03-lightrag-indexation", forcer=True)
 
 
 def question(s, rang, nom, cap, q):
@@ -48,21 +52,21 @@ def question(s, rang, nom, cap, q):
 
 
 def question_lightrag(s):
-    question(s, 2, "LightRAG Collection", "02-lightrag-question",
+    question(s, 2, "LightRAG Collection", "04-lightrag-question",
              "Quels sont les sites de Vélanor et combien de salariés compte chacun ?")
 
 
 def nano(s):
-    indexer(s, "NanoGraphRAG Collection", PETIT, "03-nanographrag-indexation")
+    indexer(s, "NanoGraphRAG Collection", PETIT, "05-nanographrag-indexation")
 
 
 def question_nano(s):
-    question(s, 3, "NanoGraphRAG Collection", "04-nanographrag-question",
+    question(s, 3, "NanoGraphRAG Collection", "06-nanographrag-question",
              "À quelle température les batteries doivent-elles être stockées ?")
 
 
 def msgraphrag(s):
-    indexer(s, "GraphRAG Collection", PETIT, "05-msgraphrag-erreur", delai=600)
+    indexer(s, "GraphRAG Collection", PETIT, "07-msgraphrag-erreur", delai=600)
 
 
 if __name__ == "__main__":

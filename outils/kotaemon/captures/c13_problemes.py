@@ -80,9 +80,33 @@ def blocage(s):
     sc.uncheck(); p.locator("#save-setting-btn").click(); p.wait_for_timeout(2500)
 
 
+def contexte(s):
+    """Dépassement volontaire : une question de plus de 80 000 caractères (environ 20 000 jetons), au-delà des
+    16 384 jetons du modèle chat et des 8 192 jetons par requête d'embed."""
+    p = s.page
+    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.reglage_session("Language", "French")
+    p.locator("#index-0").get_by_text("Search All", exact=True).click()
+    bloc = (RACINE / "corpus/documents/cse-2025-10-14.md").read_text()
+    texte = "Résume ce texte : " + (bloc + "\n") * (82000 // len(bloc) + 1)
+    s.note(f"question de {len(texte)} caractères")
+    zone = p.locator("#chat-input textarea")
+    zone.evaluate("(e, t) => { e.value = t; e.dispatchEvent(new Event('input', {bubbles: true})); }", texte)
+    p.wait_for_timeout(1500)
+    zone.press("Enter")
+    s.attendre_reponse(delai=300, stable=4)
+    s.note("dépassement : " + p.locator("#main-chat-bot .message").last.inner_text()[:300].replace("\n", " ")
+           + " ; toasts " + repr(s.toasts()))
+    s.cap_souple("06-depassement-contexte", [(p.locator("#main-chat-bot .message").last, "réponse"), (p.locator(".toast-body").first, "message d'erreur")])
+
+
 if __name__ == "__main__":
-    s = Scenario(CH)
-    try:
-        etapes([connexion, cle, format, sans_recherche, blocage], s)
-    finally:
-        s.fermer()
+    import sys
+    if "connexion" in sys.argv[1:]:
+        connexion(None)  # écran de connexion : navigateur sans session
+    else:
+        s = Scenario(CH)
+        try:
+            etapes([cle, format, sans_recherche, blocage, contexte], s)
+        finally:
+            s.fermer()

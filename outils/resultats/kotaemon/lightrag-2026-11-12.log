@@ -1,0 +1,9 @@
+== lightrag
+NOTE LightRAG Collection : indexation de rapport-annuel-2025.pdf en 8 s ; toasts ['Info\nStart indexing 1 files...\n×']
+NOTE LightRAG Collection upload info : ✅ | rapport-annuel-2025.pdf | Indexing [1/1]: rapport-annuel-2025.pdf /  => Converting rapport-annuel-2025.pdf to text /  => Converted rapport-annuel-2025.pdf to text /  => [rapport-annuel-2025.pdf] Processed 20 chunks /  => Finished indexing rapport-annuel-2025.pdf / [GraphRAG] Creating/Updating index... This can take a long time. / Error: No module named 'pipmaster' | 
+capture /depot/docs/kotaemon/img/09-graphrag/01-lightrag-indexation.png [(1, 'LightRAG Collection'), (2, 'Upload result'), (3, 'Upload info')]
+== question_lightrag
+NOTE réponse non terminée après 600 s : 'Thinking ...'
+NOTE LightRAG Collection : réponse en 601 s : Thinking ...
+NOTE LightRAG Collection panneau : Erreur
+capture /depot/docs/kotaemon/img/09-graphrag/02-lightrag-question.png [(1, 'LightRAG Collection (Search All)'), (2, 'réponse'), (3, 'entités, relations et passages')]

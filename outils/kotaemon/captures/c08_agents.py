@@ -30,7 +30,7 @@ def agent(s, nom, cap):
     s.reglage_session("Reasoning method", nom)
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
     import time; t0 = time.time()
-    s.poser(QUESTION)
+    s.poser(QUESTION, stable=10)
     s.note(f"{nom} : {time.time() - t0:.0f} s ; réponse : " + p.locator("#main-chat-bot .message").last.inner_text()[:700].replace("\n", " "))
     s.note(f"{nom} panneau : " + p.locator("#html-info-panel").inner_text()[:1200].replace("\n", " | "))
     s.cap_souple(cap, [(p.locator("#main-chat-bot .message").last, "réponse de l'agent"), (p.locator("#html-info-panel"), "étapes et sources")])

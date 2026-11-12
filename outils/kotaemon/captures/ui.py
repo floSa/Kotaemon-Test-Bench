@@ -143,14 +143,14 @@ class Scenario:
         p.wait_for_timeout(1000)
         return champ
 
-    def poser(self, question, envoyer=True):
+    def poser(self, question, envoyer=True, stable=4):
         """Écrit la question dans la zone de saisie du chat et l'envoie (Entrée)."""
         p = self.page
         zone = p.locator("#chat-input textarea")
         zone.fill(question)
         if envoyer:
             zone.press("Enter")
-            self.attendre_reponse()
+            self.attendre_reponse(stable=stable)
         return zone
 
     def zone_depot(self):

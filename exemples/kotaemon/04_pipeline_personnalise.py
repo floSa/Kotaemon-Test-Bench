@@ -6,12 +6,12 @@ from kotaemon.base import Document
 from kotaemon.embeddings import OpenAIEmbeddings
 from kotaemon.llms import ChatOpenAI
 from kotaemon.rerankings import CohereReranking
-from kotaemon.storages import InMemoryDocumentStore, InMemoryVectorstore
+from kotaemon.storages import InMemoryDocumentStore, InMemoryVectorStore
 from kotaemon.indices import VectorIndexing, VectorRetrieval
 
 CLE = os.environ["LLM_CENTRAL_KEY"]
 emb = OpenAIEmbeddings(base_url="http://llm-central:8080/v1", api_key=CLE, model="embed")
-vs, ds = InMemoryVectorstore(), InMemoryDocumentStore()
+vs, ds = InMemoryVectorStore(), InMemoryDocumentStore()
 VectorIndexing(vector_store=vs, doc_store=ds, embedding=emb).run([
     Document(text="Le local B2 est inspecté le premier lundi de chaque mois."),
     Document(text="Les batteries se stockent entre 10 et 25 °C, à l'abri de l'humidité."),

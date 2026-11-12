@@ -1,0 +1,5 @@
+2026-11-12 22:50:40 LightRAG Collection : indexation de rapport-annuel-2025.pdf en 8 s ; toasts ['Info\nStart indexing 1 files...\n×']
+2026-11-12 22:50:40 LightRAG Collection upload info : ✅ | rapport-annuel-2025.pdf | Indexing [1/1]: rapport-annuel-2025.pdf /  => Converting rapport-annuel-2025.pdf to text /  => Converted rapport-annuel-2025.pdf to text /  => [rapport-annuel-2025.pdf] Processed 20 chunks /  => Finished indexing rapport-annuel-2025.pdf / [GraphRAG] Creating/Updating index... This can take a long time. / Error: No module named 'pipmaster' | 
+2026-11-12 23:00:49 réponse non terminée après 600 s : 'Thinking ...'
+2026-11-12 23:00:49 LightRAG Collection : réponse en 601 s : Thinking ...
+2026-11-12 23:00:49 LightRAG Collection panneau : Erreur

@@ -1,6 +1,6 @@
 """Pose une question à « File Collection » avec les réglages enregistrés dans l'interface par le compte admin, et
 affiche la réponse et les pages citées (même chemin que le bouton d'envoi du chat, sans l'interface)."""
-import os, re, sys
+import contextlib, io, os, re, sys
 os.chdir("/app"); sys.path.insert(0, "/app")
 from sqlmodel import Session, select
 from ktem.app import BaseApp
@@ -8,6 +8,8 @@ from ktem.components import reasonings
 from ktem.db.models import User, Settings, engine
 
 QUESTION = "Quel est le prix unitaire des batteries prévu par le contrat avec Batterix ?"
+journal = io.StringIO()  # Kotaemon écrit beaucoup de traces sur la sortie standard : gardées à part
+contexte = contextlib.redirect_stdout(journal); contexte.__enter__()
 app = BaseApp()
 with Session(engine) as s:
     uid = s.exec(select(User).where(User.username == "admin")).one().id
@@ -26,6 +28,7 @@ for d in qa.stream(QUESTION, conv_id="", history=[]):
         reponse = "" if d.content is None else reponse + d.content
     elif d.channel == "info" and d.content:
         info += str(d.content)
+contexte.__exit__(None, None, None)
 print("Question :", QUESTION)
 print("Réponse :", reponse.strip()[:400])
 print("Sources :", sorted(set(re.findall(r"\[Page \d+\] [\w.-]+\.pdf", re.sub(r"<[^>]+>", " ", info)))))

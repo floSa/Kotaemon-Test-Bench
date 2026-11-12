@@ -1,0 +1,40 @@
+[
+ {
+  "capture": "09-graphrag/01-lightrag-indexation.png",
+  "pastilles": [
+   [
+    1,
+    "LightRAG Collection"
+   ],
+   [
+    2,
+    "Upload result"
+   ],
+   [
+    3,
+    "Upload info"
+   ]
+  ],
+  "note": "",
+  "heure": "22:50:41"
+ },
+ {
+  "capture": "09-graphrag/02-lightrag-question.png",
+  "pastilles": [
+   [
+    1,
+    "LightRAG Collection (Search All)"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "entités, relations et passages"
+   ]
+  ],
+  "note": "",
+  "heure": "23:00:50"
+ }
+]

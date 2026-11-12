@@ -81,6 +81,9 @@ def carte(s):
     nouvelle(s)
     s.reglage_session("Language", "French")
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
+    cit = p.locator("#citation-dropdown input").first
+    cit.click(); p.wait_for_timeout(600)
+    p.get_by_role("option", name="citation: highlight").locator("visible=true").first.click(); p.wait_for_timeout(800)
     cb = p.locator("#use-mindmap-checkbox input")
     if not cb.is_checked():
         cb.check()

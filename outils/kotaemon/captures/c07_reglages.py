@@ -50,7 +50,7 @@ def complexe(s):
     meth = s.reglage_session("Reasoning method", "complex")
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
     s.cap_souple("06-methode-conversation", [(meth, "Reasoning method : complex"), (p.locator("#index-0").get_by_text("Search All", exact=True), "Search All")])
-    s.poser("Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté lors de l'audit ?")
+    s.poser("Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté lors de l'audit ?", stable=12)
     s.cap_souple("07-reponse-decomposee", [(p.locator("#main-chat-bot .message").last, "réponse"), (p.locator("#html-info-panel"), "Information panel")])
     s.note("réponse complex : " + p.locator("#main-chat-bot .message").last.inner_text()[:800].replace("\n", " "))
 

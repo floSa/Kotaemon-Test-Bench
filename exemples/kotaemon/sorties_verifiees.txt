@@ -21,3 +21,28 @@ Nano-GraphRAG dependencies not installed. Try `pip install nano-graphrag` to ins
 2. GraphRAG Collection (GraphRAGIndex, privée : True) : 0 fichier(s)
 3. LightRAG Collection (LightRAGIndex, privée : True) : 0 fichier(s)
 code 0
+
+== exemples/kotaemon/03_poser_une_question.py (2026-11-13T00:08:52+01:00)
+Number of requested results 100 is greater than number of elements in index 29, updating n_results = 29
+Question : Quel est le prix unitaire des batteries prévu par le contrat avec Batterix ?
+Réponse : D'après les informations fournies dans le contexte, plus précisément dans le document **contrat-batterix-scan.pdf (Page 1)**, le prix unitaire des batteries prévu par le contrat avec Batterix est de **212 euros HT**.
+Voici les détails extraits du texte :
+*   **Document :** contrat-batterix-scan.pdf, Page 1.
+*   **Article concerné :** Article 4 (Prix).
+*   **Contenu :** "Prix unitaire 212 euros HT
+Sources : ['[Page 1] contrat-batterix-scan.pdf', '[Page 1] supplier-audit-batterix-en.pdf', '[Page 2] contrat-batterix-scan.pdf', '[Page 8] rapport-annuel-2025.pdf']
+code 0
+
+== exemples/kotaemon/04_pipeline_personnalise.py (2026-11-13T00:09:31+01:00)
+Getting embeddings for 3 nodes
+Adding embeddings to vector store
+Adding documents to doc store
+Got 2 from vectorstore
+Got 0 from docstore
+Got raw 2 retrieved documents
+thumbnail docs 0 non-thumbnail docs 2 raw-thumbnail docs 0
+passage (score de tri 6.79) : Le local B2 est inspecté le premier lundi de chaque mois.
+passage (score de tri -11.03) : Le service après-vente répond au 02 40 00 12 34.
+réponse : Le local B2 est inspecté le premier lundi de chaque mois.
+code 0
+
