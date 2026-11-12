@@ -1,0 +1,53 @@
+               total        used        free      shared  buff/cache   available
+Mem:           32098        9488        2543         914       21636       22610
+  bge-m3 (embedding)
+  bge-reranker-v2-m3 (rerank)
+  faster-whisper-small (audio_transcription)
+== chat (réflexion coupée pour l'essai)
+  Bonjour
+== embed
+  dimensions : 1024
+== rerank
+  doc 0 score 9.05
+  doc 1 score -8.63
+== transcribe (corpus/documents/message-vocal-production.mp3)
+  Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
+Q01 tableau         OK    32.5s  "D'après les documents fournis, le chiffre d'affaires de Vélanor pour l'année 2025 s'élève "
+Q02 fait simple     OK    20.4s  "D'après les documents fournis, Vélanor a été fondée en **2014**.\n\nCette information est cl"
+Q03 fait simple     OK    23.4s  "D'après les documents fournis dans le contexte, la présidente de Vélanor est **Hélène Marc"
+Q04 fait simple     OK    20.9s  "L'adresse du siège de Vélanor est située au **12 quai de la Fosse, à Nantes**.\n\nCette info"
+Q05 tableau         OK    19.0s  'Selon les documents fournis, Vélanor compte **412 salariés** au 31 décembre 2025.\n\nVoici l'
+Q06 tableau         OK    26.9s  "Selon les documents fournis, le chiffre d'affaires du troisième trimestre 2025 a été de **"
+Q07 tableau         OK    21.7s  "D'après les documents fournis, plus précisément la figure de la page 5 du rapport-annuel-2"
+Q08 tableau         OK    22.1s  "D'après les documents fournis, le prix public du modèle Erdre Cargo est de **4 290 € TTC**"
+Q09 tableau         OK    17.1s  'Selon les informations fournies dans le document **rapport-annuel-2025.pdf** (plus précisé'
+Q10 fait simple     OK    20.6s  "D'après les documents fournis, la part d'aluminium recyclé dans les cadres est de **82 %**"
+Q11 fait simple     OK    21.7s  'Selon les documents fournis, le taux de recyclage des batteries usagées collectées est de '
+Q12 tableau         OK    23.8s  "D'après les documents fournis, le fournisseur qui livre les moteurs est **Motodrive Co.** "
+Q13 tableau         OK    20.8s  'Selon les informations fournies dans le rapport annuel 2025 de Vélanor SAS, spécifiquement'
+Q14 fait simple     OK    22.8s  "Selon les documents fournis, le taux de retour sous garantie s'établit à **1,8 % des vélos"
+Q15 scan            NON   39.9s  "D'après les documents et extraits de contexte fournis, il n'est pas possible de déterminer"
+Q16 scan            NON   35.9s  "D'après les documents fournis, il n'est pas possible de déterminer le délai de livraison p"
+Q17 scan            OK    34.7s  "D'après les documents fournis, je ne connais pas la réponse à cette question. Il n'y a auc"
+Q18 scan            NON   30.6s  'Sur la base des documents fournis, je ne connais pas la réponse à cette question.\n\nBien qu'
+Q19 fait simple     OK    24.0s  "D'après le document **procedure-batteries.docx** (Procédure PR-SEC-04 — Charge et stockage"
+Q20 fait simple     OK    23.3s  "D'après les documents fournis, la personne responsable de la procédure de charge et de sto"
+Q21 tableau         OK    23.4s  "D'après les documents fournis, plus précisément le contenu du fichier **`procedure-batteri"
+Q22 fait simple     OK    19.9s  'Selon les documents fournis, le prix public du modèle **Vilaine Compact** est de **2 490 €'
+Q23 fait simple     OK    36.7s  "D'après les documents fournis, la capacité prévue de l'usine de Saint-Nazaire est de **25 "
+Q24 tableau         NON  109.5s  "D'après les documents fournis, il est impossible de déterminer avec certitude le stock exa"
+Q25 fait simple     OK    14.8s  "D'après les documents fournis, la durée de garantie du cadre est de **7 ans**.\n\nCette info"
+Q26 fait simple     OK    25.7s  "D'après les informations fournies dans le contexte, le numéro de téléphone du service aprè"
+Q27 fait simple     OK    22.7s  'D\'après le contenu du document intitulé **"Compte rendu de la réunion du CSE du 14 octobre'
+Q28 anglais         OK    24.4s  "D'après le document fourni, spécifiquement la figure extraite du fichier **supplier-audit-"
+Q29 anglais         OK    23.4s  'Selon le document fourni, spécifiquement la figure extraite du fichier **supplier-audit-ba'
+Q30 multi-documents NON   37.4s  'Sur la base des documents fournis, je ne connais pas la réponse à cette question. Aucun dé'
+Q31 multi-documents NON   50.1s  "D'après les documents fournis, voici les réponses détaillées à votre question :\n\n**1. Le s"
+Q32 multi-documents OK    26.5s  "Selon les documents fournis, voici les détails concernant les objectifs de Vélanor pour l'"
+Q33 audio           NON   40.2s  'Sur la base des documents fournis, je ne connais pas la réponse à cette question. Aucun de'
+Q34 audio           NON   32.2s  "D'après les documents contextuels fournis, il est impossible de nommer le **directeur de p"
+Q35 piège           OK    34.5s  "D'après les documents fournis, il est impossible de répondre à la question concernant le c"
+Q36 piège           OK    36.4s  "D'après les documents fournis, il n'est pas possible de déterminer qui est le directeur fi"
+Q37 piège           OK    41.9s  "D'après les documents fournis, je ne connais pas le nombre de trottinettes électriques ven"
+Q38 piège           OK    33.1s  'Sur la base des documents et extraits de contexte fournis, **je ne connais pas le salaire '
+-> outils/resultats/kotaemon/banc-2026-11-12-rerank.json

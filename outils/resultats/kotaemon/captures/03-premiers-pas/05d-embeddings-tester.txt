@@ -1,0 +1,91 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+name
+	
+vendor
+	
+default
+
+
+llm-service-embed
+	
+LCMistralEmbeddings
+	
+false
+name
+	
+vendor
+	
+default
+
+
+openai
+	
+OpenAIEmbeddings
+	
+false
+
+
+cohere
+	
+LCCohereEmbeddings
+	
+false
+
+
+google
+	
+LCGoogleEmbeddings
+	
+false
+
+
+mistral
+	
+LCMistralEmbeddings
+	
+false
+
+
+llm-service-embed
+	
+OpenAIEmbeddings
+	
+true
+Set this Embedding model as default. This default Embedding will be used by other components by default if no Embedding is specified for such components.
+Set default
+Name
+Edit to rename this Embedding model.
+Specification
+Specification of the Embedding model in YAML format
+Test connection
+▼
+Test
+- Testing model: llm-service-embed
+- Sending a message `Hi`
+- Connection success.
+
+Save
+Delete
+Close
+
+OpenAI chat model
+
+Name	Type	Description
+api_key	<class 'str'>	API key
+base_url	typing.Optional[str]	OpenAI base URL
+context_length	typing.Optional[int]	The maximum context length of the embedding model
+dimensions	typing.Optional[int]	The number of dimensions the resulting output embeddings should have. Only supported in text-embedding-3 and later models.
+max_retries	typing.Optional[int]	Maximum number of retries for the API request.
+model	<class 'str'>	ID of the model to use. You can go to Model overview to see the available models.
+organization	typing.Optional[str]	OpenAI organization
+timeout	typing.Optional[float]	Timeout for the API request.
+
+version: 0.0.1

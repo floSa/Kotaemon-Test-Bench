@@ -1,0 +1,23 @@
+2026-11-12 20:17:47 mot de passe : toasts ['Info\nPassword changed\n×']
+2026-11-12 20:22:34 04a-llms-ajouter : élément absent « description du fournisseur »
+2026-11-12 20:22:39 LLMs ajout llm-service-chat : toasts ["Info\nLLM 'llm-service-chat' created successfully\n×"]
+2026-11-12 20:23:45 Embeddings ajout llm-service-embed : toasts ['Info\nEmbedding model "llm-service-embed" created successfully\n×']
+2026-11-12 20:24:05 Rerankings ajout llm-service-rerank : toasts ['Info\nReranking model "llm-service-rerank" created successfully\n×']
+2026-11-12 20:27:18 LLMs test llm-service-chat : - Connection failed. Got error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: . You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2026-11-12 20:27:38 Embeddings test llm-service-embed : - Connection failed. Got error: RetryError[]
+2026-11-12 20:27:46 Rerankings test llm-service-rerank : - Connection success.
+2026-11-12 20:28:52 LLMs test llm-service-chat : - Connection success. Got response: Hello! 👋 How can I help you today?
+2026-11-12 20:29:01 Embeddings test llm-service-embed : - Connection success.
+2026-11-12 20:29:10 Rerankings test llm-service-rerank : - Connection success.
+2026-11-12 20:29:45 LLMs test llm-service-chat : - Connection success. Got response: Hello! 👋 How can I help you today?
+2026-11-12 20:29:53 Embeddings test llm-service-embed : - Connection success.
+2026-11-12 20:30:01 Rerankings test llm-service-rerank : - Connection success.
+2026-11-12 20:30:45 LLMs test llm-service-chat : - Connection success. Got response: Hello! 👋 How can I help you today?
+2026-11-12 20:30:53 Embeddings test llm-service-embed : - Connection success.
+2026-11-12 20:31:02 Rerankings test llm-service-rerank : - Connection success.
+2026-11-12 20:31:22 réglages raisonnement : toasts ['Info\nSetting saved\n×']
+2026-11-12 20:31:30 réglages recherche : toasts ['Info\nSetting saved\n×']
+2026-11-12 20:37:38 réglages raisonnement : toasts ['Info\nSetting saved\n×']
+2026-11-12 20:37:46 réglages recherche : toasts ['Info\nSetting saved\n×']
+2026-11-12 20:38:07 réglages raisonnement : toasts ['Info\nSetting saved\n×']
+2026-11-12 20:38:14 réglages recherche : toasts ['Info\nSetting saved\n×']

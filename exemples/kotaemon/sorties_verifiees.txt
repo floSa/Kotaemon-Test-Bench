@@ -1,0 +1,23 @@
+# Sorties réelles des exemples de exemples/kotaemon/ (Kotaemon 0.12.0, service LLM central), copiées telles quelles.
+
+== exemples/kotaemon/01_etat.sh (2026-11-12T22:00:02+01:00)
+interface : HTTP 200 en 0.021957 s
+Gradio 4.39.0 - titre : Kotaemon
+conteneur : rag-kotaemon Up 11 minutes 127.0.0.1:7860->7860/tcp
+code 0
+
+== exemples/kotaemon/02_lister_collections.py (2026-11-12T22:00:02+01:00)
+Nano-GraphRAG dependencies not installed. Try `pip install nano-graphrag` to install. Nano-GraphRAG retriever pipeline will not work properly.
+1. File Collection (FileIndex, privée : True) : 9 fichier(s)
+   - contrat-batterix-scan.pdf : 8 élément(s) indexé(s)
+   - cse-2025-10-14.md : 2 élément(s) indexé(s)
+   - faq-sav.html : 2 élément(s) indexé(s)
+   - message-vocal-production.mp3 : 0 élément(s) indexé(s)
+   - procedure-batteries.docx : 2 élément(s) indexé(s)
+   - rapport-annuel-2025.pdf : 40 élément(s) indexé(s)
+   - stocks-octobre-2025.xlsx : 2 élément(s) indexé(s)
+   - strategie-2026.pptx : 2 élément(s) indexé(s)
+   - supplier-audit-batterix-en.pdf : 4 élément(s) indexé(s)
+2. GraphRAG Collection (GraphRAGIndex, privée : True) : 0 fichier(s)
+3. LightRAG Collection (LightRAGIndex, privée : True) : 0 fichier(s)
+code 0

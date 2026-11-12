@@ -1,0 +1,608 @@
+{
+  "date": "2026-11-12T22:31:44",
+  "solution": "Kotaemon",
+  "etiquette": "docling-scan-rerank",
+  "config": {
+    "methode": "bibliothèque kotaemon dans le conteneur (pilote_conteneur.py), réglages de l'interface",
+    "collection": "File Collection",
+    "recherche": "Search All",
+    "reglages_interface": {
+      "index.options.1.reader_mode": "default",
+      "index.options.1.reranking_llm": "llm-service-chat",
+      "index.options.1.num_retrieval": 10,
+      "index.options.1.retrieval_mode": "hybrid",
+      "index.options.1.prioritize_table": false,
+      "index.options.1.mmr": false,
+      "index.options.1.use_reranking": true,
+      "index.options.1.use_llm_reranking": false,
+      "reasoning.use": "simple",
+      "reasoning.lang": "fr",
+      "reasoning.max_context_length": 8000,
+      "reasoning.options.simple.llm": "llm-service-chat",
+      "reasoning.options.simple.highlight_citation": "highlight",
+      "reasoning.options.simple.create_mindmap": false,
+      "reasoning.options.simple.create_citation_viz": false,
+      "reasoning.options.simple.use_multimodal": false,
+      "reasoning.options.simple.n_last_interactions": 5,
+      "reasoning.options.simple.trigger_context": 150,
+      "reasoning.options.complex.llm": "",
+      "reasoning.options.complex.highlight_citation": "highlight",
+      "reasoning.options.complex.create_mindmap": false,
+      "reasoning.options.complex.create_citation_viz": false,
+      "reasoning.options.complex.use_multimodal": false,
+      "reasoning.options.complex.n_last_interactions": 5,
+      "reasoning.options.complex.trigger_context": 150
+    },
+    "reglages_du_banc": {
+      "index.options.1.use_reranking": true,
+      "index.options.1.use_llm_reranking": false,
+      "reasoning.use": "simple"
+    }
+  },
+  "questions": [
+    {
+      "id": "Q15",
+      "type": "scan",
+      "question": "Quel est le prix unitaire des batteries prévu par le contrat avec Batterix ?",
+      "attendu": [
+        "212"
+      ],
+      "latence_s": 22.96,
+      "erreur": null,
+      "reponse": "Selon les documents fournis, le prix unitaire des batteries prévu par le contrat avec Batterix est de **212 euros HT**.\n\nCette information se trouve dans l'extrait du document **\"contrat-batterix-scan.pdf\" (Page 1)**, spécifiquement à l'**Article 4** intitulé \"Prix\". Le texte précise : *\"Prix unitaire 212 euros HT, révisable une fois par an\"*.\n\nAinsi, le prix de base est fixé à 212 euros hors taxes pour chaque batterie (référence BAT-48V-14Ah), avec la possibilité d'une révision annuelle.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q16",
+      "type": "scan",
+      "question": "Quel est le délai de livraison prévu par le contrat Batterix ?",
+      "attendu": [
+        "21"
+      ],
+      "latence_s": 17.91,
+      "erreur": null,
+      "reponse": "Selon le contexte fourni, le délai de livraison prévu par le contrat Batterix est de **21 jours après la commande**.\n\nVoici les détails précis tirés des documents :\n\n*   **Source :** Le document \"contrat-batterix-scan.pdf\", page 2.\n*   **Article concerné :** L'**Article 5 Délais de livraison**.\n*   **Contenu exact :** Ce document stipule que « Le Fournisseur livre sous 21 jours après la commande ».\n\nIl est également précisé dans le même contrat (Article 6) qu'en cas de retard, des pénalités s'appliquent à hauteur de 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant total. Cependant, le délai contractuel standard reste fixé à 21 jours suivant la réception de la commande.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q17",
+      "type": "scan",
+      "question": "Quel est le plafond des pénalités de retard du contrat Batterix ?",
+      "attendu": [
+        "8"
+      ],
+      "latence_s": 25.19,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, le plafond des pénalités de retard du contrat Batterix est de **8 % du montant de la commande**.\n\nVoici l'explication détaillée basée sur le contexte :\n\n1.  **Source de l'information** : Cette donnée provient du document intitulé **\"contrat-batterix-scan.pdf\"**, plus précisément de la **Page 2**.\n2.  **Article concerné** : Il s'agit de l'**Article 6** du contrat, qui porte sur les \"Pénalités de retard\".\n3.  **Détails du texte** : Le document stipule que le fournisseur (Batterix) est pénalisé à raison de **0,5 % du montant de la commande par jour de retard**. Cependant, il précise immédiatement que ces pénalités sont **\"plafonnées à 8 % du montant de la commande\"**.\n\nEn résumé, quelle que soit la durée du retard, le montant total des pénalités ne peut jamais dépasser 8 % du prix total de la commande.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q18",
+      "type": "scan",
+      "question": "Quel volume minimal annuel de batteries le contrat Batterix prévoit-il ?",
+      "attendu": [
+        "40 000"
+      ],
+      "latence_s": 23.44,
+      "erreur": null,
+      "reponse": "Selon les documents fournis, le volume minimal annuel prévu par le contrat Batterix est de **40 000 batteries**.\n\nVoici l'explication détaillée basée sur le contexte :\n\n1.  **Source du document** : L'information provient spécifiquement du fichier nommé `contrat-batterix-scan.pdf` (Page 1).\n2.  **Article concerné** : Dans ce document, on trouve l'**Article 3**, intitulé \"Volumes\".\n3.  **Contenu de l'article** : Sous la mention \"Volume minimal annuel\", le texte indique explicitement la valeur **\"40 000 batteries\"**.\n\nAinsi, le contrat d'approvisionnement n° BX-2025-117 entre Vélanor SAS et Batterix GmbH stipule que le volume minimum à livrer chaque année est de 40 000 unités.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q30",
+      "type": "multi-documents",
+      "question": "Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté ?",
+      "attendu": [
+        "21",
+        "24"
+      ],
+      "latence_s": 39.86,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, voici la réponse détaillée concernant le délai de livraison de Batterix :\n\n**1. Délai de livraison contractuel :**\nLe délai contractuel est clairement défini dans le document **`contrat-batterix-scan.pdf` (Page 2)**.\n*   Selon l'**Article 5 (Délais de livraison)** du contrat, le fournisseur s'engage à livrer sous **21 jours** après la commande.\n*   Le contrat précise également des pénalités de retard de 0,5 % du montant de la commande par jour de retard, plafonnées à 8 %.\n\n**2. Délai moyen réellement constaté :**\nIl est impossible de déterminer le délai moyen réellement constaté (la performance réelle de livraison) à partir des documents fournis.\n*   Le document **`supplier-audit-batterix-en.pdf`** mentionne un taux de défaut cellulaire mesuré de 0,3 % et identifie deux non-conformités mineures (étiquetage incomplet et manques de bracelets ESD), mais ne donne aucune donnée sur la ponctualité ou le délai moyen des livraisons.\n*   Le document **`rapport-annuel-2025.pdf`** confirme que le contrat a été renouvelé en mars 2025, mais ne contient pas de statistiques sur les délais de livraison.\n*   La feuille de calcul **`stocks-octobre-2025.xlsx`** liste les quantités en stock et les emplacements (Nantes, Cholet), mais ne fournit aucune information sur les dates d'expédition ou de réception pour calculer un délai moyen réel.\n\n**Conclusion :**\nLe délai contractuel est de **21 jours**. Cependant, concernant le délai moyen réellement constaté, **je ne connais pas cette information** à partir des pièces de contexte fournies, car elles ne contiennent pas de données sur les performances logistiques ou les délais effectifs de livraison.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": false,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q31",
+      "type": "multi-documents",
+      "question": "Quel score Batterix a-t-il obtenu à l'audit, et quel prix unitaire le contrat fixe-t-il ?",
+      "attendu": [
+        "87",
+        "212"
+      ],
+      "latence_s": 24.65,
+      "erreur": null,
+      "reponse": "Selon les documents fournis dans le contexte, voici les réponses détaillées :\n\n**1. Score obtenu par Batterix à l'audit :**\nBatterix GmbH a obtenu un score global de **87 sur 100**.\n*   **Source :** Le document \"supplier-audit-batterix-en.pdf\" (Page 1).\n*   **Détails :** L'audit a été réalisé le 18 juin 2025 par Laura Fischer. Bien que le score soit élevé, deux non-conformités mineures ont été relevées (étiquetage incomplet des palettes et manques de bracelets anti-statique). Le fournisseur est approuvé pour une autre année.\n\n**2. Prix unitaire fixé par le contrat :**\nLe contrat d'approvisionnement fixe un prix unitaire de **212 euros HT** (TVA exclue).\n*   **Source :** Le document \"contrat-batterix-scan.pdf\" (Page 1), Article 4.\n*   **Détails :** Ce prix concerne la fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Le contrat précise également que ce prix est révisable une fois par an.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    }
+  ],
+  "synthese": {
+    "questions": 6,
+    "exactes": 5,
+    "sur": 6,
+    "refus_corrects": 0,
+    "pieges": 0,
+    "citation_bon_document": 6,
+    "citation_bonne_page": 6,
+    "citations_avec_page": 6,
+    "juge_llm_oui": 5,
+    "juge_llm_sur": 6,
+    "erreurs": 0,
+    "latence_p50_s": 23.44,
+    "latence_p95_s": 39.86,
+    "par_type": {
+      "scan": "4/4",
+      "multi-documents": "1/2"
+    },
+    "pic_ram_mo": {
+      "rag-kotaemon": 1634,
+      "llm-central": 737,
+      "llm-swap": 5685,
+      "llm-speaches": 1323
+    },
+    "pic_ram_application_mo": 1634,
+    "vram": "8906 Mo / 16380 Mo (nvidia-smi, mesuré en fin de banc)",
+    "indexation_s": null
+  }
+}

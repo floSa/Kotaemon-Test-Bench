@@ -1,0 +1,233 @@
+[
+ {
+  "capture": "04-premiere-question/01-onglet-files.png",
+  "pastilles": [
+   [
+    1,
+    "Files"
+   ],
+   [
+    2,
+    "File Collection"
+   ],
+   [
+    3,
+    "Upload Files"
+   ],
+   [
+    4,
+    "zone de dépôt"
+   ],
+   [
+    5,
+    "Upload and Index"
+   ]
+  ],
+  "note": "",
+  "heure": "20:33:28"
+ },
+ {
+  "capture": "04-premiere-question/02-fichier-choisi.png",
+  "pastilles": [
+   [
+    1,
+    "Advanced indexing options"
+   ],
+   [
+    2,
+    "Upload and Index"
+   ]
+  ],
+  "note": "",
+  "heure": "20:33:36"
+ },
+ {
+  "capture": "04-premiere-question/03-progression.png",
+  "pastilles": [
+   [
+    1,
+    "Upload Progress"
+   ],
+   [
+    2,
+    "Upload result"
+   ],
+   [
+    3,
+    "Clear Upload Info and Close"
+   ]
+  ],
+  "note": "",
+  "heure": "20:33:43"
+ },
+ {
+  "capture": "04-premiere-question/04-liste-fichiers.png",
+  "pastilles": [
+   [
+    1,
+    "rapport-annuel-2025.pdf"
+   ],
+   [
+    2,
+    "Filter by name:"
+   ]
+  ],
+  "note": "",
+  "heure": "20:33:46"
+ },
+ {
+  "capture": "04-premiere-question/05-poser-la-question.png",
+  "pastilles": [
+   [
+    1,
+    "File Collection"
+   ],
+   [
+    2,
+    "Search All"
+   ],
+   [
+    3,
+    "zone de saisie"
+   ],
+   [
+    4,
+    "bouton d'envoi"
+   ]
+  ],
+  "note": "",
+  "heure": "20:38:32"
+ },
+ {
+  "capture": "04-premiere-question/06-reponse-citee.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ],
+   [
+    2,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "20:39:13"
+ },
+ {
+  "capture": "04-premiere-question/07-extrait-et-score.png",
+  "pastilles": [
+   [
+    1,
+    "extrait cité"
+   ],
+   [
+    2,
+    "[Preview]"
+   ]
+  ],
+  "note": "",
+  "heure": "20:39:14"
+ },
+ {
+  "capture": "04-premiere-question/08-visionneuse-pdf.png",
+  "pastilles": [
+   [
+    1,
+    "visionneuse"
+   ],
+   [
+    2,
+    "fermer"
+   ]
+  ],
+  "note": "",
+  "heure": "20:39:20"
+ },
+ {
+  "capture": "04-premiere-question/05-langue-de-la-reponse.png",
+  "pastilles": [
+   [
+    1,
+    "Chat settings"
+   ],
+   [
+    2,
+    "Language"
+   ],
+   [
+    3,
+    "French"
+   ]
+  ],
+  "note": "",
+  "heure": "20:40:09"
+ },
+ {
+  "capture": "04-premiere-question/06-poser-la-question.png",
+  "pastilles": [
+   [
+    1,
+    "File Collection"
+   ],
+   [
+    2,
+    "Search All"
+   ],
+   [
+    3,
+    "zone de saisie"
+   ],
+   [
+    4,
+    "bouton d'envoi"
+   ]
+  ],
+  "note": "",
+  "heure": "20:40:10"
+ },
+ {
+  "capture": "04-premiere-question/07-reponse-citee.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ],
+   [
+    2,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "20:40:41"
+ },
+ {
+  "capture": "04-premiere-question/08-extrait-et-score.png",
+  "pastilles": [
+   [
+    1,
+    "extrait cité"
+   ],
+   [
+    2,
+    "[Preview]"
+   ]
+  ],
+  "note": "",
+  "heure": "20:40:41"
+ },
+ {
+  "capture": "04-premiere-question/09-visionneuse-pdf.png",
+  "pastilles": [
+   [
+    1,
+    "visionneuse"
+   ],
+   [
+    2,
+    "fermer"
+   ]
+  ],
+  "note": "",
+  "heure": "20:40:47"
+ }
+]

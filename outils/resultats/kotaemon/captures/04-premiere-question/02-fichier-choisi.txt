@@ -1,0 +1,74 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Upload Files
+Use Web Links
+File
+rapport-annuel-2025
+.pdf
+52.5 KB ⇣
+Supported file types: .png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, .pptx, .csv, .html, .mhtml, .txt, .md, .zip
+Maximum file size: 1000 MB
+Advanced indexing options
+▼
+Upload and Index
+Files
+Groups
+Filter by name:
+(1) Case-insensitive. (2) Search with empty string to show all files.
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+-
+	
+-
+	
+-
+	
+-
+	
+-
+	
+-
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+-
+	
+-
+	
+-
+	
+-
+	
+-
+	
+-
+
+Selected file: (please select above)
+
+Advance options
+▼
+
+version: 0.0.1

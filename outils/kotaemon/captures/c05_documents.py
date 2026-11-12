@@ -105,11 +105,31 @@ def rapide(s):
 
 
 def lecteur(s):
+    """Lecteur Docling pour le PDF scanné : réglage, réindexation forcée du scan, retour au lecteur par défaut."""
     p = s.page
     s.onglet("Settings"); s.onglet("Retrieval settings")
     s.choisir("File loader", "Docling (figure+table extraction)")
     s.cap("12-lecteur-docling", [(s.tab("Retrieval settings"), "Retrieval settings"), (s.champ("File loader"), "File loader"),
                                  (p.locator("#save-setting-btn"), "Save & Close")])
+    p.locator("#save-setting-btn").click(); p.wait_for_timeout(2500); s.sans_toasts()
+    ouvrir_files(s); s.onglet("Upload Files")
+    s.deposer([DOCS / "contrat-batterix-scan.pdf"])
+    acc = s.texte("Advanced indexing options", exact=True)
+    if not p.locator("label").filter(has_text="Force reindex file").locator("visible=true").count():
+        acc.click(); p.wait_for_timeout(800)
+    p.get_by_label("Force reindex file").locator("visible=true").first.check()
+    t0 = time.time()
+    s.bouton("Upload and Index").click(); p.wait_for_timeout(5000)
+    s.attendre_fin(delai=900000); p.get_by_text("Upload Progress").locator("visible=true").first.wait_for()
+    s.note(f"réindexation Docling du scan : {time.time() - t0:.1f} s ; toasts {s.toasts()!r}")
+    s.sans_toasts()
+    s.bouton("Clear Upload Info and Close").click(); p.wait_for_timeout(1500)
+    s.ligne("contrat-batterix-scan.pdf").click(); p.wait_for_timeout(3000)
+    s.cap_souple("13-scan-lu-par-docling", [(s.ligne("contrat-batterix-scan.pdf"), "contrat-batterix-scan.pdf (lecteur)"),
+                                            (p.get_by_text("212 euros").locator("visible=true").first, "texte lu dans le scan")])
+    s.onglet("Settings"); s.onglet("Retrieval settings")
+    s.choisir("File loader", "Default (open-source)")
+    p.locator("#save-setting-btn").click(); p.wait_for_timeout(2500)
 
 
 if __name__ == "__main__":

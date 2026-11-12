@@ -1,0 +1,65 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+name
+	
+vendor
+	
+default
+
+
+llm-service-rerank
+	
+CohereReranking
+	
+false
+name
+	
+vendor
+	
+default
+
+
+cohere
+	
+CohereReranking
+	
+false
+
+
+llm-service-rerank
+	
+CohereReranking
+	
+true
+Set this Reranking model as default. This default Reranking will be used by other components by default if no Reranking is specified for such components.
+Set default
+Name
+Edit to rename this Reranking model.
+Specification
+Specification of the Embedding model in YAML format
+Test connection
+▼
+Test
+- Testing model: llm-service-rerank
+- Sending a message ([`Hello`], `Hi`)
+- Connection success.
+
+Save
+Delete
+Close
+
+Cohere Reranking model
+
+Name	Type	Description
+base_url	'str'	Rerank API base url. Default is https://api.cohere.com
+cohere_api_key	'str'	Cohere API key
+model_name	'str'	ID of the model to use. See Cohere Rerank models for supported IDs (e.g. rerank-v4.0-fast, rerank-v4.0-pro, rerank-multilingual-v3.0).
+
+version: 0.0.1

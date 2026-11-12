@@ -1,0 +1,53 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Quel est le chiffre d'affaires 2025 de Vélanor ?
+
+Based on the provided context from the rapport-annuel-2025.pdf, Vélanor's revenue (chiffre d'affaires) for the year 2025 is 48.6 million euros.
+
+Here is the detailed explanation based on the document sections:
+
+Key Figures Table (Page 3):
+In the section titled "Chiffres clés 2025" (Key Figures 2025), there is a specific indicator for "Chiffre d'affaires". The value listed for 2025 is explicitly stated as 48,6 M€. This figure also shows an evolution of +12.4% compared to the previous year.
+
+Quarterly Revenue Breakdown (Page 4):
+In the section titled "Chiffre d'affaires trimestriel" (Quarterly Revenue), a table provides the revenue for each quarter of 2025:
+
+T1 2025: 9,8 M€
+T2 2025: 13,7 M€
+T3 2025: 14,2 M€
+T4 2025: 10,9 M€
+The total row at the bottom of this table confirms the annual sum is 48,6 M€.
+
+Therefore, both the summary key figures and the quarterly breakdown confirm that Vélanor's total revenue for 2025 was 48.6 million euros.
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Information panel
+▼
+× ⛶
+
+version: 0.0.1

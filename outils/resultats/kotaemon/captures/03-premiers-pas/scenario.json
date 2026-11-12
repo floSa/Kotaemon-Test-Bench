@@ -1,0 +1,480 @@
+[
+ {
+  "capture": "03-premiers-pas/01-connexion.png",
+  "pastilles": [
+   [
+    1,
+    "Username"
+   ],
+   [
+    2,
+    "Password"
+   ],
+   [
+    3,
+    "Login"
+   ]
+  ],
+  "note": "",
+  "heure": "20:17:31"
+ },
+ {
+  "capture": "03-premiers-pas/02-ecran-principal.png",
+  "pastilles": [
+   [
+    1,
+    "barre des onglets"
+   ],
+   [
+    2,
+    "Conversations et documents"
+   ],
+   [
+    3,
+    "zone de discussion"
+   ],
+   [
+    4,
+    "zone de saisie"
+   ],
+   [
+    5,
+    "Chat settings"
+   ],
+   [
+    6,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "20:17:34"
+ },
+ {
+  "capture": "03-premiers-pas/03-changer-mot-de-passe.png",
+  "pastilles": [
+   [
+    1,
+    "User settings"
+   ],
+   [
+    2,
+    "New password"
+   ],
+   [
+    3,
+    "Confirm password"
+   ],
+   [
+    4,
+    "Change password"
+   ],
+   [
+    5,
+    "Logout"
+   ]
+  ],
+  "note": "",
+  "heure": "20:17:45"
+ },
+ {
+  "capture": "03-premiers-pas/04a-llms-ajouter.png",
+  "pastilles": [
+   [
+    1,
+    "LLMs"
+   ],
+   [
+    2,
+    "Add"
+   ],
+   [
+    3,
+    "LLM name"
+   ],
+   [
+    4,
+    "LLM vendors"
+   ],
+   [
+    5,
+    "Specification"
+   ]
+  ],
+  "note": "",
+  "heure": "20:22:35"
+ },
+ {
+  "capture": "03-premiers-pas/04b-llms-specification.png",
+  "pastilles": [
+   [
+    1,
+    "Specification"
+   ],
+   [
+    2,
+    "Set default"
+   ],
+   [
+    3,
+    "Add LLM"
+   ]
+  ],
+  "note": "",
+  "heure": "20:22:36"
+ },
+ {
+  "capture": "03-premiers-pas/05a-embeddings-ajouter.png",
+  "pastilles": [
+   [
+    1,
+    "Embeddings"
+   ],
+   [
+    2,
+    "Add"
+   ],
+   [
+    3,
+    "Name"
+   ],
+   [
+    4,
+    "Vendors"
+   ],
+   [
+    5,
+    "Specification"
+   ],
+   [
+    6,
+    "tableau des paramètres"
+   ]
+  ],
+  "note": "",
+  "heure": "20:23:41"
+ },
+ {
+  "capture": "03-premiers-pas/05b-embeddings-specification.png",
+  "pastilles": [
+   [
+    1,
+    "Specification"
+   ],
+   [
+    2,
+    "Set default"
+   ],
+   [
+    3,
+    "Add"
+   ]
+  ],
+  "note": "",
+  "heure": "20:23:42"
+ },
+ {
+  "capture": "03-premiers-pas/06a-rerankings-ajouter.png",
+  "pastilles": [
+   [
+    1,
+    "Rerankings"
+   ],
+   [
+    2,
+    "Add"
+   ],
+   [
+    3,
+    "Name"
+   ],
+   [
+    4,
+    "Vendors"
+   ],
+   [
+    5,
+    "Specification"
+   ],
+   [
+    6,
+    "tableau des paramètres"
+   ]
+  ],
+  "note": "",
+  "heure": "20:24:01"
+ },
+ {
+  "capture": "03-premiers-pas/06b-rerankings-specification.png",
+  "pastilles": [
+   [
+    1,
+    "Specification"
+   ],
+   [
+    2,
+    "Set default"
+   ],
+   [
+    3,
+    "Add"
+   ]
+  ],
+  "note": "",
+  "heure": "20:24:02"
+ },
+ {
+  "capture": "03-premiers-pas/04c-llms-tester.png",
+  "pastilles": [
+   [
+    1,
+    "View"
+   ],
+   [
+    2,
+    "llm-service-chat"
+   ],
+   [
+    3,
+    "Test connection"
+   ],
+   [
+    4,
+    "Test"
+   ],
+   [
+    5,
+    "résultat du test"
+   ]
+  ],
+  "note": "",
+  "heure": "20:29:46"
+ },
+ {
+  "capture": "03-premiers-pas/05c-embeddings-tester.png",
+  "pastilles": [
+   [
+    1,
+    "View"
+   ],
+   [
+    2,
+    "llm-service-embed"
+   ],
+   [
+    3,
+    "Test connection"
+   ],
+   [
+    4,
+    "Test"
+   ],
+   [
+    5,
+    "résultat du test"
+   ]
+  ],
+  "note": "",
+  "heure": "20:29:54"
+ },
+ {
+  "capture": "03-premiers-pas/06c-rerankings-tester.png",
+  "pastilles": [
+   [
+    1,
+    "View"
+   ],
+   [
+    2,
+    "llm-service-rerank"
+   ],
+   [
+    3,
+    "Test connection"
+   ],
+   [
+    4,
+    "Test"
+   ],
+   [
+    5,
+    "résultat du test"
+   ]
+  ],
+  "note": "",
+  "heure": "20:30:03"
+ },
+ {
+  "capture": "03-premiers-pas/04c-llms-fiche.png",
+  "pastilles": [
+   [
+    1,
+    "View"
+   ],
+   [
+    2,
+    "llm-service-chat"
+   ],
+   [
+    3,
+    "Set default"
+   ],
+   [
+    4,
+    "Specification"
+   ]
+  ],
+  "note": "",
+  "heure": "20:30:30"
+ },
+ {
+  "capture": "03-premiers-pas/04d-llms-tester.png",
+  "pastilles": [
+   [
+    1,
+    "Test connection"
+   ],
+   [
+    2,
+    "Test"
+   ],
+   [
+    3,
+    "résultat du test"
+   ],
+   [
+    4,
+    "Save"
+   ],
+   [
+    5,
+    "Delete"
+   ],
+   [
+    6,
+    "Close"
+   ]
+  ],
+  "note": "",
+  "heure": "20:30:46"
+ },
+ {
+  "capture": "03-premiers-pas/05d-embeddings-tester.png",
+  "pastilles": [
+   [
+    1,
+    "Test connection"
+   ],
+   [
+    2,
+    "Test"
+   ],
+   [
+    3,
+    "résultat du test"
+   ],
+   [
+    4,
+    "Save"
+   ],
+   [
+    5,
+    "Delete"
+   ],
+   [
+    6,
+    "Close"
+   ]
+  ],
+  "note": "",
+  "heure": "20:30:54"
+ },
+ {
+  "capture": "03-premiers-pas/06d-rerankings-tester.png",
+  "pastilles": [
+   [
+    1,
+    "Test connection"
+   ],
+   [
+    2,
+    "Test"
+   ],
+   [
+    3,
+    "résultat du test"
+   ],
+   [
+    4,
+    "Save"
+   ],
+   [
+    5,
+    "Delete"
+   ],
+   [
+    6,
+    "Close"
+   ]
+  ],
+  "note": "",
+  "heure": "20:31:03"
+ },
+ {
+  "capture": "03-premiers-pas/07-reglages-raisonnement.png",
+  "pastilles": [
+   [
+    1,
+    "Reasoning settings"
+   ],
+   [
+    2,
+    "Language"
+   ],
+   [
+    3,
+    "Max context length (LLM)"
+   ],
+   [
+    4,
+    "Language model"
+   ],
+   [
+    5,
+    "Save & Close"
+   ]
+  ],
+  "note": "",
+  "heure": "20:38:04"
+ },
+ {
+  "capture": "03-premiers-pas/08-reglages-recherche.png",
+  "pastilles": [
+   [
+    1,
+    "Retrieval settings"
+   ],
+   [
+    2,
+    "File loader"
+   ],
+   [
+    3,
+    "Number of document chunks to retrieve"
+   ],
+   [
+    4,
+    "Use reranking"
+   ],
+   [
+    5,
+    "Use LLM relevant scoring"
+   ],
+   [
+    6,
+    "Save & Close"
+   ]
+  ],
+  "note": "",
+  "heure": "20:38:12"
+ }
+]

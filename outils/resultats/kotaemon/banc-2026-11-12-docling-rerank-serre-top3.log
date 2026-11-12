@@ -1,0 +1,53 @@
+               total        used        free      shared  buff/cache   available
+Mem:           32098       10200        4297         914       19171       21898
+  bge-m3 (embedding)
+  bge-reranker-v2-m3 (rerank)
+  faster-whisper-small (audio_transcription)
+== chat (réflexion coupée pour l'essai)
+  Bonjour
+== embed
+  dimensions : 1024
+== rerank
+  doc 0 score 9.05
+  doc 1 score -8.63
+== transcribe (corpus/documents/message-vocal-production.mp3)
+  Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
+Q01 tableau         OK    19.6s  "Selon les documents fournis, le chiffre d'affaires de Vélanor pour l'année 2025 s'élève à "
+Q02 fait simple     OK    13.6s  "D'après les informations fournies dans le contexte, Vélanor a été fondée en l'année **2014"
+Q03 fait simple     OK    21.1s  "D'après les informations fournies dans le contexte, la présidente de Vélanor est **Hélène "
+Q04 fait simple     OK    27.8s  "L'adresse du siège de Vélanor est le **12 quai de la Fosse, à Nantes**.\n\nVoici l'explicati"
+Q05 tableau         OK    22.9s  'Selon les documents fournis, Vélanor compte **412 salariés** au 31 décembre 2025.\n\nVoici l'
+Q06 tableau         OK    25.0s  "Selon les documents fournis, le chiffre d'affaires du troisième trimestre 2025 a été de **"
+Q07 tableau         OK    23.7s  "D'après les informations fournies dans le contexte, **15 400 unités** du modèle Sèvre Trai"
+Q08 tableau         OK    20.5s  'Selon les informations fournies dans le contexte, le prix public du modèle **Erdre Cargo**'
+Q09 tableau         OK    28.6s  "D'après les informations fournies dans le contexte, il y a **97 salariés** au site de Chol"
+Q10 fait simple     OK    27.3s  "D'après les éléments de contexte fournis, la part d'aluminium recyclé dans les cadres est "
+Q11 fait simple     OK    11.5s  "D'après le document fourni, spécifiquement dans la section « Environnement » du rapport an"
+Q12 tableau         OK    25.7s  'Selon les documents fournis, le fournisseur qui livre les moteurs est **Motodrive Co.** et'
+Q13 tableau         OK    19.3s  "D'après les informations fournies dans le contexte, Vélanor a dégagé un **résultat net de "
+Q14 fait simple     OK    17.8s  "D'après les documents fournis, le taux de retour sous garantie est de **1,8 % des vélos ve"
+Q15 scan            OK    19.5s  'Selon les documents fournis, le prix unitaire des batteries prévu par le contrat avec Batt'
+Q16 scan            OK    14.7s  "D'après le contenu du contrat fourni, spécifiquement l'**Article 5 Délais de livraison** s"
+Q17 scan            OK    16.0s  "D'après le contenu du contrat fourni, spécifiquement l'**Article 6** intitulé « Pénalités "
+Q18 scan            OK    15.8s  "D'après les documents fournis, plus précisément le contenu du fichier **contrat-batterix-s"
+Q19 fait simple     OK    22.4s  "D'après les informations fournies dans le document **procedure-batteries.docx** (Procédure"
+Q20 fait simple     OK    16.7s  'Selon le contexte fourni, la personne responsable de la procédure de charge et de stockage'
+Q21 tableau         OK    17.3s  'D\'après le contenu du document "procedure-batteries.docx", spécifiquement dans la section '
+Q22 fait simple     OK    22.4s  "D'après les informations fournies dans le contexte, spécifiquement dans le document **stra"
+Q23 fait simple     OK    17.4s  "D'après les documents fournis, la capacité prévue de l'usine de Saint-Nazaire est de **25 "
+Q24 tableau         OK    96.8s  "D'après les documents fournis, voici l'analyse détaillée concernant le stock de batteries "
+Q25 fait simple     OK    26.8s  "D'après le contenu du document **faq-sav.html** (Page 1), la durée de garantie du cadre es"
+Q26 fait simple     OK    19.0s  'Selon le contenu fourni dans le document **faq-sav.html** (Page 1), le numéro de téléphone'
+Q27 fait simple     OK    21.9s  'Selon le document « cse-2025-10-14.md », qui contient le compte rendu de la réunion du CSE'
+Q28 anglais         OK    18.8s  "D'après les informations fournies dans le contexte, Batterix GmbH a obtenu une **note glob"
+Q29 anglais         OK    28.4s  "Selon le document d'audit fournisseur fourni (intitulé **supplier-audit-batterix-en.pdf**)"
+Q30 multi-documents NON   23.8s  "D'après les extraits de contrat fournis, voici la réponse détaillée :\n\n**1. Délai de livra"
+Q31 multi-documents OK    21.3s  "D'après les documents fournis, voici les réponses détaillées à votre question :\n\n**1. Le s"
+Q32 multi-documents OK    17.7s  "D'après les documents fournis, voici les informations détaillées pour répondre à votre que"
+Q33 audio           NON   28.5s  'Sur la base des documents fournis, je ne connais pas la réponse à cette question.\n\nVoici l'
+Q34 audio           NON   23.2s  "D'après les documents fournis, il n'est pas possible de répondre à la question concernant "
+Q35 piège           OK    38.7s  "D'après les extraits de contexte fournis, je ne connais pas le chiffre d'affaires de Vélan"
+Q36 piège           OK    33.5s  "D'après les documents fournis, il n'est pas possible d'identifier le directeur financier d"
+Q37 piège           OK    45.5s  "D'après les extraits de contexte fournis dans le rapport annuel 2025 de Vélanor SAS, il es"
+Q38 piège           OK    27.5s  "D'après les documents fournis, il n'est pas possible de connaître le salaire de Karim Bena"
+-> outils/resultats/kotaemon/banc-2026-11-12-docling-rerank-serre-top3.json
