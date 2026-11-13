@@ -56,7 +56,7 @@ Choisir `rapport-annuel-2025.pdf` (cocher « Force reindex file » s'il a déjà
 |---|---|---|
 | 1 | « LightRAG Collection » | collection en graphe |
 | 2 | « Upload result » | coche verte : fichier indexé |
-| 3 | « Upload info » | « [GraphRAG] Creating index: 0 / 10 documents », « Indexed 4 / 10 documents… » : avancement de la construction du graphe ; LightRAG regroupe les passages du fichier en morceaux plus grands (ici 10) et les traite un par un |
+| 3 | « Upload info » | « [GraphRAG] Creating index: 0 / 10 documents », « Indexed 4 / 10 documents… » : avancement de la construction du graphe ; les « documents » sont ici les morceaux de texte que LightRAG traite l'un après l'autre (10 pour ce rapport), pas des fichiers |
 
 *Résultat* : après environ 9 minutes pour ce rapport de 10 pages (contre 6 secondes dans « File Collection »), le message « Successfully index 1 files » apparaît.
 
