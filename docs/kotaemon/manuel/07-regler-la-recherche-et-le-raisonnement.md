@@ -30,7 +30,7 @@ Les réglages conseillés pour le service de modèles de ce poste sont ceux du c
 Ouvrir la liste « Retrieval mode ».
 
 ![Mode de recherche](../img/07-reglages/01-mode-recherche.png)
-*Écran : « Retrieval settings », liste « Retrieval mode » ouverte.*
+*Écran : « Retrieval settings », liste « Retrieval mode » ouverte (la liste ouverte cache son libellé ; le libellé visible juste au-dessus, « Number of document chunks to retrieve », appartient au champ précédent).*
 
 | N° | Élément | Rôle |
 |---|---|---|
