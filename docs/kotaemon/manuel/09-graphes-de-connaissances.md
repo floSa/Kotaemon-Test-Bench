@@ -72,7 +72,7 @@ Cliquer d'abord sur le titre « LightRAG Collection » dans la colonne de gauche
 |---|---|---|
 | 1 | « LightRAG Collection » avec « Search All » | recherche dans le graphe seulement |
 | 2 | réponse | les quatre sites et leurs effectifs (Nantes 268, Cholet 97, Lyon 31, Bruxelles 16), total 412 |
-| 3 | entités, relations et passages | « Plot » : carte des entités ; « Entities » : tableau des entités et de leurs descriptions ; plus bas, « Relationships » et les passages d'origine |
+| 3 | « Entities » | tableau des entités et de leurs descriptions ; au-dessus, sans numéro, « Plot » (carte des entités) ; plus bas, « Relationships » et les passages d'origine |
 
 *Résultat* : la réponse arrive en moins d'une minute et elle est juste. Le panneau montre ce que le graphe a retenu ; les descriptions des entités sont en anglais (langue de l'extraction).
 
@@ -136,7 +136,7 @@ Choisir `procedure-batteries.docx`, puis « Upload and Index ».
 | Symptôme | Cause | Que faire |
 |---|---|---|
 | « Error: No module named 'pipmaster' » | pièce manquante de LightRAG | `outils/kotaemon/completer_lightrag.sh`, puis « Force reindex file » |
-| la page ne s'affiche plus après l'installation de NanoGraphRAG | conflit de bibliothèques | relancer `outils/kotaemon/installer_nanographrag.sh` (il contient les corrections) |
+| la page ne s'affiche plus après l'installation de NanoGraphRAG | conflit de bibliothèques | relancer `outils/kotaemon/installer_nanographrag.sh` (il contient les corrections), puis `outils/kotaemon/completer_lightrag.sh` |
 | « Error: EmptyNetworkError » | aucune relation trouvée par NanoGraphRAG | utiliser LightRAG |
 | GraphRAG : rien ne se passe après « Creating index » | Microsoft GraphRAG absent du programme lancé | utiliser LightRAG |
 

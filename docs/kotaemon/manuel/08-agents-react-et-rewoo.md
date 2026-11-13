@@ -34,7 +34,7 @@ Les agents sont en général plus lents que la méthode `simple` (souvent une mi
 | 3 | « Tools for knowledge retrieval » | outils permis : `SearchDoc` et `LLM` cochés par défaut, `Wikipedia` et `Google` décochés |
 | 4 | « Maximum number of iterations the LLM can go through » | nombre maximal de tours réflexion-action (5) |
 
-*Résultat* : ces réglages s'enregistrent avec « Save & Close ». Cliquer ensuite de nouveau sur `simple` avant « Save & Close » (ne pas enregistrer un agent comme méthode par défaut : la suite du manuel suppose `simple`) ; l'agent se choisit conversation par conversation (étape 3).
+*Résultat* : les réglages de ReAct s'affichent ; rien n'est à modifier ici.
 
 **Étape 2. Lire les réglages de ReWOO**
 *Où* : même écran ; cliquer sur `ReWOO`.
@@ -49,7 +49,7 @@ Les agents sont en général plus lents que la méthode `simple` (souvent une mi
 | 3 | « Language model for Solver » | modèle qui rédige la réponse finale |
 | 4 | « Highlight Citation » | surligne les passages cités dans le panneau des sources |
 
-*Résultat* : plus bas, « Tools for knowledge retrieval » (outils permis, comme pour ReAct), « Planner Prompt » et « Solver Prompt » (consignes des deux étapes).
+*Résultat* : plus bas, « Tools for knowledge retrieval » (outils permis, comme pour ReAct), « Planner Prompt » et « Solver Prompt » (consignes des deux étapes). Cliquer enfin de nouveau sur `simple` dans « Reasoning options » ; s'il faut enregistrer un réglage d'agent, le faire avec « Save & Close » une fois `simple` choisi, pour que la suite du manuel garde `simple` par défaut. L'agent se choisit conversation par conversation (étape 3).
 
 ## Poser une question à un agent
 

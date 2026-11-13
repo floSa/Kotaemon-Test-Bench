@@ -139,7 +139,7 @@ Le script annonce ce qu'il va supprimer et demande de taper `oui`. Il supprime l
 
 ## Bon à savoir
 
-- Le script d'installation peut être relancé sans risque : il garde les réglages et les données existants.
+- Le script d'installation peut être relancé sans risque pour les données : il garde les réglages et les documents. S'il recrée le conteneur (après une modification de sa configuration), refaire les compléments du chapitre 09 (voir chapitre 13, étape 4).
 - La version installée est Kotaemon 0.12.0 (31 mai 2026). Le projet ne publie pas d'image numérotée pour cette version : le script prend l'image `main-full`, figée par son empreinte, qui correspond exactement à la version 0.12.0. L'interface affiche pourtant « version: 0.0.1 » en haut à droite : ce numéro est faux (il est calculé à partir d'un historique absent de l'image) et peut être ignoré.
 - Kotaemon propose aussi un assistant de premier lancement (choix d'un fournisseur de modèles en ligne ou d'Ollama). Il n'apparaît pas avec ce script, car le dossier de données existe avant le premier démarrage, et il ne permet de toute façon pas de saisir l'adresse du service de modèles : les modèles se déclarent dans l'onglet « Resources » (chapitre 03).
 - Au démarrage, le journal du conteneur affiche `ollama: not found` et `Nano-GraphRAG dependencies not installed` : ces deux messages sont sans conséquence (Ollama n'est pas utilisé ; NanoGraphRAG est traité au chapitre 09).

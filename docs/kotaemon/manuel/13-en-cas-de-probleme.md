@@ -70,7 +70,7 @@ Les lignes qui commencent par `Traceback` ou qui contiennent `Error` décrivent 
 | 2 | « 0 chunks » | aucun passage : le fichier ne sert à rien |
 | 3 | « Delete » | le retire (sans confirmation) |
 
-*Résultat* : le fichier disparaît de la liste. Sans ce retrait, un nouvel essai d'ajout répond « File … already indexed. Please rerun with reindex=True to force reindexing. ». Même chose pour un DOCX ou un PPTX en échec avec « HTTP Error 403: Forbidden » : relancer `outils/kotaemon/installer.sh` (il fournit les données manquantes) ; ce script ne recrée le conteneur que si sa configuration a changé, et si LightRAG affiche ensuite « No module named 'pipmaster' », relancer `outils/kotaemon/completer_lightrag.sh` (et `outils/kotaemon/installer_nanographrag.sh` si NanoGraphRAG était installé, chapitre 09), puis relire le fichier avec « Force reindex file » (chapitre 05, étape 9).
+*Résultat* : le fichier disparaît de la liste. Sans ce retrait, un nouvel essai d'ajout répond « File … already indexed. Please rerun with reindex=True to force reindexing. ». Même chose pour un DOCX ou un PPTX en échec avec « HTTP Error 403: Forbidden » : relancer `outils/kotaemon/installer.sh` (il fournit les données manquantes) ; ce script ne recrée le conteneur que si sa configuration a changé, et si LightRAG affiche ensuite « No module named 'pipmaster' », relancer d'abord `outils/kotaemon/installer_nanographrag.sh` si NanoGraphRAG était installé, puis `outils/kotaemon/completer_lightrag.sh` (chapitre 09), puis relire le fichier avec « Force reindex file » (chapitre 05, étape 9).
 
 ## Réponse sans document
 
@@ -148,7 +148,7 @@ Dans tous les cas, recharger la page, ouvrir une nouvelle conversation et repose
 | « (Sorry, I don't know) » alors que la réponse existe | style « citation: inline » (5 échecs sur 7 essais) | « citation: highlight » (chapitre 06, étape 5) |
 | l'alerte de faible pertinence n'apparaît jamais | la notation par le modèle échoue sans message | ne pas compter sur cette alerte ; lire les notes de tri (chapitre 06, étape 6) |
 | PDF scanné sans réponse | lecteur intégré sans lecture optique | lecteur Docling (chapitre 05, étapes 12 et 13) |
-| la page ne s'affiche plus après l'installation de NanoGraphRAG | conflit de bibliothèques | relancer `outils/kotaemon/installer_nanographrag.sh` (chapitre 09) |
+| la page ne s'affiche plus après l'installation de NanoGraphRAG | conflit de bibliothèques | relancer `outils/kotaemon/installer_nanographrag.sh`, puis `outils/kotaemon/completer_lightrag.sh` (chapitre 09) |
 | `ollama: not found` dans le journal au démarrage | Ollama absent de l'image « full » | sans conséquence |
 
 ---
