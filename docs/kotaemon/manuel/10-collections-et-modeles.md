@@ -92,7 +92,7 @@ outils/kotaemon/demarrer.sh
 **Étape 4. Enregistrer de nouveau les réglages**
 *Où* : « Settings » › « Reasoning settings », puis « Settings » › « Retrieval settings ».
 
-Après la création d'une collection, Kotaemon ne sait plus relire les réglages enregistrés de chaque compte (il manque ceux de la nouvelle collection) : l'interface revient en silence aux valeurs par défaut (« Language » `English`, « Max context length (LLM) » `32000`, « Use LLM relevant scoring » coché). Refaire les étapes 10 et 11 du chapitre 03 (langue `French`, `8000`, notation décochée), en décochant aussi « Use LLM relevant scoring » dans le sous-onglet de la nouvelle collection (« Documents partagés »), puis « Save & Close » : les réglages sont de nouveau enregistrés au complet, nouvelle collection comprise.
+Après la création d'une collection, Kotaemon ne sait plus relire les réglages enregistrés de chaque compte (il manque ceux de la nouvelle collection) : l'interface revient en silence aux valeurs par défaut (« Language » `English`, « Max context length (LLM) » `32000`, « Use LLM relevant scoring » coché). Refaire les étapes 10 et 11 du chapitre 03 (langue `French`, `8000`, notation décochée, et « Number of document chunks to retrieve » à la valeur choisie au chapitre 07, `3` conseillé), en décochant aussi « Use LLM relevant scoring » dans le sous-onglet de la nouvelle collection (« Documents partagés »), puis « Save & Close » : les réglages sont de nouveau enregistrés au complet, nouvelle collection comprise.
 
 ![Réglages de raisonnement à enregistrer de nouveau](../img/03-premiers-pas/07-reglages-raisonnement.png)
 *Écran : « Settings » › « Reasoning settings » (même écran qu'au chapitre 03).*

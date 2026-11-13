@@ -124,7 +124,7 @@ outils/kotaemon/arreter.sh
 outils/kotaemon/demarrer.sh
 ```
 
-*Résultat* : `Kotaemon prêt : http://127.0.0.1:7860` après une trentaine de secondes. Dans le navigateur, l'écran de connexion demande le mot de passe choisi au chapitre 03.
+*Résultat* : `Kotaemon prêt : http://127.0.0.1:7860` après une trentaine de secondes. Dans le navigateur, recharger la page : si la session avait été fermée (« Logout », chapitre 11) ou si le navigateur a été changé, l'écran de connexion demande le mot de passe choisi au chapitre 03 ; sinon, le navigateur reconnecte automatiquement le compte.
 
 **Étape 11. Tout supprimer**
 *Où* : terminal Ubuntu, dossier du dépôt.
