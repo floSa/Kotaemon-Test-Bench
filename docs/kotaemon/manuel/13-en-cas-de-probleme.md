@@ -106,7 +106,7 @@ Les lignes qui commencent par `Traceback` ou qui contiennent `Error` décrivent 
 
 - la notation par le modèle (« Use LLM relevant scoring ») avec 10 passages : dix demandes simultanées, le service de modèles en refuse une partie (« Too many requests », erreur 429 dans le journal) ; décocher l'option (chapitre 03, étape 11) ;
 - une collection en graphe dont le graphe n'a pas été construit (cas de la capture : pièce `pipmaster` manquante) ; voir le chapitre 09 ;
-- une question de suite envoyée avant la fin de la réponse précédente : attendre que la conversation ait reçu son nom (chapitre 12, cas 2).
+- une question de suite envoyée avant la fin de la réponse précédente : attendre une trentaine de secondes après la fin de la réponse précédente (chapitre 12, cas 2).
 
 Dans tous les cas, recharger la page, ouvrir une nouvelle conversation et reposer la question.
 

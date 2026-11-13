@@ -161,7 +161,7 @@ Remettre `simple` dans « Chat settings » › « Reasoning method » (l'étape 
 |---|---|---|
 | 1 | réponse | la réponse dit ne pas trouver l'information dans les documents |
 
-*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde « LLM relevant score: 0.0 » (visible en dépliant « Relevance score » dans le panneau, chapitre 06, étape 6). Cette option n'apporte donc rien ici : revenir ensuite aux réglages conseillés (3 à 5 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
+*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde une note du modèle à 0 (« LLM relevant score: 0.0 » dans le détail des notes, chapitre 06, étape 6, quand le bloc du passage affiche la ligne « Relevance score » ; sur cette capture, le bloc visible ne l'affiche pas). Cette option n'apporte donc rien ici : revenir ensuite aux réglages conseillés (3 à 5 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
 
 ## Bon à savoir
 

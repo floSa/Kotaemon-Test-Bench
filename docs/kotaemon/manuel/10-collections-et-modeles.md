@@ -145,8 +145,8 @@ Après la création d'une collection, Kotaemon ne sait plus relire les réglages
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `llm-service-rerank` | ligne du haut : modèle de tri du service de modèles, par défaut |
-| 2 | `cohere` | ligne du bas : modèle de tri en ligne préinstallé, sans clé |
+| 1 | `llm-service-rerank` | ligne du bas (`true`) : modèle de tri du service de modèles, par défaut |
+| 2 | `cohere` | ligne du haut (`false`) : modèle de tri en ligne préinstallé, sans clé |
 
 *Résultat* : le tri des passages (« Use reranking », chapitre 07) utilise le modèle marqué par défaut.
 

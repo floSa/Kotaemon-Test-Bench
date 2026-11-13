@@ -164,7 +164,7 @@ Cliquer sur « [Preview] ».
 ## Bon à savoir
 
 - La première question d'une session prend un peu plus de temps : Kotaemon prépare ses composants.
-- Le titre de la conversation (« Untitled - date ») est donné automatiquement ; il se renomme au chapitre 06.
+- Une nouvelle conversation s'appelle « Untitled - date » ; une fois la réponse terminée, Kotaemon lui donne souvent un nom tiré de la première question (en anglais), mais pas toujours : le nom peut rester « Untitled - date ». La conversation se renomme à la main (chapitre 06).
 - La carte mentale (« Mindmap (on) ») est activée par défaut dans chaque conversation : Kotaemon demande alors au modèle un schéma de la réponse, ce qui allonge l'attente. Elle se décoche à côté de « Chat settings » (chapitre 06).
 
 ## En cas de problème

@@ -149,7 +149,7 @@ Les captures des étapes 8 à 13 montrent à l'arrière-plan des noms de convers
 | 1 | liste des conversations | affiche le nom de la conversation ouverte ; un clic déroule les autres, une saisie les filtre |
 | 2 | une conversation | un clic la rouvre, avec ses questions et ses réponses |
 
-*Résultat* : la conversation choisie s'affiche. Kotaemon nomme lui-même chaque conversation d'après sa première question, souvent en anglais (« Untitled » tant qu'aucune réponse n'est arrivée).
+*Résultat* : la conversation choisie s'affiche. Une nouvelle conversation s'appelle « Untitled - date » ; une fois la réponse terminée, Kotaemon lui donne souvent un nom tiré de la première question (en anglais), mais pas toujours : le nom peut rester « Untitled - date ».
 
 **Étape 9. Repérer les boutons d'une conversation**
 *Où* : sous la liste des conversations.

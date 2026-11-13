@@ -37,7 +37,7 @@ But : retrouver dans la foire aux questions du service après-vente la durée de
 **Étape 2. Poser une question, puis une question de suite**
 *Où* : « Chat » › « File Collection » › « Search All » ; « Reasoning method » : `simple`.
 
-Poser `Quelle est la durée de garantie du cadre ?`, attendre que la réponse soit complète et que la conversation ait reçu son nom (une trentaine de secondes), puis poser `Et quel numéro appeler pour le service après-vente ?`.
+Poser `Quelle est la durée de garantie du cadre ?`, attendre une trentaine de secondes après que la réponse a cessé de s'allonger (Kotaemon termine encore la carte mentale), puis poser `Et quel numéro appeler pour le service après-vente ?`.
 
 ![Question de suite dans la même conversation](../img/12-cas-pratiques/02-client-suite.png)
 *Écran : « Chat », deux questions dans la même conversation.*
@@ -48,7 +48,7 @@ Poser `Quelle est la durée de garantie du cadre ?`, attendre que la réponse so
 | 2 | réponse à la question de suite | « 02 40 00 12 34 », du lundi au vendredi de 9 h à 18 h |
 | 3 | source : `faq-sav.html` | passage de la foire aux questions surligné |
 
-*Résultat* : la seconde réponse donne « 02 40 00 12 34 ». Une question de suite envoyée trop tôt, pendant que Kotaemon termine la carte mentale et le nom de la conversation, reste sans réponse affichée : il suffit d'attendre que le nom de la conversation remplace « Untitled » avant de continuer.
+*Résultat* : la seconde réponse donne « 02 40 00 12 34 ». Une question de suite envoyée trop tôt, pendant que Kotaemon termine la carte mentale et le nom de la conversation, reste sans réponse affichée : il suffit d'attendre une trentaine de secondes après la fin de la réponse avant de continuer.
 
 ## Cas 3. Mettre une note interne à disposition de l'équipe
 
@@ -80,7 +80,7 @@ Le compte rendu a été ajouté par l'administrateur dans « Documents partagés
 | Symptôme | Cause | Que faire |
 |---|---|---|
 | le contrat n'est pas trouvé avec le groupe | le groupe a perdu le fichier après une relecture forcée | réparer le groupe (chapitre 05) |
-| la question de suite ne reçoit pas de réponse | envoyée avant la fin de la réponse précédente | attendre le nom de la conversation, puis reposer la question |
+| la question de suite ne reçoit pas de réponse | envoyée avant la fin de la réponse précédente | attendre une trentaine de secondes, puis reposer la question |
 | Camille ne trouve pas le document | document dans « File Collection » (privée) | l'ajouter à « Documents partagés » |
 
 ---
