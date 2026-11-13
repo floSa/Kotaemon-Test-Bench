@@ -23,6 +23,7 @@
 - Clé du service de modèles masquée sur les captures (remplacée par des astérisques dans l'affichage seulement) et dans les textes enregistrés. [Vérifié] Exception corrigée : un préfixe de 6 caractères de la clé était resté dans `graphrag-2026-11-13.log`, masqué au commit `87ce88a` ; il reste dans l'historique git (réécriture interdite) : changer la clé est inscrit dans les décisions en attente.
 - Banc de 38 questions par la bibliothèque dans le conteneur (annexe A1). [Vérifié]
 - Exemples courts exécutés, sortie dans `exemples/kotaemon/sorties_verifiees.txt` (annexe A3). [Vérifié]
+- Relecture de la partie 1 par un lecteur novice (sous-agent neuf, sans accès au logiciel ni aux annexes), dix-sept passages jusqu'à « Aucune remarque » ; relecture adversariale de la partie 2 par un sous-agent neuf (27 écarts corrigés). [Vérifié] (`JOURNAL.md`)
 
 ## 2. Machine et versions
 

@@ -7,6 +7,7 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 1. LLM-Service : modèle de réponse plus léger (ou alias sans réflexion de `chat`) pour situer un plancher de qualité. Hors mission (modification de LLM-Service).
 2. Serveur Docling externe (docling-serve) branché par `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` : demandé par l'utilisateur le 12 novembre ; image hors enveloppe, essai sur accord ; méthode documentée (annexe A3).
 3. Sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo) : garder ou supprimer.
+4. Changer la clé du service LLM central (un préfixe de 6 caractères est resté dans l'historique git) : relève de l'utilisateur, LLM-Service n'étant pas modifiable par la mission.
 
 ### 2026-11-12 19:30 — Phase A : diagnostic de la machine et santé du service central
 
@@ -36,3 +37,11 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 - Question de l'utilisateur (Docling externe) : méthode documentée (A3 §5, chapitre 05), essai en attente d'accord (image docling-serve hors enveloppe).
 - Manuels 01 à 14, annexes A1 à A6, carte, README, index de la série, outils/README, RAPPORT ; `verifier_docs.py` à 0 point.
 - Prochaine étape : relecture par un lecteur novice, relecture adversariale des annexes, commit final.
+
+### 2026-11-13 04:30 — Phase H : relectures et clôture
+
+- Relecture par un lecteur novice (partie 1), dix-sept passages avec un sous-agent neuf à chaque fois : 34, 24, 15, 3, 6, 7, 2, 2, 3, 3, 4, 5, 1, 1, 4, 4 remarques, puis « Aucune remarque » au dix-septième. Corrections commitées après chaque passage (captures refaites : 04/09, 06/06, 06/07, 06/12, 07/03, 07/04, 07/07, 08/02, 10/04, 11/04, 11/07, 12/01, 12/02 ; règle de langue unifiée ; nombre de passages conseillé 3 ; consignes de réglage après création de collection ; ordre des scripts LightRAG et NanoGraphRAG).
+- Relecture adversariale des annexes : 27 écarts corrigés (requalifications, chiffres rectifiés, relevé `fin-de-mission-2026-11-13.log`) ; un préfixe de 6 caractères de la clé trouvé dans `graphrag-2026-11-13.log`, masqué (commit 87ce88a, historique non réécrit) : changement de clé inscrit dans les décisions en attente.
+- Incident de ménage : le premier filtre de `demo.py` a supprimé aussi les conversations de démonstration et la conversation partagée ; recréées par l'interface (filtre corrigé).
+- Style « citation: inline » : 2 réponses sur 7 essais (`captures/06-questions/notes.log`) ; chapitre 06 réécrit tel quel.
+- État : Kotaemon en marche sur http://127.0.0.1:7860, jeu de démonstration en place, `verifier_docs.py` à 0 point.
