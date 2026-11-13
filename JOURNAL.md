@@ -64,3 +64,7 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 - Kotaemon démarré avec `compose.docling-externe.yml` (service kotaemon seul, `--no-deps` : le conteneur `rag-docling-serve` tournait déjà, partagé avec Open WebUI).
 - `outils/kotaemon/banc.py` : options `--reindexer` (réindexation forcée) et `--docling-deporte` (vérifie le branchement, compte Docling avec l'application).
 - Banc `docling-deporte-rerank-serre-top3` : 29/34 (31 avec le Docling intégré, qui ne relisait que le scan), 4/4, médiane 18,4 s, indexation 28 s. Q13 et Q24 (tableaux du rapport annuel) échouent : tous les PDF sont relus par Docling. Annexe A1 (section 2.1) et index de la série à jour. Kotaemon remis dans sa configuration d'origine, puis arrêté.
+
+### 2026-11-13 — Docling déporté partagé
+
+- `brancher.sh` réutilise un serveur `rag-docling-serve` déjà démarré (partagé avec Open WebUI) au lieu d'échouer sur le nom du conteneur ; `debrancher.sh` ne supprime le serveur que s'il a été lancé par Kotaemon. [Testée] dans les deux sens. Manuel 05, étape 17 : une phrase sur ce cas.

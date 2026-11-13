@@ -307,7 +307,7 @@ Lancer :
 outils/kotaemon/docling_externe/brancher.sh
 ```
 
-*Résultat* : le message « Kotaemon prêt, PDF lus par rag-docling-serve » apparaît après une trentaine de secondes. Pour un serveur installé sur une autre machine, il suffit de retirer le service `docling-serve` du fichier `compose.docling-externe.yml` et de mettre son adresse dans `DOCLING_SERVE_URL` (cas non essayé).
+*Résultat* : le message « Kotaemon prêt, PDF lus par rag-docling-serve » apparaît après une trentaine de secondes. Si un serveur `rag-docling-serve` tourne déjà, partagé avec une autre application (par exemple Open WebUI), le script le réutilise au lieu d'en lancer un second et affiche d'abord « Serveur rag-docling-serve déjà démarré : réutilisé » ; `debrancher.sh` laisse alors ce serveur en place. Pour un serveur installé sur une autre machine, il suffit de retirer le service `docling-serve` du fichier `compose.docling-externe.yml` et de mettre son adresse dans `DOCLING_SERVE_URL` (cas non essayé).
 
 **Étape 18. Relire le PDF scanné avec le serveur séparé**
 *Où* : « Files » › « File Collection » › « Upload Files ».
