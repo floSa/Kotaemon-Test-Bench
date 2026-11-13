@@ -40,7 +40,7 @@ L'image de Kotaemon 0.12.0 contient LightRAG, mais il lui manque une petite bibl
 outils/kotaemon/completer_lightrag.sh
 ```
 
-*Résultat* : le script ajoute `pipmaster` dans le conteneur et affiche son emplacement. Il est à relancer chaque fois que le conteneur est recréé (réinstallation, chapitre 02, ou option NanoGraphRAG, étape 5).
+*Résultat* : le script ajoute `pipmaster` dans le conteneur et affiche son emplacement. Il est à relancer chaque fois que le conteneur est recréé (réinstallation, chapitre 02, ou option NanoGraphRAG, étape 5). Un arrêt puis un redémarrage par `outils/kotaemon/arreter.sh` et `outils/kotaemon/demarrer.sh` (chapitres 02 et 10) gardent le conteneur : inutile alors de relancer le script.
 
 ## Indexer et interroger avec LightRAG
 
@@ -95,7 +95,7 @@ outils/kotaemon/completer_lightrag.sh
 
 Le premier script active la collection « NanoGraphRAG Collection », installe le paquet `nano-graphrag` dans le conteneur, puis corrige les deux conflits qu'il provoque : il remplace une bibliothèque de la base des vecteurs (Kotaemon ne démarre plus sans cette correction, comme le signale la documentation du projet) et il fait monter une autre bibliothèque (pydantic) vers une version qui empêche l'interface de s'afficher ; le script remet la version d'origine. Le second script remet la pièce de LightRAG, perdue quand le conteneur est recréé.
 
-*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat. Comme toute création de collection, celle-ci fait revenir les réglages de « Settings » aux valeurs par défaut : les refaire (chapitre 10, étape 4).
+*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat. Comme toute création de collection, celle-ci fait revenir les réglages de « Settings » aux valeurs par défaut (anglais, 32 000, notation cochée) : dans « Settings » › « Reasoning settings », remettre « Language » sur `French` et « Max context length (LLM) » sur `8000` ; dans « Settings » › « Retrieval settings », décocher « Use LLM relevant scoring » dans chaque sous-onglet de collection ; puis « Save & Close » (détail au chapitre 10, étape 4).
 
 **Étape 6. Indexer un document avec NanoGraphRAG**
 *Où* : « Files » › « NanoGraphRAG Collection » › « Upload Files ».

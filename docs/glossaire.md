@@ -43,7 +43,7 @@ Termes employés dans la série de manuels. Quand un terme est propre à une sol
 | MMR (Maximal Marginal Relevance) | Choix des passages qui équilibre pertinence et diversité, pour éviter de transmettre plusieurs fois la même information. |
 | Mode Chat, mode Requête (AnythingLLM) | En mode Chat, le modèle répond avec ses connaissances générales et les documents ; en mode Requête, il ne répond qu'à partir des documents et renvoie un refus s'il n'en trouve aucun. |
 | Modèle de raisonnement | Modèle qui produit une réflexion intermédiaire avant sa réponse ; plus lent, parfois plus juste. |
-| Notation par le modèle, LLM relevant scoring (Kotaemon) | Option qui demande au modèle de réponse de noter chaque passage ; elle déclenche l'alerte de faible pertinence. |
+| Notation par le modèle, LLM relevant scoring (Kotaemon) | Option qui demande au modèle de réponse de noter chaque passage ; prévue pour déclencher l'alerte de faible pertinence (sans effet dans l'installation décrite, chapitre 07 du manuel Kotaemon). |
 | `num_ctx` | Taille de contexte d'un modèle dans Ollama, en jetons. Au-delà, le début du prompt est tronqué. |
 | OCR (lecture optique de caractères) | Reconnaissance du texte dans une image ou un PDF scanné. |
 | Ollama | Serveur de modèles local, qui fonctionne sur CPU ou GPU et expose une API. |

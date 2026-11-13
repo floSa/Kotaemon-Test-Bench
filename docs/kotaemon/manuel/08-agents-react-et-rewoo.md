@@ -17,7 +17,7 @@ Deux agents existent :
 - **ReAct** alterne réflexion et action : il réfléchit, choisit un outil, lit le résultat, puis recommence, jusqu'à cinq fois au plus ;
 - **ReWOO** écrit d'abord un plan (« #Plan1 », « #Plan2 »…) avec les actions à faire, les exécute toutes, puis rédige la réponse à partir des résultats.
 
-Les agents sont plus lents que la méthode `simple` (une minute ou plus par question) et leur réussite dépend beaucoup du modèle de réponse.
+Les agents sont en général plus lents que la méthode `simple` (souvent une minute ou plus par question ; ReAct répond plus vite quand il s'arrête après une seule recherche, comme à l'étape 3) et leur réussite dépend beaucoup du modèle de réponse.
 
 ## Régler les agents
 

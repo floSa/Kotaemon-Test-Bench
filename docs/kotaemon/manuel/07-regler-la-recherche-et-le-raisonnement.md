@@ -9,7 +9,7 @@
 Les réglages se trouvent à deux endroits :
 
 - « Settings » : réglages du compte, gardés d'une visite à l'autre ; « Retrieval settings » règle la **recherche** (un sous-onglet par collection), « Reasoning settings » règle la **rédaction** ;
-- « Chat settings », sous la zone de saisie : méthode, modèle et langue de la conversation, qui l'emportent sur « Settings » jusqu'au rechargement de la page.
+- « Chat settings », sous la zone de saisie : méthode, modèle, langue, style de citation et carte mentale de la conversation, qui l'emportent sur « Settings » jusqu'au rechargement de la page.
 
 Kotaemon propose quatre **méthodes de raisonnement** :
 

@@ -21,7 +21,7 @@ Les mots techniques employés dans ce manuel sont définis simplement dans le [g
 | « Search All », « Search In File(s) » | chercher dans toute la collection, ou dans les fichiers et groupes choisis |
 | « Information panel » | panneau des passages cités |
 | « Relevance score » | note de pertinence d'un passage |
-| « Chat settings » | réglages de la conversation en cours : méthode, modèle, langue |
+| « Chat settings » | réglages de la conversation en cours : méthode, modèle, langue, style de citation, carte mentale ; ils l'emportent sur « Settings » |
 | « Reasoning method » | méthode de raisonnement : `simple`, `complex`, `ReAct`, `ReWOO` |
 | « Mindmap » | carte mentale de la réponse |
 | « citation: highlight », « citation: inline », « no citation » | style des citations : passages surlignés dans le panneau, renvois dans le texte, aucune |
