@@ -1,6 +1,6 @@
 KeyError: 'index.options.4.reader_mode'
 GraphRAG embedding dim 1024
-Indexing GraphRAG with LLM ChatOpenAI(api_key=sk-local-nxMcTJ..., base_url=http://llm-cent..., frequency_penalty=None, logit_bias=None, logprobs=None, max_retries=None, max_retries_=2, max_tokens=6144, model=chat, n=1, organization=None, presence_penalty=None, stop=None, temperature=0, timeout=600, tool_choice=None, tools=None, top_logprobs=None, top_p=None) and Embedding OpenAIEmbeddings(api_key=sk-local-nxMcTJ..., base_url=http://llm-cent..., context_length=None, dimensions=None, max_retries=None, max_retries_=2, model=embed, organization=None, timeout=120)...
+Indexing GraphRAG with LLM ChatOpenAI(api_key=[clé masquée], base_url=http://llm-cent..., frequency_penalty=None, logit_bias=None, logprobs=None, max_retries=None, max_retries_=2, max_tokens=6144, model=chat, n=1, organization=None, presence_penalty=None, stop=None, temperature=0, timeout=600, tool_choice=None, tools=None, top_logprobs=None, top_p=None) and Embedding OpenAIEmbeddings(api_key=[clé masquée], base_url=http://llm-cent..., context_length=None, dimensions=None, max_retries=None, max_retries_=2, model=embed, organization=None, timeout=120)...
 INFO:nano-graphrag:Load KV full_docs with 0 data
 INFO:nano-graphrag:Load KV text_chunks with 0 data
 INFO:nano-graphrag:Load KV llm_response_cache with 0 data
