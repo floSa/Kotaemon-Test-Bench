@@ -55,7 +55,7 @@ Ouvrir la liste « Retrieval mode ».
 
 *Résultat* : chaque collection garde ses propres réglages. Rien à changer ici : la valeur de départ de « Search type », `local`, convient (chapitre 09).
 
-Les autres réglages de « File Collection » sont décrits au chapitre 03 (étape 11) : « Number of document chunks to retrieve », « Use reranking », « Use LLM relevant scoring », « LLM for relevant scoring » et « File loader » (chapitre 05).
+Les autres réglages de « File Collection » sont décrits au chapitre 03 (étape 11) : « Number of document chunks to retrieve », « Use reranking », « Use LLM relevant scoring » et « File loader » (chapitre 05) ; « LLM for relevant scoring » est décrit plus bas (étape 8).
 
 ## Régler la rédaction
 
