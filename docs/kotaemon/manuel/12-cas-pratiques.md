@@ -57,7 +57,7 @@ But : permettre à une collègue, Camille, de consulter le compte rendu du CSE s
 **Étape 3. Interroger la collection partagée depuis le compte de Camille**
 *Où* : un autre navigateur ou une fenêtre privée, `http://127.0.0.1:7860`, session `camille` ; « Chat » › « Documents partagés » › « Search All ».
 
-Si ce n'est pas déjà fait, régler d'abord les « Settings » du compte `camille` comme au chapitre 03, étapes 10 et 11 (langue `French`, `8000`, « Use LLM relevant scoring » décoché), puis « Save & Close ». Le compte rendu a été ajouté par l'administrateur dans « Documents partagés » (chapitre 11, étape 3). Choisir `French` dans « Language », puis poser `Quel est le montant de la prime d'intéressement 2025 ?`.
+Si ce n'est pas déjà fait, régler d'abord les « Settings » du compte `camille` comme au chapitre 03, étapes 10 et 11 (langue `French`, `8000`, « Use LLM relevant scoring » décoché), puis « Save & Close ». Le compte rendu a été ajouté par l'administrateur dans « Documents partagés » (chapitre 11, étape 3). Dans la colonne de gauche, cliquer sur le titre « Documents partagés » pour déplier la section, puis sur « Search All ». Vérifier `French` dans « Language », puis poser `Quel est le montant de la prime d'intéressement 2025 ?`.
 
 ![Réponse depuis la collection partagée](../img/12-cas-pratiques/03-equipe-reponse.png)
 *Écran : « Chat » du compte `camille`, collection « Documents partagés ».*

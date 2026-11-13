@@ -15,8 +15,8 @@ Kotaemon propose trois variantes, chacune dans sa propre collection :
 | Collection | Variante | Sur ce poste |
 |---|---|---|
 | « LightRAG Collection » | LightRAG | fonctionne, après une petite correction faite par un script (étape 1) |
-| « NanoGraphRAG Collection » | NanoGraphRAG | s'installe avec un script ; l'indexation échoue avec le modèle de ce poste (étape 6) |
-| « GraphRAG Collection » | Microsoft GraphRAG | ne fonctionne pas : l'indexation ne démarre pas (étape 7) |
+| « NanoGraphRAG Collection » | NanoGraphRAG | s'installe avec un script ; l'indexation échoue avec le modèle de ce poste (étape 5) |
+| « GraphRAG Collection » | Microsoft GraphRAG | ne fonctionne pas : l'indexation ne démarre pas (étape 6) |
 
 Une collection en graphe s'utilise comme les autres : ajout par « Files », question par le chat en choisissant « Search All » dans sa section. Certaines captures de ce chapitre montrent déjà « Documents partagés » et « NanoGraphRAG Collection », créées ailleurs dans le manuel : ne pas en tenir compte.
 
@@ -40,7 +40,7 @@ L'image de Kotaemon 0.12.0 contient LightRAG, mais il lui manque une petite bibl
 outils/kotaemon/completer_lightrag.sh
 ```
 
-*Résultat* : le script ajoute `pipmaster` dans le conteneur et affiche son emplacement. Il est à relancer chaque fois que le conteneur est recréé (réinstallation, chapitre 02, ou option NanoGraphRAG, étape 5). Un arrêt puis un redémarrage par `outils/kotaemon/arreter.sh` et `outils/kotaemon/demarrer.sh` (chapitres 02 et 10) gardent le conteneur : inutile alors de relancer le script.
+*Résultat* : le script ajoute `pipmaster` dans le conteneur et affiche son emplacement. Il est à relancer chaque fois que le conteneur est recréé (réinstallation, chapitre 02, ou option NanoGraphRAG, étape 4). Un arrêt puis un redémarrage par `outils/kotaemon/arreter.sh` et `outils/kotaemon/demarrer.sh` (chapitres 02 et 10) gardent le conteneur : inutile alors de relancer le script.
 
 ## Indexer et interroger avec LightRAG
 
@@ -63,7 +63,7 @@ Choisir `rapport-annuel-2025.pdf` (cocher « Force reindex file » s'il a déjà
 **Étape 3. Poser une question au graphe**
 *Où* : « Chat » › nouvelle conversation › « LightRAG Collection » › « Search All » ; « Language » : `French`.
 
-Laisser « File Collection » sans choix, pour n'interroger que le graphe (si « Search All » y est déjà coché, recharger la page : à l'ouverture, aucune collection n'est choisie ; puis choisir de nouveau « French »), puis poser `Quels sont les sites de Vélanor et combien de salariés compte chacun ?`.
+Cliquer d'abord sur le titre « LightRAG Collection » dans la colonne de gauche pour déplier la section (elle est repliée, petit triangle à droite), puis sur « Search All ». Laisser « File Collection » sans choix, pour n'interroger que le graphe (si « Search All » y est déjà coché, recharger la page : à l'ouverture, aucune collection n'est choisie ; puis choisir de nouveau « French »), puis poser `Quels sont les sites de Vélanor et combien de salariés compte chacun ?`.
 
 ![Réponse à partir du graphe LightRAG](../img/09-graphrag/04-lightrag-question.png)
 *Écran : « Chat », réponse de la collection LightRAG.*
@@ -76,16 +76,9 @@ Laisser « File Collection » sans choix, pour n'interroger que le graphe (si «
 
 *Résultat* : la réponse arrive en moins d'une minute et elle est juste. Le panneau montre ce que le graphe a retenu ; les descriptions des entités sont en anglais (langue de l'extraction).
 
-**Étape 4. Régler la recherche dans le graphe**
-*Où* : « Settings » › « Retrieval settings » › « LightRAG Collection ».
-
-Le réglage « Search type » choisit `local` (autour des entités de la question), `global` (sur tout le graphe) ou `hybrid` ; il est présenté au chapitre 07 (étape 2).
-
-*Résultat* : le réglage vaut pour les questions suivantes posées à cette collection.
-
 ## Essayer NanoGraphRAG
 
-**Étape 5. Installer NanoGraphRAG**
+**Étape 4. Installer NanoGraphRAG**
 *Où* : terminal Ubuntu, dossier du dépôt.
 
 ```bash
@@ -95,9 +88,9 @@ outils/kotaemon/completer_lightrag.sh
 
 Le premier script active la collection « NanoGraphRAG Collection », installe le paquet `nano-graphrag` dans le conteneur, puis corrige les deux conflits qu'il provoque : il remplace une bibliothèque de la base des vecteurs (Kotaemon ne démarre plus sans cette correction, comme le signale la documentation du projet) et il fait monter une autre bibliothèque (pydantic) vers une version qui empêche l'interface de s'afficher ; le script remet la version d'origine. Le second script remet la pièce de LightRAG, perdue quand le conteneur est recréé.
 
-*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat. Comme toute création de collection, celle-ci fait revenir les réglages de « Settings » aux valeurs par défaut (anglais, 32 000, notation cochée) : dans « Settings » › « Reasoning settings », remettre « Language » sur `French` et « Max context length (LLM) » sur `8000` ; dans « Settings » › « Retrieval settings », décocher « Use LLM relevant scoring » dans chaque sous-onglet de collection ; puis « Save & Close » (détail au chapitre 10, étape 4).
+*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat. Comme toute création de collection, celle-ci fait revenir les réglages de « Settings » aux valeurs par défaut (anglais, 32 000, notation cochée) : dans « Settings » › « Reasoning settings », remettre « Language » sur `French` et « Max context length (LLM) » sur `8000` ; dans « Settings » › « Retrieval settings », décocher « Use LLM relevant scoring » dans les sous-onglets « File Collection » et « Documents partagés » (les collections en graphe n'ont pas cette case) ; puis « Save & Close » (détail au chapitre 10, étape 4).
 
-**Étape 6. Indexer un document avec NanoGraphRAG**
+**Étape 5. Indexer un document avec NanoGraphRAG**
 *Où* : « Files » › « NanoGraphRAG Collection » › « Upload Files ».
 
 Choisir `procedure-batteries.docx`, puis « Upload and Index ».
@@ -115,7 +108,7 @@ Choisir `procedure-batteries.docx`, puis « Upload and Index ».
 
 ## Essayer Microsoft GraphRAG
 
-**Étape 7. Indexer un document avec Microsoft GraphRAG**
+**Étape 6. Indexer un document avec Microsoft GraphRAG**
 *Où* : « Files » › « GraphRAG Collection » › « Upload Files ».
 
 Choisir `procedure-batteries.docx`, puis « Upload and Index ».
@@ -133,6 +126,7 @@ Choisir `procedure-batteries.docx`, puis « Upload and Index ».
 
 ## Bon à savoir
 
+- Le réglage « Search type » (« Settings » › « Retrieval settings » › « LightRAG Collection », chapitre 07, étape 2) choisit `local`, `global` ou `hybrid` ; la valeur de départ, `local`, a suffi pour les essais de ce chapitre.
 - Un graphe coûte cher à construire : environ une minute par page avec le modèle de ce poste, sur une carte graphique. Le réserver à quelques documents riches en relations.
 - La question s'adresse au graphe seulement si les autres collections restent sans choix ; cocher « Search All » dans plusieurs collections mélange passages et graphe.
 - Une conversation qui interroge une collection en graphe sans graphe construit reste sur « Thinking ... » (chapitre 13).

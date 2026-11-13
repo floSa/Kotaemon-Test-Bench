@@ -8,7 +8,7 @@
 
 Chaque question est posée dans une **conversation**. Les questions d'une même conversation se suivent : Kotaemon tient compte des échanges précédents (les cinq derniers par défaut) pour comprendre une question de suite comme « Et le numéro du service après-vente ? ».
 
-Pour chaque collection, la colonne de gauche propose deux façons de chercher :
+Pour chaque collection, la colonne de gauche a une section à son nom ; seule « File Collection » est dépliée au départ, les autres se déplient d'un clic sur leur titre (petit triangle à droite). Chaque section propose deux façons de chercher :
 
 - « Search All » : tous les fichiers de la collection ;
 - « Search In File(s) » : seulement les fichiers ou les groupes choisis dans la liste qui apparaît.
@@ -30,7 +30,7 @@ Cliquer sur « Search In File(s) » (pastille 1), puis dans la liste qui appara�
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Search In File(s) » | limite la recherche aux éléments choisis |
-| 2 | liste des fichiers | fichiers et groupes de la collection ; un clic ajoute un élément, sa croix le retire |
+| 2 | champ de choix | un clic ouvre en dessous la liste des fichiers et groupes de la collection ; un clic sur un élément l'ajoute, sa croix le retire |
 | 3 | `group: 'Fournisseur Batterix'` | groupe créé au chapitre 05 : tous ses fichiers d'un coup |
 | 4 | `contrat-batterix-scan.pdf` | un fichier seul |
 
@@ -101,7 +101,7 @@ Choisir « citation: inline » dans la liste de l'étape 4, décocher « Mindmap
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | réponse | ici « (Sorry, I don't know) », alors que la réponse (25 000 vélos par an) est dans `strategie-2026.pptx` |
-| 2 | « Information panel » | les passages retenus, dont la diapositive « Usine de Saint-Nazaire » |
+| 2 | « Information panel » | les passages retenus (en tête, des pages du rapport annuel) |
 
 *Résultat* : quand ce style fonctionne, la réponse contient des numéros entre crochets, comme 【1】, qui renvoient aux passages surlignés du panneau. Lors des essais, il n'a fonctionné que 2 fois sur 7 avec le modèle de ce poste ; les 5 autres fois, la réponse a été « (Sorry, I don't know) » alors que le bon passage était trouvé. **Garder « citation: highlight »**, qui a répondu juste à chaque essai.
 

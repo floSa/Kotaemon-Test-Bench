@@ -53,7 +53,7 @@ Ouvrir la liste « Retrieval mode ».
 | 2 | « LightRAG Collection » | réglages de la collection LightRAG (chapitre 09) |
 | 3 | « Search type » | `local` : autour des entités de la question ; `global` : sur l'ensemble du graphe ; `hybrid` : les deux |
 
-*Résultat* : chaque collection garde ses propres réglages.
+*Résultat* : chaque collection garde ses propres réglages. Rien à changer ici : la valeur de départ de « Search type », `local`, convient (chapitre 09).
 
 Les autres réglages de « File Collection » sont décrits au chapitre 03 (étape 11) : « Number of document chunks to retrieve », « Use reranking », « Use LLM relevant scoring », « LLM for relevant scoring » et « File loader » (chapitre 05).
 

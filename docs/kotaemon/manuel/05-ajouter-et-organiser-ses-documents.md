@@ -230,7 +230,7 @@ Choisir `contrat-batterix-scan.pdf`, cocher « Force reindex file » (étape 9),
 | 1 | `contrat-batterix-scan.pdf` | la colonne « loader » indique désormais `DoclingReader` |
 | 2 | passage lu | « [1/2] [Page 1] (text) CONTRAT D'APPROVISIONNEMENT N° BX-2025-117 … » : le texte de la page scannée est lu |
 
-*Résultat* : la relecture prend environ 50 secondes pour ces deux pages (la première fois, Docling télécharge aussi ses modèles). Les questions sur le contrat trouvent désormais leur réponse (prix, délai, pénalités, volume). Remettre ensuite « Default (open-source) » dans « File loader » si les PDF suivants sont des PDF de texte : le lecteur intégré est plus rapide et garde la vignette de chaque page. Les choix « PaddleOCR » de la même liste désignent un autre lecteur à lecture optique, absent de cette image.
+*Résultat* : la relecture prend environ 50 secondes pour ces deux pages (la première fois, Docling télécharge aussi ses modèles). Les questions sur le contrat trouvent désormais leur réponse (prix, délai, pénalités, volume). Remettre ensuite « Default (open-source) » dans « File loader », puis « Save & Close » : le lecteur intégré est plus rapide pour les PDF de texte et garde la vignette de chaque page ; revenir à Docling seulement pour un autre PDF scanné. Les choix « PaddleOCR » de la même liste désignent un autre lecteur à lecture optique, absent de cette image.
 
 ## Supprimer un fichier
 

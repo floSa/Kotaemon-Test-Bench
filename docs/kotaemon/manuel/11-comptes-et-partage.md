@@ -100,7 +100,7 @@ Se connecter avec `camille` et son mot de passe (chapitre 03, étape 1).
 |---|---|---|
 | 1 | barre des onglets | « Chat », « Files », « Settings », « Help » : pas de « Resources » pour un utilisateur |
 | 2 | « File Collection » | collection privée : vide pour ce compte |
-| 3 | « Documents partagés » | collection partagée : contient le document ajouté par l'administrateur |
+| 3 | « Documents partagés » | section de la collection partagée (repliée ; un clic sur le titre la déplie) : le document ajouté par l'administrateur y est consultable |
 
 *Résultat* : le compte `camille` ne voit ni les modèles ni les comptes, et ne voit pas les fichiers privés de l'administrateur.
 
