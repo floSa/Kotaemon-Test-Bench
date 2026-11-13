@@ -22,9 +22,9 @@ Ce manuel apprend à installer Kotaemon 0.12.0 sur un poste Windows 11 avec WSL2
 | [05. Ajouter et organiser ses documents](manuel/05-ajouter-et-organiser-ses-documents.md) | ajouter plusieurs fichiers, consulter les passages d'un fichier, créer des groupes, supprimer, ajouter depuis le chat, choisir le lecteur de fichiers |
 | [06. Poser des questions et lire les sources](manuel/06-poser-des-questions-et-lire-les-sources.md) | gérer les conversations, limiter la recherche à des fichiers ou un groupe, choisir le style de citation, lire les scores, donner un avis |
 | [07. Régler la recherche et le raisonnement](manuel/07-regler-la-recherche-et-le-raisonnement.md) | choisir le mode de recherche, le tri, la notation par le modèle et son alerte, la méthode de raisonnement et les consignes |
-| [08. Agents ReAct et ReWOO](manuel/08-agents-react-et-rewoo.md) | faire répondre un agent qui enchaîne des recherches, comparer les deux agents |
+| [08. Agents ReAct et ReWOO](manuel/08-agents-react-et-rewoo.md) | faire répondre un agent qui enchaîne des recherches, comparer les deux agents, voir où se déclarent les serveurs MCP |
 | [09. Graphes de connaissances (GraphRAG)](manuel/09-graphes-de-connaissances.md) | indexer un document en graphe avec LightRAG ou NanoGraphRAG, l'interroger, connaître le coût |
-| [10. Collections et modèles](manuel/10-collections-et-modeles.md) | créer une collection, modifier ou supprimer un modèle, voir les serveurs MCP |
+| [10. Collections et modèles](manuel/10-collections-et-modeles.md) | créer une collection, réparer les réglages après création, supprimer un modèle |
 | [11. Comptes et partage](manuel/11-comptes-et-partage.md) | créer des comptes, partager une collection et une conversation, se déconnecter |
 | [12. Cas pratiques](manuel/12-cas-pratiques.md) | dérouler trois usages complets de bout en bout |
 | [13. En cas de problème](manuel/13-en-cas-de-probleme.md) | reconnaître les erreurs rencontrées et les corriger |

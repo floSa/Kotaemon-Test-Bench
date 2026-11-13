@@ -34,9 +34,9 @@ Sub questions and their answers
 Sub-question 1
 quel est le prix unitaire spécifié dans le contrat avec Batterix ?
 Answer
-Selon le contexte fourni, le prix unitaire spécifié dans le contrat avec Batterix est de **212 euros HT** (hors taxes).
+D'après les informations fournies dans le document "contrat-batterix-scan.pdf" (Page 1), spécifiquement dans l'**Article 4 Prix**, le prix unitaire spécifié dans le contrat avec Batterix est de **212 euros HT** (hors taxes).
 
-Cette information se trouve dans le document « contrat-batterix-scan.pdf », plus précisément à la page 1, sous l'Article 4 (Prix). Le texte indique explicitement : « Prix unitaire 212 euros HT, révisable une fois par an ».
+Le texte précise également que ce prix est révisable une fois par an.
 Sub-question 2
 quel délai de livraison est spécifié dans le contrat avec Batterix ?
 Answer
@@ -44,24 +44,24 @@ Selon les documents fournis, le délai de livraison spécifié dans le contrat a
 
 Voici l'explication détaillée basée sur le contexte :
 
-Source de l'information : Cette information se trouve dans le document intitulé "contrat-batterix-scan.pdf", plus précisément à la Page 2.
-Article concerné : Il s'agit de l'Article 5 du contrat, qui porte sur les "Délais de livraison".
-Contenu exact : Le texte stipule : "Le Fournisseur livre sous 21 jours après la commande".
-Contexte contractuel : Ce délai est encadré par des pénalités de retard (Article 6), qui s'élèvent à 0,5 % du montant de la commande par jour de retard, plafonnées à 8 %.
+Source de l'information : Cette information provient du document intitulé "contrat-batterix-scan.pdf", plus précisément à la page 2.
+Article concerné : Il s'agit de l'article 5 du contrat, qui porte sur les "Délais de livraison".
+Texte exact : Le document stipule clairement : "Le Fournisseur livre sous 21 jours après la commande".
 
-Ainsi, pour le contrat d'approvisionnement n° BX-2025-117 entre Vélanor SAS et Batterix GmbH, la livraison doit être effectuée dans un délai maximum de 21 jours suivant la réception de la commande.
+Il convient de noter que le document d'audit fourni ("supplier-audit-batterix-en.pdf") ne contient pas ces termes contractuels, mais se concentre sur l'évaluation de la qualité du fournisseur (score global de 87/100, non-conformités mineures, etc.). La réponse au sujet du délai de livraison s'appuie donc exclusivement sur les clauses contractuelles mentionnées dans le contexte.
 Sub-question 3
 quel score l'audit a-t-il attribué à Batterix ?
 Answer
-D'après les documents fournis, l'audit attribué à Batterix (Batterix GmbH) a obtenu un score global de 87 sur 100.
+Selon les documents fournis, l'audit attribué au fournisseur Batterix GmbH a obtenu un score de 87 sur 100.
 
-Voici l'explication détaillée basée sur le contexte :
+Voici les détails précis tirés du contexte :
 
-Source de l'information : Cette donnée provient du document intitulé "supplier-audit-batterix-en.pdf", spécifiquement la page 1.
-Mention exacte : Dans la section "Overall score", le texte indique explicitement : "87 out of 100".
-Contexte de l'audit : L'audit a été réalisé le 18 juin 2025 par Laura Fischer (équipe qualité de Vélanor). Bien que deux non-conformités mineures aient été relevées (étiquetage incomplet des palettes et manques de bracelets ESD), le fournisseur est approuvé pour une autre année avec ce score.
+Source de l'information : Le document intitulé "supplier-audit-batterix-en.pdf" (Page 1).
+Titre de la section : "Overall score".
+Valeur exacte : Le texte indique explicitement : "Overall score: 87 out of 100".
+Contexte de l'audit : L'audit a été réalisé par Laura Fischer (équipe qualité de Vélanor) le 18 juin 2025. Bien que deux non-conformités mineures aient été relevées (étiquetage incomplet des palettes et manques de bracelets ESD), le fournisseur est approuvé pour une autre année avec ce score global.
 
-Aucune autre mention du score d'audit n'apparaît dans les autres extraits de contrats fournis.
+Ainsi, la note finale donnée à Batterix par l'audit qualité est de 87/100.
 
 Main question
 Pour préparer la renégociation avec Batterix : quel prix unitaire et quel délai de livraison le contrat fixe-t-il, et quel score l'audit a-t-il attribué ?

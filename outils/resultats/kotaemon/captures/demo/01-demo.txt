@@ -27,19 +27,19 @@ Feedback
 
 Quelle est la durée de garantie du cadre et quel numéro appeler pour le service après-vente ?
 
-D'après les documents fournis, voici les informations détaillées concernant la garantie du cadre et le contact pour le service après-vente :
+D'après les documents fournis, voici les informations détaillées concernant la durée de garantie du cadre et le numéro de téléphone pour le service après-vente :
 
 1. Durée de garantie du cadre :
-La durée de garantie applicable au cadre est de 7 ans.
+Selon le document faq-sav.html (Page 1), dans la section "Quelle est la durée de la garantie ?", il est spécifié que le cadre est garanti 7 ans.
 
-Source : Le document faq-sav.html (Page 1), dans la section "Quelle est la durée de la garantie ?", indique explicitement : « Le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans. »
+Note : Il est important de noter que les batteries et le moteur sont garantis pour une durée différente (2 ans), mais la question porte spécifiquement sur le cadre.
 
 2. Numéro de téléphone pour le service après-vente :
-Pour joindre le service après-vente, il faut appeler le numéro 02 40 00 12 34.
+Pour contacter le service après-vente, le document faq-sav.html (Page 1) indique dans la section "Comment joindre le service après-vente ?" que l'on peut appeler par téléphone au numéro :
 
-Source : Le document faq-sav.html (Page 1), dans la section "Comment joindre le service après-vente ?", précise : « Par téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site. »
+02 40 00 12 34
 
-En résumé, vous bénéficiez d'une garantie de 7 ans sur le cadre et vous pouvez contacter le service après-vente au 02 40 00 12 34.
+Ce numéro est disponible du lundi au vendredi de 9 h à 18 h. Il est également possible de contacter le service via le formulaire du site web.
 
 MultimodalTextbox
 Dropdown
@@ -54,18 +54,6 @@ Dropdown
 Dropdown
 Information panel
 ▼
-Mindmap [Expand] [Export]
-### Numéro téléphone : 02 40 00 12 34
-### Horaires : Lundi au vendredi, 9 h à 18 h
-### Autre moyen : Formulaire du site
-### Valeur : 7 ans
-### Source : FAQ Service Après-Vente (faq-sav.html)
-
-Contact Service Après-Vente
-Durée de garantie du cadre
-Garantie du cadre et Contact SAV
-
-
 [Page 1] faq-sav.html [score: 0.0]
  Relevance score: 4.1
 

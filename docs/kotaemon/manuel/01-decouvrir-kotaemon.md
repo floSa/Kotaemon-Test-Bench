@@ -59,7 +59,8 @@ Réponses : **Oui**, **Non**, ou **Partiel** avec la limite en une phrase.
 | Fonction | Réponse |
 |---|---|
 | PDF, Word, PowerPoint, Excel, CSV, HTML, Markdown, texte, archives ZIP | Oui (Word et PowerPoint après une correction appliquée par le script d'installation) |
-| PDF scannés et images (lecture optique) | Partiel : seulement avec le lecteur Docling |
+| PDF scannés (lecture optique) | Partiel : seulement avec le lecteur Docling |
+| Images (PNG, JPEG, TIFF) | acceptées par Kotaemon, non essayées dans ce manuel |
 | Pages web par leur adresse | Partiel : passe par un service en ligne (Jina Reader) |
 | Audio et vidéo | Non |
 | Groupes de fichiers | Oui |

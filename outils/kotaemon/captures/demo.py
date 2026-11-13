@@ -9,21 +9,31 @@ DEMOS = [("Démo — Chiffre d'affaires 2025", "Quel est le chiffre d'affaires 2
          ("Démo — Garantie et SAV", "Quelle est la durée de garantie du cadre et quel numéro appeler pour le service après-vente ?")]
 
 
+GARDER = ("Démo",)
+
+
 def menage(s):
+    """Supprime les conversations du compte admin, sauf celles dont le nom commence par « Démo » et la dernière
+    conversation partagée (chapitre 11), passée en argument --garder « nom »."""
+    import sys
     p = s.page
+    garder = list(GARDER) + [a for a in sys.argv[1:] if a.startswith("Untitled")]
     n = 0
     for _ in range(60):
         dd = p.locator("#conversation-dropdown input")
         dd.click(); p.wait_for_timeout(800)
-        opts = p.get_by_role("option").locator("visible=true")
-        if not opts.count():
+        opts = [o for o in p.get_by_role("option").locator("visible=true").all()
+                if not any(g in o.inner_text().strip() for g in garder)]
+        if not opts:
             p.keyboard.press("Escape"); break
-        opts.first.click(); p.wait_for_timeout(1500)
+        opts[0].click(); p.wait_for_timeout(1500)
         p.locator("#conv-settings-panel img[src*='delete']").locator("..").locator("visible=true").first.click()
         p.wait_for_timeout(600)
         s.bouton("Delete").click(); p.wait_for_timeout(1500)
         n += 1
     s.note(f"conversations d'essai supprimées : {n}")
+    if "conversations" not in sys.argv[1:] and len(sys.argv) > 1:
+        return
     for coll in ("GraphRAG Collection", "NanoGraphRAG Collection"):
         s.onglet("Files"); s.onglet(coll); s.onglet("Files")
         for _ in range(5):

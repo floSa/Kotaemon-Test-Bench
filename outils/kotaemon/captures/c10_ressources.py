@@ -41,12 +41,11 @@ def ajouter(s):
 def supprimer(s):
     p = s.page
     s.onglet("Resources"); s.onglet("LLMs"); s.onglet("View")
-    s.ligne("mistral").click(); p.wait_for_timeout(2000)
+    s.ligne("claude").click(); p.wait_for_timeout(2000)
     s.bouton("Delete").click(); p.wait_for_timeout(1000)
-    nom = p.locator("textarea").locator("visible=true").first
-    s.cap_souple("04-supprimer-modele", [(nom, "Name : mistral"), (s.bouton("Confirm Delete"), "Confirm Delete"), (s.bouton("Cancel"), "Cancel")])
+    s.cap_souple("04-supprimer-modele", [(s.bouton("Confirm Delete"), "Confirm Delete"), (s.bouton("Cancel"), "Cancel")])
     s.bouton("Confirm Delete").click(); p.wait_for_timeout(2500)
-    s.note("suppression mistral : toasts " + repr(s.toasts()))
+    s.note("suppression claude : toasts " + repr(s.toasts()))
 
 
 def vues(s):

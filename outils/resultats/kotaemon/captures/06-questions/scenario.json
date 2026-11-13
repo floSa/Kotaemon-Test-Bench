@@ -117,33 +117,6 @@
   "heure": "22:27:42"
  },
  {
-  "capture": "06-questions/12-avis.png",
-  "pastilles": [
-   [
-    1,
-    "The answer is correct"
-   ],
-   [
-    2,
-    "The evidence is incorrect"
-   ],
-   [
-    3,
-    "More detail"
-   ],
-   [
-    4,
-    "Report"
-   ],
-   [
-    5,
-    "Share this conversation"
-   ]
-  ],
-  "note": "",
-  "heure": "22:27:44"
- },
- {
   "capture": "06-questions/13-mode-sombre.png",
   "pastilles": [
    [
@@ -161,21 +134,6 @@
   ],
   "note": "",
   "heure": "22:27:47"
- },
- {
-  "capture": "06-questions/07-carte-mentale.png",
-  "pastilles": [
-   [
-    1,
-    "Mindmap (on)"
-   ],
-   [
-    2,
-    "carte mentale"
-   ]
-  ],
-  "note": "",
-  "heure": "00:58:42"
  },
  {
   "capture": "06-questions/04-styles-citation.png",
@@ -221,5 +179,47 @@
   ],
   "note": "",
   "heure": "01:14:48"
+ },
+ {
+  "capture": "06-questions/07-carte-mentale.png",
+  "pastilles": [
+   [
+    1,
+    "Mindmap (on)"
+   ],
+   [
+    2,
+    "carte mentale"
+   ]
+  ],
+  "note": "",
+  "heure": "01:22:02"
+ },
+ {
+  "capture": "06-questions/12-avis.png",
+  "pastilles": [
+   [
+    1,
+    "The answer is correct"
+   ],
+   [
+    2,
+    "The evidence is incorrect"
+   ],
+   [
+    3,
+    "More detail"
+   ],
+   [
+    4,
+    "Report"
+   ],
+   [
+    5,
+    "Share this conversation"
+   ]
+  ],
+  "note": "",
+  "heure": "01:22:04"
  }
 ]

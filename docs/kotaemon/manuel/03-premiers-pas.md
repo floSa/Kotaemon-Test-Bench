@@ -244,7 +244,7 @@ Pourquoi `8000` : le modèle `chat` accepte 16 384 jetons par question (un jeton
 **Étape 11. Régler la recherche des passages**
 *Où* : « Settings » › « Retrieval settings » (sous-onglet « File Collection »).
 
-Laisser « File loader » sur « Default (open-source) » et « Number of document chunks to retrieve » sur `10`. Laisser « Use reranking » coché et **décocher** « Use LLM relevant scoring » (pastille 5), puis cliquer sur « Save & Close ».
+Laisser « File loader » sur « Default (open-source) » et « Number of document chunks to retrieve » sur `10` (valeur de départ ; le chapitre 07 conseille ensuite 3 à 5). Laisser « Use reranking » coché et **décocher** « Use LLM relevant scoring » (pastille 5), puis cliquer sur « Save & Close ».
 
 ![Réglages de recherche](../img/03-premiers-pas/08-reglages-recherche.png)
 *Écran : « Settings » › « Retrieval settings », collection « File Collection ».*

@@ -23,7 +23,7 @@ Choisir `group: 'Fournisseur Batterix'` dans la liste des fichiers (chapitre 06,
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | groupe « Fournisseur Batterix » | recherche limitée au contrat et à l'audit |
-| 2 | réponse | sous-questions et réponses : prix 212 euros HT, délai 21 jours après commande, score 87 sur 100 |
+| 2 | réponse | « Sub questions and their answers » : prix 212 euros HT (sous-question 1), délai 21 jours après la commande (sous-question 2) ; le score de l'audit (87 sur 100) suit plus bas |
 | 3 | sources : contrat et audit | passages retenus ; en tête l'audit, puis, plus bas dans le panneau, les pages 1 et 2 du contrat, phrases surlignées |
 
 *Résultat* : en un peu plus d'une minute, chaque partie de la question a sa réponse et sa source. Vérifier : le passage « Prix unitaire 212 euros HT, révisable une fois par an » est surligné dans `contrat-batterix-scan.pdf`, page 1.
@@ -44,7 +44,7 @@ Poser `Quelle est la durée de garantie du cadre ?`, attendre que la réponse so
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | question de suite | « Et quel numéro… » : Kotaemon comprend qu'il s'agit du même service grâce à la question précédente (au-dessus, la première réponse : « 7 ans ») |
+| 1 | question de suite | « Et quel numéro… » : Kotaemon comprend qu'il s'agit du même service grâce à la question précédente (la première réponse, « 7 ans », est au-dessus, hors capture) |
 | 2 | réponse à la question de suite | « 02 40 00 12 34 », du lundi au vendredi de 9 h à 18 h |
 | 3 | source : `faq-sav.html` | passage de la foire aux questions surligné |
 

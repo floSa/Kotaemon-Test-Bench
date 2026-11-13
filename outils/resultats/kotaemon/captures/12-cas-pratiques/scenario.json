@@ -19,25 +19,6 @@
   "heure": "23:40:35"
  },
  {
-  "capture": "12-cas-pratiques/01-fournisseur-reponse.png",
-  "pastilles": [
-   [
-    1,
-    "groupe Fournisseur Batterix"
-   ],
-   [
-    2,
-    "réponse"
-   ],
-   [
-    3,
-    "sources : contrat et audit"
-   ]
-  ],
-  "note": "",
-  "heure": "23:43:18"
- },
- {
   "capture": "12-cas-pratiques/02-client-suite.png",
   "pastilles": [
    [
@@ -55,5 +36,24 @@
   ],
   "note": "",
   "heure": "01:08:02"
+ },
+ {
+  "capture": "12-cas-pratiques/01-fournisseur-reponse.png",
+  "pastilles": [
+   [
+    1,
+    "groupe Fournisseur Batterix"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "sources : contrat et audit"
+   ]
+  ],
+  "note": "",
+  "heure": "01:26:44"
  }
 ]

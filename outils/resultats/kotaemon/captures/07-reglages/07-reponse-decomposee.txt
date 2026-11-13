@@ -36,17 +36,20 @@ Selon les documents fournis, le délai de livraison contractuel pour Batterix es
 
 Voici l'explication détaillée basée sur le contexte :
 
-Source du document : Cette information se trouve dans le fichier contrat-batterix-scan.pdf, spécifiquement sur la Page 2.
-Article concerné : Il s'agit de l'Article 5, intitulé « Délais de livraison ».
-Contenu exact : Le texte du contrat stipule clairement : « Le Fournisseur livre sous 21 jours après la commande ».
-Contexte contractuel : Ce délai s'applique au contrat d'approvisionnement n° BX-2025-117 signé entre Vélanor SAS (l'Acheteur) et Batterix GmbH (le Fournisseur), comme confirmé sur la Page 1 du même fichier de contrat.
+Source du document : L'information provient spécifiquement du fichier "contrat-batterix-scan.pdf", plus précisément de la Page 2 de ce contrat.
+Article concerné : Dans ce document, l'Article 5 est intitulé "Délais de livraison".
+Contenu exact : Le texte stipule clairement : "Le Fournisseur livre sous 21 jours après la commande".
+Contexte du contrat : Ce contrat d'approvisionnement (référence BX-2025-117) est signé entre Vélanor SAS (l'Acheteur) et Batterix GmbH (le Fournisseur), confirmant que cette clause s'applique à la fourniture des batteries par Batterix.
 
-Ainsi, conformément à l'accord écrit, le fournisseur Batterix s'engage à livrer les batteries dans un délai maximum de 21 jours suivant la réception de la commande par Vélanor SAS.
+Ainsi, le délai contractuel officiel est de 21 jours suivant la réception de la commande.
 
 Main question
 Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté lors de l'audit ?
 Answer
+Selon les documents fournis, voici la réponse détaillée à votre question :
 
+1. Délai de livraison contractuel :
+Le délai de livraison contractuel pour Batterix est de 21 jours après la commande.
 
 MultimodalTextbox
 Dropdown
@@ -93,12 +96,6 @@ CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse
 
 
 
-stocks-octobre-2025.xlsx
-
-BAT-48V-14Ah Batterie 48 V 14 Ah 1240 1500 Nantes MOT-250W Moteur roue arrière 250 W 2105 1200 Nantes CAD-ALU-L Cadre aluminium taille L 860 600 Cholet CAD-ALU-M Cadre aluminium taille M 1020 600 Cholet FRN-HYD-02 Frein hydraulique 3400 2000 Nantes PNU-700-38 Pneu 700x38 5150 3000 Nantes Batterix GmbH Batteries 24 Motodrive Co. Moteurs 45 Stopline Freins 12 Gomma Ouest Pneus 6
-
-
-
 [Page 1] faq-sav.html
 
 FAQ du service après-vente
@@ -120,6 +117,12 @@ Par téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par l
 Peut-on remplacer soi-même la batterie ?
 
 Oui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.
+
+
+
+stocks-octobre-2025.xlsx
+
+BAT-48V-14Ah Batterie 48 V 14 Ah 1240 1500 Nantes MOT-250W Moteur roue arrière 250 W 2105 1200 Nantes CAD-ALU-L Cadre aluminium taille L 860 600 Cholet CAD-ALU-M Cadre aluminium taille M 1020 600 Cholet FRN-HYD-02 Frein hydraulique 3400 2000 Nantes PNU-700-38 Pneu 700x38 5150 3000 Nantes Batterix GmbH Batteries 24 Motodrive Co. Moteurs 45 Stopline Freins 12 Gomma Ouest Pneus 6
 
 
 

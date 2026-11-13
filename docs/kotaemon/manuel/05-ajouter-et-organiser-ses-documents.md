@@ -11,7 +11,7 @@
 Ajouter un document se fait en deux temps : Kotaemon le **lit** (le transforme en texte), puis l'**indexe** (le découpe en passages et calcule leur représentation). La lecture est confiée à un **lecteur de fichiers** :
 
 - **le lecteur intégré** (« Default (open-source) ») : il fait partie de Kotaemon et sert par défaut. Il lit le texte des PDF page par page (avec une vignette de chaque page), les fichiers Word et PowerPoint, les classeurs Excel, les pages HTML, les fichiers Markdown et texte. Il **ne lit pas** le texte contenu dans une image : un PDF scanné reste presque vide ;
-- **Docling** : un second lecteur, réservé aux PDF, choisi dans les réglages. Il reconnaît la mise en page et les tableaux, et lit le texte des pages scannées (lecture optique, ou OCR). Il est plus lent et télécharge environ 1 Go de modèles à sa première utilisation.
+- **Docling** : un second lecteur, réservé aux PDF (les images restent lues par le lecteur intégré), choisi dans les réglages. Il reconnaît la mise en page et les tableaux, et lit le texte des pages scannées (lecture optique, ou OCR). Il est plus lent et télécharge environ 1 Go de modèles à sa première utilisation.
 
 Docling n'est donc pas indispensable : il est utile pour les PDF scannés ou les tableaux complexes. Dans l'installation de ce manuel, il est fourni **à l'intérieur** de l'image de Kotaemon (version « full ») et tourne dans le même conteneur. Kotaemon sait aussi confier la lecture à un programme extérieur (un serveur Docling ou PaddleOCR installé à part) ; ce branchement demande d'écrire un petit module de réglage et n'est pas fait dans ce manuel (voir « Bon à savoir »).
 
@@ -47,7 +47,7 @@ Cliquer sur « Upload and Index », puis attendre la fin.
 | 1 | « Upload result » | une ligne par fichier, avec une coche verte s'il a été indexé |
 | 2 | « Upload info » | détail de chaque fichier : conversion, découpage, calcul des représentations |
 
-*Résultat* : en une quinzaine de secondes, le message « Successfully index 7 files » apparaît. Un fichier déjà présent dans la collection (pour le lecteur qui suit ce manuel : le rapport annuel, ajouté au chapitre 04) est ignoré : pour le relire, cocher « Force reindex file » (étape 9). Les captures de ce chapitre ont été prises à des moments où d'autres collections (« Documents partagés », « NanoGraphRAG Collection », chapitres 09 et 10) et d'autres fichiers existaient déjà : ne pas en tenir compte.
+*Résultat* : en une quinzaine de secondes, le message « Successfully index 7 files » apparaît. Un fichier déjà présent dans la collection n'est pas relu : il est marqué d'une croix rouge, avec « already indexed » (sur la capture, le contrat scanné, présent d'un essai antérieur ; pour le lecteur qui suit ce manuel, ce sera le rapport annuel, ajouté au chapitre 04). Pour le relire, cocher « Force reindex file » (étape 9). Les captures de ce chapitre ont été prises à des moments où d'autres collections (« Documents partagés », « NanoGraphRAG Collection », chapitres 09 et 10) et d'autres fichiers existaient déjà : ne pas en tenir compte.
 
 ## Ajouter des pages web
 
@@ -182,7 +182,7 @@ Cliquer ensuite dans la zone « Quick Upload » et choisir ce fichier (`C:\Users
 | N° | Élément | Rôle |
 |---|---|---|
 | 1 | « Quick Upload » | ajoute le fichier à « File Collection » sans quitter le chat ; « Or paste URLs » accepte une adresse web |
-| 2 | zone de discussion | affiche « Please wait for the indexing process to complete before adding your question. » pendant l'indexation |
+| 2 | zone de discussion | « Thinking ... » : Kotaemon indexe le fichier puis prépare un résumé ; les messages « Successfully index 1 files » apparaissent en haut à droite |
 
 *Résultat* : le message « Indexing completed. » apparaît sous la zone (étape suivante).
 
@@ -194,10 +194,10 @@ Cliquer ensuite dans la zone « Quick Upload » et choisir ce fichier (`C:\Users
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | résumé du fichier | Kotaemon pose de lui-même la question « What is the summary of this document? » et affiche la réponse |
+| 1 | résumé du fichier | Kotaemon pose de lui-même la question « What is the summary of this document? » (en haut de la zone, hors capture) et affiche la réponse |
 | 2 | « File Collection » | la recherche est réglée sur « Search In File(s) » avec le seul fichier ajouté |
 
-*Résultat* : le résumé et sa carte mentale s'affichent. La conversation venant de démarrer, le résumé est en anglais (langue par défaut de la conversation, chapitre 04, étape 5).
+*Résultat* : le résumé et sa carte mentale s'affichent. Le résumé est en anglais quand la page vient d'être ouverte ou rechargée (à chaque ouverture ou rechargement de la page, la langue de la conversation repart sur « English » ; elle reste ensuite celle choisie pour toutes les conversations, jusqu'au prochain rechargement, chapitre 04, étape 5).
 
 ## Choisir le lecteur de fichiers
 
@@ -230,7 +230,7 @@ Choisir `contrat-batterix-scan.pdf`, cocher « Force reindex file » (étape 9),
 | 1 | `contrat-batterix-scan.pdf` | la colonne « loader » indique désormais `DoclingReader` |
 | 2 | passage lu | « [1/2] [Page 1] (text) CONTRAT D'APPROVISIONNEMENT N° BX-2025-117 … » : le texte de la page scannée est lu |
 
-*Résultat* : la relecture prend environ 50 secondes pour ces deux pages (la première fois, Docling télécharge aussi ses modèles). Les questions sur le contrat trouvent désormais leur réponse (prix, délai, pénalités, volume). Remettre ensuite « Default (open-source) » dans « File loader » si les PDF suivants sont des PDF de texte : le lecteur intégré est plus rapide et garde la vignette de chaque page.
+*Résultat* : la relecture prend environ 50 secondes pour ces deux pages (la première fois, Docling télécharge aussi ses modèles). Les questions sur le contrat trouvent désormais leur réponse (prix, délai, pénalités, volume). Remettre ensuite « Default (open-source) » dans « File loader » si les PDF suivants sont des PDF de texte : le lecteur intégré est plus rapide et garde la vignette de chaque page. Les choix « PaddleOCR » de la même liste désignent un autre lecteur à lecture optique, absent de cette image.
 
 ## Supprimer un fichier
 

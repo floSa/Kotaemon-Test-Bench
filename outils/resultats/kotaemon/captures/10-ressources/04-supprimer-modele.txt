@@ -54,13 +54,6 @@ LCCohereChat
 false
 
 
-mistral
-	
-ChatOpenAI
-	
-false
-
-
 llm-service-chat
 	
 ChatOpenAI
@@ -86,26 +79,10 @@ Confirm Delete
 Cancel
 Close
 
-OpenAI chat model
+None
 
 Name	Type	Description
-api_key	<class 'str'>	API key
-base_url	typing.Optional[str]	OpenAI base URL
-frequency_penalty	typing.Optional[float]	Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decrearsing the model's likelihood of repeating the same text.
-logit_bias	typing.Optional[dict]	Dictionary of logit bias values to add to the logits of the tokens in the vocabulary.
-logprobs	typing.Optional[bool]	Include log probabilities on the logprobs most likely tokens, as well as the chosen token.
-max_retries	typing.Optional[int]	Maximum number of retries for the API request
-max_tokens	typing.Optional[int]	Maximum number of tokens to generate. The total length of input tokens and generated tokens is limited by the model's context length.
-model	<class 'str'>	OpenAI model
-n	<class 'int'>	Number of completions to generate. The API will generate n completion for each prompt.
-organization	typing.Optional[str]	OpenAI organization
-presence_penalty	typing.Optional[float]	Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing presence in the text so far, decrearsing the model's likelihood of repeating the same text.
-stop	typing.Union[str, list[str], NoneType]	Stop sequence. If a stop sequence is detected, generation will stop at that point. If not specified, generation will continue until the maximum token length is reached.
-temperature	typing.Optional[float]	Number between 0 and 2 that controls the randomness of the generated tokens. Lower values make the model more deterministic, while higher values make the model more random.
-timeout	typing.Optional[float]	Timeout for the API request
-tool_choice	typing.Optional[str]	Choice of tool to use for the completion. Available choices are: auto, default.
-tools	typing.Optional[list[str]]	List of tools to use for the completion.
-top_logprobs	typing.Optional[int]	An integer between 0 and 5 specifying the number of most likely tokens to return at each token position, each with an associated log probability. logprobs must also be set to true if this parameter is used.
-top_p	typing.Optional[float]	An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the token with top_p probability mass. So 0.1 means that only the tokens comprising the top 10% probability mass are considered.
+api_key	'str'	API key (https://console.anthropic.com/settings/keys)
+model_name	'str'	Model name to use (https://docs.anthropic.com/en/docs/about-claude/models)
 
 version: 0.0.1

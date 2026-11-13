@@ -10,6 +10,8 @@ Kotaemon range les documents dans des **collections**. À l'installation, il en 
 
 Quand un document est ajouté, Kotaemon le lit, le découpe en **passages** (des morceaux de texte d'environ une page) et calcule pour chacun sa représentation par le modèle d'embedding : c'est l'**indexation**. À chaque question, Kotaemon cherche les passages les plus proches de la question, les trie, puis les donne au modèle de réponse, qui rédige une réponse en s'appuyant dessus. Les passages utilisés s'affichent à droite de la réponse, avec le nom du document et le numéro de page : ce sont les **citations**.
 
+Les captures de ce chapitre montrent dans la colonne de gauche deux collections de plus (« Documents partagés », « NanoGraphRAG Collection »), créées plus loin dans le manuel : ne pas en tenir compte.
+
 L'exemple utilise `rapport-annuel-2025.pdf`, le rapport annuel d'une entreprise fictive, Vélanor, fourni dans le dossier `corpus/documents/` du dépôt. Depuis Windows, ce dossier s'ouvre dans l'Explorateur à l'adresse `\\wsl$\Ubuntu\home\<nom d'utilisateur>\Kotaemon-Test-Bench\corpus\documents` (adapter le chemin au dossier où le dépôt a été cloné).
 
 ## Ajouter un document
@@ -92,7 +94,7 @@ Cliquer sur « Chat settings » (pastille 1) pour déplier les réglages de la c
 | 2 | « Language » | langue de la réponse |
 | 3 | `French` | valeur choisie |
 
-Ce choix est nécessaire même si « French » a été réglé dans « Settings » au chapitre 03 : la conversation démarre toujours en anglais, et sa langue l'emporte.
+Ce choix est nécessaire même si « French » a été réglé dans « Settings » au chapitre 03 : à chaque ouverture ou rechargement de la page, la langue de la conversation repart sur « English » ; elle reste ensuite celle choisie pour toutes les conversations, jusqu'au prochain rechargement. Le choix de la conversation l'emporte sur « Settings ».
 
 *Résultat* : la liste affiche « French ».
 
@@ -143,7 +145,7 @@ Sans choix entre « Search All » et « Search In File(s) », Kotaemon ne consul
 
 Le « [score: 0.0] » du titre vient d'un calcul que Kotaemon n'utilise plus ici et peut être ignoré. La ligne « Relevance score » donne la vraie note de pertinence du passage ; un clic sur son triangle affiche le détail (note de la recherche, note du tri). Plus la note est haute, plus le passage est jugé utile.
 
-*Résultat* : le passage de la page 10 (« Perspectives 2026 ») est affiché, avec les mots « chiffre d'affaires » surlignés. Les autres blocs, plus bas dans le panneau, montrent les pages 3 et 4.
+*Résultat* : le premier bloc montre la page 4 (« Chiffre d'affaires trimestriel »), avec « Chiffre d'affaires » et « Total 48,6 » surlignés. Les autres blocs, plus bas dans le panneau, montrent notamment la page 3.
 
 **Étape 9. Ouvrir le document à la bonne page**
 *Où* : « Information panel » › « [Preview] ».
@@ -155,8 +157,7 @@ Cliquer sur « [Preview] ».
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | croix | referme la visionneuse ; l'icône voisine l'agrandit |
-| 2 | visionneuse (grand cadre) | doit afficher le PDF à la page du passage, avec le passage surligné |
+| 1 | visionneuse (grand cadre) | doit afficher le PDF à la page du passage, avec le passage surligné ; la croix en haut à gauche la referme, l'icône voisine l'agrandit |
 
 *Résultat* : avec la version 0.12.0, la visionneuse s'ouvre mais **reste vide** : le composant d'affichage des PDF, téléchargé à l'ouverture de la page depuis un site public, n'y est plus disponible. La vignette de la page et le texte surligné de l'étape 8 restent la seule façon de vérifier la source dans l'interface (détail au chapitre 13).
 

@@ -1,7 +1,8 @@
 ChatFilesSettingsHelp
 Conversations
 Chat sessions
-Untitled - 2026-11-12 22:48:53
+Untitled - 2026-11-13 01:37:55
+Untitled - 2026-11-12 23:40:01
 Suggest chat
 File Collection
 ▼
@@ -13,6 +14,8 @@ GraphRAG Collection
 LightRAG Collection
 ▼
 Documents partagés
+▼
+NanoGraphRAG Collection
 ▼
 Quick Upload
 ▼

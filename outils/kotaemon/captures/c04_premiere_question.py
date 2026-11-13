@@ -58,7 +58,7 @@ def questionner(s):
         p.locator("#html-info-panel details").first.evaluate("e => e.open = true")
         s.cap("08-extrait-et-score", [(p.locator("#html-info-panel details").first, "extrait cité"), (lien, "[Preview]")])
         lien.click(); p.wait_for_timeout(5000)
-        s.cap("09-visionneuse-pdf", [(p.locator("#modal-close"), "fermer"), (p.locator("#pdf-modal .modal-content"), "visionneuse")])
+        s.cap("09-visionneuse-pdf", [(p.locator("#pdf-modal .modal-body"), "visionneuse")])
     else:
         s.note("aucun lien [Preview] dans le panneau d'information")
 

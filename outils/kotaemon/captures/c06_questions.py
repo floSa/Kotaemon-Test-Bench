@@ -9,8 +9,7 @@ CH = "06-questions"
 
 
 def nouvelle(s):
-    p = s.page
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(2000)
+    s.nouvelle_conversation()
 
 
 def fichiers(s):
@@ -119,10 +118,14 @@ def avis(s):
     p = s.page
     acc = p.locator("#report-accordion")
     acc.get_by_text("Feedback").first.click(); p.wait_for_timeout(1000)
+    acc.get_by_text("The answer is correct", exact=True).click()
+    acc.locator("textarea").first.fill("Réponse juste, source vérifiée dans le panneau.")
     s.cap_souple("12-avis", [(acc.get_by_text("The answer is correct", exact=True), "The answer is correct"),
                              (acc.get_by_text("The evidence is incorrect", exact=True), "The evidence is incorrect"),
                              (acc.locator("textarea").first, "More detail"), (s.bouton("Report"), "Report"),
                              (p.locator("#is-public-checkbox"), "Share this conversation")])
+    s.bouton("Report").click(); p.wait_for_timeout(2500)
+    s.note("avis : toasts " + repr(s.toasts()))
 
 
 def affichage(s):

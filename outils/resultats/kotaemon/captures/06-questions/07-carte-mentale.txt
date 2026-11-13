@@ -27,33 +27,34 @@ Feedback
 
 Quelles sont les perspectives 2026 de Vélanor ?
 
-D'après les documents fournis (le rapport annuel 2025 et le document de stratégie 2026), voici les perspectives détaillées pour l'année 2026 chez Vélanor SAS :
+D'après les documents fournis (le rapport annuel 2025 et le document de stratégie 2026), voici les perspectives détaillées pour l'année 2026 de Vélanor SAS :
 
-1. Objectifs financiers et rentabilité
+1. Objectifs financiers et commerciaux
 
 Chiffre d'affaires : L'entreprise vise un chiffre d'affaires de 55 M€. Cet objectif est mentionné à la fois dans le rapport annuel (page 10) et dans le document de stratégie 2026.
-Marge nette : Un objectif de marge nette de 7 % est fixé pour l'année en cours.
-Part de marché export : La part de l'export visée passe de 27 % (en 2025) à 32 %.
+Part de l'export : La part des ventes exportées est visée à 32 % pour 2026, soit une augmentation par rapport aux 27 % observés en 2025.
+Rentabilité : Une marge nette cible de 7 % est définie dans la stratégie 2026.
 
-2. Expansion industrielle et effectifs
+2. Développement des produits et innovation
 
-Nouvelle usine : Une seconde usine d'assemblage est prévue pour s'ouvrir à Saint-Nazaire en septembre 2026.
-Capacité : Elle permettra de produire 25 000 vélos par an.
-Investissement : Cet investissement représente 14 M€.
-Recrutement : L'ouverture de cette usine s'accompagne de 70 embauches prévues.
-
-3. Innovation produit
-
-Nouveau modèle : Vélanor lancera un nouveau modèle compact, le "Vilaine Compact", qui est un vélo pliant électrique.
+Nouveau modèle : Vélanor lancera un nouveau vélo électrique pliant, le "Vilaine Compact".
 Date de lancement : Avril 2026.
-Prix public : Il sera vendu à 2 490 € TTC.
+Prix public : 2 490 € TTC.
+
+3. Expansion industrielle et logistique
+
+Nouvelle usine : Une seconde usine d'assemblage sera ouverte à Saint-Nazaire.
+Date d'ouverture : Septembre 2026.
+Capacité de production : Elle permettra de produire 25 000 vélos par an.
+Investissement : Cet investissement est estimé à 14 M€.
+Recrutement : L'ouverture de cette usine prévoit 70 embauches supplémentaires.
 
 4. Développement international (Export)
 
-Allemagne : L'entreprise vise une croissance des ventes d'30 % sur le marché allemand.
-Pays-Bas : Un showroom est prévu pour être ouvert à Utrecht.
+Allemagne : Une croissance des ventes en Allemagne est visée avec une augmentation de 30 %.
+Pays-Bas : Un showroom sera ouvert à Utrecht pour renforcer la présence locale.
 
-En résumé, la stratégie 2026 se concentre sur la croissance du chiffre d'affaires grâce à l'ouverture de nouvelles capacités de production (Saint-Nazaire), au lancement d'un nouveau produit compact et à une forte expansion sur les marchés exporteurs européens.
+En résumé, l'année 2026 se caractérise par une forte expansion industrielle (nouvelle usine), le lancement d'un nouveau produit compact, et une ambition accrue sur les marchés exportés tout en visant une rentabilité de 7 %.
 
 MultimodalTextbox
 Dropdown
@@ -69,28 +70,25 @@ Dropdown
 Information panel
 ▼
 Mindmap [Expand] [Export]
-### Allemagne : Croissance visée de 30 %
-### Pays-Bas : Showroom à Utrecht
-### Nouveau modèle : Vilaine Compact
-  #### Type : Vélo pliant électrique
-  #### Lancement : Avril 2026
-  #### Prix public : 2 490 € TTC
-
-### Nouvelle usine Saint-Nazaire
-  #### Ouverture : Septembre 2026
-  #### Capacité : 25 000 vélos/an
-  #### Investissement : 14 M€
-  #### Effectifs : +70 embauches
-
-### Chiffre d'affaires visé : 55 M€
-### Part de l'export visée : 32 %
-### Marge nette visée : 7 %
-
+Prix public : 2 490 € TTC
+Lancement : Avril 2026
+Type : Vélo pliant électrique
+Recrutement : 70 embauches
+Investissement : 14 M€
+Capacité : 25 000 vélos par an
+Ouverture : Septembre 2026
+Pays-Bas : Ouverture showroom à Utrecht
+Allemagne : Croissance visée de 30 %
+Nouveau modèle : Vilaine Compact
+Usine Saint-Nazaire
+Marge nette visée : 7 %
+Part de l'export visée : 32 %
+Chiffre d'affaires visé : 55 M€
 Expansion Export
-Innovation & Produits
-Production & Usine
+Innovation Produit
+Développement Industriel
 Objectifs Financiers
-Perspectives 2026 - Vélanor
+Perspectives 2026 - Vélanor SAS
 
 
 Image from [Page 1] rapport-annuel-2025.pdf [score: 0.0] [Preview]
@@ -113,7 +111,7 @@ Image from [Page 10] rapport-annuel-2025.pdf [score: 0.0] [Preview]
 
 
 
-Vélanor SAS — document fictif — page 10 9. Perspectives 2026 Vélanor vise un chiffre d'affaires de 55 M€ en 2026de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.
+Vélanor SAS — document fictif — page 10 9. Perspectives 2026 Vélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.
 
 
 

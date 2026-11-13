@@ -49,7 +49,7 @@ Ouvrir la liste « Retrieval mode ».
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « GraphRAG Collection » | réglages de la collection en graphe de Microsoft |
+| 1 | « GraphRAG Collection » | réglages de la collection en graphe de Microsoft (Microsoft GraphRAG, inutilisable ici, chapitre 09) |
 | 2 | « LightRAG Collection » | réglages de la collection LightRAG (chapitre 09) |
 | 3 | « Search type » | `local` : autour des entités de la question ; `global` : sur l'ensemble du graphe ; `hybrid` : les deux |
 
@@ -125,7 +125,7 @@ Choisir `complex` dans « Reasoning method », cliquer sur « Search All », pui
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Sub questions and their answers » | chaque sous-question, suivie de sa réponse, puis la réponse d'ensemble |
+| 1 | réponse | « Sub questions and their answers » : chaque sous-question, suivie de sa réponse, puis la réponse d'ensemble plus bas |
 | 2 | « Information panel » | passages de toutes les sous-questions |
 
 *Résultat* : la réponse est plus longue à venir (une recherche et une réponse par sous-question) mais traite chaque partie : sous-question 1, délai contractuel de 21 jours après la commande (contrat, page 2) ; pour le délai constaté, l'audit ne donne pas de valeur, ce que la réponse dit (ce délai figure en réalité dans le classeur des stocks).
@@ -161,7 +161,7 @@ Poser une question dont la réponse n'est pas dans les documents : `Combien de t
 |---|---|---|
 | 1 | réponse | la réponse dit ne pas trouver l'information dans les documents |
 
-*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde « LLM relevant score: 0.0 ». Cette option n'apporte donc rien ici : revenir ensuite aux réglages du chapitre 03 (10 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
+*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde « LLM relevant score: 0.0 ». Cette option n'apporte donc rien ici : revenir ensuite aux réglages conseillés (3 à 5 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
 
 ## Bon à savoir
 

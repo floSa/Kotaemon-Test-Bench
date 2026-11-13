@@ -3,6 +3,7 @@ File Collection
 GraphRAG Collection
 LightRAG Collection
 Documents partagés
+NanoGraphRAG Collection
 Upload Files
 Use Web Links
 File

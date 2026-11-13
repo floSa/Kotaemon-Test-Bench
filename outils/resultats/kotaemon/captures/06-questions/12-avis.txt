@@ -11,6 +11,10 @@ GraphRAG Collection
 ▼
 LightRAG Collection
 ▼
+Documents partagés
+▼
+NanoGraphRAG Collection
+▼
 Quick Upload
 ▼
 File
@@ -35,7 +39,34 @@ Report
 
 Quelles sont les perspectives 2026 de Vélanor ?
 
-(Sorry, I don't know)
+D'après les documents fournis (le rapport annuel 2025 et le document de stratégie 2026), voici les perspectives détaillées pour l'année 2026 de Vélanor SAS :
+
+1. Objectifs financiers et commerciaux
+
+Chiffre d'affaires : L'entreprise vise un chiffre d'affaires de 55 M€. Cet objectif est mentionné à la fois dans le rapport annuel (page 10) et dans le document de stratégie 2026.
+Part de l'export : La part des ventes exportées est visée à 32 % pour 2026, soit une augmentation par rapport aux 27 % observés en 2025.
+Rentabilité : Une marge nette cible de 7 % est définie dans la stratégie 2026.
+
+2. Développement des produits et innovation
+
+Nouveau modèle : Vélanor lancera un nouveau vélo électrique pliant, le "Vilaine Compact".
+Date de lancement : Avril 2026.
+Prix public : 2 490 € TTC.
+
+3. Expansion industrielle et logistique
+
+Nouvelle usine : Une seconde usine d'assemblage sera ouverte à Saint-Nazaire.
+Date d'ouverture : Septembre 2026.
+Capacité de production : Elle permettra de produire 25 000 vélos par an.
+Investissement : Cet investissement est estimé à 14 M€.
+Recrutement : L'ouverture de cette usine prévoit 70 embauches supplémentaires.
+
+4. Développement international (Export)
+
+Allemagne : Une croissance des ventes en Allemagne est visée avec une augmentation de 30 %.
+Pays-Bas : Un showroom sera ouvert à Utrecht pour renforcer la présence locale.
+
+En résumé, l'année 2026 se caractérise par une forte expansion industrielle (nouvelle usine), le lancement d'un nouveau produit compact, et une ambition accrue sur les marchés exportés tout en visant une rentabilité de 7 %.
 
 MultimodalTextbox
 Dropdown
@@ -51,23 +82,25 @@ Dropdown
 Information panel
 ▼
 Mindmap [Expand] [Export]
-Lancement : Avril 2026
 Prix public : 2 490 € TTC
-Effectifs : +70 embauches
+Lancement : Avril 2026
+Type : Vélo pliant électrique
+Recrutement : 70 embauches
 Investissement : 14 M€
-Capacité : 25 000 vélos/an
-Pays-Bas : Showroom à Utrecht
+Capacité : 25 000 vélos par an
+Ouverture : Septembre 2026
+Pays-Bas : Ouverture showroom à Utrecht
 Allemagne : Croissance visée de 30 %
-Vilaine Compact (Vélo pliant électrique)
-Usine Saint-Nazaire (Septembre 2026)
+Nouveau modèle : Vilaine Compact
+Usine Saint-Nazaire
 Marge nette visée : 7 %
 Part de l'export visée : 32 %
 Chiffre d'affaires visé : 55 M€
-Internationalisation
+Expansion Export
 Innovation Produit
-Expansion Industrielle
+Développement Industriel
 Objectifs Financiers
-Perspectives 2026 - Vélanor
+Perspectives 2026 - Vélanor SAS
 
 
 Image from [Page 1] rapport-annuel-2025.pdf [score: 0.0] [Preview]
@@ -105,19 +138,6 @@ Vélanor SAS — document fictif — page 1 Vélanor SAS — Rapport annuel 2025
 
 
 
-Image from [Page 2] rapport-annuel-2025.pdf [score: 0.0] [Preview]
- Relevance score: 2.2
-
-
-
-
-
-Vélanor SAS — document fictif — page 2 1. Mot de la présidente Fondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les tensions sur les cellules de batterie. L'entreprise a franchi pour la première fois le seuil de 60 000 vélos produits dans l'année.
-
-
-
-
-
 [Page 3] rapport-annuel-2025.pdf [score: 0.0] [Preview]
  Relevance score: 1.5
 
@@ -138,9 +158,7 @@ Comité de direction du 20 novembre 2025
 
 Document fictif
 
-Objectifs 2026
-
-Chiffre d'affaires visé : 55 M€
+Objectifs 2026 Chiffre d'affaires visé : 55 M€
 
 Part de l'export visée : 32 %
 
@@ -167,6 +185,19 @@ Export
 Allemagne : croissance visée de 30 %
 
 Pays-Bas : ouverture d'un showroom à Utrecht
+
+
+
+Image from [Page 2] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 2.2
+
+
+
+
+
+Vélanor SAS — document fictif — page 2 1. Mot de la présidente Fondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les tensions sur les cellules de batterie. L'entreprise a franchi pour la première fois le seuil de 60 000 vélos produits dans l'année.
+
+
 
 
 

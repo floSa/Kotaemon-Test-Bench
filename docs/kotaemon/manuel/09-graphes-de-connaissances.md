@@ -63,7 +63,7 @@ Choisir `rapport-annuel-2025.pdf` (cocher « Force reindex file » s'il a déjà
 **Étape 3. Poser une question au graphe**
 *Où* : « Chat » › nouvelle conversation › « LightRAG Collection » › « Search All » ; « Language » : `French`.
 
-Laisser « File Collection » sans choix, pour n'interroger que le graphe, puis poser `Quels sont les sites de Vélanor et combien de salariés compte chacun ?`.
+Laisser « File Collection » sans choix, pour n'interroger que le graphe (si « Search All » y est déjà coché, recharger la page : à l'ouverture, aucune collection n'est choisie ; puis choisir de nouveau « French »), puis poser `Quels sont les sites de Vélanor et combien de salariés compte chacun ?`.
 
 ![Réponse à partir du graphe LightRAG](../img/09-graphrag/04-lightrag-question.png)
 *Écran : « Chat », réponse de la collection LightRAG.*

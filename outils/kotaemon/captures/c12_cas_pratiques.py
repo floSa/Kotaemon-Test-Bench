@@ -28,6 +28,7 @@ def fournisseur(s):
     s.poser("Pour préparer la renégociation avec Batterix : quel prix unitaire et quel délai de livraison le contrat fixe-t-il, "
             "et quel score l'audit a-t-il attribué ?", stable=12)
     s.note(f"fournisseur ({time.time() - t0:.0f} s) : " + p.locator("#main-chat-bot .message").last.inner_text()[:900].replace("\n", " "))
+    p.locator("#main-chat-bot .message").last.evaluate("e => e.scrollIntoView({block: 'start'})"); p.wait_for_timeout(800)
     s.cap_souple("01-fournisseur-reponse", [(zone, "groupe Fournisseur Batterix"), (p.locator("#main-chat-bot .message").last, "réponse"),
                                             (p.locator("#html-info-panel"), "sources : contrat et audit")])
 

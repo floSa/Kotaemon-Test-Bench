@@ -134,8 +134,7 @@ Dans tous les cas, recharger la page, ouvrir une nouvelle conversation et repose
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | visionneuse | cadre vide |
-| 2 | croix | referme la visionneuse |
+| 1 | visionneuse | cadre vide ; la croix en haut à gauche la referme |
 
 *Résultat* : la visionneuse charge son composant d'affichage depuis un site public (`cdn.skypack.dev`) qui, depuis peu, renvoie une erreur au lieu du composant : le défaut touche toute installation de Kotaemon 0.12.0, pas seulement ce poste. Vérifier la source avec la vignette de la page et le texte surligné du panneau d'information (chapitre 04, étape 8).
 

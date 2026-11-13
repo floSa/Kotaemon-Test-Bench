@@ -43,13 +43,20 @@ def partager(s):
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
     s.poser("Qui est la présidente de Vélanor ?")
     p.wait_for_timeout(20000)
+    # replier « Quick Upload » pour que le bloc « Feedback » tienne dans la fenêtre
+    p.locator("#conv-settings-panel").get_by_text("Quick Upload", exact=True).first.click(); p.wait_for_timeout(800)
     acc = p.locator("#report-accordion")
-    acc.get_by_text("Feedback").first.click(); p.wait_for_timeout(800)
-    p.locator("#is-public-checkbox").scroll_into_view_if_needed(); p.wait_for_timeout(500)
+    if not p.locator("#is-public-checkbox").is_visible():
+        acc.get_by_text("Feedback").first.click(); p.wait_for_timeout(1000)
+    p.locator("#is-public-checkbox").evaluate("e => e.scrollIntoView({block: 'center'})"); p.wait_for_timeout(800)
+    s.note("conversation partagée : " + p.locator("#conversation-dropdown input").input_value())
     p.locator("#is-public-checkbox input").check(); p.wait_for_timeout(1500)
     s.note("partage : toasts " + repr(s.toasts()))
+    # la colonne de gauche ne défile pas : fenêtre plus haute pour cette seule capture
+    p.set_viewport_size({"width": 1440, "height": 1250}); p.wait_for_timeout(1500)
     s.cap_souple("04-partager-conversation", [(p.locator("#is-public-checkbox"), "Share this conversation"),
                                               (p.locator("#conversation-dropdown"), "conversation partagée")])
+    p.set_viewport_size({"width": 1440, "height": 900}); p.wait_for_timeout(800)
 
 
 def utilisateur(s):

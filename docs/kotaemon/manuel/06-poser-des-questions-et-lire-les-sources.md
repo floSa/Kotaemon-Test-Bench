@@ -15,7 +15,7 @@ Pour chaque collection, la colonne de gauche propose deux façons de chercher :
 
 Tant qu'aucun des deux n'est choisi, la collection n'est pas consultée.
 
-Les réglages de « Chat settings » (méthode, modèle, langue, style de citation, carte mentale) valent pour toutes les conversations ouvertes dans l'onglet du navigateur, jusqu'au prochain rechargement de la page.
+Les réglages de « Chat settings » (méthode, modèle, langue, style de citation, carte mentale) valent pour toutes les conversations ouvertes dans l'onglet du navigateur, jusqu'au prochain rechargement de la page : à chaque ouverture ou rechargement de la page, la langue de la conversation repart sur « English » ; elle reste ensuite celle choisie pour toutes les conversations, jusqu'au prochain rechargement.
 
 ## Limiter la recherche à un groupe ou à des fichiers
 
@@ -55,7 +55,7 @@ Cliquer sur « Search In File(s) » (pastille 1), puis dans la liste qui appara�
 **Étape 3. Désigner un fichier dans la question**
 *Où* : zone de saisie.
 
-Le texte d'aide de la zone de saisie (« Type a message, use @WebSearch, or tag a file with @filename ») indique qu'un fichier peut être désigné en écrivant `@` suivi de son nom. Nouvelle conversation, « Search All », puis écrire `Quel est le prix du Vilaine Compact ? @strat` et Entrée.
+Le texte d'aide de la zone de saisie (« Type a message, use @WebSearch, or tag a file with @filename ») indique qu'un fichier peut être désigné en écrivant `@` suivi de son nom. Ouvrir une nouvelle conversation (crayon dans un carré vert, sous la liste des conversations, étape 9), cliquer sur « Search All », puis écrire `Quel est le prix du Vilaine Compact ? @strat` et Entrée.
 
 ![Mention d'un fichier dans la question](../img/06-questions/03-mention-fichier.png)
 *Écran : « Chat », question avec mention `@strat`.*
@@ -139,6 +139,8 @@ Remettre « citation: highlight », cocher « Mindmap », nouvelle conversation 
 **Étape 8. Retrouver une conversation**
 *Où* : colonne de gauche › liste des conversations (sous « Conversations »).
 
+Les captures des étapes 8 à 13 montrent à l'arrière-plan des noms de conversations, des messages (« Conversation renamed. ») et des réponses issus d'autres essais : ne pas en tenir compte.
+
 ![Liste des conversations](../img/06-questions/08-parcourir.png)
 *Écran : « Chat », liste des conversations ouverte.*
 
@@ -196,7 +198,7 @@ Saisir le nouveau nom dans le champ qui apparaît, puis Entrée.
 **Étape 12. Signaler une réponse**
 *Où* : colonne de gauche › « Feedback ».
 
-Cliquer sur « Feedback » pour l'ouvrir.
+Cliquer sur « Feedback » pour l'ouvrir, choisir « The answer is correct » (ou « The answer is incorrect »), cocher au besoin une case de « Other issue: », écrire une explication dans la zone de texte, puis cliquer sur « Report ».
 
 ![Avis sur une réponse](../img/06-questions/12-avis.png)
 *Écran : « Chat », bloc « Feedback » ouvert.*
@@ -209,7 +211,7 @@ Cliquer sur « Feedback » pour l'ouvrir.
 | 4 | « Report » | enregistre l'avis dans la base de Kotaemon |
 | 5 | « Share this conversation » | rend la conversation visible des autres comptes (chapitre 11) |
 
-*Résultat* : l'avis est enregistré dans la base de Kotaemon, sur le poste. Le texte affiché sous le bloc (« This will send the current chat and the user settings to help with investigation ») veut dire que la conversation et les réglages sont joints à l'avis, dans cette même base ; rien ne part vers Internet. Les pouces sous chaque réponse servent au même usage, en un clic.
+*Résultat* : le message « Thank you for your feedback » apparaît ; l'avis est enregistré dans la base de Kotaemon, sur le poste. Le texte affiché sous le bloc (« This will send the current chat and the user settings to help with investigation ») veut dire que la conversation et les réglages sont joints à l'avis, dans cette même base ; rien ne part vers Internet. Les pouces sous chaque réponse servent au même usage, en un clic.
 
 ## Régler l'affichage
 

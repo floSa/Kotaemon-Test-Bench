@@ -27,23 +27,23 @@ Feedback
 
 Quel est le chiffre d'affaires 2025 de Vélanor ?
 
-D'après les documents fournis, le chiffre d'affaires de Vélanor pour l'année 2025 s'élève à 48,6 millions d'euros (48,6 M€).
+Selon les documents fournis, le chiffre d'affaires de Vélanor en 2025 s'élève à 48,6 millions d'euros.
 
-Voici une explication détaillée basée sur les extraits contextuels :
+Voici les détails tirés des contextes disponibles pour étayer cette réponse :
 
-Confirmation dans les Chiffres clés (Page 3) :
-Dans la section intitulée "Chiffres clés 2025" du rapport annuel, l'indicateur "Chiffre d'affaires" est explicitement listé à 48,6 M€. Ce chiffre représente une évolution positive de +12,4 % par rapport à l'année précédente.
+Chiffres clés 2025 (Page 3 du rapport annuel) :
+Dans la section intitulée "Chiffres clés 2025", le document indique explicitement que le chiffre d'affaires de l'année 2025 est de 48,6 M€. Cette performance représente une évolution positive de +12,4 % par rapport à l'année précédente.
 
-Confirmation dans le détail trimestriel (Page 4) :
-La figure intitulée "Chiffre d'affaires trimestriel" présente la répartition des revenus sur les quatre trimestres de l'année :
+Chiffre d'affaires trimestriel (Page 4 du rapport annuel) :
+Le tableau détaillant le chiffre d'affaires trimestriel confirme ce total annuel. Il présente les revenus pour chaque trimestre de l'année 2025 :
 
 T1 2025 : 9,8 M€
 T2 2025 : 13,7 M€
-T3 2025 : 14,2 M€
+T3 2025 : 14,2 M€ (le trimestre le plus élevé de l'année)
 T4 2025 : 10,9 M€
-Le tableau indique un Total de 48,6 M€, ce qui correspond exactement au chiffre global mentionné sur la page 3.
+La ligne "Total" de ce tableau résume ces quatre trimestres à 48,6 M€.
 
-Ainsi, toutes les sources documentaires fournies convergent vers le même montant pour l'année 2025.
+Ainsi, les deux sources du rapport annuel 2025 convergent pour indiquer que le chiffre d'affaires total de l'entreprise pour cette année est de 48,6 millions d'euros.
 
 MultimodalTextbox
 Dropdown

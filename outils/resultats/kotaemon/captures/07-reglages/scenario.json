@@ -99,36 +99,6 @@
   "heure": "22:37:04"
  },
  {
-  "capture": "07-reglages/06-methode-conversation.png",
-  "pastilles": [
-   [
-    1,
-    "Reasoning method : complex"
-   ],
-   [
-    2,
-    "Search All"
-   ]
-  ],
-  "note": "",
-  "heure": "01:04:40"
- },
- {
-  "capture": "07-reglages/07-reponse-decomposee.png",
-  "pastilles": [
-   [
-    1,
-    "réponse"
-   ],
-   [
-    2,
-    "Information panel"
-   ]
-  ],
-  "note": "",
-  "heure": "01:05:35"
- },
- {
   "capture": "07-reglages/03-methodes.png",
   "pastilles": [
    [
@@ -157,5 +127,35 @@
   ],
   "note": "",
   "heure": "01:06:04"
+ },
+ {
+  "capture": "07-reglages/06-methode-conversation.png",
+  "pastilles": [
+   [
+    1,
+    "Reasoning method : complex"
+   ],
+   [
+    2,
+    "Search All"
+   ]
+  ],
+  "note": "",
+  "heure": "01:22:21"
+ },
+ {
+  "capture": "07-reglages/07-reponse-decomposee.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ],
+   [
+    2,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "01:23:13"
  }
 ]
