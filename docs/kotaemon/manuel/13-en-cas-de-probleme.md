@@ -146,7 +146,7 @@ Dans tous les cas, recharger la page, ouvrir une nouvelle conversation et repose
 | la réponse est en anglais | langue de la conversation sur « English » | « Chat settings » › « Language » › `French` (chapitre 04) |
 | réglages revenus aux valeurs par défaut après la création d'une collection | réglages enregistrés incomplets | refaire les réglages et « Save & Close » (chapitre 10, étape 4) |
 | un groupe ne trouve plus un fichier | fichier relu avec « Force reindex file » | remettre le fichier dans le groupe (chapitre 05, étapes 15 et 16) |
-| « (Sorry, I don't know) » alors que la réponse existe | réponse vide du modèle, plus fréquente en « citation: inline » | reposer la question ; « citation: highlight » |
+| « (Sorry, I don't know) » alors que la réponse existe | style « citation: inline » (5 échecs sur 7 essais) | « citation: highlight » (chapitre 06, étape 5) |
 | l'alerte de faible pertinence n'apparaît jamais | la notation par le modèle échoue sans message | ne pas compter sur cette alerte ; lire les notes de tri (chapitre 06, étape 6) |
 | PDF scanné sans réponse | lecteur intégré sans lecture optique | lecteur Docling (chapitre 05, étapes 12 et 13) |
 | la page ne s'affiche plus après l'installation de NanoGraphRAG | conflit de bibliothèques | relancer `outils/kotaemon/installer_nanographrag.sh` (chapitre 09) |

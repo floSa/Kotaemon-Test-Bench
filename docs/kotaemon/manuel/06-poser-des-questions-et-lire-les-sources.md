@@ -85,25 +85,25 @@ Cliquer sur la liste qui affiche « citation: highlight ».
 Les trois styles :
 
 - « citation: highlight » (par défaut) : la réponse reste propre ; les phrases des documents qui la justifient sont surlignées en vert dans le panneau des sources ;
-- « citation: inline » : des numéros entre crochets, comme 【1】, renvoient dans la réponse aux passages du panneau ;
+- « citation: inline » : des numéros entre crochets, comme 【1】, renvoient dans la réponse aux passages du panneau ; peu fiable avec le modèle de ce poste (étape 5) ;
 - « no citation » : aucun repère, réponse plus rapide.
 
 *Résultat* : le style choisi s'applique aux questions suivantes.
 
-**Étape 5. Lire une réponse avec renvois**
+**Étape 5. Essayer le style « citation: inline »**
 *Où* : zone de discussion et « Information panel ».
 
 Choisir « citation: inline » dans la liste de l'étape 4, décocher « Mindmap », ouvrir une nouvelle conversation avec « Search All », puis poser `Quelle est la capacité prévue de l'usine de Saint-Nazaire ?`.
 
-![Réponse avec renvois numérotés](../img/06-questions/05-citation-en-ligne.png)
+![Réponse en style citation inline](../img/06-questions/05-citation-en-ligne.png)
 *Écran : « Chat », réponse en style « citation: inline ».*
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | réponse avec renvois | « 25 000 vélos par an », suivi de 【1】 |
-| 2 | « Information panel » | le passage n° 1 (« Usine de Saint-Nazaire ») surligné, dans `strategie-2026.pptx` |
+| 1 | réponse | ici « (Sorry, I don't know) », alors que la réponse (25 000 vélos par an) est dans `strategie-2026.pptx` |
+| 2 | « Information panel » | les passages retenus, dont la diapositive « Usine de Saint-Nazaire » |
 
-*Résultat* : chaque numéro de la réponse se retrouve, surligné, dans le panneau. Lors des essais, ce style a donné plusieurs fois la réponse « (Sorry, I don't know) » à une question qui a une réponse ; reposer la question, ou revenir à « citation: highlight », a suffi.
+*Résultat* : quand ce style fonctionne, la réponse contient des numéros entre crochets, comme 【1】, qui renvoient aux passages surlignés du panneau. Lors des essais, il n'a fonctionné que 2 fois sur 7 avec le modèle de ce poste ; les 5 autres fois, la réponse a été « (Sorry, I don't know) » alors que le bon passage était trouvé. **Garder « citation: highlight »**, qui a répondu juste à chaque essai.
 
 **Étape 6. Lire le détail des notes d'un passage**
 *Où* : « Information panel » › bloc d'un passage › « Relevance score ».
@@ -237,7 +237,7 @@ Cliquer sur « Feedback » pour l'ouvrir.
 
 | Symptôme | Cause | Que faire |
 |---|---|---|
-| « (Sorry, I don't know) » alors que la réponse existe | réponse parfois vide du modèle, surtout en « citation: inline » | reposer la question ; revenir à « citation: highlight » |
+| « (Sorry, I don't know) » alors que la réponse existe | style « citation: inline » (5 échecs sur 7 essais) | revenir à « citation: highlight » |
 | la réponse ignore un document attendu | recherche limitée à d'autres fichiers | vérifier « Search All » ou la liste de « Search In File(s) » |
 | `@WebSearch` ne répond pas | service de recherche en ligne non configuré | ne pas utiliser ; voir le [chapitre 13](13-en-cas-de-probleme.md) |
 

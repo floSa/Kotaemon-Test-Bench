@@ -163,6 +163,21 @@
   "heure": "22:27:47"
  },
  {
+  "capture": "06-questions/07-carte-mentale.png",
+  "pastilles": [
+   [
+    1,
+    "Mindmap (on)"
+   ],
+   [
+    2,
+    "carte mentale"
+   ]
+  ],
+  "note": "",
+  "heure": "00:58:42"
+ },
+ {
   "capture": "06-questions/04-styles-citation.png",
   "pastilles": [
    [
@@ -179,7 +194,7 @@
    ]
   ],
   "note": "",
-  "heure": "00:55:46"
+  "heure": "01:13:00"
  },
  {
   "capture": "06-questions/05-citation-en-ligne.png",
@@ -194,7 +209,7 @@
    ]
   ],
   "note": "",
-  "heure": "00:57:32"
+  "heure": "01:14:46"
  },
  {
   "capture": "06-questions/06-detail-scores.png",
@@ -205,21 +220,6 @@
    ]
   ],
   "note": "",
-  "heure": "00:57:34"
- },
- {
-  "capture": "06-questions/07-carte-mentale.png",
-  "pastilles": [
-   [
-    1,
-    "Mindmap (on)"
-   ],
-   [
-    2,
-    "carte mentale"
-   ]
-  ],
-  "note": "",
-  "heure": "00:58:42"
+  "heure": "01:14:48"
  }
 ]

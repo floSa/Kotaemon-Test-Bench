@@ -66,7 +66,7 @@ Les temps de réponse sont dominés par le modèle `chat`, qui réfléchit avant
 
 ## 5. Limites de la mesure
 
-- Un seul passage par réglage : la réponse peut varier d'un passage à l'autre. Lors des captures, la même question (usine de Saint-Nazaire, style « citation: inline ») a reçu une fois « (Sorry, I don't know) » sur trois essais (`captures/06-questions/05-citation-en-ligne-essai2-sorry.txt`). [Vérifié]
+- Un seul passage par réglage : la réponse peut varier d'un passage à l'autre. Lors des captures, la même question (usine de Saint-Nazaire, style « citation: inline ») a reçu « (Sorry, I don't know) » 5 fois sur 7 essais (`captures/06-questions/notes.log`, lignes « réponse inline ») ; le style « citation: highlight », celui du banc, a répondu juste à chaque essai de capture. [Vérifié]
 - Le banc ne passe pas par le navigateur : la langue de session (anglais par défaut dans le chat) n'intervient pas ; dans l'interface, il faut choisir « French » à chaque visite (chapitre 04). [Vérifié]
 - Le juge LLM est indulgent : il a validé Q15 et Q16 (« le document ne donne pas le prix ») dans le premier banc. Les chiffres « Exactes » font foi. [Vérifié]
 - La notation par le modèle (« Use LLM relevant scoring ») n'a pas été passée au banc : avec 10 passages, elle bloque les réponses (erreur 429 du service central, `incident-2026-11-12-429-score-llm.log`) ; avec 4 passages, ses notes restent à 0 et l'alerte de pertinence ne s'affiche pas (`essai-2026-11-12-alerte-pertinence.txt`). [Vérifié]
