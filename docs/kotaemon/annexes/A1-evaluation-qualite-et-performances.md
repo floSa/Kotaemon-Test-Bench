@@ -40,6 +40,30 @@ Par type de question (meilleur réglage, 3 passages) : faits simples 13/13, tabl
 
 **Correction manuelle** : dans les deux premiers bancs, Q17 (plafond des pénalités, attendu « 8 ») est comptée juste alors que la réponse refuse ; le chiffre « 8 » vient de « Page 8 » dans le texte. Score réel : 25/34 pour ces deux bancs. [Vérifié] (réponse de Q17 dans `banc-2026-11-12-defaut-sans-rerank.json`)
 
+### 2.1 Docling déporté (13 novembre 2026)
+
+Même réglage que le meilleur banc (3 passages, tri `rerank`), mais les PDF sont lus par un serveur Docling séparé (`docling-serve` 1.38.2, version processeur, conteneur partagé `rag-docling-serve` sur le réseau `llm-net`), branché par le lecteur ajouté décrit en annexe [A3](A3-automatiser-par-la-bibliotheque.md). Tous les fichiers ont été réindexés. Commande [Testée] :
+
+```bash
+outils/kotaemon/serie_banc.sh docling-deporte-rerank-serre-top3 --top-k 3 --reindexer --docling-deporte
+```
+
+| Lecture des PDF | Exactes | Refus pièges | Bon document cité | Bonne page | p50 (s) | p95 (s) | Indexation | Pic RAM application |
+|---|---|---|---|---|---|---|---|---|
+| Docling intégré, scan seul relu (meilleur banc ci-dessus) | 31 | 4 | 32 | 25/25 | 22,0 | 38,7 | non mesurée | 1 710 Mo |
+| Docling déporté, les trois PDF relus | 29 | 4 | 32 | 24/25 | 18,4 | 27,3 | 28 s | 4 933 Mo, dont 2 524 Mo pour Docling |
+
+[Vérifié] (`outils/resultats/kotaemon/banc-2026-11-13-docling-deporte-rerank-serre-top3.json` et `.log`)
+
+Lecture :
+
+1. Le scan est lu (4/4) : le Docling déporté remplace le Docling intégré pour la lecture optique. Le contrat scanné est relu en 7,5 s contre 47 à 56 s avec le Docling intégré.
+2. Les deux bancs ne diffèrent pas seulement par l'endroit où tourne Docling : le lecteur ajouté s'applique à tous les PDF, alors que le meilleur banc n'avait relu que le scan. Le rapport annuel est donc découpé autrement, et deux questions sur ses tableaux échouent : Q13 (résultat net, « je ne connais pas ») et Q24 (réponse vide après 97 s). L'écart de 31 à 29 vient de là, pas du déport.
+3. Réponses plus rapides (médiane 18,4 s contre 22,0 s), mémoire de l'ensemble plus lourde si Docling ne sert qu'à Kotaemon (2,5 Gio de plus), plus légère s'il est déjà partagé avec une autre application.
+4. L'audio reste non lu (0/2), comme dans tous les bancs Kotaemon.
+
+Après le banc, Kotaemon a été remis dans sa configuration d'origine (`outils/kotaemon/compose.sh up -d --force-recreate kotaemon`), puis arrêté ; la collection garde les PDF lus par le Docling déporté.
+
 ## 3. Ce qui fait réussir ou échouer
 
 1. **Le lecteur de fichiers, pas le tri.** Le tri `rerank` ne change pas le nombre de bonnes réponses (26 dans les deux cas) : les échecs ne viennent pas du classement des passages. Le gain vient de la relecture du contrat scanné par Docling : 0/4 réellement (1/4 au comptage automatique, avec le faux positif Q17) puis 4/4 sur les questions du scan, et une question multi-documents de plus. [Vérifié]

@@ -10,6 +10,10 @@ langue et modèle des réglages de l'interface. Seuls les réglages passés en o
 
 Usage : outils/kotaemon/banc.py --etiquette defaut-sans-rerank --sans-rerank [--top-k 10] [--mode hybrid]
         [--score-llm] [--raisonnement simple] [--citation highlight] [--limite N] [--ids Q01,Q02] [--sans-juge]
+        [--reindexer] [--docling-deporte]
+--reindexer : réindexe tous les fichiers du corpus (« Force reindex file »), même déjà présents.
+--docling-deporte : Kotaemon a été démarré branché sur le serveur rag-docling-serve (outils/kotaemon/docling_externe/) ;
+le conteneur rag-docling-serve est alors compté avec l'application et la configuration le mentionne.
 """
 import argparse, json, subprocess, sys
 from pathlib import Path
@@ -18,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "communs/banc"))
 import commun  # noqa: E402
 
 APP = ["rag-kotaemon"]
+LECTEUR_DEPORTE = "lecteur_docling_serve.LecteurDoclingServe"
 MODELES = ["llm-central", "llm-swap", "llm-speaches"]
 DANS = "/app/ktem_app_data/banc"
 
@@ -58,7 +63,8 @@ class Adaptateur:
         return r
 
     def indexer(self, fichiers):
-        r = self._commande({"cmd": "indexer", "fichiers": [f"{DANS}/corpus/{f.name}" for f in fichiers]})
+        r = self._commande({"cmd": "indexer", "fichiers": [f"{DANS}/corpus/{f.name}" for f in fichiers],
+                            "forcer": self.a.reindexer})
         for d in r["detail"]:
             print("  ", d, flush=True)
         return r
@@ -72,7 +78,8 @@ class Adaptateur:
              and not k.startswith("reasoning.options.ReAct") and not k.startswith("reasoning.options.ReWOO")}
         return {"methode": "bibliothèque kotaemon dans le conteneur (pilote_conteneur.py), réglages de l'interface",
                 "collection": "File Collection", "recherche": "Search All", "reglages_interface": b,
-                "reglages_du_banc": self.reglages}
+                "reglages_du_banc": self.reglages, "reindexation_forcee": self.a.reindexer,
+                "lecteur_pdf": f"docling-serve déporté ({LECTEUR_DEPORTE})" if self.a.docling_deporte else "réglage de l'interface"}
 
 
 def main():
@@ -88,9 +95,17 @@ def main():
     p.add_argument("--ids")
     p.add_argument("--sans-juge", action="store_true")
     p.add_argument("--sans-index", action="store_true")
+    p.add_argument("--reindexer", action="store_true")
+    p.add_argument("--docling-deporte", action="store_true")
     a = p.parse_args()
+    if a.docling_deporte:
+        extracteurs = subprocess.run(["docker", "exec", "rag-kotaemon", "grep", "-c", LECTEUR_DEPORTE, "/app/flowsettings.py"],
+                                     capture_output=True, text=True).stdout.strip()
+        if extracteurs in ("", "0"):
+            sys.exit("Kotaemon n'est pas branché sur rag-docling-serve : lancer outils/kotaemon/docling_externe/brancher.sh")
     ad = Adaptateur(a)
-    res = commun.lancer(ad, a.etiquette, APP, MODELES, indexer=not a.sans_index, juge=not a.sans_juge, limite=a.limite,
+    app = APP + (["rag-docling-serve"] if a.docling_deporte else [])
+    res = commun.lancer(ad, a.etiquette, app, MODELES, indexer=not a.sans_index, juge=not a.sans_juge, limite=a.limite,
                         ids=a.ids.split(",") if a.ids else None)
     commun.ecrire(res, commun.RACINE / "outils/resultats/kotaemon")
     ad.p.stdin.close()

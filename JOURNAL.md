@@ -58,3 +58,9 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 - `docs/README.md` remplacé par l'index commun aux cinq dépôts (Open Notebook, RAGFlow, AnythingLLM, Kotaemon, Open WebUI) : modèles utilisés, services déportables (OCR, audio, reranker), comparatif à deux lignes par solution (défaut, meilleur réglage). Chiffres repris des résultats bruts du 12 et du 13 novembre, aucun nouveau banc.
 - README : section « Résultats » au même format que les autres dépôts.
 - `verifier_docs.py` : 0 point.
+
+### 2026-11-13 — Banc avec Docling déporté
+
+- Kotaemon démarré avec `compose.docling-externe.yml` (service kotaemon seul, `--no-deps` : le conteneur `rag-docling-serve` tournait déjà, partagé avec Open WebUI).
+- `outils/kotaemon/banc.py` : options `--reindexer` (réindexation forcée) et `--docling-deporte` (vérifie le branchement, compte Docling avec l'application).
+- Banc `docling-deporte-rerank-serre-top3` : 29/34 (31 avec le Docling intégré, qui ne relisait que le scan), 4/4, médiane 18,4 s, indexation 28 s. Q13 et Q24 (tableaux du rapport annuel) échouent : tous les PDF sont relus par Docling. Annexe A1 (section 2.1) et index de la série à jour. Kotaemon remis dans sa configuration d'origine, puis arrêté.

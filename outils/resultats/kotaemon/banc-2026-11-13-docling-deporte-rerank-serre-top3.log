@@ -1,0 +1,63 @@
+               total        used        free      shared  buff/cache   available
+Mem:           32098       11436        5101         914       17130       20661
+  bge-m3 (embedding)
+  bge-reranker-v2-m3 (rerank)
+  faster-whisper-small (audio_transcription)
+== chat (réflexion coupée pour l'essai)
+  Bonjour
+== embed
+  dimensions : 1024
+== rerank
+  doc 0 score 9.02
+  doc 1 score -8.61
+== transcribe (corpus/documents/message-vocal-production.mp3)
+  Message vocale de Julien Moreau, directeur de production chez Vélanor, enregistrait le 3 novembre VVTSEC. La ligne d'assoblage numéro 3 de Nantes sera arrêtée du 2 au 6 mars VVTSI pour maintenance. Pe
+   {'fichier': 'contrat-batterix-scan.pdf', 'duree_s': 7.5, 'ids': ['2d3a44cd-91ef-4909-a7e0-d282b694562d'], 'erreurs': [], 'journal': [' => [contrat-batterix-scan.pdf] Created embedding for 2 chunks', ' => Finished indexing contrat-batterix-scan.pdf', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/contrat-batterix-scan.pdf'), 'file_name': 'contrat-batterix-scan.pdf', 'status': 'success'}"]}
+   {'fichier': 'cse-2025-10-14.md', 'duree_s': 0.9, 'ids': ['666fa9f1-3642-4f33-a1a1-47b4bb11f89c'], 'erreurs': [], 'journal': [' => [cse-2025-10-14.md] Created embedding for 1 chunks', ' => Finished indexing cse-2025-10-14.md', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/cse-2025-10-14.md'), 'file_name': 'cse-2025-10-14.md', 'status': 'success'}"]}
+   {'fichier': 'faq-sav.html', 'duree_s': 1.0, 'ids': ['578d8c8f-79ad-4166-9841-480c2e3ed368'], 'erreurs': [], 'journal': [' => [faq-sav.html] Created embedding for 1 chunks', ' => Finished indexing faq-sav.html', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/faq-sav.html'), 'file_name': 'faq-sav.html', 'status': 'success'}"]}
+   {'fichier': 'message-vocal-production.mp3', 'duree_s': 0.8, 'ids': [], 'erreurs': ['Invalid file /app/ktem_app_data/banc/corpus/message-vocal-production.mp3. The FileType.UNK file type is not supported in partition.'], 'journal': ['Indexing [1/1]: message-vocal-production.mp3', ' => Converting message-vocal-production.mp3 to text', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/message-vocal-production.mp3'), 'file_name': 'message-vocal-production.mp3', 'status': 'failed', 'message': 'Invalid file /app/ktem_app_data/ban"]}
+   {'fichier': 'procedure-batteries.docx', 'duree_s': 1.6, 'ids': ['272affe5-0c1d-4f94-acb6-ffdb64759bf3'], 'erreurs': [], 'journal': [' => [procedure-batteries.docx] Created embedding for 1 chunks', ' => Finished indexing procedure-batteries.docx', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/procedure-batteries.docx'), 'file_name': 'procedure-batteries.docx', 'status': 'success'}"]}
+   {'fichier': 'rapport-annuel-2025.pdf', 'duree_s': 11.1, 'ids': ['0807d192-037b-4428-813f-da62faa945a7'], 'erreurs': [], 'journal': [' => [rapport-annuel-2025.pdf] Created embedding for 15 chunks', ' => Finished indexing rapport-annuel-2025.pdf', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/rapport-annuel-2025.pdf'), 'file_name': 'rapport-annuel-2025.pdf', 'status': 'success'}"]}
+   {'fichier': 'stocks-octobre-2025.xlsx', 'duree_s': 1.1, 'ids': ['146738f8-98d0-4204-9f92-4961b7c11605'], 'erreurs': [], 'journal': [' => [stocks-octobre-2025.xlsx] Created embedding for 1 chunks', ' => Finished indexing stocks-octobre-2025.xlsx', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/stocks-octobre-2025.xlsx'), 'file_name': 'stocks-octobre-2025.xlsx', 'status': 'success'}"]}
+   {'fichier': 'strategie-2026.pptx', 'duree_s': 1.0, 'ids': ['bc38272b-2778-447d-a222-1b44eb211e99'], 'erreurs': [], 'journal': [' => [strategie-2026.pptx] Created embedding for 1 chunks', ' => Finished indexing strategie-2026.pptx', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/strategie-2026.pptx'), 'file_name': 'strategie-2026.pptx', 'status': 'success'}"]}
+   {'fichier': 'supplier-audit-batterix-en.pdf', 'duree_s': 3.2, 'ids': ['d64b47c9-187d-44d7-a24e-3af3b20e22ce'], 'erreurs': [], 'journal': [' => [supplier-audit-batterix-en.pdf] Created embedding for 1 chunks', ' => Finished indexing supplier-audit-batterix-en.pdf', "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/supplier-audit-batterix-en.pdf'), 'file_name': 'supplier-audit-batterix-en.pdf', 'status': 'success'}"]}
+indexation : 28.2 s
+Q01 tableau         OK    17.1s  "Le chiffre d'affaires de Vélanor en 2025 est de **48,6 M€**.\n\n**Explication :**\nCette info"
+Q02 fait simple     OK    15.8s  'Selon les documents fournis, Vélanor a été fondée en **2014**.\n\nCette information est clai'
+Q03 fait simple     OK    17.7s  "D'après les documents fournis, la présidente de Vélanor est **Hélène Marchais**.\n\nVoici l'"
+Q04 fait simple     OK    19.0s  "D'après les documents fournis, l'adresse du siège de Vélanor est la suivante :\n\n**12 quai "
+Q05 tableau         OK    16.8s  'Vélanor compte **412 salariés** au 31 décembre 2025.\n\n**Explication :**\nCette information '
+Q06 tableau         OK    18.4s  "Le chiffre d'affaires du troisième trimestre 2025 a été de **14,2 M€**.\n\n**Explication :**"
+Q07 tableau         OK    19.1s  'Selon le contexte fourni, **15 400 unités** du modèle Sèvre Trail ont été produites en 202'
+Q08 tableau         OK    13.5s  'Le prix public TTC du modèle Erdre Cargo est de **4 290 €**.\n\n**Explication :**\nEn se réfé'
+Q09 tableau         OK    14.2s  'Selon le tableau fourni dans le document `rapport-annuel-2025.pdf` (Page 6), il y a **97 s'
+Q10 fait simple     OK    14.3s  "La part d'aluminium recyclé dans les cadres est de **82 %**.\n\n**Explication :**\nCette info"
+Q11 fait simple     OK    15.3s  "D'après les informations fournies dans le document « rapport-annuel-2025.pdf » (page 7), l"
+Q12 tableau         OK    12.8s  'Selon le tableau fourni dans le contexte (page 8), le fournisseur des moteurs est **Motodr'
+Q13 tableau         NON   24.7s  "D'après les extraits de contexte fournis, je ne connais pas le résultat net dégagé par Vél"
+Q14 fait simple     OK    20.7s  "D'après les informations fournies dans le contexte, le taux de retour sous garantie est de"
+Q15 scan            OK    14.3s  "Selon le contenu du document « contrat-batterix-scan.pdf » (Page 1), plus précisément à l'"
+Q16 scan            OK    16.9s  'Selon le contenu du contrat fourni, le délai de livraison prévu par le contrat Batterix es'
+Q17 scan            OK    14.6s  "D'après les informations fournies dans le document `contrat-batterix-scan.pdf`, plus préci"
+Q18 scan            OK    19.3s  'Selon les documents fournis, le contrat Batterix prévoit un volume minimal annuel de **40 '
+Q19 fait simple     OK    19.2s  'Selon le document de procédure PR-SEC-04 (« Charge et stockage des batteries »), les batte'
+Q20 fait simple     OK    14.6s  'Selon le contenu du document intitulé **procedure-batteries.docx**, la personne responsabl'
+Q21 tableau         OK    12.3s  'Selon le document « procedure-batteries.docx », spécifiquement dans la section intitulée *'
+Q22 fait simple     OK    19.7s  'Selon les informations fournies dans le contexte, le prix du modèle **Vilaine Compact** es'
+Q23 fait simple     OK    18.4s  "La capacité prévue de l'usine de Saint-Nazaire est de **25 000 vélos par an**.\n\n**Explicat"
+Q24 tableau         NON   97.3s  ''
+Q25 fait simple     OK    23.8s  'Selon le document fourni, plus précisément dans le fichier **faq-sav.html (Page 1)**, la d'
+Q26 fait simple     OK    17.8s  "D'après le contenu fourni dans le fichier `faq-sav.html`, le numéro de téléphone du servic"
+Q27 fait simple     OK    18.9s  "Le montant de la prime d'intéressement 2025 est de **1 150 euros par salarié**.\n\n**Explica"
+Q28 anglais         OK    19.5s  'D\'après les informations fournies dans le document "supplier-audit-batterix-en.pdf", Batte'
+Q29 anglais         OK    18.2s  "D'après les informations fournies dans le document « supplier-audit-batterix-en.pdf » (Pag"
+Q30 multi-documents NON   23.6s  "D'après les extraits de contrat fournis, voici la réponse détaillée :\n\n**1. Délai de livra"
+Q31 multi-documents OK    18.4s  "D'après les documents fournis, voici les réponses détaillées :\n\n**1. Score obtenu à l'audi"
+Q32 multi-documents OK    21.1s  "D'après les documents fournis, voici les détails concernant les objectifs de Vélanor pour "
+Q33 audio           NON   26.0s  "D'après les documents fournis, je ne connais pas la réponse à cette question.\n\nVoici l'ana"
+Q34 audio           NON   26.7s  "D'après les documents fournis, je ne connais pas l'identité du directeur de production de "
+Q35 piège           OK    15.6s  'Je ne peux pas répondre à cette question avec les informations fournies dans le contexte.\n'
+Q36 piège           OK    29.5s  "D'après les documents fournis, je ne connais pas le nom du directeur financier de Vélanor."
+Q37 piège           OK    27.3s  "D'après les informations fournies dans le rapport annuel 2025, il n'est pas possible de ré"
+Q38 piège           OK    22.7s  "Je ne connais pas le salaire de Karim Benali d'après les informations fournies.\n\n**Explica"
+-> outils/resultats/kotaemon/banc-2026-11-13-docling-deporte-rerank-serre-top3.json

@@ -1,0 +1,1957 @@
+{
+  "date": "2026-11-13T21:53:05",
+  "solution": "Kotaemon",
+  "etiquette": "docling-deporte-rerank-serre-top3",
+  "config": {
+    "methode": "bibliothèque kotaemon dans le conteneur (pilote_conteneur.py), réglages de l'interface",
+    "collection": "File Collection",
+    "recherche": "Search All",
+    "reglages_interface": {
+      "index.options.1.reader_mode": "default",
+      "index.options.1.reranking_llm": "llm-service-chat",
+      "index.options.1.num_retrieval": 10,
+      "index.options.1.retrieval_mode": "hybrid",
+      "index.options.1.prioritize_table": false,
+      "index.options.1.mmr": false,
+      "index.options.1.use_reranking": true,
+      "index.options.1.use_llm_reranking": false,
+      "reasoning.use": "simple",
+      "reasoning.lang": "fr",
+      "reasoning.max_context_length": 8000,
+      "reasoning.options.simple.llm": "llm-service-chat",
+      "reasoning.options.simple.highlight_citation": "highlight",
+      "reasoning.options.simple.create_mindmap": false,
+      "reasoning.options.simple.create_citation_viz": false,
+      "reasoning.options.simple.use_multimodal": false,
+      "reasoning.options.simple.n_last_interactions": 5,
+      "reasoning.options.simple.trigger_context": 150,
+      "reasoning.options.complex.llm": "",
+      "reasoning.options.complex.highlight_citation": "highlight",
+      "reasoning.options.complex.create_mindmap": false,
+      "reasoning.options.complex.create_citation_viz": false,
+      "reasoning.options.complex.use_multimodal": false,
+      "reasoning.options.complex.n_last_interactions": 5,
+      "reasoning.options.complex.trigger_context": 150
+    },
+    "reglages_du_banc": {
+      "index.options.1.use_reranking": true,
+      "index.options.1.use_llm_reranking": false,
+      "reasoning.use": "simple",
+      "index.options.1.num_retrieval": 3
+    },
+    "reindexation_forcee": true,
+    "lecteur_pdf": "docling-serve déporté (lecteur_docling_serve.LecteurDoclingServe)"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "type": "tableau",
+      "question": "Quel est le chiffre d'affaires 2025 de Vélanor ?",
+      "attendu": [
+        "48,6"
+      ],
+      "latence_s": 17.11,
+      "erreur": null,
+      "reponse": "Le chiffre d'affaires de Vélanor en 2025 est de **48,6 M€**.\n\n**Explication :**\nCette information se trouve directement dans le tableau présenté à la page 3 du document *rapport-annuel-2025.pdf*. Dans cette table, la ligne intitulée \"Chiffre d'affaires\" indique une valeur de **48,6 M€** sous la colonne correspondant à l'année **2025**.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q02",
+      "type": "fait simple",
+      "question": "En quelle année Vélanor a-t-elle été fondée ?",
+      "attendu": [
+        "2014"
+      ],
+      "latence_s": 15.81,
+      "erreur": null,
+      "reponse": "Selon les documents fournis, Vélanor a été fondée en **2014**.\n\nCette information est clairement indiquée dans le contenu du document « rapport-annuel-2025.pdf » (Page 2). Le texte précise : « Fondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. ».\n\nAinsi, l'année de création de l'entreprise est bien 2014, avec son siège social situé au 12 quai de la Fosse à Nantes.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q03",
+      "type": "fait simple",
+      "question": "Qui est la présidente de Vélanor ?",
+      "attendu": [
+        "Marchais"
+      ],
+      "latence_s": 17.73,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, la présidente de Vélanor est **Hélène Marchais**.\n\nVoici l'explication détaillée basée sur le contexte :\n\n1.  **Rapport annuel 2025 :** Dans la section intitulée \"Mot de la présidente\" (page 2), il est explicitement indiqué que « La présidente, Hélène Marchais, dirige l'entreprise depuis 2019 ».\n2.  **Contrat Batterix :** Sur la page 2 du contrat signé le 14 février 2025, sous les signatures, il est spécifié « Pour Vélanor : Hélène Marchais », confirmant son rôle de représentante de l'entreprise dans ce document.\n\nAinsi, les deux sources confirment que **Hélène Marchais** est la présidente de Vélanor.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q04",
+      "type": "fait simple",
+      "question": "Quelle est l'adresse du siège de Vélanor ?",
+      "attendu": [
+        "quai de la Fosse"
+      ],
+      "latence_s": 19.01,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, l'adresse du siège de Vélanor est la suivante :\n\n**12 quai de la Fosse, 44000 Nantes.**\n\nVoici les détails tirés des contextes pour confirmer cette information :\n\n1.  **Rapport annuel 2025 (Page 2) :** Le texte indique explicitement que « Son siège est situé au 12 quai de la Fosse, à Nantes ».\n2.  **Contrat d'approvisionnement Batterix (Page 1) :** L'adresse complète de l'acheteur Vélanor SAS est reprise dans le contrat comme étant « 12 quai de la Fosse, 44000 Nantes ».\n\nAinsi, en combinant ces éléments, on peut affirmer que le siège social se trouve au 12 quai de la Fosse à Nantes (code postal 44000).",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q05",
+      "type": "tableau",
+      "question": "Combien de salariés compte Vélanor au 31 décembre 2025 ?",
+      "attendu": [
+        "412"
+      ],
+      "latence_s": 16.83,
+      "erreur": null,
+      "reponse": "Vélanor compte **412 salariés** au 31 décembre 2025.\n\n**Explication :**\nCette information se trouve directement dans le tableau fourni dans le contexte (page 3 du rapport-annuel-2025.pdf). En regardant la ligne intitulée « Effectif au 31/12/2025 », on peut lire la valeur correspondante de **412 salariés** dans la colonne « 2025 ».",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q06",
+      "type": "tableau",
+      "question": "Quel a été le chiffre d'affaires du troisième trimestre 2025 ?",
+      "attendu": [
+        "14,2"
+      ],
+      "latence_s": 18.37,
+      "erreur": null,
+      "reponse": "Le chiffre d'affaires du troisième trimestre 2025 a été de **14,2 M€**.\n\n**Explication :**\nCette information se trouve dans le premier tableau fourni dans le contexte (provenant de la page 4 du document *rapport-annuel-2025.pdf*). En consultant la ligne correspondant au trimestre **\"T3 2025\"** et en regardant la colonne **\"Chiffre d'affaires (M€)\"**, on trouve la valeur **14,2**.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q07",
+      "type": "tableau",
+      "question": "Combien d'unités du modèle Sèvre Trail ont été produites en 2025 ?",
+      "attendu": [
+        "15 400"
+      ],
+      "latence_s": 19.07,
+      "erreur": null,
+      "reponse": "Selon le contexte fourni, **15 400 unités** du modèle Sèvre Trail ont été produites en 2025.\n\n**Explication :**\nDans le tableau intitulé « Table from rapport-annuel-2025.pdf (Page 5) », la ligne correspondant au modèle **« Sèvre Trail »** indique dans la colonne **« Unités produites »** la valeur **15 400**.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q08",
+      "type": "tableau",
+      "question": "Quel est le prix public du modèle Erdre Cargo ?",
+      "attendu": [
+        "4 290"
+      ],
+      "latence_s": 13.49,
+      "erreur": null,
+      "reponse": "Le prix public TTC du modèle Erdre Cargo est de **4 290 €**.\n\n**Explication :**\nEn se référant au tableau fourni dans le contexte (page 5 du rapport-annuel-2025.pdf), on localise la ligne correspondant au modèle **\"Erdre Cargo\"**. En suivant cette ligne jusqu'à la colonne intitulée **\"Prix public TTC\"**, on trouve la valeur indiquée : **4 290 €**.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 5,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q09",
+      "type": "tableau",
+      "question": "Combien de salariés travaillent sur le site de Cholet ?",
+      "attendu": [
+        "97"
+      ],
+      "latence_s": 14.25,
+      "erreur": null,
+      "reponse": "Selon le tableau fourni dans le document `rapport-annuel-2025.pdf` (Page 6), il y a **97 salariés** au site de Cholet.\n\n**Explication :**\nDans la colonne \"Site\", on trouve l'entrée \"Cholet\". En regardant la même ligne sous la colonne \"Salariés au 31/12/2025\", le chiffre indiqué est 97.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q10",
+      "type": "fait simple",
+      "question": "Quelle est la part d'aluminium recyclé dans les cadres ?",
+      "attendu": [
+        "82"
+      ],
+      "latence_s": 14.35,
+      "erreur": null,
+      "reponse": "La part d'aluminium recyclé dans les cadres est de **82 %**.\n\n**Explication :**\nCette information est directement extraite du texte fourni dans le contexte, spécifiquement depuis la section \"Environnement\" du document `rapport-annuel-2025.pdf` (Page 7). Le texte indique : « Les cadres sont fabriqués à partir d'aluminium recyclé à 82 %. »",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q11",
+      "type": "fait simple",
+      "question": "Quel est le taux de recyclage des batteries usagées ?",
+      "attendu": [
+        "96"
+      ],
+      "latence_s": 15.3,
+      "erreur": null,
+      "reponse": "D'après les informations fournies dans le document « rapport-annuel-2025.pdf » (page 7), le taux de recyclage des batteries usagées collectées atteint **96 %**.\n\nCe chiffre est spécifiquement mentionné dans la section « Environnement » du rapport. Le texte précise que ce taux élevé est rendu possible grâce au partenariat avec la filière de collecte Recylo. Bien que le document mentionne également d'autres indicateurs environnementaux, tels que l'utilisation d'aluminium recyclé à 82 % pour les cadres ou la consommation électrique des sites, c'est bien le taux de 96 % qui correspond spécifiquement au recyclage des batteries usagées.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q12",
+      "type": "tableau",
+      "question": "Quel fournisseur livre les moteurs et dans quel pays est-il installé ?",
+      "attendu": [
+        "Motodrive",
+        "Taïwan|Taiwan"
+      ],
+      "latence_s": 12.78,
+      "erreur": null,
+      "reponse": "Selon le tableau fourni dans le contexte (page 8), le fournisseur des moteurs est **Motodrive Co.** et il est installé au pays de **Taïwan**.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q13",
+      "type": "tableau",
+      "question": "Quel résultat net Vélanor a-t-elle dégagé en 2025 ?",
+      "attendu": [
+        "3,1"
+      ],
+      "latence_s": 24.68,
+      "erreur": null,
+      "reponse": "D'après les extraits de contexte fournis, je ne connais pas le résultat net dégagé par Vélanor en 2025.\n\nBien que le rapport annuel mentionne sur la page 2 une croissance soutenue et un volume de production de 60 000 vélos pour l'année 2025, ainsi que des informations environnementales détaillées sur la page 7 (telles que la consommation électrique ou le taux de recyclage des batteries), aucune donnée financière spécifique concernant le résultat net n'est rapportée dans ces extraits. Par conséquent, il est impossible de déterminer ce chiffre avec les informations disponibles.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": false,
+      "citation": {
+        "document": true,
+        "page": false
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q14",
+      "type": "fait simple",
+      "question": "Quel est le taux de retour sous garantie ?",
+      "attendu": [
+        "1,8"
+      ],
+      "latence_s": 20.66,
+      "erreur": null,
+      "reponse": "D'après les informations fournies dans le contexte, le taux de retour sous garantie est de **1,8 %**.\n\nVoici les détails de cette réponse basés sur le document `rapport-annuel-2025.pdf` (Page 3) :\n\n*   **Source :** La section \"Chiffres clés 2025\" du rapport annuel.\n*   **Valeur exacte :** Le texte indique que « Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus ».\n*   **Contexte :** Ce pourcentage concerne spécifiquement les vélos vendus par l'entreprise (Vélanor SAS) dans le cadre du rapport annuel 2025.\n\nLe document contractuel `contrat-batterix-scan.pdf` ne contient pas d'information sur ce taux spécifique, mais mentionne une garantie de 5 ans ou 1 000 cycles de charge.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q15",
+      "type": "scan",
+      "question": "Quel est le prix unitaire des batteries prévu par le contrat avec Batterix ?",
+      "attendu": [
+        "212"
+      ],
+      "latence_s": 14.3,
+      "erreur": null,
+      "reponse": "Selon le contenu du document « contrat-batterix-scan.pdf » (Page 1), plus précisément à l'article 4 intitulé « Prix », le prix unitaire des batteries prévu par le contrat avec Batterix est de **212 euros HT** (hors taxes).\n\nLe texte précise également que ce prix peut être révisé une fois par an. Cette information provient directement de la section du contrat d'approvisionnement n° BX-2025-117 entre Vélanor SAS et Batterix GmbH.",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q16",
+      "type": "scan",
+      "question": "Quel est le délai de livraison prévu par le contrat Batterix ?",
+      "attendu": [
+        "21"
+      ],
+      "latence_s": 16.86,
+      "erreur": null,
+      "reponse": "Selon le contenu du contrat fourni, le délai de livraison prévu par le contrat Batterix est de **21 jours après la commande**.\n\nVoici les détails basés sur l'extrait de contexte :\n\n*   **Article concerné :** L'information se trouve à l'**Article 5 - Délais de livraison** (Page 2 du document).\n*   **Texte exact :** Le contrat stipule que « Le Fournisseur livre sous 21 jours après la commande ».\n\nAinsi, une fois la commande passée par l'Acheteur (Vélanor SAS), le Fournisseur (Batterix GmbH) doit exécuter la livraison dans un délai maximum de 21 jours.",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q17",
+      "type": "scan",
+      "question": "Quel est le plafond des pénalités de retard du contrat Batterix ?",
+      "attendu": [
+        "8"
+      ],
+      "latence_s": 14.61,
+      "erreur": null,
+      "reponse": "D'après les informations fournies dans le document `contrat-batterix-scan.pdf`, plus précisément dans l'**Article 6 - Pénalités de retard** (Page 2), le plafond des pénalités de retard est fixé à **8 % du montant de la commande**.\n\nVoici les détails précis :\n*   Le taux de pénalité journalier est de **0,5 %** du montant de la commande par jour de retard.\n*   Ce taux cumulé est **plafonné**, c'est-à-dire qu'il ne peut pas dépasser **8 %** du montant total de la commande.\n\nAinsi, même si le retard s'étend sur plusieurs jours, l'acheteur n'aura à payer que jusqu'à ce seuil maximum de 8 %.",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q18",
+      "type": "scan",
+      "question": "Quel volume minimal annuel de batteries le contrat Batterix prévoit-il ?",
+      "attendu": [
+        "40 000"
+      ],
+      "latence_s": 19.31,
+      "erreur": null,
+      "reponse": "Selon les documents fournis, le contrat Batterix prévoit un volume minimal annuel de **40 000 batteries**.\n\n**Explication détaillée :**\nCette information est contenue dans le document « contrat-batterix-scan.pdf », plus précisément dans l'**Article 3 - Volumes**. Le texte du contrat stipule explicitement : *\"Volume minimal annuel : 40 000 batteries\"*. Il s'agit d'une condition contractuelle liant l'Acheteur (Vélanor SAS) et le Fournisseur (Batterix GmbH) pour la fourniture des batteries 48 V 14 Ah.",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q19",
+      "type": "fait simple",
+      "question": "À quelle température les batteries doivent-elles être stockées ?",
+      "attendu": [
+        "10",
+        "25"
+      ],
+      "latence_s": 19.2,
+      "erreur": null,
+      "reponse": "Selon le document de procédure PR-SEC-04 (« Charge et stockage des batteries »), les batteries doivent être stockées entre **10 °C et 25 °C**.\n\nLe texte précise que ce stockage s'effectue dans le local B2, qui est équipé d'un système de détection incendie. De plus, pour un stockage de plus de 30 jours, la charge des batteries doit être ramenée à 80 % au maximum.",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q20",
+      "type": "fait simple",
+      "question": "Qui est responsable de la procédure de charge et de stockage des batteries ?",
+      "attendu": [
+        "Benali"
+      ],
+      "latence_s": 14.58,
+      "erreur": null,
+      "reponse": "Selon le contenu du document intitulé **procedure-batteries.docx**, la personne responsable de la procédure de charge et de stockage des batteries est **Karim Benali**.\n\nVoici les détails précis tirés du contexte fourni :\n\n*   **Nom :** Karim Benali.\n*   **Fonction :** Il est désigné comme le \"responsable HSE\" (Santé, Sécurité et Environnement).\n*   **Référence de la procédure :** La procédure porte le numéro **PR-SEC-04** et concerne spécifiquement la \"Charge et stockage des batteries\".\n*   **Version :** Le document mentionné est à la version 3, datée du 1er septembre 2025.\n\nAinsi, Karim Benali est l'individu identifié comme responsable de cette procédure dans le cadre de la sécurité industrielle décrit dans le document.",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q21",
+      "type": "tableau",
+      "question": "À quelle fréquence le local B2 est-il inspecté ?",
+      "attendu": [
+        "premier lundi"
+      ],
+      "latence_s": 12.26,
+      "erreur": null,
+      "reponse": "Selon le document « procedure-batteries.docx », spécifiquement dans la section intitulée **« Contrôles »**, l'inspection du local B2 est effectuée avec une fréquence de **le premier lundi de chaque mois**.\n\nLe responsable de cette inspection est Karim Benali, responsable HSE.",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q22",
+      "type": "fait simple",
+      "question": "Quel est le prix du Vilaine Compact ?",
+      "attendu": [
+        "2 490"
+      ],
+      "latence_s": 19.7,
+      "erreur": null,
+      "reponse": "Selon les informations fournies dans le contexte, le prix du modèle **Vilaine Compact** est de **2 490 € TTC** (Toutes Taxes Comprises).\n\nVoici les détails de cette information :\n*   **Source :** Cette donnée provient spécifiquement du document intitulé `stratege-2026.pptx` (Stratégie 2026), dans la section dédiée au \"Nouveau modèle\".\n*   **Produit :** Il s'agit d'un vélo pliant électrique.\n*   **Lancement :** Le produit est prévu pour être lancé en avril 2026.\n\nAucune autre information contradictoire ou complémentaire concernant le prix n'est mentionnée dans le document `rapport-annuel-2025.pdf`, qui se concentre principalement sur les objectifs de chiffre d'affaires et l'ouverture de la nouvelle usine à Saint-Nazaire.",
+      "citations": [
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q23",
+      "type": "fait simple",
+      "question": "Quelle est la capacité prévue de l'usine de Saint-Nazaire ?",
+      "attendu": [
+        "25 000"
+      ],
+      "latence_s": 18.38,
+      "erreur": null,
+      "reponse": "La capacité prévue de l'usine de Saint-Nazaire est de **25 000 vélos par an**.\n\n**Explication :**\nCette information se trouve dans le premier extrait de contexte fourni, intitulé `<b>Content from strategie-2026.pptx: </b>`. Dans la section concernant l'« Usine de Saint-Nazaire », il est explicitement indiqué : « Capacité : 25 000 vélos par an ».",
+      "citations": [
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q24",
+      "type": "tableau",
+      "question": "Quel stock de batteries BAT-48V-14Ah reste-t-il et est-il sous le seuil d'alerte ?",
+      "attendu": [
+        "1 240|1240",
+        "1 500|1500"
+      ],
+      "latence_s": 97.32,
+      "erreur": null,
+      "reponse": "",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 9,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": false,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q25",
+      "type": "fait simple",
+      "question": "Quelle est la durée de garantie du cadre ?",
+      "attendu": [
+        "7 ans"
+      ],
+      "latence_s": 23.84,
+      "erreur": null,
+      "reponse": "Selon le document fourni, plus précisément dans le fichier **faq-sav.html (Page 1)**, la durée de garantie du cadre est de **7 ans**.\n\nVoici les détails tirés du contexte :\n*   **Durée de garantie :** Le texte indique explicitement que « Le cadre est garanti 7 ans ».\n*   **Distinction des composants :** Pour être complet, le document précise également que la batterie et le moteur sont garantis pour une durée différente, à savoir 2 ans.\n\nAinsi, en se basant sur les informations disponibles dans le FAQ du service après-vente, la garantie sur le cadre s'élève à sept années.",
+      "citations": [
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q26",
+      "type": "fait simple",
+      "question": "Quel est le numéro de téléphone du service après-vente ?",
+      "attendu": [
+        "02 40 00 12 34"
+      ],
+      "latence_s": 17.79,
+      "erreur": null,
+      "reponse": "D'après le contenu fourni dans le fichier `faq-sav.html`, le numéro de téléphone du service après-vente est le **02 40 00 12 34**.\n\nVoici les détails complets concernant ce contact disponibles dans le document :\n*   **Numéro :** 02 40 00 12 34.\n*   **Horaires d'ouverture :** Le service est accessible du lundi au vendredi de 9 h à 18 h.\n*   **Autres options :** En plus du téléphone, il est également possible de contacter le service après-vente en utilisant le formulaire disponible sur le site web.\n\nLe fichier `stocks-octobre-2025.xlsx` ne contient aucune information relative au numéro de téléphone et se concentre uniquement sur les stocks de pièces détachées (batteries, moteurs, cadres, etc.).",
+      "citations": [
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "faq-sav.html",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q27",
+      "type": "fait simple",
+      "question": "Quel est le montant de la prime d'intéressement 2025 ?",
+      "attendu": [
+        "1 150|1150"
+      ],
+      "latence_s": 18.88,
+      "erreur": null,
+      "reponse": "Le montant de la prime d'intéressement 2025 est de **1 150 euros par salarié**.\n\n**Explication :**\nCette information se trouve dans le document « Compte rendu de la réunion du CSE du 14 octobre 2025 » (cse-2025-10-14.md). Dans la section intitulée « Décisions », il est spécifiquement indiqué : « Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026. » Les tableaux fournis dans le rapport annuel ne contiennent pas d'informations sur ce montant spécifique.",
+      "citations": [
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "cse-2025-10-14.md",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 4,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": null
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q28",
+      "type": "anglais",
+      "question": "What overall score did Batterix obtain at the supplier audit?",
+      "attendu": [
+        "87"
+      ],
+      "latence_s": 19.47,
+      "erreur": null,
+      "reponse": "D'après les informations fournies dans le document \"supplier-audit-batterix-en.pdf\", Batterix GmbH a obtenu un **score global de 87 sur 100** lors de l'audit fournisseur.\n\nVoici une explication détaillée basée sur le contexte fourni :\n\n*   **Source de l'information :** Le texte provient de la première page du document fictif intitulé \"Supplier Quality Audit - Batterix GmbH, Bremen\".\n*   **Date de l'audit :** L'audit a eu lieu le 18 juin 2025.\n*   **Résultat spécifique :** Dans le résumé des résultats de l'audit, il est écrit explicitement : \"**Overall score: 87 out of 100**\".\n*   **Conséquence du score :** Bien que deux non-conformités mineures aient été relevées (étiquetage incomplet des palettes et manques de bracelets anti-statiques), le fournisseur a été approuvé pour une autre année grâce à ce score.\n\nAucune autre information concernant ce score n'est disponible dans le fichier Excel \"stocks-octobre-2025.xlsx\", qui se concentre uniquement sur les stocks et les fournisseurs d'équipements (batteries, moteurs, freins, etc.).",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "stocks-octobre-2025.xlsx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q29",
+      "type": "anglais",
+      "question": "Quel est le taux de cellules défectueuses mesuré chez Batterix lors de l'audit ?",
+      "attendu": [
+        "0.3|0,3"
+      ],
+      "latence_s": 18.22,
+      "erreur": null,
+      "reponse": "D'après les informations fournies dans le document « supplier-audit-batterix-en.pdf » (Page 1), le taux de cellules défectueuses mesuré chez Batterix lors de l'audit est de **0,3 %**.\n\nVoici les détails de cette information :\n*   **Source :** Le rapport d'audit fournisseur (Supplier Quality Audit) daté du 18 juin 2025.\n*   **Indicateur spécifique :** Le texte mentionne explicitement la ligne : \"The measured cell defect rate is 0.3 %.\"\n*   **Contexte :** Cet audit a été réalisé par Laura Fischer pour Vélanor quality team, et le fournisseur (Batterix GmbH) a obtenu une note globale de 87 sur 100.\n\nAinsi, la réponse précise au taux de défauts est de **0,3 %**.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q30",
+      "type": "multi-documents",
+      "question": "Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté ?",
+      "attendu": [
+        "21",
+        "24"
+      ],
+      "latence_s": 23.61,
+      "erreur": null,
+      "reponse": "D'après les extraits de contrat fournis, voici la réponse détaillée :\n\n**1. Délai de livraison contractuel :**\nLe délai de livraison contractuel est clairement défini dans l'**Article 5 - Délais de livraison** (Page 2). Il stipule que le Fournisseur (Batterix) livre sous **21 jours après la commande**.\n\n**2. Délai moyen réellement constaté :**\nConcernant cette partie de la question, les documents fournis ne contiennent **aucune information** sur le délai moyen réellement constaté ou les performances effectives de livraison. Le texte se limite aux clauses contractuelles (prix, pénalités, garantie, juridiction) et ne mentionne pas de statistiques, d'historiques ou de données relatives à l'exécution réelle du contrat par Batterix.\n\nPar conséquent, je peux confirmer le délai contractuel (21 jours), mais je ne peux pas répondre au second point car l'information n'est pas disponible dans le contexte fourni.",
+      "citations": [
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": false,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q31",
+      "type": "multi-documents",
+      "question": "Quel score Batterix a-t-il obtenu à l'audit, et quel prix unitaire le contrat fixe-t-il ?",
+      "attendu": [
+        "87",
+        "212"
+      ],
+      "latence_s": 18.38,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, voici les réponses détaillées :\n\n**1. Score obtenu à l'audit :**\nSelon le document \"supplier-audit-batterix-en.pdf\" (Page 1), Batterix a obtenu un **score global de 87 sur 100**. Cet audit de qualité fournisseur a été réalisé le 18 juin 2025 par Vélanor SAS. Bien que deux non-conformités mineures aient été relevées, le fournisseur est approuvé pour une autre année.\n\n**2. Prix unitaire fixé par le contrat :**\nSelon l'article 4 du document \"contrat-batterix-scan.pdf\" (Page 1), le prix unitaire des batteries (référence BAT-48V-14Ah) est fixé à **212 euros HT** (taxes hors taxes). Ce prix est révisable une fois par an.\n\nEn résumé, Batterix a obtenu un score de **87/100** et le contrat prévoit un prix unitaire de **212 € HT**.",
+      "citations": [
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "contrat-batterix-scan.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 8,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q32",
+      "type": "multi-documents",
+      "question": "Quel chiffre d'affaires Vélanor vise-t-elle en 2026 et combien d'embauches sont prévues à Saint-Nazaire ?",
+      "attendu": [
+        "55",
+        "70"
+      ],
+      "latence_s": 21.05,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, voici les détails concernant les objectifs de Vélanor pour l'année 2026 :\n\n1.  **Chiffre d'affaires visé :** Vélanor vise un chiffre d'affaires de **55 millions d'euros (55 M€)** en 2026. Cette information est confirmée à la fois dans le rapport annuel 2025 (page 10) et dans la présentation de la stratégie 2026.\n\n2.  **Embauches prévues à Saint-Nazaire :** Il est prévu d'embaucher **70 personnes** pour l'usine d'assemblage située à Saint-Nazaire. Cette nouvelle usine ouvrira en septembre 2026 et aura une capacité de production de 25 000 vélos par an, avec un investissement de 14 M€.\n\nEn résumé, l'objectif financier est de 55 M€ et le recrutement local à Saint-Nazaire s'élève à 70 postes.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "strategie-2026.pptx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": {
+        "document": true,
+        "page": true
+      },
+      "juge_llm": true
+    },
+    {
+      "id": "Q33",
+      "type": "audio",
+      "question": "Quelle ligne d'assemblage sera arrêtée pour maintenance en mars 2026, et jusqu'à quelle date ?",
+      "attendu": [
+        "3",
+        "6 mars"
+      ],
+      "latence_s": 26.02,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, je ne connais pas la réponse à cette question.\n\nVoici l'analyse des informations disponibles dans le contexte :\n\n1.  **Rapport annuel 2025 (Page 10) :** Ce document mentionne que Vélanor vise un chiffre d'affaires de 55 M€ en 2026, prévoit l'ouverture d'une seconde usine d'assemblage à Saint-Nazaire en septembre 2026 et le lancement du modèle compact \"Vilaine Compact\" en avril 2026. Cependant, il ne fait aucune mention d'un arrêt de ligne d'assemblage pour maintenance en mars 2026.\n2.  **Audit fournisseur Batterix (Page 1) :** Ce document concerne un audit qualité réalisé le 18 juin 2025 et l'audit suivant prévu en juin 2026. Il mentionne des non-conformités mineures et un taux de défaut, mais ne contient aucune information sur l'arrêt d'une ligne de production pour maintenance en mars 2026.\n\nPuisque les documents fournis ne contiennent pas d'informations concernant un arrêt de ligne spécifique en mars 2026, je ne peux pas répondre à la question demandée.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": false,
+      "citation": {
+        "document": false,
+        "page": null
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q34",
+      "type": "audio",
+      "question": "Qui est le directeur de production de Vélanor ?",
+      "attendu": [
+        "Moreau"
+      ],
+      "latence_s": 26.69,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, je ne connais pas l'identité du directeur de production de Vélanor. Voici l'explication détaillée basée sur le contexte :\n\n1.  **Rapport annuel (page 2) :** Ce document mentionne que la présidente, Hélène Marchais, dirige l'entreprise depuis 2019. Cependant, il ne nomme aucun directeur de production spécifique.\n2.  **Audit fournisseur (page 1) :** Ce document identifie Laura Fischer en tant qu'auditrice principale pour l'équipe qualité de Vélanor, mais ce rôle n'est pas celui de directeur de production.\n\nAucun des extraits fournis ne contient le nom ou la fonction du directeur de production. Par conséquent, je ne peux pas répondre à cette question avec les informations disponibles.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": false,
+      "citation": {
+        "document": false,
+        "page": null
+      },
+      "juge_llm": false
+    },
+    {
+      "id": "Q35",
+      "type": "piège",
+      "question": "Quel était le chiffre d'affaires de Vélanor en 2022 ?",
+      "attendu": [],
+      "latence_s": 15.63,
+      "erreur": null,
+      "reponse": "Je ne peux pas répondre à cette question avec les informations fournies dans le contexte.\n\n**Explication :**\nLe document fourni contient des données financières et stratégiques pour l'année **2025** (chiffre d'affaires de 48,6 M€) ainsi que des projections pour l'année **2026**. Bien qu'il mentionne la fondation de l'entreprise en 2014, il ne contient aucune donnée spécifique concernant le chiffre d'affaires de l'année **2022**.\n\nPar conséquent, sur la base du contexte donné, je ne connais pas le chiffre d'affaires de Vélanor en 2022.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 10,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 3,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    },
+    {
+      "id": "Q36",
+      "type": "piège",
+      "question": "Qui est le directeur financier de Vélanor ?",
+      "attendu": [],
+      "latence_s": 29.48,
+      "erreur": null,
+      "reponse": "D'après les documents fournis, je ne connais pas le nom du directeur financier de Vélanor. Voici l'explication détaillée basée sur le contexte disponible :\n\n1.  **Analyse du rapport annuel (rapport-annuel-2025.pdf) :** Ce document mentionne que la présidente de l'entreprise est **Hélène Marchais**, qui dirige Vélanor depuis 2019. Cependant, il ne fait aucune référence à un poste de \"directeur financier\" ou à une personne occupant ce rôle spécifique.\n2.  **Analyse du rapport d'audit (supplier-audit-batterix-en.pdf) :** Ce document identifie **Laura Fischer** comme l'auditrice principale de Vélanor lors de l'audit du fournisseur Batterix en juin 2025. Elle est membre de l'équipe qualité, mais son rôle n'est pas celui de directeur financier.\n\nEn conclusion, bien que les documents fournissent des informations sur la présidente et un auditeur, ils ne contiennent aucune donnée concernant le directeur financier de Vélanor. Par conséquent, je ne peux pas répondre à cette question avec précision sur la base des informations disponibles.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "supplier-audit-batterix-en.pdf",
+          "page": 1,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    },
+    {
+      "id": "Q37",
+      "type": "piège",
+      "question": "Combien de trottinettes électriques Vélanor a-t-elle vendues en 2025 ?",
+      "attendu": [],
+      "latence_s": 27.34,
+      "erreur": null,
+      "reponse": "D'après les informations fournies dans le rapport annuel 2025, il n'est pas possible de répondre à la question concernant le nombre de trottinettes électriques vendues par Vélanor en 2025.\n\nVoici les raisons détaillées :\n\n1.  **Absence de mention des trottinettes :** Le document ne fait aucune référence aux trottinettes électriques. Il est spécifié que l'entreprise \"conçoit et assemble des vélos à assistance électrique\".\n2.  **Données disponibles :** Le rapport indique que Vélanor a franchi pour la première fois le seuil de **60 000 vélos produits** dans l'année 2025, mais cela concerne uniquement les vélos électriques et non les trottinettes.\n\nPar conséquent, sur la base du contexte fourni, je ne connais pas le nombre de trottinettes électriques vendues en 2025.",
+      "citations": [
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 2,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 7,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    },
+    {
+      "id": "Q38",
+      "type": "piège",
+      "question": "Quel est le salaire de Karim Benali ?",
+      "attendu": [],
+      "latence_s": 22.69,
+      "erreur": null,
+      "reponse": "Je ne connais pas le salaire de Karim Benali d'après les informations fournies.\n\n**Explication :**\n1.  **Le document texte** (\"procedure-batteries.docx\") identifie bien Karim Benali comme le responsable HSE et précise ses tâches (inspection du local B2, vérification des extincteurs), mais il ne contient aucune information sur sa rémunération ou son salaire.\n2.  **Le tableau** (\"rapport-annuel-2025.pdf\") indique uniquement le nombre de salariés par site (Total : 412) et les activités de chaque site, sans donner de détails individuels sur les salaires des employés.\n\nPar conséquent, il est impossible de déterminer son salaire à partir du contexte fourni.",
+      "citations": [
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": null
+        },
+        {
+          "document": "procedure-batteries.docx",
+          "page": null,
+          "extrait": "",
+          "score": 0.0
+        },
+        {
+          "document": "rapport-annuel-2025.pdf",
+          "page": 6,
+          "extrait": "",
+          "score": 0.0
+        }
+      ],
+      "exacte": true,
+      "citation": null,
+      "juge_llm": true
+    }
+  ],
+  "indexation": {
+    "collection": "File Collection",
+    "detail": [
+      {
+        "fichier": "contrat-batterix-scan.pdf",
+        "duree_s": 7.5,
+        "ids": [
+          "2d3a44cd-91ef-4909-a7e0-d282b694562d"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [contrat-batterix-scan.pdf] Created embedding for 2 chunks",
+          " => Finished indexing contrat-batterix-scan.pdf",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/contrat-batterix-scan.pdf'), 'file_name': 'contrat-batterix-scan.pdf', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "cse-2025-10-14.md",
+        "duree_s": 0.9,
+        "ids": [
+          "666fa9f1-3642-4f33-a1a1-47b4bb11f89c"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [cse-2025-10-14.md] Created embedding for 1 chunks",
+          " => Finished indexing cse-2025-10-14.md",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/cse-2025-10-14.md'), 'file_name': 'cse-2025-10-14.md', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "faq-sav.html",
+        "duree_s": 1.0,
+        "ids": [
+          "578d8c8f-79ad-4166-9841-480c2e3ed368"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [faq-sav.html] Created embedding for 1 chunks",
+          " => Finished indexing faq-sav.html",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/faq-sav.html'), 'file_name': 'faq-sav.html', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "message-vocal-production.mp3",
+        "duree_s": 0.8,
+        "ids": [],
+        "erreurs": [
+          "Invalid file /app/ktem_app_data/banc/corpus/message-vocal-production.mp3. The FileType.UNK file type is not supported in partition."
+        ],
+        "journal": [
+          "Indexing [1/1]: message-vocal-production.mp3",
+          " => Converting message-vocal-production.mp3 to text",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/message-vocal-production.mp3'), 'file_name': 'message-vocal-production.mp3', 'status': 'failed', 'message': 'Invalid file /app/ktem_app_data/ban"
+        ]
+      },
+      {
+        "fichier": "procedure-batteries.docx",
+        "duree_s": 1.6,
+        "ids": [
+          "272affe5-0c1d-4f94-acb6-ffdb64759bf3"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [procedure-batteries.docx] Created embedding for 1 chunks",
+          " => Finished indexing procedure-batteries.docx",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/procedure-batteries.docx'), 'file_name': 'procedure-batteries.docx', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "rapport-annuel-2025.pdf",
+        "duree_s": 11.1,
+        "ids": [
+          "0807d192-037b-4428-813f-da62faa945a7"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [rapport-annuel-2025.pdf] Created embedding for 15 chunks",
+          " => Finished indexing rapport-annuel-2025.pdf",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/rapport-annuel-2025.pdf'), 'file_name': 'rapport-annuel-2025.pdf', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "stocks-octobre-2025.xlsx",
+        "duree_s": 1.1,
+        "ids": [
+          "146738f8-98d0-4204-9f92-4961b7c11605"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [stocks-octobre-2025.xlsx] Created embedding for 1 chunks",
+          " => Finished indexing stocks-octobre-2025.xlsx",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/stocks-octobre-2025.xlsx'), 'file_name': 'stocks-octobre-2025.xlsx', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "strategie-2026.pptx",
+        "duree_s": 1.0,
+        "ids": [
+          "bc38272b-2778-447d-a222-1b44eb211e99"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [strategie-2026.pptx] Created embedding for 1 chunks",
+          " => Finished indexing strategie-2026.pptx",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/strategie-2026.pptx'), 'file_name': 'strategie-2026.pptx', 'status': 'success'}"
+        ]
+      },
+      {
+        "fichier": "supplier-audit-batterix-en.pdf",
+        "duree_s": 3.2,
+        "ids": [
+          "d64b47c9-187d-44d7-a24e-3af3b20e22ce"
+        ],
+        "erreurs": [],
+        "journal": [
+          " => [supplier-audit-batterix-en.pdf] Created embedding for 1 chunks",
+          " => Finished indexing supplier-audit-batterix-en.pdf",
+          "{'file_path': PosixPath('/app/ktem_app_data/banc/corpus/supplier-audit-batterix-en.pdf'), 'file_name': 'supplier-audit-batterix-en.pdf', 'status': 'success'}"
+        ]
+      }
+    ],
+    "duree_s": 28.2
+  },
+  "synthese": {
+    "questions": 38,
+    "exactes": 29,
+    "sur": 34,
+    "refus_corrects": 4,
+    "pieges": 4,
+    "citation_bon_document": 32,
+    "citation_bonne_page": 24,
+    "citations_avec_page": 25,
+    "juge_llm_oui": 33,
+    "juge_llm_sur": 38,
+    "erreurs": 0,
+    "latence_p50_s": 18.38,
+    "latence_p95_s": 27.34,
+    "par_type": {
+      "tableau": "8/10",
+      "fait simple": "13/13",
+      "scan": "4/4",
+      "anglais": "2/2",
+      "multi-documents": "2/3",
+      "audio": "0/2",
+      "piège": "4/4"
+    },
+    "pic_ram_mo": {
+      "rag-kotaemon": 2409,
+      "rag-docling-serve": 2524,
+      "llm-central": 721,
+      "llm-swap": 7707,
+      "llm-speaches": 1371
+    },
+    "pic_ram_application_mo": 4933,
+    "vram": "10620 Mo / 16380 Mo (nvidia-smi, mesuré en fin de banc)",
+    "indexation_s": 28.2
+  }
+}
