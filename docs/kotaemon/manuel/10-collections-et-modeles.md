@@ -35,7 +35,7 @@ Une **collection** se décrit par une spécification YAML. Les réglages utiles 
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Index Collections » | liste des collections : numéro, nom, type (`FileIndex`, `GraphRAGIndex`, `LightRAGIndex`) |
+| 1 | « Index Collections » | liste des collections : numéro, nom, type (`FileIndex`, `GraphRAGIndex`, `LightRAGIndex`, et `NanoGraphRAGIndex` si NanoGraphRAG a été installé au chapitre 09 ; la capture a été prise avant) |
 | 2 | `File Collection` | un clic ouvre la fiche |
 | 3 | « Index name » | nom affiché dans « Files » et dans le chat |
 | 4 | « Index config » | spécification YAML de la collection (`private: true`, `embedding: default`…) |

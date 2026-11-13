@@ -103,7 +103,7 @@ Les autres réglages de « File Collection » sont décrits au chapitre 03 (éta
 ## Choisir la méthode pour une conversation
 
 **Étape 6. Passer une conversation en méthode `complex`**
-*Où* : « Chat » › « Chat settings » › « Reasoning method ».
+*Où* : « Chat » › nouvelle conversation › « Chat settings » › « Reasoning method ».
 
 Choisir `complex` dans « Reasoning method », cliquer sur « Search All », puis poser `Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté lors de l'audit ?`.
 

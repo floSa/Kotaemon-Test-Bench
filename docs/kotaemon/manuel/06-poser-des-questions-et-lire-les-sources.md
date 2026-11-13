@@ -22,7 +22,7 @@ Les réglages de « Chat settings » (méthode, modèle, langue, style de citati
 **Étape 1. Choisir des fichiers ou un groupe**
 *Où* : « Chat » › colonne de gauche › « File Collection » › « Search In File(s) ».
 
-Cliquer sur « Search In File(s) » (pastille 1), puis dans la liste qui apparaît (pastille 2), choisir le groupe `group: 'Fournisseur Batterix'` (pastille 3). Variante : choisir à la place un ou plusieurs fichiers (pastille 4).
+Ouvrir d'abord une nouvelle conversation (crayon dans un carré vert, sous la liste des conversations, étape 9). Cliquer ensuite sur « Search In File(s) » (pastille 1), puis dans la liste qui apparaît (pastille 2), choisir le groupe `group: 'Fournisseur Batterix'` (pastille 3). Variante : choisir à la place un ou plusieurs fichiers (pastille 4).
 
 ![Choix des fichiers ou du groupe](../img/06-questions/01-choisir-fichiers.png)
 *Écran : « Chat », liste des fichiers ouverte sous « Search In File(s) ».*

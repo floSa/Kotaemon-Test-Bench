@@ -31,6 +31,7 @@ Termes employés dans la série de manuels. Quand un terme est propre à une sol
 | Gradio | Bibliothèque Python qui construit des interfaces web ; l'interface de Kotaemon en est faite. |
 | GraphRAG, LightRAG, NanoGraphRAG | Variantes du RAG qui extraient des documents un graphe d'entités (personnes, sites, produits) et de relations, puis s'en servent pour répondre ; chacune a sa collection dans Kotaemon. |
 | Groupe de fichiers (Kotaemon) | Liste nommée de fichiers d'une collection, choisie d'un clic pour limiter la recherche. |
+| Image (Docker) | Modèle figé d'un conteneur, téléchargé une fois ; Docker lance le conteneur à partir de l'image. |
 | Information panel (Kotaemon) | Panneau de droite du chat qui montre les passages utilisés pour la réponse, leur page, leurs notes et la vignette de la page. |
 | Jeton (token) | Unité de texte manipulée par un modèle, environ trois quarts de mot en français. |
 | JSON | Format de texte structuré, fait de paires `"nom": valeur` entre accolades, utilisé pour échanger des données entre programmes. |
