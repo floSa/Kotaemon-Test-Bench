@@ -62,17 +62,19 @@ Les sorties réelles sont dans `exemples/kotaemon/sorties_verifiees.txt`.
 
 **Point d'extension.** Le fichier de configuration `flowsettings.py` peut définir `FILE_INDEX_PIPELINE_FILE_EXTRACTORS`, un dictionnaire extension → classe de lecteur (chemin Python). Kotaemon instancie ces classes et les applique **après** le choix de « File loader », pour toutes les collections de type fichier (`ktem/index/file/pipelines.py:58-66` et `708`). [Source]
 
-**Méthode** pour un serveur Docling séparé (docling-serve) ou un serveur PaddleOCR : [À tester]
+**Essai avec un serveur Docling séparé** (docling-serve v1.38.2, version CPU) : [Vérifié] (`outils/resultats/kotaemon/docling-externe-2026-11-13.log`, capture `05-documents/18-scan-lu-par-docling-externe.png`)
 
-1. faire tourner le serveur dans son propre conteneur, relié au réseau Docker `rag-local`, port publié sur `127.0.0.1` seulement s'il doit être joint depuis l'hôte ;
-2. écrire une classe de lecteur héritant de `kotaemon.loaders.base.BaseReader`, dont la méthode `load_data(file_path, extra_info=None)` envoie le fichier au serveur et renvoie une liste de `Document` (un par page, avec `metadata["page_label"]` et `metadata["file_name"]`, pour garder les pages dans les citations) ;
-3. monter ce module dans le conteneur (par exemple `/app/lecteurs_externes.py`) et une copie de `flowsettings.py` complétée par :
+1. le serveur tourne dans son propre conteneur `rag-docling-serve`, sur le réseau Docker `llm-net`, sans port publié (`outils/kotaemon/compose.docling-externe.yml`) ;
+2. la classe `LecteurDoclingServe` (`outils/kotaemon/docling_externe/lecteur_docling_serve.py`) hérite de `kotaemon.loaders.base.BaseReader` ; `load_data(file_path, extra_info=None)` envoie le fichier à `POST /v1/convert/file` (`to_formats=json`, `do_ocr=true`), lit le document Docling renvoyé (`document.json_content`) et rend un `Document` par page (`metadata["page_label"]`, `metadata["file_name"]`) et un par tableau (Markdown), comme le lecteur Docling intégré ; les figures ne sont pas extraites ;
+3. le module est monté en `/app/lecteur_docling_serve.py`, et une copie de `flowsettings.py` de l'image, complétée par la ligne suivante, est montée en `/app/flowsettings.py` :
 
    ```python
-   FILE_INDEX_PIPELINE_FILE_EXTRACTORS = {".pdf": "lecteurs_externes.LecteurDoclingServe"}
+   FILE_INDEX_PIPELINE_FILE_EXTRACTORS = {".pdf": "lecteur_docling_serve.LecteurDoclingServe"}
    ```
 
-4. redémarrer, puis réindexer les PDF (« Force reindex file »).
+4. `outils/kotaemon/docling_externe/brancher.sh` démarre les deux conteneurs (Kotaemon prêt en 28 s) ; `debrancher.sh` revient à la configuration d'origine.
+
+Résultat : le contrat scanné (2 pages) est lu en 10 à 14 secondes (trois relectures), contre 47 secondes avec le Docling intégré (chapitre 05, étape 13) ; le journal du conteneur indique « Using reader LecteurDoclingServe() » ; les deux passages contiennent le texte des pages scannées. « File loader » reste sur « Default (open-source) » : le réglage l'emporte sur ce choix. [Vérifié] Le serveur sur une autre machine (seule l'adresse `DOCLING_SERVE_URL` change) et un serveur PaddleOCR (même méthode, module à adapter à son API) n'ont pas été essayés. [À tester]
 
 Pour PaddleOCR-VL, le lecteur intégré a un paramètre `vl_rec_server_url` qui déporte seulement le modèle de vision ; il demande quand même la bibliothèque `paddleocr` dans le conteneur, absente de l'image « full », et l'interface ne permet pas de le régler. [Source] (`paddleocr_vl_loader.py:40,81`, `indices/ingests/files.py:44-45`)
 

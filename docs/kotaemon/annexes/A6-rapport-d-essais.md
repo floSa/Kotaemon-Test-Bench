@@ -34,6 +34,7 @@
 | Kotaemon | 0.12.0 (31 mai 2026), dernière version stable ; aucune image numérotée publiée, d'où `main-full` figée par empreinte | [Vérifié] (`versions-2026-11-12.json`) |
 | Service de modèles | LiteLLM v1.109.0, llama-swap v272 (CUDA, llama.cpp b12282), speaches 0.8.3 ; noms fixes `chat` (Qwen3.5-4B), `embed` (bge-m3), `rerank` (bge-reranker-v2-m3) | [Vérifié] (`sante-2026-11-12-debut.txt`) |
 | Projet | 25 906 étoiles, 39 contributeurs, aucune modification sur 90 jours au 12 novembre 2026 | [Vérifié] (`identite-github-2026-11-12.json`) |
+| Serveur Docling séparé (essai du chapitre 05) | docling-serve v1.38.2, image `quay.io/docling-project/docling-serve-cpu` figée par empreinte `sha256:7a480a16…`, 5,06 Go ; arrêté et supprimé après l'essai | [Vérifié] (`docling-externe-2026-11-13.log`) |
 | Paquets ajoutés dans le conteneur | `pipmaster` 1.2.2 (LightRAG), `nano-graphrag` 0.0.8.2 (option du chapitre 09), données NLTK `punkt_tab` et `averaged_perceptron_tagger_eng` | [Vérifié] |
 
 ## 3. Preuves par chapitre
@@ -43,7 +44,7 @@
 | 02 Installer | `installation-2026-11-12.log`, `installation-2026-11-12-essai-nltk-403.log`, `ports-publies-2026-11-12.txt`, `exploitation-2026-11-12.log` |
 | 03 Premiers pas | `captures/03-premiers-pas/` (tests de connexion réussis des trois modèles dans `notes.log`) |
 | 04 Première question | `captures/04-premiere-question/` (indexation 6,1 s, réponse en français) ; `incident-2026-11-12-visionneuse-pdf.txt` |
-| 05 Documents | `captures/05-documents/` (8 fichiers déposés, 7 indexés, en 13,1 s, suppression sans confirmation, relecture Docling 47,1 s, groupe incomplet) ; `docling-2026-11-12.log` |
+| 05 Documents | `captures/05-documents/` (8 fichiers déposés, 7 indexés, en 13,1 s, suppression sans confirmation, relecture Docling 47,1 s, groupe incomplet ; serveur Docling séparé : 10 à 14 s, capture 18) ; `docling-2026-11-12.log`, `docling-externe-2026-11-13.log` |
 | 06 Questions et sources | `captures/06-questions/` (dont `05-citation-en-ligne-essai2-sorry.txt`) |
 | 07 Réglages | `captures/07-reglages/` ; `essai-2026-11-12-alerte-pertinence.txt` ; `incident-2026-11-12-429-score-llm.log` |
 | 08 Agents | `captures/08-agents/notes.log` (ReAct 26 s, ReWOO 74 s, étapes) |
@@ -79,7 +80,7 @@
 ## 5. Ce qui n'a pas été vérifié
 
 - Le profil sans carte graphique (annexe A2) : estimations. [Estimation]
-- Le branchement d'un lecteur extérieur (serveur Docling ou PaddleOCR), l'image « lite », le second modèle `gemma-4-e4b`. [À tester]
+- Le serveur Docling sur une autre machine, un serveur PaddleOCR, l'image « lite », le second modèle `gemma-4-e4b`. [À tester]
 - L'ajout effectif d'un serveur MCP, les liens web (service en ligne Jina Reader), `@WebSearch`. [À tester]
 - `outils/communs/nettoyer.sh kotaemon` : relu, non rejoué pour garder le jeu de démonstration. [À tester]
 - Les boutons « Download », « Download all files », « Report » et l'interrupteur « Suggest chat » ont été montrés sans être actionnés. [À tester]

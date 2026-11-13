@@ -1,0 +1,18 @@
+# Complément à compose.yml (manuel, chapitre 05) : serveur Docling séparé (docling-serve, version CPU) et branchement
+# de Kotaemon sur ce serveur. Lancement : outils/kotaemon/docling_externe/brancher.sh ; retrait : debrancher.sh.
+# Aucun port publié : Kotaemon joint le serveur par le réseau Docker llm-net (http://rag-docling-serve:5001).
+services:
+  docling-serve:
+    image: quay.io/docling-project/docling-serve-cpu:v1.38.2@sha256:7a480a1604fa3b42efeddc7db9527690d9f9bc903226136013e2bfe6b1a4dfb0
+    container_name: rag-docling-serve
+    networks:
+      - llm-net
+    restart: unless-stopped
+  kotaemon:
+    environment:
+      DOCLING_SERVE_URL: http://rag-docling-serve:5001
+    volumes:
+      - ./docling_externe/flowsettings.py:/app/flowsettings.py:ro
+      - ./docling_externe/lecteur_docling_serve.py:/app/lecteur_docling_serve.py:ro
+    depends_on:
+      - docling-serve

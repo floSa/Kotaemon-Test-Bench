@@ -1,6 +1,6 @@
 # 05. Ajouter et organiser ses documents
 
-> Ce chapitre apprend à ajouter plusieurs documents d'un coup, à consulter les passages d'un fichier, à regrouper des fichiers, à supprimer, à ajouter un fichier depuis le chat, à choisir le lecteur de fichiers (lecteur intégré ou Docling) selon le type de document, et à réparer un groupe après une relecture.
+> Ce chapitre apprend à ajouter plusieurs documents d'un coup, à consulter les passages d'un fichier, à regrouper des fichiers, à supprimer, à ajouter un fichier depuis le chat, à choisir le lecteur de fichiers (lecteur intégré ou Docling) selon le type de document, à réparer un groupe après une relecture, et à confier la lecture des PDF à un serveur Docling installé à part.
 > **Point de départ** : Kotaemon ouvert, session administrateur, modèles déclarés (chapitre 03).
 > **Durée** : environ 20 minutes. **Avant** : chapitre 04.
 
@@ -13,7 +13,14 @@ Ajouter un document se fait en deux temps : Kotaemon le **lit** (le transforme e
 - **le lecteur intégré** (« Default (open-source) ») : il fait partie de Kotaemon et sert par défaut. Il lit le texte des PDF page par page (avec une vignette de chaque page), les fichiers Word et PowerPoint, les classeurs Excel, les pages HTML, les fichiers Markdown et texte. Il **ne lit pas** le texte contenu dans une image : un PDF scanné reste presque vide ;
 - **Docling** : un second lecteur, réservé aux PDF (les images restent lues par le lecteur intégré), choisi dans les réglages. Il reconnaît la mise en page et les tableaux, et lit le texte des pages scannées (lecture optique, ou OCR). Il est plus lent et télécharge environ 1 Go de modèles à sa première utilisation.
 
-Docling n'est donc pas indispensable : il est utile pour les PDF scannés ou les tableaux complexes. Dans l'installation de ce manuel, il est fourni **à l'intérieur** de l'image de Kotaemon (version « full ») et tourne dans le même conteneur. Kotaemon sait aussi confier la lecture à un programme extérieur (un serveur Docling ou PaddleOCR installé à part) ; ce branchement demande d'écrire un petit module de réglage et n'est pas fait dans ce manuel (voir « Bon à savoir »).
+Kotaemon fonctionne avec son lecteur intégré seul. Docling est un **service en plus**, utile pour les PDF scannés et les tableaux complexes. Il peut tourner à deux endroits :
+
+| Où tourne Docling | Comment | Où se règle le choix |
+|---|---|---|
+| **dans** le conteneur de Kotaemon | fourni par l'image « full » utilisée dans ce manuel | dans l'interface : « Settings » › « File loader » (étapes 12 et 13) |
+| **dans un conteneur séparé** (serveur docling-serve) | installé à part, sur le même poste ou sur une autre machine ; l'image de Kotaemon peut alors être plus légère | hors de l'interface : deux fichiers ajoutés au conteneur (étapes 17 et 18) |
+
+Un serveur PaddleOCR installé à part se branche de la même façon que le serveur Docling séparé (étape 17), avec un module adapté à ce serveur ; ce cas n'a pas été essayé.
 
 Les fichiers audio et vidéo ne sont pas lus. Les pages web s'ajoutent par leur adresse, mais passent alors par un service en ligne (section « Ajouter des pages web »).
 
@@ -279,11 +286,57 @@ Cliquer dans « Attached files », choisir `contrat-batterix-scan.pdf`, puis cli
 
 *Résultat* : le message « Group Fournisseur Batterix has been saved » apparaît ; le groupe contient de nouveau ses deux fichiers.
 
+## Confier la lecture à un serveur Docling séparé
+
+Ces deux étapes remplacent le Docling intégré par un serveur docling-serve qui tourne dans son propre conteneur. Elles se font dans le terminal Ubuntu, puis dans l'interface. L'interface n'a **aucun écran** pour ce réglage : le choix « File loader » ne contient aucun champ d'adresse de serveur.
+
+**Étape 17. Brancher le serveur**
+*Où* : terminal Ubuntu, dossier du dépôt.
+
+Le branchement repose sur trois fichiers fournis dans `outils/kotaemon/` :
+
+| Fichier | Rôle |
+|---|---|
+| `docling_externe/lecteur_docling_serve.py` | petit lecteur Python : envoie chaque PDF au serveur (`/v1/convert/file`) et rend le texte page par page, tableaux compris |
+| `docling_externe/flowsettings.py` | copie du fichier de configuration de Kotaemon, complétée par la ligne `FILE_INDEX_PIPELINE_FILE_EXTRACTORS = {".pdf": "lecteur_docling_serve.LecteurDoclingServe"}` |
+| `compose.docling-externe.yml` | ajoute le conteneur `rag-docling-serve` (image `quay.io/docling-project/docling-serve-cpu:v1.38.2`, 5 Go) et monte les deux fichiers dans le conteneur de Kotaemon ; l'adresse du serveur est dans `DOCLING_SERVE_URL` (`http://rag-docling-serve:5001`) |
+
+Lancer :
+
+```bash
+outils/kotaemon/docling_externe/brancher.sh
+```
+
+*Résultat* : le message « Kotaemon prêt, PDF lus par rag-docling-serve » apparaît après une trentaine de secondes. Pour un serveur installé sur une autre machine, il suffit de retirer le service `docling-serve` du fichier `compose.docling-externe.yml` et de mettre son adresse dans `DOCLING_SERVE_URL` (cas non essayé).
+
+**Étape 18. Relire le PDF scanné avec le serveur séparé**
+*Où* : « Files » › « File Collection » › « Upload Files ».
+
+Laisser « Default (open-source) » dans « File loader » : le réglage de l'étape 17 s'applique à tous les PDF, quel que soit ce choix. Choisir `contrat-batterix-scan.pdf`, cocher « Force reindex file », cliquer sur « Upload and Index », puis cliquer sur la ligne du fichier dans la liste.
+
+![PDF scanné lu par le serveur Docling séparé](../img/05-documents/18-scan-lu-par-docling-externe.png)
+*Écran : fiche de `contrat-batterix-scan.pdf` après la relecture par le serveur séparé.*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | `contrat-batterix-scan.pdf` | la colonne « loader » indique `LecteurDoclingServe` (le lecteur de l'étape 17) |
+| 2 | passage lu | « [1/2] [Page 1] (text) CONTRAT D'APPROVISIONNEMENT N° BX-2025-117 … » : le texte de la page scannée est lu |
+
+*Résultat* : la relecture prend une dizaine de secondes pour ces deux pages. Le groupe « Fournisseur Batterix » perd le contrat, comme après toute relecture forcée : le remettre (étapes 15 et 16).
+
+Pour revenir au fonctionnement d'origine (serveur arrêté et supprimé, Kotaemon sans le lecteur extérieur) :
+
+```bash
+outils/kotaemon/docling_externe/debrancher.sh
+```
+
+Les PDF déjà lus par le serveur séparé gardent leur texte ; seuls les PDF ajoutés ensuite reviennent au lecteur choisi dans « File loader ».
+
 ## Bon à savoir
 
 - Formats acceptés : PDF, images (PNG, JPEG, TIFF), Word (`.doc`, `.docx`), Excel (`.xls`, `.xlsx`), PowerPoint (`.pptx`), CSV, HTML, MHTML, texte, Markdown et archives ZIP ; taille maximale 1000 Mo par fichier.
 - Les collections sont privées par défaut : chaque compte ne voit que les fichiers qu'il a ajoutés (chapitre 11).
-- **Lecteur extérieur** : Kotaemon accepte qu'un lecteur écrit à part remplace le sien pour une extension donnée (réglage `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` de son fichier de configuration `flowsettings.py`). C'est par ce moyen qu'un serveur Docling ou PaddleOCR installé hors de Kotaemon peut lire les PDF : un petit module Python envoie le fichier au serveur et rend le texte page par page. Ce branchement n'est pas réalisé dans ce manuel ; la méthode est décrite dans l'[annexe A3](../annexes/A3-automatiser-par-la-bibliotheque.md).
+- **Lecteur extérieur** : le réglage `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` de `flowsettings.py` associe une extension (`.pdf`, `.png`…) à un lecteur écrit à part ; il l'emporte sur le choix « File loader ». Le détail technique est dans l'[annexe A3](../annexes/A3-automatiser-par-la-bibliotheque.md).
 - Un fichier Word ou PowerPoint qui échoue avec « HTTP Error 403: Forbidden » signale des données de découpage manquantes : relancer le script d'installation (chapitre 02), puis forcer la relecture (étape 9) ; voir le chapitre 13 (étape 4) pour LightRAG et NanoGraphRAG après une réinstallation.
 
 ## En cas de problème
@@ -295,6 +348,8 @@ Cliquer dans « Attached files », choisir `contrat-batterix-scan.pdf`, puis cli
 | un fichier déjà présent n'est pas relu | Kotaemon ignore les fichiers déjà indexés | cocher « Force reindex file » (étape 9) |
 | un fichier a disparu | clic sur « Delete » dans sa fiche | l'ajouter de nouveau (étape 1) |
 | un groupe ne trouve plus un fichier | fichier relu par « Force reindex file » | le remettre dans le groupe (étapes 15 et 16) |
+| « Converting … » puis échec, après l'étape 17 | serveur Docling séparé arrêté ou injoignable | `docker ps` : `rag-docling-serve` doit être « Up » ; relancer `brancher.sh` |
+| le choix « File loader » n'a plus d'effet sur les PDF | lecteur extérieur branché (étape 17) | normal ; `debrancher.sh` pour revenir au choix de l'interface |
 
 ---
-*Version décrite : Kotaemon 0.12.0, essais du 12 novembre 2026. Détails et preuves : [rapport d'essais](../annexes/A6-rapport-d-essais.md).*
+*Version décrite : Kotaemon 0.12.0, essais du 12 et 13 novembre 2026. Détails et preuves : [rapport d'essais](../annexes/A6-rapport-d-essais.md).*

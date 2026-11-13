@@ -26,6 +26,7 @@ Principe : rien n'est écrit de mémoire. Chaque affirmation des manuels vient d
 | Fichier | Rôle |
 |---|---|
 | `compose.yml`, `compose.sh` | projet compose `rag-kotaemon` (image figée, `127.0.0.1:7860`, réseaux `llm-net` et `rag-local`, télémétrie coupée, `NLTK_DATA`, options facultatives `donnees/kotaemon/options.env`) |
+| `compose.docling-externe.yml`, `docling_externe/` | serveur Docling séparé `rag-docling-serve` et lecteur `LecteurDoclingServe` branché par `flowsettings.py` ; `brancher.sh`, `debrancher.sh` (chapitre 05, étapes 17 et 18) |
 | `installer.sh` | installation rejouable (image, dossier de données, données NLTK, démarrage, contrôle des ports) |
 | `demarrer.sh`, `arreter.sh`, `etat.sh` | exploitation courante |
 | `sauvegarder.sh`, `restaurer.sh` | sauvegarde et restauration du dossier de données (conteneur jetable, fichiers de root) |

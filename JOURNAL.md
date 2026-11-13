@@ -5,7 +5,7 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 ## Décisions en attente
 
 1. LLM-Service : modèle de réponse plus léger (ou alias sans réflexion de `chat`) pour situer un plancher de qualité. Hors mission (modification de LLM-Service).
-2. Serveur Docling externe (docling-serve) branché par `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` : demandé par l'utilisateur le 12 novembre ; image hors enveloppe, essai sur accord ; méthode documentée (annexe A3).
+2. Serveur PaddleOCR externe, et serveur Docling sur une autre machine : même méthode que l'essai du 13 novembre, non essayés.
 3. Sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo) : garder ou supprimer.
 4. Changer la clé du service LLM central (un préfixe de 6 caractères est resté dans l'historique git) : relève de l'utilisateur, LLM-Service n'étant pas modifiable par la mission.
 
@@ -45,3 +45,10 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 - Incident de ménage : le premier filtre de `demo.py` a supprimé aussi les conversations de démonstration et la conversation partagée ; recréées par l'interface (filtre corrigé).
 - Style « citation: inline » : 2 réponses sur 7 essais (`captures/06-questions/notes.log`) ; chapitre 06 réécrit tel quel.
 - État : Kotaemon en marche sur http://127.0.0.1:7860, jeu de démonstration en place, `verifier_docs.py` à 0 point.
+
+### 2026-11-13 08:10 — Complément : serveur Docling séparé
+
+- Demande de l'utilisateur (un essai, pas de banc) : docling-serve v1.38.2 (CPU, `quay.io/docling-project/docling-serve-cpu` figée par empreinte, 5,06 Go) dans `rag-docling-serve`, réseau `llm-net`, sans port publié.
+- Branchement : `outils/kotaemon/docling_externe/` (lecteur `LecteurDoclingServe`, copie de `flowsettings.py` avec `FILE_INDEX_PIPELINE_FILE_EXTRACTORS`, `brancher.sh`, `debrancher.sh`) et `compose.docling-externe.yml`.
+- Résultat : contrat scanné relu en 10 à 14 s (contre 47 s avec le Docling intégré), colonne « loader » `LecteurDoclingServe`, texte des pages lu ; « File loader » inchangé (`docling-externe-2026-11-13.log`, scénario `captures/c05_docling_externe.py`, capture 18 du chapitre 05). Groupe « Fournisseur Batterix » réparé ; serveur débranché, Kotaemon revenu à sa configuration (HTTP 200).
+- Documentation : chapitre 05 (explication Docling intégré ou séparé, étapes 17 et 18), annexe A3 §5, A6, README, RAPPORT.

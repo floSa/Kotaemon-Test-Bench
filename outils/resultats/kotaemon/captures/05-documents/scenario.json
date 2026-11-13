@@ -289,5 +289,20 @@
   ],
   "note": "",
   "heure": "23:41:31"
+ },
+ {
+  "capture": "05-documents/18-scan-lu-par-docling-externe.png",
+  "pastilles": [
+   [
+    1,
+    "LecteurDoclingServe"
+   ],
+   [
+    2,
+    "texte lu par le serveur"
+   ]
+  ],
+  "note": "",
+  "heure": "07:04:27"
  }
 ]

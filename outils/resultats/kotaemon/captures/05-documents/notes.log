@@ -16,3 +16,31 @@
 2026-11-12 22:21:22 15-fichier-supprime : élément absent « message »
 2026-11-12 22:21:33 remise : toasts ['Info\nSuccessfully index 1 files\n×', 'Info\nStart indexing 1 files...\n×']
 2026-11-12 23:41:34 réparation du groupe : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']
+2026-11-13 07:02:19 File loader affiché : 'Default (open-source)'
+2026-11-13 07:02:40 réindexation du scan par le serveur Docling séparé : 14.1 s ; toasts ['Info\nSuccessfully index 1 files\n×']
+2026-11-13 07:02:40 Upload info : ✅ | contrat-batterix-scan.pdf | Indexing [1/1]: contrat-batterix-scan.pdf
+ => Removing old contrat-batterix-scan.pdf
+ => Converting contrat-batterix-scan.pdf to text
+ => Converted contrat-batterix-scan.pdf to text
+ => [contrat-batterix-scan.pdf] Processed 2 chunks
+ => [contrat-batterix-scan.pdf] Created embedding for 2 chunks
+ => Finished indexing contrat-batterix-scan.pdf | 
+2026-11-13 07:02:57 groupe réparé : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']
+2026-11-13 07:03:31 réindexation du scan par le serveur Docling séparé : 11.1 s ; toasts ['Info\nSuccessfully index 1 files\n×']
+2026-11-13 07:03:31 Upload info : ✅ | contrat-batterix-scan.pdf | Indexing [1/1]: contrat-batterix-scan.pdf
+ => Removing old contrat-batterix-scan.pdf
+ => Converting contrat-batterix-scan.pdf to text
+ => Converted contrat-batterix-scan.pdf to text
+ => [contrat-batterix-scan.pdf] Processed 2 chunks
+ => [contrat-batterix-scan.pdf] Created embedding for 2 chunks
+ => Finished indexing contrat-batterix-scan.pdf | 
+2026-11-13 07:03:47 groupe réparé : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']
+2026-11-13 07:04:20 réindexation du scan par le serveur Docling séparé : 10.1 s ; toasts ['Info\nSuccessfully index 1 files\n×', 'Info\nStart indexing 1 files...\n×']
+2026-11-13 07:04:20 Upload info : ✅ | contrat-batterix-scan.pdf | Indexing [1/1]: contrat-batterix-scan.pdf
+ => Removing old contrat-batterix-scan.pdf
+ => Converting contrat-batterix-scan.pdf to text
+ => Converted contrat-batterix-scan.pdf to text
+ => [contrat-batterix-scan.pdf] Processed 2 chunks
+ => [contrat-batterix-scan.pdf] Created embedding for 2 chunks
+ => Finished indexing contrat-batterix-scan.pdf | 
+2026-11-13 07:04:37 groupe réparé : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']

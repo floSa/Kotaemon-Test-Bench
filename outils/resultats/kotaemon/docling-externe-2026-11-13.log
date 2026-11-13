@@ -1,0 +1,57 @@
+# Essai d'un serveur Docling séparé (docling-serve) branché à Kotaemon — 2026-11-13 08:04:52
+image : quay.io/docling-project/docling-serve-cpu:v1.38.2@sha256:7a480a1604fa3b42efeddc7db9527690d9f9bc903226136013e2bfe6b1a4dfb0 (5,06 Go)
+branchement : outils/kotaemon/docling_externe/brancher.sh (compose.yml + compose.docling-externe.yml), prêt en 28 s
+santé du serveur vue depuis rag-kotaemon : {"status":"ok"}
+File loader affiché : Default (open-source) (inchangé)
+--- notes du scénario (captures/05-documents/notes.log) ---
+2026-11-13 07:02:19 File loader affiché : 'Default (open-source)'
+2026-11-13 07:02:40 réindexation du scan par le serveur Docling séparé : 14.1 s ; toasts ['Info\nSuccessfully index 1 files\n×']
+2026-11-13 07:02:40 Upload info : ✅ | contrat-batterix-scan.pdf | Indexing [1/1]: contrat-batterix-scan.pdf
+ => Removing old contrat-batterix-scan.pdf
+ => Converting contrat-batterix-scan.pdf to text
+ => Converted contrat-batterix-scan.pdf to text
+ => [contrat-batterix-scan.pdf] Processed 2 chunks
+ => [contrat-batterix-scan.pdf] Created embedding for 2 chunks
+ => Finished indexing contrat-batterix-scan.pdf | 
+2026-11-13 07:02:57 groupe réparé : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']
+2026-11-13 07:03:31 réindexation du scan par le serveur Docling séparé : 11.1 s ; toasts ['Info\nSuccessfully index 1 files\n×']
+2026-11-13 07:03:31 Upload info : ✅ | contrat-batterix-scan.pdf | Indexing [1/1]: contrat-batterix-scan.pdf
+ => Removing old contrat-batterix-scan.pdf
+ => Converting contrat-batterix-scan.pdf to text
+ => Converted contrat-batterix-scan.pdf to text
+ => [contrat-batterix-scan.pdf] Processed 2 chunks
+ => [contrat-batterix-scan.pdf] Created embedding for 2 chunks
+ => Finished indexing contrat-batterix-scan.pdf | 
+2026-11-13 07:03:47 groupe réparé : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']
+2026-11-13 07:04:20 réindexation du scan par le serveur Docling séparé : 10.1 s ; toasts ['Info\nSuccessfully index 1 files\n×', 'Info\nStart indexing 1 files...\n×']
+2026-11-13 07:04:20 Upload info : ✅ | contrat-batterix-scan.pdf | Indexing [1/1]: contrat-batterix-scan.pdf
+ => Removing old contrat-batterix-scan.pdf
+ => Converting contrat-batterix-scan.pdf to text
+ => Converted contrat-batterix-scan.pdf to text
+ => [contrat-batterix-scan.pdf] Processed 2 chunks
+ => [contrat-batterix-scan.pdf] Created embedding for 2 chunks
+ => Finished indexing contrat-batterix-scan.pdf | 
+2026-11-13 07:04:37 groupe réparé : toasts ['Info\nGroup Fournisseur Batterix has been saved\n×']
+--- journal du conteneur (extrait) ---
+Using reader LecteurDoclingServe()
+Using reader LecteurDoclingServe()
+Using reader LecteurDoclingServe()
+--- débranchement ---
+ Container rag-kotaemon Recreate 
+ Container rag-kotaemon Recreated 
+ Container rag-kotaemon Starting 
+ Container rag-kotaemon Started 
+HTTP 7860 : 200
+rag-kotaemon Up 25 seconds 127.0.0.1:7860->7860/tcp
+rag-anythingllm Exited (137) 11 hours ago 
+rag-open-notebook Exited (0) 19 hours ago 
+rag-reranker Exited (0) 35 hours ago 
+rag-ragflow-server Exited (137) 19 hours ago 
+rag-ragflow-mysql Exited (0) 19 hours ago 
+rag-ragflow-minio Exited (0) 19 hours ago 
+rag-ragflow-es01 Exited (143) 19 hours ago 
+rag-ragflow-kvrocks Exited (0) 19 hours ago 
+rag-ragflow-nats Exited (0) 19 hours ago 
+rag-open-notebook-surrealdb Exited (0) 19 hours ago 
+rag-speaches Exited (0) 19 hours ago 
+/app/ktem_app_data 

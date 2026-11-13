@@ -19,7 +19,7 @@ Ce manuel apprend à installer Kotaemon 0.12.0 sur un poste Windows 11 avec WSL2
 | [02. Installer Kotaemon](manuel/02-installer-kotaemon.md) | installer, démarrer, arrêter et supprimer Kotaemon sous Windows 11 et WSL2 |
 | [03. Premiers pas](manuel/03-premiers-pas.md) | se connecter, changer le mot de passe administrateur, se repérer dans l'écran, déclarer les modèles du service de modèles, régler la langue |
 | [04. Première question en dix minutes](manuel/04-premiere-question.md) | ajouter un PDF, poser une question en français, lire la réponse et ses passages cités |
-| [05. Ajouter et organiser ses documents](manuel/05-ajouter-et-organiser-ses-documents.md) | ajouter plusieurs fichiers, consulter les passages d'un fichier, créer des groupes, supprimer, ajouter depuis le chat, choisir le lecteur de fichiers |
+| [05. Ajouter et organiser ses documents](manuel/05-ajouter-et-organiser-ses-documents.md) | ajouter plusieurs fichiers, consulter les passages d'un fichier, créer des groupes, supprimer, ajouter depuis le chat, choisir le lecteur de fichiers, brancher un serveur Docling séparé |
 | [06. Poser des questions et lire les sources](manuel/06-poser-des-questions-et-lire-les-sources.md) | gérer les conversations, limiter la recherche à des fichiers ou un groupe, choisir le style de citation, lire les scores, donner un avis |
 | [07. Régler la recherche et le raisonnement](manuel/07-regler-la-recherche-et-le-raisonnement.md) | choisir le mode de recherche, le tri, la notation par le modèle et son alerte, la méthode de raisonnement et les consignes |
 | [08. Agents ReAct et ReWOO](manuel/08-agents-react-et-rewoo.md) | faire répondre un agent qui enchaîne des recherches, comparer les deux agents, voir où se déclarent les serveurs MCP |
@@ -57,7 +57,7 @@ Pour choisir, dimensionner, automatiser ou exploiter ; rien de cette partie n'es
 
 | Sujet | État |
 |---|---|
-| Lecteur Docling ou PaddleOCR installé hors de Kotaemon | possible par le réglage `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` de `flowsettings.py` et un petit module Python ; méthode décrite dans l'annexe A3, non essayée |
+| Lecteur PaddleOCR installé hors de Kotaemon, serveur Docling sur une autre machine | même méthode que le serveur Docling séparé essayé sur le poste (chapitre 05, étapes 17 et 18) ; non essayés |
 | Image « lite », plus légère | non essayée ; perd probablement la lecture des DOCX et PPTX |
 | Poste sans carte graphique | temps estimés à partir des mesures du service de modèles (annexe A2), non mesurés avec Kotaemon |
 | Serveurs MCP, liens web, `@WebSearch` | formulaires montrés ; services en ligne ou serveurs tiers non branchés |
@@ -68,7 +68,6 @@ Pour choisir, dimensionner, automatiser ou exploiter ; rien de cette partie n'es
 
 Choix qui restent à faire par la personne qui gère le poste ; aucun n'empêche de suivre le manuel.
 
-1. Essayer un lecteur Docling installé comme service séparé, hors de Kotaemon (méthode décrite dans l'annexe A3) : demande de télécharger un logiciel supplémentaire, non prévu pour ces essais.
-2. Faire servir par le service de modèles une version de `chat` qui répond sans réfléchir d'abord, ou un modèle plus léger : réponses plus rapides ; c'est un réglage du service de modèles, pas de Kotaemon.
-3. Garder ou supprimer la sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo) ; elle contient la clé du service de modèles.
-4. Changer la clé du service de modèles : un fragment de 6 caractères en est resté dans l'historique du dépôt (annexe A6).
+1. Faire servir par le service de modèles une version de `chat` qui répond sans réfléchir d'abord, ou un modèle plus léger : réponses plus rapides ; c'est un réglage du service de modèles, pas de Kotaemon.
+2. Garder ou supprimer la sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo) ; elle contient la clé du service de modèles.
+3. Changer la clé du service de modèles : un fragment de 6 caractères en est resté dans l'historique du dépôt (annexe A6).

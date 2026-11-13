@@ -34,7 +34,7 @@ Mission `kit/PROMPT.md`, fiche `kit/fiches/03-kotaemon.md`, essais du 12 et 13 n
 ## Vérifié, non vérifié
 
 - **Vérifié** : installation, ports, chaque chapitre de la partie 1 fait à la souris et capturé, banc (4 réglages complets, 1 partiel), exemples (4, code 0), sauvegarde et restauration, LightRAG, échecs de NanoGraphRAG et de Microsoft GraphRAG, comptes et partage.
-- **Non vérifié** : profil sans carte graphique (estimations, annexe A2) ; lecteur Docling ou PaddleOCR externe (méthode lue dans le code, annexe A3) ; image « lite » ; modèle `gemma-4-e4b` ; ajout effectif d'un serveur MCP ; liens web et `@WebSearch` (services en ligne) ; `nettoyer.sh kotaemon` (pour garder le jeu de démonstration) ; boutons « Download », « Report » et « Suggest chat » montrés sans être actionnés.
+- **Non vérifié** : profil sans carte graphique (estimations, annexe A2) ; serveur PaddleOCR externe et serveur Docling sur une autre machine (même méthode que l'essai du serveur Docling séparé) ; image « lite » ; modèle `gemma-4-e4b` ; ajout effectif d'un serveur MCP ; liens web et `@WebSearch` (services en ligne) ; `nettoyer.sh kotaemon` (pour garder le jeu de démonstration) ; boutons « Download », « Report » et « Suggest chat » montrés sans être actionnés.
 
 ## Incidents
 
@@ -42,7 +42,7 @@ Détail dans l'annexe A6, section 4. Principaux : données NLTK d'unstructured e
 
 ## Décisions en attente
 
-1. **Serveur Docling externe** : la demande de l'utilisateur (brancher un docling-serve ou un PaddleOCR hors de Kotaemon) est décrite comme méthode (annexe A3, section 5) mais non essayée : l'image docling-serve n'est pas dans l'enveloppe autorisée. À essayer sur accord.
+1. **Serveur Docling externe** : essayé le 13 novembre sur accord de l'utilisateur (docling-serve v1.38.2 dans `rag-docling-serve`, contrat scanné lu en 10 à 14 s, chapitre 05 étapes 17 et 18, annexe A3 section 5) ; débranché ensuite. Reste à essayer : un serveur PaddleOCR et un serveur sur une autre machine.
 2. **Modèle de réponse plus léger** pour situer un plancher de qualité : relève de LLM-Service, hors mission.
 3. **Réflexion de `chat`** : Kotaemon ne peut pas la couper ; une option côté LLM-Service (alias sans réflexion) raccourcirait les réponses de moitié environ [Estimation]. Hors mission.
 4. **Sauvegarde d'essai** `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo, contient la clé du service en clair dans la base) : à garder ou supprimer.
