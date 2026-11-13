@@ -6,7 +6,7 @@
 
 ## Ce qu'il faut savoir
 
-Chaque cas reprend des gestes déjà vus ; il les enchaîne pour un but précis et montre comment vérifier la réponse à sa source. Avant chaque cas : nouvelle conversation (crayon dans un carré vert, chapitre 06) et « French » dans « Chat settings » › « Language ».
+Chaque cas reprend des gestes déjà vus ; il les enchaîne pour un but précis et montre comment vérifier la réponse à sa source. Avant chaque cas : nouvelle conversation (crayon dans un carré vert, chapitre 06) ; vérifier que « Chat settings » › « Language » affiche `French` (le rechoisir après un rechargement de la page).
 
 ## Cas 1. Préparer la renégociation d'un fournisseur
 

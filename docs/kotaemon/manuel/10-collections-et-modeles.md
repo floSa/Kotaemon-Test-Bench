@@ -73,7 +73,7 @@ Cliquer enfin sur le bouton « Add » (pastille 5).
 *Résultat* : le message « Index "Documents partagés" created successfully. Please restart the app! » apparaît (étape suivante).
 
 **Étape 3. Redémarrer Kotaemon**
-*Où* : terminal Ubuntu, dossier du dépôt.
+*Où* : navigateur (message de fin de création), puis terminal Ubuntu, dossier du dépôt (commandes).
 
 ![Demande de redémarrage](../img/10-ressources/03-redemarrer.png)
 *Écran : message de fin de création.*
@@ -145,8 +145,8 @@ Après la création d'une collection, Kotaemon ne sait plus relire les réglages
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `llm-service-rerank` | modèle de tri du service de modèles, par défaut |
-| 2 | `cohere` | modèle de tri en ligne préinstallé, sans clé |
+| 1 | `llm-service-rerank` | ligne du haut : modèle de tri du service de modèles, par défaut |
+| 2 | `cohere` | ligne du bas : modèle de tri en ligne préinstallé, sans clé |
 
 *Résultat* : le tri des passages (« Use reranking », chapitre 07) utilise le modèle marqué par défaut.
 

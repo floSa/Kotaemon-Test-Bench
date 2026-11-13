@@ -152,7 +152,7 @@ Saisir `4` dans « Number of document chunks to retrieve », cocher « Use LLM r
 **Étape 9. Vérifier l'alerte de faible pertinence**
 *Où* : « Chat », nouvelle conversation, « Search All ».
 
-Poser une question dont la réponse n'est pas dans les documents : `Combien de trottinettes électriques Vélanor a-t-elle vendues en 2025 ?`.
+Remettre `simple` dans « Chat settings » › « Reasoning method » (l'étape 6 l'avait passée sur `complex`), puis poser une question dont la réponse n'est pas dans les documents : `Combien de trottinettes électriques Vélanor a-t-elle vendues en 2025 ?`.
 
 ![Réponse à une question sans réponse dans les documents](../img/07-reglages/09-alerte-pertinence.png)
 *Écran : « Chat », réponse avec notation par le modèle.*
@@ -161,7 +161,7 @@ Poser une question dont la réponse n'est pas dans les documents : `Combien de t
 |---|---|---|
 | 1 | réponse | la réponse dit ne pas trouver l'information dans les documents |
 
-*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde « LLM relevant score: 0.0 ». Cette option n'apporte donc rien ici : revenir ensuite aux réglages conseillés (3 à 5 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
+*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde « LLM relevant score: 0.0 » (visible en dépliant « Relevance score » dans le panneau, chapitre 06, étape 6). Cette option n'apporte donc rien ici : revenir ensuite aux réglages conseillés (3 à 5 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
 
 ## Bon à savoir
 

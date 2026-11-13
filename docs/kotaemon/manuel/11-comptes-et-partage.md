@@ -74,7 +74,7 @@ Ajouter `cse-2025-10-14.md` comme au chapitre 05 (étape 1).
 **Étape 4. Partager une conversation**
 *Où* : « Chat » › colonne de gauche › « Feedback » › « Share this conversation ».
 
-Poser une question dans une nouvelle conversation (par exemple `Qui est la présidente de Vélanor ?`), ouvrir « Feedback », puis cocher « Share this conversation ».
+Ouvrir une nouvelle conversation, cliquer sur « Search All » dans « File Collection », poser une question (par exemple `Qui est la présidente de Vélanor ?`), ouvrir « Feedback », puis cocher « Share this conversation ».
 
 ![Partage d'une conversation](../img/11-comptes/04-partager-conversation.png)
 *Écran : « Chat », bloc « Feedback » ouvert, conversation partagée.*

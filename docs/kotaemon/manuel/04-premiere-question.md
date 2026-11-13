@@ -8,7 +8,7 @@
 
 Kotaemon range les documents dans des **collections**. À l'installation, il en existe trois : « File Collection » (la collection ordinaire, utilisée ici), « GraphRAG Collection » et « LightRAG Collection » (deux collections qui construisent en plus un graphe des notions du document, chapitre 09).
 
-Quand un document est ajouté, Kotaemon le lit, le découpe en **passages** (des morceaux de texte d'environ une page) et calcule pour chacun sa représentation par le modèle d'embedding : c'est l'**indexation**. À chaque question, Kotaemon cherche les passages les plus proches de la question, les trie, puis les donne au modèle de réponse, qui rédige une réponse en s'appuyant dessus. Les passages utilisés s'affichent à droite de la réponse, avec le nom du document et le numéro de page : ce sont les **citations**.
+Quand un document est ajouté, Kotaemon le lit, le découpe en **passages** (des morceaux de texte d'environ une demi-page, 1 024 jetons au plus) et calcule pour chacun sa représentation par le modèle d'embedding : c'est l'**indexation**. À chaque question, Kotaemon cherche les passages les plus proches de la question, les trie, puis les donne au modèle de réponse, qui rédige une réponse en s'appuyant dessus. Les passages utilisés s'affichent à droite de la réponse, avec le nom du document et le numéro de page : ce sont les **citations**.
 
 Les captures de ce chapitre montrent dans la colonne de gauche deux collections de plus (« Documents partagés », « NanoGraphRAG Collection »), créées plus loin dans le manuel : ne pas en tenir compte.
 

@@ -20,7 +20,7 @@ Les lignes qui commencent par `Traceback` ou qui contiennent `Error` décrivent 
 *Où* : onglet « Welcome ».
 
 ![Mot de passe refusé](../img/13-problemes/01-mot-de-passe-refuse.png)
-*Écran : « Welcome », après un mauvais mot de passe (le champ « Password » est masqué en noir sur la capture).*
+*Écran : « Welcome », après un mauvais mot de passe (le champ « Password » est masqué en noir sur la capture ; le cadre rouge sans numéro signale ce masquage).*
 
 | N° | Élément | Rôle |
 |---|---|---|
@@ -120,7 +120,7 @@ Dans tous les cas, recharger la page, ouvrir une nouvelle conversation et repose
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | question | texte collé dans la zone de saisie, aucune réponse en dessous |
+| 1 | question | question envoyée, affichée dans la zone de discussion, sans réponse en dessous |
 
 *Résultat* : aucune réponse n'arrive et le panneau affiche « No evidence found. » ; le journal montre une erreur de la recherche par mots (« LanceError(IO): sql parser error »). Le modèle accepte au plus 16 384 jetons par question, réponse comprise : un long texte s'ajoute comme document (chapitre 05), puis s'interroge par des questions courtes.
 

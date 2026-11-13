@@ -120,7 +120,7 @@ Test sur 38 questions dont la réponse est connue, posées à 9 documents d'une 
 
 | Mesure | Résultat |
 |---|---|
-| Réponses justes (34 questions ont une réponse dans les documents, 4 n'en ont pas) | 25 sur 34 avec le lecteur intégré ; 30 sur 34 quand le contrat scanné est lu par Docling ; 31 sur 34 en ne transmettant que 3 passages au modèle |
+| Réponses justes (34 questions ont une réponse dans les documents, 4 n'en ont pas) | 25 sur 34 avec le lecteur intégré ; 30 sur 34 quand le contrat scanné est lu par Docling ; 31 sur 34 avec Docling en ne transmettant que 3 passages au modèle (une de plus qu'avec 10 passages) |
 | Questions sans réponse dans les documents | 4 refus sur 4 dans tous les réglages, aucune réponse inventée |
 | Source citée | quand le passage vient d'un PDF, la page citée est toujours la bonne |
 | Échecs restants | les 2 questions sur le message vocal (audio non lu), une question qui croise deux documents |

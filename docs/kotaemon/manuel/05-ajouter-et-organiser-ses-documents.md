@@ -75,7 +75,7 @@ Cliquer sur « Upload and Index », puis attendre la fin.
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `contrat-batterix-scan.pdf` | une ligne par fichier : nom, taille, nombre de jetons, lecteur utilisé (« loader »), date d'ajout |
+| 1 | `contrat-batterix-scan.pdf` | une ligne par fichier : nom, taille, nombre de jetons, lecteur utilisé (« loader »), date d'ajout ; sur la capture, le contrat a déjà été relu par Docling (étape 13) : à ce stade, sa ligne affiche `PDFThumbnailReader` |
 | 2 | « Filter by name: » | n'affiche que les fichiers dont le nom contient le texte saisi (majuscules indifférentes) |
 
 *Résultat* : la colonne « loader » indique le lecteur qui a lu chaque fichier : `PDFThumbnailReader` (PDF, lecteur intégré), `UnstructuredReader` (Word, PowerPoint), `PandasExcelReader` (Excel), `HtmlReader`, `TxtReader` (Markdown), `DoclingReader` (PDF lu par Docling).
@@ -102,7 +102,7 @@ Cliquer sur « Upload and Index », puis attendre la fin.
 Un **groupe** est une liste nommée de fichiers d'une collection. Il sert à limiter une recherche à ces fichiers d'un seul clic (chapitre 06).
 
 **Étape 6. Créer un groupe**
-*Où* : « Files » › « File Collection » › « Groups » › « Add ».
+*Où* : « Files » › « File Collection » › « Groups » (le formulaire « Add new group » s'affiche directement tant qu'aucun groupe n'existe ; sinon, cliquer sur « Add »).
 
 Saisir `Fournisseur Batterix` dans « Group name », choisir `contrat-batterix-scan.pdf` puis `supplier-audit-batterix-en.pdf` dans « Attached files » (un clic par fichier dans la liste qui s'ouvre), puis cliquer sur « Save ».
 

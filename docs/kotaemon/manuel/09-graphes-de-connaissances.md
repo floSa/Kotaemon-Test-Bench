@@ -56,7 +56,7 @@ Choisir `rapport-annuel-2025.pdf` (cocher « Force reindex file » s'il a déjà
 |---|---|---|
 | 1 | « LightRAG Collection » | collection en graphe |
 | 2 | « Upload result » | coche verte : fichier indexé |
-| 3 | « Upload info » | « [GraphRAG] Creating index: 0 / 10 documents », « Indexed 4 / 10 documents… » : avancement de la construction du graphe |
+| 3 | « Upload info » | « [GraphRAG] Creating index: 0 / 10 documents », « Indexed 4 / 10 documents… » : avancement de la construction du graphe ; LightRAG regroupe les passages du fichier en morceaux plus grands (ici 10) et les traite un par un |
 
 *Résultat* : après environ 9 minutes pour ce rapport de 10 pages (contre 6 secondes dans « File Collection »), le message « Successfully index 1 files » apparaît.
 
@@ -95,7 +95,7 @@ outils/kotaemon/completer_lightrag.sh
 
 Le premier script active la collection « NanoGraphRAG Collection », installe le paquet `nano-graphrag` dans le conteneur, puis corrige les deux conflits qu'il provoque : il remplace une bibliothèque de la base des vecteurs (Kotaemon ne démarre plus sans cette correction, comme le signale la documentation du projet) et il fait monter une autre bibliothèque (pydantic) vers une version qui empêche l'interface de s'afficher ; le script remet la version d'origine. Le second script remet la pièce de LightRAG, perdue quand le conteneur est recréé.
 
-*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat.
+*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat. Comme toute création de collection, celle-ci fait revenir les réglages de « Settings » aux valeurs par défaut : les refaire (chapitre 10, étape 4).
 
 **Étape 6. Indexer un document avec NanoGraphRAG**
 *Où* : « Files » › « NanoGraphRAG Collection » › « Upload Files ».
