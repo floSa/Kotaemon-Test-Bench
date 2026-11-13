@@ -31,25 +31,23 @@ D'après les documents fournis, la durée de garantie du cadre est de 7 ans.
 
 Voici l'explication détaillée basée sur le contexte :
 
-Source de l'information : La réponse se trouve dans le document faq-sav.html (Page 1), intitulé "FAQ du service après-vente".
-Contenu exact : Dans la section répondant à la question "Quelle est la durée de la garantie ?", il est écrit explicitement : "Le cadre est garanti 7 ans."
-Distinction avec les autres pièces : Il est important de noter que d'autres documents mentionnent des garanties différentes pour d'autres composants ou contrats :
-Le document contrat-batterix-scan.pdf (Page 2) indique une garantie de 5 ans (ou 1 000 cycles), mais cela concerne les batteries ("Article 7 Garantie" dans un contrat d'approvisionnement de batteries).
-Le document faq-sav.html précise également que la batterie et le moteur sont garantis seulement 2 ans.
+Source de l'information : La réponse se trouve dans le document faq-sav.html (Page 1), qui contient les questions fréquentes du service après-vente.
+Contenu exact : Dans la section intitulée "## Quelle est la durée de la garantie ?", il est écrit explicitement : "Le cadre est garanti 7 ans."
+Contexte complémentaire : Le même document précise que les autres composants principaux, à savoir la batterie et le moteur, sont garantis pour une durée plus courte (2 ans), ce qui met en évidence la différence de garantie accordée au cadre par rapport aux autres pièces du produit.
 
-Ainsi, pour le cadre spécifiquement, la durée de garantie est bien de 7 ans.
+Aucun autre document fourni (comme le rapport annuel ou les contrats d'approvisionnement) ne mentionne spécifiquement la durée de garantie du cadre, confirmant que c'est l'information issue de la FAQ qui est la plus pertinente pour cette question.
 
 Et quel numéro appeler pour le service après-vente ?
 
-Pour contacter le service après-vente, vous devez appeler le numéro 02 40 00 12 34.
+Pour contacter le service après-vente par téléphone, il faut appeler le numéro 02 40 00 12 34.
 
-Voici les détails complets basés sur le document faq-sav.html (Page 1) :
+Cette information est extraite du document faq-sav.html (Page 1), dans la section intitulée "## Comment joindre le service après-vente ?". Le texte précise les conditions d'accès au service :
 
-Numéro de téléphone : 02 40 00 12 34.
-Horaires d'ouverture : Du lundi au vendredi, de 9 h à 18 h.
-Autre moyen de contact : Il est également possible de contacter le service après-vente en remplissant le formulaire du site web.
+Numéro : 02 40 00 12 34.
+Horaires : Du lundi au vendredi de 9 h à 18 h.
+Alternative : Il est également possible de contacter le service via le formulaire du site web.
 
-Aucune autre information contradictoire n'est présente dans les autres documents fournis (rapport annuel, contrats, stocks ou procédures).
+Aucun autre document fourni (rapport annuel, contrats d'approvisionnement ou procédures) ne contient cette information spécifique pour le contact client.
 
 MultimodalTextbox
 Dropdown
@@ -91,6 +89,37 @@ Oui, la batterie se retire avec la clé fournie. Seule une batterie d'origine V�
 
 
 
+Image from [Page 8] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+
+
+Vélanor SAS — document fictif — page 8 7. Fournisseurs principaux Composant Fournisseur Pays Batteries Batterix GmbH Allemagne (Brême) Moteurs Motodrive Co. Taïwan Freins Stopline Italie Pneus Gomma Ouest France Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars 2025.
+
+
+
+
+
+stocks-octobre-2025.xlsx [score: 0.0]
+ Relevance score: 0.0
+
+
+
+BAT-48V-14Ah Batterie 48 V 14 Ah 1240 1500 Nantes MOT-250W Moteur roue arrière 250 W 2105 1200 Nantes CAD-ALU-L Cadre aluminium taille L 860 600 Cholet CAD-ALU-M Cadre aluminium taille M 1020 600 Cholet FRN-HYD-02 Frein hydraulique 3400 2000 Nantes PNU-700-38 Pneu 700x38 5150 3000 Nantes Batterix GmbH Batteries 24 Motodrive Co. Moteurs 45 Stopline Freins 12 Gomma Ouest Pneus 6
+
+
+
+[Page 1] contrat-batterix-scan.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
 procedure-batteries.docx [score: 0.0]
  Relevance score: 0.0
 
@@ -118,43 +147,12 @@ Contrôle Fréquence Responsable Inspection du local B2 le premier lundi de chaq
 
 
 
-Image from [Page 8] rapport-annuel-2025.pdf [score: 0.0] [Preview]
- Relevance score: 0.0
-
-
-
-
-
-Vélanor SAS — document fictif — page 8 7. Fournisseurs principaux Composant Fournisseur Pays Batteries Batterix GmbH Allemagne (Brême) Moteurs Motodrive Co. Taïwan Freins Stopline Italie Pneus Gomma Ouest France Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars 2025.
-
-
-
-
-
-stocks-octobre-2025.xlsx [score: 0.0]
- Relevance score: 0.0
-
-
-
-BAT-48V-14Ah Batterie 48 V 14 Ah 1240 1500 Nantes MOT-250W Moteur roue arrière 250 W 2105 1200 Nantes CAD-ALU-L Cadre aluminium taille L 860 600 Cholet CAD-ALU-M Cadre aluminium taille M 1020 600 Cholet FRN-HYD-02 Frein hydraulique 3400 2000 Nantes PNU-700-38 Pneu 700x38 5150 3000 Nantes Batterix GmbH Batteries 24 Motodrive Co. Moteurs 45 Stopline Freins 12 Gomma Ouest Pneus 6
-
-
-
 [Page 2] contrat-batterix-scan.pdf [score: 0.0] [Preview]
  Relevance score: 0.0
 
 
 
 Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
-
-
-
-[Page 1] contrat-batterix-scan.pdf [score: 0.0] [Preview]
- Relevance score: 0.0
-
-
-
-CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
 
 
 

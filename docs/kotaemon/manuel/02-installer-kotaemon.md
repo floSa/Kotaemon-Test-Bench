@@ -35,7 +35,7 @@ docker compose version
 df -h ~
 ```
 
-*Résultat* : la colonne « Avail » doit montrer au moins 20 Go libres : l'image de Kotaemon pèse 12,7 Go, car elle embarque LibreOffice, la lecture optique de caractères et plusieurs bibliothèques d'IA.
+*Résultat* : la colonne « Avail » doit montrer au moins 25 Go libres : l'image de Kotaemon pèse 12,7 Go, car elle embarque LibreOffice, la lecture optique de caractères et plusieurs bibliothèques d'IA.
 
 **Étape 3. Récupérer le dépôt**
 *Où* : terminal Ubuntu, dans le dossier où ranger le projet.

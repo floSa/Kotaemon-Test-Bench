@@ -26,7 +26,7 @@ Mission `kit/PROMPT.md`, fiche `kit/fiches/03-kotaemon.md`, essais du 12 et 13 n
 ## Résultats du banc en cinq lignes
 
 1. Lecteur intégré, 10 passages, sans puis avec le tri `rerank` : 25/34 justes après relecture (26 au comptage automatique) dans les deux cas, 4/4 refus ; le tri ne change pas le score.
-2. Contrat scanné relu par Docling : 30/34 (scan 4/4 au lieu de 1/4).
+2. Contrat scanné relu par Docling : 30/34 (scan 4/4 au lieu de 0/4 réellement, 1/4 au comptage automatique).
 3. Même chose avec 3 passages au lieu de 10 : 31/34, réponses un peu plus rapides (médiane 22 s).
 4. Échecs restants : audio non lu (2), une question qui croise contrat et tableur.
 5. Temps de réponse médian 22 à 26 s (réflexion du modèle comprise, non réglable dans Kotaemon) ; Kotaemon prend 0,5 à 1,9 Go de mémoire.
@@ -46,18 +46,21 @@ Détail dans l'annexe A6, section 4. Principaux : données NLTK d'unstructured e
 2. **Modèle de réponse plus léger** pour situer un plancher de qualité : relève de LLM-Service, hors mission.
 3. **Réflexion de `chat`** : Kotaemon ne peut pas la couper ; une option côté LLM-Service (alias sans réflexion) raccourcirait les réponses de moitié environ [Estimation]. Hors mission.
 4. **Sauvegarde d'essai** `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo, contient la clé du service en clair dans la base) : à garder ou supprimer.
-5. **Défauts à signaler au projet Kotaemon** (aucun compte en ligne créé) : visionneuse PDF, `pipmaster` manquant dans l'image, `python` hors environnement pour Microsoft GraphRAG, réglages non relus après création d'une collection, groupes non mis à jour après relecture.
+5. **Clé du service de modèles** : un préfixe de 6 caractères est resté dans l'historique git (journal `graphrag-2026-11-13.log`, masqué au commit `87ce88a`, historique non réécrit) ; changer la clé dans LLM-Service relève de l'utilisateur.
+6. **Défauts à signaler au projet Kotaemon** (aucun compte en ligne créé) : visionneuse PDF, `pipmaster` manquant dans l'image, `python` hors environnement pour Microsoft GraphRAG, réglages non relus après création d'une collection, groupes non mis à jour après relecture.
 
 ## Disque, mémoire, carte graphique
+
+Relevé : `outils/resultats/kotaemon/fin-de-mission-2026-11-13.log`.
 
 | Mesure | Valeur |
 |---|---|
 | Image Kotaemon | 12,7 Go |
-| Données `donnees/kotaemon/` | 1,1 Go (dont 536 Mo de modèles de Docling) |
+| Données `donnees/kotaemon/` | 1,1 Go, surtout les modèles de Docling et leur cache |
 | Sauvegarde d'essai | 1 007 Mo |
-| Mémoire de Kotaemon au repos (fin de mission) | 747 Mio |
+| Mémoire de Kotaemon au repos (fin de mission) | 746 Mio |
 | Service central, mémoire vive | LiteLLM 735 Mio, llama-swap 5,4 Gio, speaches 1,3 Gio |
-| Carte graphique (service central, bureau compris) | 7 799 Mio sur 16 380 |
+| Carte graphique (service central, bureau compris) | 7 730 Mio sur 16 380 |
 
 ## Tout arrêter ou tout supprimer
 

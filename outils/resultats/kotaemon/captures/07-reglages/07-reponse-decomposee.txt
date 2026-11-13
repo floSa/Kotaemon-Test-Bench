@@ -11,6 +11,10 @@ GraphRAG Collection
 ▼
 LightRAG Collection
 ▼
+Documents partagés
+▼
+NanoGraphRAG Collection
+▼
 Quick Upload
 ▼
 File
@@ -28,6 +32,21 @@ Sub questions and their answers
 Sub-question 1
 Quel est le délai de livraison contractuel pour Batterix ?
 Answer
+Selon les documents fournis, le délai de livraison contractuel pour Batterix est de **21 jours après la commande**.
+
+Voici l'explication détaillée basée sur le contexte :
+
+Source du document : Cette information se trouve dans le fichier contrat-batterix-scan.pdf, spécifiquement sur la Page 2.
+Article concerné : Il s'agit de l'Article 5, intitulé « Délais de livraison ».
+Contenu exact : Le texte du contrat stipule clairement : « Le Fournisseur livre sous 21 jours après la commande ».
+Contexte contractuel : Ce délai s'applique au contrat d'approvisionnement n° BX-2025-117 signé entre Vélanor SAS (l'Acheteur) et Batterix GmbH (le Fournisseur), comme confirmé sur la Page 1 du même fichier de contrat.
+
+Ainsi, conformément à l'accord écrit, le fournisseur Batterix s'engage à livrer les batteries dans un délai maximum de 21 jours suivant la réception de la commande par Vélanor SAS.
+
+Main question
+Quel est le délai de livraison contractuel de Batterix et quel délai moyen est réellement constaté lors de l'audit ?
+Answer
+
 
 MultimodalTextbox
 Dropdown
@@ -42,21 +61,21 @@ Dropdown
 Dropdown
 Information panel
 ▼
-[Page 1] supplier-audit-batterix-en.pdf [Preview]
-
-
-
-Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
-
-
-
-
-
 [Page 8] rapport-annuel-2025.pdf [Preview]
 
 
 
 Vélanor SAS — document fictif — page 8 7. Fournisseurs principaux Composant Fournisseur Pays Batteries Batterix GmbH Allemagne (Brême) Moteurs Motodrive Co. Taïwan Freins Stopline Italie Pneus Gomma Ouest France Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars 2025.
+
+
+
+
+
+[Page 1] supplier-audit-batterix-en.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
 
 
 
@@ -101,6 +120,114 @@ Par téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par l
 Peut-on remplacer soi-même la batterie ?
 
 Oui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.
+
+
+
+[Page 9] rapport-annuel-2025.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 9 8. Risques Les principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en dollars américains.
+
+
+
+
+
+[Page 8] rapport-annuel-2025.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 8 7. Fournisseurs principaux Composant Fournisseur Pays Batteries Batterix GmbH Allemagne (Brême) Moteurs Motodrive Co. Taïwan Freins Stopline Italie Pneus Gomma Ouest France Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars 2025.
+
+
+
+
+
+[Page 1] supplier-audit-batterix-en.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+[Page 2] contrat-batterix-scan.pdf [Preview]
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+[Page 1] contrat-batterix-scan.pdf [Preview]
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+stocks-octobre-2025.xlsx
+
+BAT-48V-14Ah Batterie 48 V 14 Ah 1240 1500 Nantes MOT-250W Moteur roue arrière 250 W 2105 1200 Nantes CAD-ALU-L Cadre aluminium taille L 860 600 Cholet CAD-ALU-M Cadre aluminium taille M 1020 600 Cholet FRN-HYD-02 Frein hydraulique 3400 2000 Nantes PNU-700-38 Pneu 700x38 5150 3000 Nantes Batterix GmbH Batteries 24 Motodrive Co. Moteurs 45 Stopline Freins 12 Gomma Ouest Pneus 6
+
+
+
+[Page 1] faq-sav.html
+
+FAQ du service après-vente
+
+Document fictif.
+
+Quelle est la durée de la garantie ?
+
+Le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.
+
+Quel est le délai de réparation ?
+
+Une réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.
+
+Comment joindre le service après-vente ?
+
+Par téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.
+
+Peut-on remplacer soi-même la batterie ?
+
+Oui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.
+
+
+
+procedure-batteries.docx
+
+Procédure PR-SEC-04 — Charge et stockage des batteries
+
+Responsable de la procédure : Karim Benali, responsable HSE. Version 3 du 1er septembre 2025.
+
+Stockage
+
+Les batteries sont stockées entre 10 °C et 25 °C, dans le local B2 équipé d'une détection incendie.
+
+Pour un stockage de plus de 30 jours, la charge est ramenée à 80 % au maximum.
+
+Charge
+
+La charge se fait uniquement sur les postes équipés d'un chargeur homologué, sous surveillance.
+
+Une batterie gonflée ou chaude est isolée immédiatement dans le bac sable du local B2.
+
+Contrôles
+
+Contrôle Fréquence Responsable Inspection du local B2 le premier lundi de chaque mois Karim Benali Vérification des extincteurs de classe D tous les 6 mois prestataire Sécurifeu Formation des opérateurs à l'embauche puis tous les 2 ans service RH
+
+
+
+[Page 1] rapport-annuel-2025.pdf [Preview]
+
+Vélanor SAS — document fictif — page 1 Vélanor SAS — Rapport annuel 2025 Document fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente — 2. Chiffres clés — 3. Chiffre d'affaires trimestriel — 4. Production par modèle — 5. Effectifs — 6. Environnement — 7. Fournisseurs — 8. Risques — 9. Perspectives 2026.
+
+
+
+[Page 7] rapport-annuel-2025.pdf [Preview]
+
+Vélanor SAS — document fictif — page 7 6. Environnement Les cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au partenariat avec la filière de collecte Recylo.
 
 
 

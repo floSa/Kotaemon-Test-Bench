@@ -8,3 +8,5 @@
 2026-11-12 22:30:11 détail des scores :  Relevance score: 0.0 |   Vectorstore score: 0.3 |   LLM relevant score: 0.0 |   Reranking score: -9.39 | 
 2026-11-12 22:32:18 réponse inline : La capacité prévue de l'usine de Saint-Nazaire est de 25 000 vélos par an. Cette information figure dans le document stratégique pour 2026, qui détaille les objectifs de production et d'investissement. L'usine s'intègre au plan d'expansion global de Vélanor SAS, avec une ouverture prévue en septembre 2026【1】【
 2026-11-12 22:32:19 détail des scores :  Relevance score: 2.2 |   Vectorstore score: 0.39 |   LLM relevant score: 0.0 |   Reranking score: 2.16 | 
+2026-11-13 00:57:32 réponse inline : (Sorry, I don't know)
+2026-11-13 00:57:34 détail des scores :  Relevance score: 0.0 |   Vectorstore score: 0.3 |   LLM relevant score: 0.0 |   Reranking score: -9.39 | 

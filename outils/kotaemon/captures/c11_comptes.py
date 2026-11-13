@@ -34,22 +34,20 @@ def partager(s):
     """Admin : ajoute la note CSE dans la collection partagée et partage une conversation."""
     p = s.page
     from ui import RACINE
-    s.onglet("Files"); s.onglet("Documents partagés"); s.onglet("Upload Files")
-    s.deposer([RACINE / "corpus/documents/cse-2025-10-14.md"])
-    s.bouton("Upload and Index").click(); p.wait_for_timeout(3000); s.attendre_fin()
-    p.get_by_text("Upload Progress").locator("visible=true").first.wait_for()
-    s.sans_toasts()
-    s.bouton("Clear Upload Info and Close").click(); p.wait_for_timeout(1500)
-    s.cap_souple("03-collection-partagee", [(s.tab("Documents partagés"), "Documents partagés"), (s.ligne("cse-2025-10-14.md"), "cse-2025-10-14.md")])
+    s.onglet("Files"); s.onglet("Documents partagés"); s.onglet("Files")
+    if False:
+        s.cap_souple("03-collection-partagee", [(s.tab("Documents partagés"), "Documents partagés"), (s.ligne("cse-2025-10-14.md"), "cse-2025-10-14.md")])
     s.onglet("Chat")
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.nouvelle_conversation()
     s.reglage_session("Language", "French")
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
     s.poser("Qui est la présidente de Vélanor ?")
+    p.wait_for_timeout(20000)
     acc = p.locator("#report-accordion")
     acc.get_by_text("Feedback").first.click(); p.wait_for_timeout(800)
-    p.locator("#is-public-checkbox input").check(); p.wait_for_timeout(2000)
-    s.note("partage : toasts " + repr(s.toasts())); s.sans_toasts()
+    p.locator("#is-public-checkbox").scroll_into_view_if_needed(); p.wait_for_timeout(500)
+    p.locator("#is-public-checkbox input").check(); p.wait_for_timeout(1500)
+    s.note("partage : toasts " + repr(s.toasts()))
     s.cap_souple("04-partager-conversation", [(p.locator("#is-public-checkbox"), "Share this conversation"),
                                               (p.locator("#conversation-dropdown"), "conversation partagée")])
 

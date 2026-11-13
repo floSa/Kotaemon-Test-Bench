@@ -47,13 +47,6 @@ LCGeminiChat
 false
 
 
-groq
-	
-ChatOpenAI
-	
-false
-
-
 cohere
 	
 LCCohereChat
@@ -73,6 +66,13 @@ llm-service-chat
 ChatOpenAI
 	
 true
+
+
+groq
+	
+ChatOpenAI
+	
+false
 Set this LLM as default. If no default is set, a random LLM will be used. This default LLM will be used by other components by default if no LLM is specified for such components.
 Set default
 Name
@@ -109,7 +109,3 @@ top_logprobs	typing.Optional[int]	An integer between 0 and 5 specifying the numb
 top_p	typing.Optional[float]	An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the token with top_p probability mass. So 0.1 means that only the tokens comprising the top 10% probability mass are considered.
 
 version: 0.0.1
-
-Info
-Index "Documents partagés" created successfully. Please restart the app!
-×

@@ -20,7 +20,7 @@ Les lignes qui commencent par `Traceback` ou qui contiennent `Error` décrivent 
 *Où* : onglet « Welcome ».
 
 ![Mot de passe refusé](../img/13-problemes/01-mot-de-passe-refuse.png)
-*Écran : « Welcome », après un mauvais mot de passe.*
+*Écran : « Welcome », après un mauvais mot de passe (le champ « Password » est masqué en noir sur la capture).*
 
 | N° | Élément | Rôle |
 |---|---|---|

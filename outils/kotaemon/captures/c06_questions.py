@@ -73,7 +73,7 @@ def citations(s):
     titre.click(); p.wait_for_timeout(1000)
     bloc = titre.locator("xpath=..")
     s.note("détail des scores : " + bloc.inner_text()[:300].replace("\n", " | "))
-    s.cap_souple("06-detail-scores", [(titre, "Relevance score"), (bloc, "détail des notes")])
+    s.cap_souple("06-detail-scores", [(bloc, "Relevance score et détail des notes")])
 
 
 def carte(s):
@@ -89,6 +89,7 @@ def carte(s):
         cb.check()
     s.poser("Quelles sont les perspectives 2026 de Vélanor ?")
     p.wait_for_timeout(5000)
+    s.sans_toasts()
     mm = p.locator("#html-info-panel svg, #html-info-panel .markmap").locator("visible=true").first
     s.cap_souple("07-carte-mentale", [(p.locator("#use-mindmap-checkbox"), "Mindmap (on)"), (mm, "carte mentale")])
 

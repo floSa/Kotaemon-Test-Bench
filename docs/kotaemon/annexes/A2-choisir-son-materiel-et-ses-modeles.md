@@ -22,7 +22,7 @@
 |---|---|---|
 | Kotaemon au repos | 0,5 à 0,9 Gio | [Vérifié] (`installation-2026-11-12.log`, `exploitation-2026-11-12.log`) |
 | Kotaemon pendant un banc (10 passages, citations, tri) | 1,5 à 1,9 Gio | [Vérifié] (`banc-2026-11-12-*.json`, `pic_ram_application_mo`) |
-| Docling (lecture optique d'un scan) | mémoire non mesurée séparément ; 536 Mo de modèles sur disque | [Vérifié] pour le disque (`docling-2026-11-12.log`) |
+| Docling (lecture optique d'un scan) | mémoire non mesurée séparément ; environ 1,1 Go de modèles et de cache sur disque | [Vérifié] pour le disque (`fin-de-mission-2026-11-13.log`) |
 | Image de Kotaemon « full » | 12,7 Go sur disque | [Vérifié] (`installation-2026-11-12.log`) |
 | Service central, profil `cpu` : LiteLLM, llama-swap, speaches | 0,59 + 3,6 + 0,13 Gio ≈ 4,3 Go | [Source] (`LLM-Service/mesures/cpu/memoire-vive-conteneurs.txt`) |
 | Service central, profil `gpu` : mémoire vive | LiteLLM 0,8, llama-swap 4,4, speaches 0,2 à 1,5 Go | [Source] (`LLM-Service/README.md`, « Mesures ») |
@@ -38,7 +38,7 @@ Machine type : PC portable Intel Core Ultra 7 255H, 15,3 Go dans WSL ; service e
 |---|---|---|
 | Processeur | 8 cœurs récents (AVX2) | [Estimation] (profil A du banc) |
 | Mémoire vive | 16 Go : 4,3 Go service, 1 à 2 Gio Kotaemon, le reste pour Windows, WSL et Docker | [Estimation] (somme des lignes de la section 1) |
-| Disque | 25 Go : image Kotaemon 12,7 Go, modèles du service environ 5 Go, Docling 0,5 Go, données | [Estimation] |
+| Disque | 25 Go : image Kotaemon 12,7 Go, modèles du service environ 5 Go, Docling environ 1,1 Go, données | [Estimation] |
 | Débit de `chat` | 14 jetons/s pour une requête, 31 jetons/s cumulés pour quatre (profil `cpu` mesuré sur le Ryzen 5 9600X) | [Source] (`LLM-Service/README.md`) ; sur le Core Ultra 7 255H : [Estimation] du même ordre |
 | Temps de réponse attendu | environ 2 minutes en médiane, 3 à 4 minutes pour les plus longues | [Estimation] (rapport de débit 68 / 14 ≈ 4,9 appliqué à la médiane de 22 à 26 s et au p95 de 38 à 42 s du profil B) |
 | Relecture d'un scan par Docling | plusieurs minutes par page | [Estimation] (Docling tourne déjà sur le processeur en profil B : 47 à 56 s pour 2 pages, sans charge du modèle ; un processeur portable est plus lent) |
@@ -61,13 +61,13 @@ Machine d'essai : Ryzen 5 9600X, 32 Go dans WSL, RTX 4060 Ti 16 Go ; service en 
 |---|---|---|
 | Profil du service | `gpu` (`llm-swap`) | [Vérifié] |
 | Modèles | mêmes noms que le profil A [Vérifié] (`/v1/models`) ; quantifications Q4_K_M et Q8_0 [Source] (README de LLM-Service) |
-| Contexte | 16 384 jetons | [Vérifié] (santé du service) |
+| Contexte | 16 384 jetons | [Source] (configuration et README de LLM-Service) |
 | Carte graphique | 12 Go conseillés : 7,0 Go pour les trois modèles permanents [Source] plus le bureau Windows ; 8,6 à 9,2 Go mesurés sur la carte de 16 Go [Vérifié] ; une carte de 8 Go est trop juste [Estimation] |
-| Mémoire vive | 16 Go : 5,4 Go pour le service au repos [Source] ; 7,9 Gio mesurés pendant les bancs, transcription chargée [Vérifié] (`pic_ram_mo`) ; 1,5 à 1,9 Gio Kotaemon [Vérifié] |
+| Mémoire vive | 16 Go : 5,4 Go pour le service au repos [Source] ; 7,7 Gio (7 920 Mo) mesurés pendant les bancs, transcription chargée [Vérifié] (`pic_ram_mo`) ; 1,5 à 1,9 Gio Kotaemon [Vérifié] |
 | Débit de `chat` | 68 jetons/s pour une requête, 174 jetons/s cumulés pour quatre | [Source] |
 | Réglages | modèles du service, Docling pour les scans, 3 ou 10 passages, tri `rerank` | [Vérifié] |
 | Résultats du banc | 25 à 31 bonnes réponses sur 34, 4/4 refus | [Vérifié] (A1) |
-| Temps d'attente | médiane 22 à 26 s, p95 38 à 42 s ; indexation de huit documents 13 s ; relecture Docling d'un scan de 2 pages 47 à 56 s | [Vérifié] |
+| Temps d'attente | médiane 22 à 26 s, p95 38 à 42 s ; indexation de huit fichiers déposés (sept indexés) 13 s ; relecture Docling d'un scan de 2 pages 47 à 56 s | [Vérifié] |
 
 ## 4. Budget de contexte et volume de documents
 

@@ -25,11 +25,11 @@ def raisonnement(s):
     s.onglet("Settings"); s.onglet("Reasoning settings")
     opts = p.locator("fieldset").filter(has_text="Reasoning options").locator("visible=true").first
     s.cap_souple("03-methodes", [(opts, "Reasoning options"), (p.locator("label").filter(has_text="Create Mindmap").locator("visible=true").first, "Create Mindmap"),
-                                 (p.locator("label").filter(has_text="Create Embeddings Visualization").locator("visible=true").first, "Create Embeddings Visualization"),
-                                 (p.locator("label").filter(has_text="Use Multimodal Input").locator("visible=true").first, "Use Multimodal Input")])
+                                 (p.locator("label").filter(has_text="Create Embeddings Visualization").locator("visible=true").first, "Create Embeddings Visualization")])
     opts.get_by_text("complex", exact=True).click(); p.wait_for_timeout(1500)
-    s.cap_souple("04-complex", [(opts.get_by_text("complex", exact=True), "complex"), (s.texte("Complex QA"), "Complex QA"),
-                                (s.texte("Decompose Prompt", exact=True), "Decompose Prompt")])
+    p.mouse.wheel(0, -3000); p.wait_for_timeout(800)
+    opts.scroll_into_view_if_needed(); p.wait_for_timeout(800)
+    s.cap_souple("04-complex", [(s.texte("Decompose Prompt", exact=True), "Decompose Prompt")])
     opts.get_by_text("simple", exact=True).click(); p.wait_for_timeout(1000)
 
 
@@ -45,7 +45,8 @@ def consignes(s):
 
 def complexe(s):
     p = s.page
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.onglet("Chat")
+    s.nouvelle_conversation()
     s.reglage_session("Language", "French")
     meth = s.reglage_session("Reasoning method", "complex")
     p.locator("#index-0").get_by_text("Search All", exact=True).click()

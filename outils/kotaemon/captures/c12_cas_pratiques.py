@@ -43,8 +43,9 @@ def client(s):
     p.wait_for_timeout(30000)
     s.poser("Et quel numéro appeler pour le service après-vente ?")
     s.note("client : " + p.locator("#main-chat-bot").inner_text()[:1200].replace("\n", " "))
-    s.cap_souple("02-client-suite", [(p.locator("#main-chat-bot .message").nth(1), "première réponse"),
-                                     (p.locator("#main-chat-bot .message").last, "réponse à la question de suite"),
+    msgs = p.locator("#main-chat-bot .message")
+    msgs.last.evaluate("e => e.scrollIntoView({block: 'end'})"); p.wait_for_timeout(1000)
+    s.cap_souple("02-client-suite", [(msgs.nth(msgs.count() - 2), "question de suite"), (msgs.last, "réponse à la question de suite"),
                                      (p.locator("#html-info-panel"), "source : faq-sav.html")])
 
 

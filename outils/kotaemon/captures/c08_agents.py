@@ -17,8 +17,7 @@ def reglages(s):
     opts.get_by_text("ReWOO", exact=True).click(); p.wait_for_timeout(1500)
     s.cap_souple("02-reglages-rewoo", [(opts.get_by_text("ReWOO", exact=True), "ReWOO"), (s.champ("Language model for Planner"), "Language model for Planner"),
                                        (s.champ("Language model for Solver"), "Language model for Solver"),
-                                       (p.locator("label").filter(has_text="Highlight Citation").locator("visible=true").first, "Highlight Citation"),
-                                       (p.locator("fieldset").filter(has_text="Tools for knowledge retrieval").locator("visible=true").first, "Tools for knowledge retrieval")])
+                                       (p.locator("label").filter(has_text="Highlight Citation").locator("visible=true").first, "Highlight Citation")])
     s.note("réglages agents : " + p.locator("body").inner_text()[:1500].replace("\n", " | "))
     opts.get_by_text("simple", exact=True).click(); p.wait_for_timeout(800)
 

@@ -111,7 +111,7 @@ Cliquer sur « Search All » (pastille 2) : la recherche porte sur tous les fich
 | 3 | zone de saisie | la question |
 | 4 | flèche d'envoi | envoie la question |
 
-Sans choix entre « Search All » et « Search In File(s) », Kotaemon ne consulte aucun document et répond de mémoire.
+Sans choix entre « Search All » et « Search In File(s) », Kotaemon ne consulte aucun document et répond « (Sorry, I don't know) » (chapitre 13, étape 5).
 
 *Résultat* : la question apparaît dans la zone de discussion, suivie de « Thinking ... » pendant que le modèle réfléchit.
 
@@ -141,7 +141,7 @@ Sans choix entre « Search All » et « Search In File(s) », Kotaemon ne consul
 | 1 | passage cité | titre du bloc : type de passage (« Image from » pour une vignette de page), numéro de page, nom du fichier et score ; en dessous, la vignette de la page et le texte, avec les mots de la réponse surlignés en vert |
 | 2 | « [Preview] » | ouvre le document à la page du passage |
 
-La ligne « Relevance score » donne la note de pertinence du passage ; un clic sur son triangle affiche le détail (note de la recherche, note du tri). Plus la note est haute, plus le passage est jugé utile.
+Le « [score: 0.0] » du titre vient d'un calcul que Kotaemon n'utilise plus ici et peut être ignoré. La ligne « Relevance score » donne la vraie note de pertinence du passage ; un clic sur son triangle affiche le détail (note de la recherche, note du tri). Plus la note est haute, plus le passage est jugé utile.
 
 *Résultat* : le passage de la page 10 (« Perspectives 2026 ») est affiché, avec les mots « chiffre d'affaires » surlignés. Les autres blocs, plus bas dans le panneau, montrent les pages 3 et 4.
 
@@ -155,8 +155,8 @@ Cliquer sur « [Preview] ».
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | visionneuse | doit afficher le PDF à la page du passage, avec le passage surligné |
-| 2 | croix | referme la visionneuse ; l'icône voisine l'agrandit |
+| 1 | croix | referme la visionneuse ; l'icône voisine l'agrandit |
+| 2 | visionneuse (grand cadre) | doit afficher le PDF à la page du passage, avec le passage surligné |
 
 *Résultat* : avec la version 0.12.0, la visionneuse s'ouvre mais **reste vide** : le composant d'affichage des PDF, téléchargé à l'ouverture de la page depuis un site public, n'y est plus disponible. La vignette de la page et le texte surligné de l'étape 8 restent la seule façon de vérifier la source dans l'interface (détail au chapitre 13).
 
@@ -172,7 +172,7 @@ Cliquer sur « [Preview] ».
 |---|---|---|
 | la réponse est en anglais | langue de la conversation restée sur « English » | choisir `French` dans « Chat settings » › « Language » (étape 5) |
 | « Have errors for 1 files » | lecture du fichier impossible | voir le cadre « Upload info » et le [chapitre 13](13-en-cas-de-probleme.md) |
-| la réponse dit ne rien trouver | ni « Search All » ni « Search In File(s) » choisi | cliquer sur « Search All » (étape 6) |
+| « (Sorry, I don't know) » et « No evidence found. » | ni « Search All » ni « Search In File(s) » choisi | cliquer sur « Search All » (étape 6) |
 | la réponse reste sur « Thinking ... » | « Use LLM relevant scoring » coché | le décocher (chapitre 03, étape 11) |
 
 ---

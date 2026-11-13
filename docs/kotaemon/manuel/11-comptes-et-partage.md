@@ -46,7 +46,7 @@ Saisir `camille` dans « Username », puis le mot de passe dans « Password » e
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `camille` | ligne du compte (identifiant interne, nom, droit d'administration) |
+| 1 | `camille` | ligne du compte : nom (« username ») et droit d'administration (« admin ») |
 | 2 | « Change password » | nouveau mot de passe, à saisir aussi dans « Confirm change password » ; c'est ainsi qu'un administrateur remplace un mot de passe oublié |
 | 3 | « Admin » | case à cocher pour donner les droits d'administration |
 | 4 | « Save » | enregistre les modifications |
@@ -146,7 +146,7 @@ Se connecter avec `camille` et son mot de passe (chapitre 03, étape 1).
 ## Bon à savoir
 
 - Un administrateur peut donner les droits d'administration à un autre compte (case « Admin », étape 2).
-- Les réglages (« Settings ») sont propres à chaque compte : le nouveau compte repart des valeurs par défaut, sauf les modèles, communs à tous ; lui faire régler « Language » et « Use LLM relevant scoring » comme au chapitre 03.
+- Les réglages (« Settings ») sont propres à chaque compte : le nouveau compte repart des valeurs par défaut, sauf les modèles, communs à tous ; lui faire régler « Language » (`French`), « Max context length (LLM) » (`8000`) et « Use LLM relevant scoring » (décoché) comme au chapitre 03.
 - Une collection partagée convient aux documents de référence (procédures, comptes rendus) ; les documents personnels restent dans « File Collection ».
 
 ## En cas de problème

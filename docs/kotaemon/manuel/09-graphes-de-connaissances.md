@@ -18,14 +18,14 @@ Kotaemon propose trois variantes, chacune dans sa propre collection :
 | « NanoGraphRAG Collection » | NanoGraphRAG | s'installe avec un script ; l'indexation échoue avec le modèle de ce poste (étape 6) |
 | « GraphRAG Collection » | Microsoft GraphRAG | ne fonctionne pas : l'indexation ne démarre pas (étape 7) |
 
-Une collection en graphe s'utilise comme les autres : ajout par « Files », question par le chat en choisissant « Search All » dans sa section.
+Une collection en graphe s'utilise comme les autres : ajout par « Files », question par le chat en choisissant « Search All » dans sa section. Certaines captures de ce chapitre montrent déjà « Documents partagés » et « NanoGraphRAG Collection », créées ailleurs dans le manuel : ne pas en tenir compte.
 
 ## Préparer LightRAG
 
 **Étape 1. Ajouter la pièce manquante de LightRAG**
 *Où* : terminal Ubuntu, dossier du dépôt.
 
-L'image de Kotaemon 0.12.0 contient LightRAG, mais il lui manque une petite bibliothèque (`pipmaster`). Sans elle, l'indexation s'arrête.
+L'image de Kotaemon 0.12.0 contient LightRAG, mais il lui manque une petite bibliothèque (`pipmaster`). Sans elle, l'indexation s'arrête, comme le montre la capture ci-dessous (prise sans le script). La seule action de cette étape est de lancer le script indiqué après la capture.
 
 ![Indexation LightRAG sans la bibliothèque manquante](../img/09-graphrag/01-lightrag-sans-pipmaster.png)
 *Écran : « Files » › « LightRAG Collection », indexation en échec.*
@@ -95,7 +95,7 @@ outils/kotaemon/completer_lightrag.sh
 
 Le premier script active la collection « NanoGraphRAG Collection », installe le paquet `nano-graphrag` dans le conteneur, puis corrige les deux conflits qu'il provoque : il remplace une bibliothèque de la base des vecteurs (Kotaemon ne démarre plus sans cette correction, comme le signale la documentation du projet) et il fait monter une autre bibliothèque (pydantic) vers une version qui empêche l'interface de s'afficher ; le script remet la version d'origine. Le second script remet la pièce de LightRAG, perdue quand le conteneur est recréé.
 
-*Résultat* : après redémarrage, « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat.
+*Résultat* : le premier script redémarre Kotaemon lui-même et se termine par « Kotaemon redémarré avec NanoGraphRAG ». Recharger la page du navigateur : « NanoGraphRAG Collection » apparaît dans « Files » et dans le chat.
 
 **Étape 6. Indexer un document avec NanoGraphRAG**
 *Où* : « Files » › « NanoGraphRAG Collection » › « Upload Files ».
@@ -117,6 +117,8 @@ Choisir `procedure-batteries.docx`, puis « Upload and Index ».
 
 **Étape 7. Indexer un document avec Microsoft GraphRAG**
 *Où* : « Files » › « GraphRAG Collection » › « Upload Files ».
+
+Choisir `procedure-batteries.docx`, puis « Upload and Index ».
 
 ![Indexation Microsoft GraphRAG](../img/09-graphrag/07-msgraphrag-erreur.png)
 *Écran : « GraphRAG Collection », indexation interrompue.*

@@ -48,9 +48,8 @@ Les agents sont plus lents que la méthode `simple` (une minute ou plus par ques
 | 2 | « Language model for Planner » | modèle qui écrit le plan |
 | 3 | « Language model for Solver » | modèle qui rédige la réponse finale |
 | 4 | « Highlight Citation » | surligne les passages cités dans le panneau des sources |
-| 5 | « Tools for knowledge retrieval » | outils permis, comme pour ReAct |
 
-*Résultat* : plus bas, « Planner Prompt » et « Solver Prompt » contiennent les consignes des deux étapes.
+*Résultat* : plus bas, « Tools for knowledge retrieval » (outils permis, comme pour ReAct), « Planner Prompt » et « Solver Prompt » (consignes des deux étapes).
 
 ## Poser une question à un agent
 
@@ -67,7 +66,7 @@ Poser `Quel est le délai de livraison contractuel de Batterix et quel délai mo
 | 1 | réponse de l'agent | réponse finale de l'agent |
 | 2 | étapes et sources | chaque étape : « Step 1 », action choisie (`docsearch`), texte cherché, passages obtenus |
 
-*Résultat* : en 26 secondes, l'agent fait une recherche (`docsearch`), obtient la page de l'audit et celle des fournisseurs du rapport annuel, puis répond « (Sorry, I don't know) ». Avec le modèle de ce poste, ReAct s'arrête souvent ainsi : il ne sait pas tirer la réponse des passages trouvés.
+*Résultat* : en 26 secondes, l'agent fait une recherche (`docsearch`), obtient la page de l'audit, celle des fournisseurs du rapport annuel et même la page 2 du contrat (« 21 jours »), puis répond « (Sorry, I don't know) » alors que la réponse est sous ses yeux. Avec le modèle de ce poste, ReAct s'arrête souvent ainsi : il ne sait pas tirer la réponse des passages trouvés.
 
 **Étape 4. Interroger l'agent ReWOO**
 *Où* : nouvelle conversation, « Reasoning method » : `ReWOO`, mêmes réglages, même question.
@@ -96,7 +95,7 @@ Un **serveur MCP** est un petit programme qui offre des outils à un agent (lire
 |---|---|---|
 | 1 | « MCP Servers » | liste des serveurs MCP déclarés |
 | 2 | « Add » | formulaire d'ajout |
-| 3 | « Configuration (JSON) » | description du serveur au format JSON (commande à lancer ou adresse) |
+| 3 | « Configuration (JSON) » | description du serveur au format JSON, un format de texte structuré entre accolades (commande à lancer ou adresse) |
 | 4 | « Add MCP Servers » | enregistre le serveur |
 
 *Résultat* : un serveur déclaré ici apparaît comme outil supplémentaire dans « Tools for knowledge retrieval » des agents. Aucun serveur MCP n'a été branché dans ce manuel.

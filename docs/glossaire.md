@@ -19,6 +19,7 @@ Termes employés dans la série de manuels. Quand un terme est propre à une sol
 | Compose (Docker Compose) | Outil qui démarre plusieurs conteneurs décrits dans un fichier `docker-compose.yml` ou `compose.yml`. |
 | Conteneur | Programme isolé lancé par Docker à partir d'une image. |
 | CPU, GPU | Processeur central ; carte graphique. Les modèles de langage sont bien plus rapides sur un GPU NVIDIA. |
+| CSE (comité social et économique) | Instance qui représente le personnel dans une entreprise française ; ses comptes rendus servent d'exemple de note interne dans le corpus. |
 | Docling | Lecteur de documents open source (IBM) qui reconnaît la mise en page, les tableaux et, avec la lecture optique, le texte des scans ; proposé par Kotaemon comme « File loader ». |
 | Découpage (chunking) | Opération qui coupe un document en passages de taille fixe, avec un éventuel recouvrement. |
 | Embedder natif (AnythingLLM) | Modèle d'embedding intégré à AnythingLLM (all-MiniLM-L6-v2, surtout anglais), téléchargé au premier usage ; remplacé ici par `embed` (bge-m3) du service central. |
@@ -32,8 +33,11 @@ Termes employés dans la série de manuels. Quand un terme est propre à une sol
 | Groupe de fichiers (Kotaemon) | Liste nommée de fichiers d'une collection, choisie d'un clic pour limiter la recherche. |
 | Information panel (Kotaemon) | Panneau de droite du chat qui montre les passages utilisés pour la réponse, leur page, leurs notes et la vignette de la page. |
 | Jeton (token) | Unité de texte manipulée par un modèle, environ trois quarts de mot en français. |
+| JSON | Format de texte structuré, fait de paires `"nom": valeur` entre accolades, utilisé pour échanger des données entre programmes. |
 | LanceDB | Base vectorielle intégrée à AnythingLLM, rangée dans le dossier de données de l'application. |
 | Lecteur de fichiers, file loader | Composant qui transforme un fichier (PDF, Word…) en texte avant le découpage. |
+| LiteLLM | Passerelle qui présente plusieurs modèles sous une même adresse compatible avec l'API d'OpenAI ; porte d'entrée du service LLM central. |
+| llama.cpp | Programme qui fait tourner des modèles de langage au format GGUF sur processeur ou carte graphique ; moteur du service LLM central. |
 | LLM, SLM | Grand modèle de langage ; petit modèle de langage (quelques milliards de paramètres), adapté à une machine ordinaire. |
 | MCP (Model Context Protocol) | Protocole qui permet à un assistant (client MCP) d'appeler les fonctions d'une application (serveur MCP). |
 | MMR (Maximal Marginal Relevance) | Choix des passages qui équilibre pertinence et diversité, pour éviter de transmettre plusieurs fois la même information. |

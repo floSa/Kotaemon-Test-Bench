@@ -41,11 +41,12 @@ def ajouter(s):
 def supprimer(s):
     p = s.page
     s.onglet("Resources"); s.onglet("LLMs"); s.onglet("View")
-    s.ligne("groq").click(); p.wait_for_timeout(2000)
+    s.ligne("mistral").click(); p.wait_for_timeout(2000)
     s.bouton("Delete").click(); p.wait_for_timeout(1000)
-    s.cap_souple("04-supprimer-modele", [(s.ligne("groq"), "groq"), (s.bouton("Confirm Delete"), "Confirm Delete"), (s.bouton("Cancel"), "Cancel")])
+    nom = p.locator("textarea").locator("visible=true").first
+    s.cap_souple("04-supprimer-modele", [(nom, "Name : mistral"), (s.bouton("Confirm Delete"), "Confirm Delete"), (s.bouton("Cancel"), "Cancel")])
     s.bouton("Confirm Delete").click(); p.wait_for_timeout(2500)
-    s.note("suppression groq : toasts " + repr(s.toasts()))
+    s.note("suppression mistral : toasts " + repr(s.toasts()))
 
 
 def vues(s):

@@ -160,7 +160,7 @@ Ouvrir « Test connection » (pastille 1), puis cliquer sur « Test » (pastille
 | 5 | « Delete » | supprime le modèle (une confirmation est demandée) |
 | 6 | « Close » | referme la fiche |
 
-*Résultat* : « Connection success. Got response: Hello! … How can I help you today? » s'affiche en vert. En cas d'échec (« Error code: 401 »), la clé est fausse : la corriger dans « Specification », cliquer sur « Save », puis refaire le test.
+*Résultat* : « Connection success. Got response: Hello! … How can I help you today? » s'affiche en vert. En cas d'échec avec « Error code: 400 … No connected db. », la clé est fausse (chapitre 13, étape 2) : la corriger dans « Specification », cliquer sur « Save », puis refaire le test.
 
 ## Déclarer le modèle d'embedding
 
@@ -273,7 +273,7 @@ Pourquoi décocher « Use LLM relevant scoring » : cette option envoie au modè
 | Symptôme | Cause | Que faire |
 |---|---|---|
 | « Invalid username or password » | mot de passe déjà changé | utiliser le mot de passe choisi à l'étape 3 |
-| « Connection failed … Error code: 401 » | clé du service fausse dans la spécification | corriger `api_key` (ou `cohere_api_key`), « Save », refaire le test |
+| « Connection failed … Error code: 400 … No connected db. » | clé du service fausse dans la spécification | corriger `api_key` (ou `cohere_api_key`), « Save », refaire le test |
 | « Connection failed … RetryError » pour l'embedding | adresse fausse ou service arrêté | vérifier `base_url: http://llm-central:8080/v1` et que le service répond (chapitre 02, étape 5) |
 | la réponse reste sur « Thinking ... » | « Use LLM relevant scoring » coché | le décocher (étape 11) ; voir le [chapitre 13](13-en-cas-de-probleme.md) |
 

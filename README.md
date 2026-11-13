@@ -100,7 +100,7 @@ Kotaemon n'a pas d'API REST. Le pilotage se fait par sa bibliothèque Python dan
 
 ```bash
 python3 outils/communs/verifier_docs.py           # 0 point(s) sur 24 fichier(s)
-outils/kotaemon/serie_banc.sh rerank --sans-index # banc de 38 questions, environ 45 minutes
+outils/kotaemon/serie_banc.sh rerank --sans-index # banc de 38 questions : environ 15 à 20 minutes de réponses, plus le juge
 exemples/kotaemon/lancer.sh exemples/kotaemon/03_poser_une_question.py
 ```
 

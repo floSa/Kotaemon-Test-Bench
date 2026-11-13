@@ -61,25 +61,6 @@
   "heure": "22:47:04"
  },
  {
-  "capture": "10-ressources/04-supprimer-modele.png",
-  "pastilles": [
-   [
-    1,
-    "groq"
-   ],
-   [
-    2,
-    "Confirm Delete"
-   ],
-   [
-    3,
-    "Cancel"
-   ]
-  ],
-  "note": "",
-  "heure": "22:47:12"
- },
- {
   "capture": "10-ressources/05-embeddings-liste.png",
   "pastilles": [
    [
@@ -108,5 +89,24 @@
   ],
   "note": "",
   "heure": "22:47:23"
+ },
+ {
+  "capture": "10-ressources/04-supprimer-modele.png",
+  "pastilles": [
+   [
+    1,
+    "Name : mistral"
+   ],
+   [
+    2,
+    "Confirm Delete"
+   ],
+   [
+    3,
+    "Cancel"
+   ]
+  ],
+  "note": "",
+  "heure": "00:59:56"
  }
 ]

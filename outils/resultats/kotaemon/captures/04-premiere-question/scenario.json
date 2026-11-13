@@ -160,7 +160,7 @@
    ]
   ],
   "note": "",
-  "heure": "20:40:09"
+  "heure": "01:03:34"
  },
  {
   "capture": "04-premiere-question/06-poser-la-question.png",
@@ -183,7 +183,7 @@
    ]
   ],
   "note": "",
-  "heure": "20:40:10"
+  "heure": "01:03:35"
  },
  {
   "capture": "04-premiere-question/07-reponse-citee.png",
@@ -198,7 +198,7 @@
    ]
   ],
   "note": "",
-  "heure": "20:40:41"
+  "heure": "01:04:18"
  },
  {
   "capture": "04-premiere-question/08-extrait-et-score.png",
@@ -213,21 +213,21 @@
    ]
   ],
   "note": "",
-  "heure": "20:40:41"
+  "heure": "01:04:19"
  },
  {
   "capture": "04-premiere-question/09-visionneuse-pdf.png",
   "pastilles": [
    [
     1,
-    "visionneuse"
+    "fermer"
    ],
    [
     2,
-    "fermer"
+    "visionneuse"
    ]
   ],
   "note": "",
-  "heure": "20:40:47"
+  "heure": "01:04:25"
  }
 ]

@@ -50,12 +50,12 @@ Cliquer sur « Search In File(s) » (pastille 1), puis dans la liste qui appara�
 | 2 | réponse | réponse en deux parties, une par sous-question |
 | 3 | « Information panel » | passages retenus, ici la page 1 de l'audit, phrase « Overall score: 87 out of 100 » surlignée |
 
-*Résultat* : la réponse donne le score de l'audit (87 sur 100) mais dit ne pas trouver le prix du contrat, et le panneau ne montre que l'audit. La cause : le contrat avait été relu par Docling après la création du groupe, et le groupe l'avait perdu (chapitre 05, étapes 15 et 16). Une fois le groupe réparé, la même recherche trouve le prix (212 euros HT, chapitre 12, cas 1).
+*Résultat* : pour le lecteur qui a réparé le groupe au chapitre 05 (étapes 15 et 16), la réponse donne le score de l'audit (87 sur 100) et le prix du contrat (212 euros HT). La capture montre l'état d'avant la réparation : le groupe avait perdu le contrat, la réponse ne trouve que le score et le panneau ne montre que l'audit.
 
 **Étape 3. Désigner un fichier dans la question**
 *Où* : zone de saisie.
 
-Le texte d'aide de la zone de saisie (« Type a message, use @WebSearch, or tag a file with @filename ») indique qu'un fichier peut être désigné en écrivant `@` suivi de son nom.
+Le texte d'aide de la zone de saisie (« Type a message, use @WebSearch, or tag a file with @filename ») indique qu'un fichier peut être désigné en écrivant `@` suivi de son nom. Nouvelle conversation, « Search All », puis écrire `Quel est le prix du Vilaine Compact ? @strat` et Entrée.
 
 ![Mention d'un fichier dans la question](../img/06-questions/03-mention-fichier.png)
 *Écran : « Chat », question avec mention `@strat`.*
@@ -70,6 +70,8 @@ Le texte d'aide de la zone de saisie (« Type a message, use @WebSearch, or tag 
 
 **Étape 4. Ouvrir la liste des styles de citation**
 *Où* : sous la zone de saisie, à droite de « Chat settings ».
+
+Cliquer sur la liste qui affiche « citation: highlight ».
 
 ![Styles de citation et carte mentale](../img/06-questions/04-styles-citation.png)
 *Écran : « Chat », liste des styles de citation ouverte.*
@@ -89,9 +91,9 @@ Les trois styles :
 *Résultat* : le style choisi s'applique aux questions suivantes.
 
 **Étape 5. Lire une réponse avec renvois**
-*Où* : zone de discussion et « Information panel », style « citation: inline », carte mentale décochée.
+*Où* : zone de discussion et « Information panel ».
 
-Poser `Quelle est la capacité prévue de l'usine de Saint-Nazaire ?`.
+Choisir « citation: inline » dans la liste de l'étape 4, décocher « Mindmap », ouvrir une nouvelle conversation avec « Search All », puis poser `Quelle est la capacité prévue de l'usine de Saint-Nazaire ?`.
 
 ![Réponse avec renvois numérotés](../img/06-questions/05-citation-en-ligne.png)
 *Écran : « Chat », réponse en style « citation: inline ».*
@@ -106,22 +108,21 @@ Poser `Quelle est la capacité prévue de l'usine de Saint-Nazaire ?`.
 **Étape 6. Lire le détail des notes d'un passage**
 *Où* : « Information panel » › bloc d'un passage › « Relevance score ».
 
-Cliquer sur le triangle de « Relevance score ».
+Dans le bloc d'un passage, cliquer sur le triangle de « Relevance score ».
 
 ![Détail des notes d'un passage](../img/06-questions/06-detail-scores.png)
 *Écran : « Information panel », notes d'un passage dépliées.*
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Relevance score » | note de pertinence retenue pour le passage |
-| 2 | détail des notes | « Vectorstore score » (proximité de sens, de 0 à 1), « LLM relevant score » (note du modèle de réponse, 0 si l'option est désactivée), « Reranking score » (note du modèle de tri : positive si le passage répond, négative sinon) |
+| 1 | « Relevance score » et détail des notes | note de pertinence retenue pour le passage, puis son détail : « Vectorstore score » (proximité de sens, de 0 à 1), « LLM relevant score » (note du modèle de réponse, 0 si l'option est désactivée), « Reranking score » (note du modèle de tri : positive si le passage répond, négative sinon) |
 
 *Résultat* : la note du modèle de tri est la plus parlante : un passage noté au-dessus de 0 répond en général à la question.
 
 **Étape 7. Afficher la carte mentale**
-*Où* : case « Mindmap » cochée (« Mindmap (on) »), puis une question.
+*Où* : sous la zone de saisie : « citation: highlight » et case « Mindmap » cochée (« Mindmap (on) »).
 
-Poser `Quelles sont les perspectives 2026 de Vélanor ?`.
+Remettre « citation: highlight », cocher « Mindmap », nouvelle conversation avec « Search All », puis poser `Quelles sont les perspectives 2026 de Vélanor ?`.
 
 ![Carte mentale de la réponse](../img/06-questions/07-carte-mentale.png)
 *Écran : « Information panel », carte mentale en tête du panneau.*
@@ -208,7 +209,7 @@ Cliquer sur « Feedback » pour l'ouvrir.
 | 4 | « Report » | enregistre l'avis dans la base de Kotaemon |
 | 5 | « Share this conversation » | rend la conversation visible des autres comptes (chapitre 11) |
 
-*Résultat* : l'avis est enregistré sur le poste ; il n'est envoyé nulle part. Les pouces sous chaque réponse servent au même usage, en un clic.
+*Résultat* : l'avis est enregistré dans la base de Kotaemon, sur le poste. Le texte affiché sous le bloc (« This will send the current chat and the user settings to help with investigation ») veut dire que la conversation et les réglages sont joints à l'avis, dans cette même base ; rien ne part vers Internet. Les pouces sous chaque réponse servent au même usage, en un clic.
 
 ## Régler l'affichage
 

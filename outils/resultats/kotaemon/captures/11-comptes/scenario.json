@@ -73,21 +73,6 @@
   "heure": "22:48:52"
  },
  {
-  "capture": "11-comptes/04-partager-conversation.png",
-  "pastilles": [
-   [
-    1,
-    "Share this conversation"
-   ],
-   [
-    2,
-    "conversation partagée"
-   ]
-  ],
-  "note": "",
-  "heure": "22:49:41"
- },
- {
   "capture": "11-comptes/05-ecran-utilisateur.png",
   "pastilles": [
    [
@@ -150,5 +135,20 @@
   ],
   "note": "",
   "heure": "22:50:05"
+ },
+ {
+  "capture": "11-comptes/04-partager-conversation.png",
+  "pastilles": [
+   [
+    1,
+    "Share this conversation"
+   ],
+   [
+    2,
+    "conversation partagée"
+   ]
+  ],
+  "note": "",
+  "heure": "01:01:15"
  }
 ]

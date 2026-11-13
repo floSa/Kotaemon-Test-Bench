@@ -11,6 +11,10 @@ GraphRAG Collection
 ▼
 LightRAG Collection
 ▼
+Documents partagés
+▼
+NanoGraphRAG Collection
+▼
 Quick Upload
 ▼
 File
@@ -23,19 +27,23 @@ Feedback
 
 Quel est le chiffre d'affaires 2025 de Vélanor ?
 
-Selon les documents fournis, le chiffre d'affaires de Vélanor pour l'année 2025 s'élève à 48,6 millions d'euros.
+D'après les documents fournis, le chiffre d'affaires de Vélanor pour l'année 2025 s'élève à 48,6 millions d'euros (48,6 M€).
 
-Voici les détails tirés du rapport annuel 2025 qui confirment cette information :
+Voici une explication détaillée basée sur les extraits contextuels :
 
-Chiffres clés (Page 3) : Dans la section intitulée "Chiffres clés 2025", le tableau indique explicitement que le chiffre d'affaires de l'année est de 48,6 M€. Cette performance représente une évolution positive de +12,4 % par rapport à l'année précédente.
-Chiffre d'affaires trimestriel (Page 4) : Le document détaille également la répartition du chiffre d'affaires sur les quatre trimestres de l'année :
+Confirmation dans les Chiffres clés (Page 3) :
+Dans la section intitulée "Chiffres clés 2025" du rapport annuel, l'indicateur "Chiffre d'affaires" est explicitement listé à 48,6 M€. Ce chiffre représente une évolution positive de +12,4 % par rapport à l'année précédente.
+
+Confirmation dans le détail trimestriel (Page 4) :
+La figure intitulée "Chiffre d'affaires trimestriel" présente la répartition des revenus sur les quatre trimestres de l'année :
+
 T1 2025 : 9,8 M€
 T2 2025 : 13,7 M€
-T3 2025 : 14,2 M€ (le trimestre le plus élevé de l'année)
+T3 2025 : 14,2 M€
 T4 2025 : 10,9 M€
-Total : La somme de ces trimestres confirme le chiffre global de 48,6 M€.
+Le tableau indique un Total de 48,6 M€, ce qui correspond exactement au chiffre global mentionné sur la page 3.
 
-Ainsi, le chiffre d'affaires total pour 2025 est bien de 48,6 millions d'euros.
+Ainsi, toutes les sources documentaires fournies convergent vers le même montant pour l'année 2025.
 
 MultimodalTextbox
 Dropdown
@@ -50,19 +58,6 @@ Dropdown
 Dropdown
 Information panel
 ▼
-Image from [Page 10] rapport-annuel-2025.pdf [score: 0.0] [Preview]
- Relevance score: 4.3
-
-
-
-
-
-Vélanor SAS — document fictif — page 10 9. Perspectives 2026 Vélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.
-
-
-
-
-
 Image from [Page 4] rapport-annuel-2025.pdf [score: 0.0] [Preview]
  Relevance score: 4.6
 
@@ -76,6 +71,19 @@ Vélanor SAS — document fictif — page 4 3. Chiffre d'affaires trimestriel Tr
 
 
 
+Image from [Page 10] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 4.3
+
+
+
+
+
+Vélanor SAS — document fictif — page 10 9. Perspectives 2026 Vélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.
+
+
+
+
+
 Image from [Page 3] rapport-annuel-2025.pdf [score: 0.0] [Preview]
  Relevance score: 7.5
 
@@ -83,9 +91,52 @@ Image from [Page 3] rapport-annuel-2025.pdf [score: 0.0] [Preview]
 
 
 
-Vélanor SAS — document fictif — page 3 2. Chiffres clés 2025 Indicateur 2025 Évolution Chiffre d'affaires 48,6 M€ +12,4 % Résultat net 3,1 M€ +0,6 M€ Vélos produits 61 800 +9 % Effectif au 31/12/2025 412 salariés +38 Part de l'export 27 % +4 points Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus.
+Vélanor SAS — document fictif — page 3 2. Chiffres clés 2025 Indicateur 2025 Évolution Chiffre d'affaires 48,6 M€M€ +12,4 % Résultat net 3,1 M€ +0,6 M€ Vélos produits 61 800 +9 % Effectif au 31/12/2025 412 salariés +38 Part de l'export 27 % +4 points Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus.
 
 
+
+
+
+strategie-2026.pptx [score: 0.0]
+ Relevance score: 0.6
+
+
+
+Stratégie 2026
+
+Comité de direction du 20 novembre 2025
+
+Document fictif
+
+Objectifs 2026
+
+Chiffre d'affaires visé : 55 M€
+
+Part de l'export visée : 32 %
+
+Marge nette visée : 7 %
+
+Nouveau modèle
+
+Vilaine Compact : vélo pliant électrique
+
+Lancement en avril 2026
+
+Prix public : 2 490 € TTC
+
+Usine de Saint-Nazaire
+
+Ouverture en septembre 2026
+
+Capacité : 25 000 vélos par an
+
+Investissement : 14 M€
+
+Export
+
+Allemagne : croissance visée de 30 %
+
+Pays-Bas : ouverture d'un showroom à Utrecht
 
 
 
@@ -107,30 +158,12 @@ Vélanor SAS — document fictif — page 6 5. Effectifs par site Site Activité
 
 
 
-[Page 5] rapport-annuel-2025.pdf [score: 0.0] [Preview]
- Relevance score: 0.0
-
-
-
-Vélanor SAS — document fictif — page 5 4. Production par modèle Modèle Usage Unités produites Prix public TTC Loire Urban ville 24 300 1 890 € Sèvre Trail VTT 15 400 3 150 € Brière Kid enfant 13 200 990 € Erdre Cargo cargo 8 900 4 290 € Total 61 800 Le modèle cargo Erdre Cargo est le plus cher de la gamme ; le Loire Urban est le plus vendu.
-
-
-
 [Page 7] rapport-annuel-2025.pdf [score: 0.0] [Preview]
  Relevance score: 0.0
 
 
 
 Vélanor SAS — document fictif — page 7 6. Environnement Les cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au partenariat avec la filière de collecte Recylo.
-
-
-
-[Page 9] rapport-annuel-2025.pdf [score: 0.0] [Preview]
- Relevance score: 0.0
-
-
-
-Vélanor SAS — document fictif — page 9 8. Risques Les principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en dollars américains.
 
 
 
@@ -143,12 +176,21 @@ Vélanor SAS — document fictif — page 2 1. Mot de la présidente Fondée en 
 
 
 
-[Page 8] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+[Page 1] contrat-batterix-scan.pdf [score: 0.0] [Preview]
  Relevance score: 0.0
 
 
 
-Vélanor SAS — document fictif — page 8 7. Fournisseurs principaux Composant Fournisseur Pays Batteries Batterix GmbH Allemagne (Brême) Moteurs Motodrive Co. Taïwan Freins Stopline Italie Pneus Gomma Ouest France Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars 2025.
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+[Page 1] supplier-audit-batterix-en.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
 
 
 

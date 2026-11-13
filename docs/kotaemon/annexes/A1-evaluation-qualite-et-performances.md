@@ -42,22 +42,22 @@ Par type de question (meilleur réglage, 3 passages) : faits simples 13/13, tabl
 
 ## 3. Ce qui fait réussir ou échouer
 
-1. **Le lecteur de fichiers, pas le tri.** Le tri `rerank` ne change pas le nombre de bonnes réponses (26 dans les deux cas) : les échecs ne viennent pas du classement des passages. Le gain vient de la relecture du contrat scanné par Docling : 1/4 puis 4/4 sur les questions du scan, et une question multi-documents de plus. [Vérifié]
-2. **Le scan** : le lecteur intégré ne fait pas de lecture optique ; il ne garde du contrat scanné qu'une vignette par page, sans texte utile. Docling lit les deux pages en 47 à 56 secondes (`docling-2026-11-12.log`, `captures/05-documents/notes.log`), après un téléchargement de 536 Mo de modèles. [Vérifié]
+1. **Le lecteur de fichiers, pas le tri.** Le tri `rerank` ne change pas le nombre de bonnes réponses (26 dans les deux cas) : les échecs ne viennent pas du classement des passages. Le gain vient de la relecture du contrat scanné par Docling : 0/4 réellement (1/4 au comptage automatique, avec le faux positif Q17) puis 4/4 sur les questions du scan, et une question multi-documents de plus. [Vérifié]
+2. **Le scan** : le lecteur intégré ne fait pas de lecture optique ; il ne garde du contrat scanné qu'une vignette par page, sans texte utile. Docling lit les deux pages en 47 à 56 secondes (`docling-2026-11-12.log`, `captures/05-documents/notes.log`), après le téléchargement de ses modèles (environ 1,1 Go sur disque avec leur cache, `fin-de-mission-2026-11-13.log`). [Vérifié]
 3. **L'audio** : le MP3 n'est pas lu (« The FileType.UNK file type is not supported in partition. ») ; Q33 et Q34 échouent dans tous les réglages. [Vérifié]
-4. **Le tableur** : Q24 (stock et seuil d'alerte) échoue avec 10 passages et réussit avec 3 : avec moins de passages, la ligne du tableur pèse davantage dans la réponse. [Vérifié]
+4. **Le tableur** : Q24 (stock et seuil d'alerte) échoue avec 10 passages (« impossible de déterminer » sans Docling ; réponse vide après 110 s dans `banc-2026-11-12-docling-rerank.json`) et réussit avec 3 passages. [Vérifié] Explication possible : avec moins de passages, la ligne du tableur pèse davantage. [Estimation]
 5. **Les pièges** : 4/4 refus dans tous les réglages ; le modèle dit ne pas trouver l'information plutôt que d'inventer. [Vérifié]
 6. **Les pages** : quand le passage cité vient d'un PDF, sa page est toujours la bonne (20/20 puis 25/25). Les autres formats n'ont pas de page. [Vérifié]
-7. **Q30** (délai prévu dans le contrat et délai constaté dans le tableur) échoue toujours : la réponse trouve le délai du contrat, pas celui du tableur. [Vérifié]
+7. **Q30** (délai prévu dans le contrat et délai constaté dans le tableur) échoue toujours : avec Docling, la réponse trouve le délai du contrat mais pas celui du tableur ; sans Docling, elle ne trouve aucun délai. [Vérifié]
 
 ## 4. Temps et mémoire
 
 | Mesure | Valeur | Statut |
 |---|---|---|
 | Temps de réponse, médiane | 22 à 26 s, réflexion de `chat` comprise | [Vérifié] |
-| Temps de réponse, 95 % des questions sous | 38 à 42 s | [Vérifié] |
+| Temps de réponse, 95 % des questions sous | 38 à 42 s ; pointes isolées de 70 à 110 s | [Vérifié] |
 | Indexation par l'interface : un PDF de 10 pages | 6,1 s | [Vérifié] (`captures/04-premiere-question/notes.log`) |
-| Indexation par l'interface : huit documents d'un coup | 13,1 s | [Vérifié] (`captures/05-documents/notes.log`) |
+| Indexation par l'interface : huit fichiers déposés d'un coup (sept indexés, le huitième déjà présent) | 13,1 s | [Vérifié] (`captures/05-documents/notes.log`) |
 | Relecture du scan par Docling (2 pages) | 47 à 56 s | [Vérifié] |
 | Mémoire du conteneur pendant un banc | 1,5 à 1,9 Gio | [Vérifié] (`pic_ram_application_mo`) |
 | Mémoire de la carte graphique en fin de banc (service central) | 8,6 à 9,2 Go sur 16 | [Vérifié] (`vram`) |
@@ -86,7 +86,7 @@ Les temps de réponse sont dominés par le modèle `chat`, qui réfléchit avant
 |---|---|---|
 | `banc.py` : « pilote arrêté » | le conteneur ne tourne pas | `outils/kotaemon/demarrer.sh`, puis relancer |
 | un fichier du corpus « déjà indexé » sans passage | lecture précédente en échec | le pilote réindexe d'office les fichiers sans passage |
-| latences très supérieures à 40 s | autre essai lourd en parallèle | un seul essai à la fois ; `free -m` |
+| latences de 70 à 110 s sur certaines questions | longue réflexion du modèle (pointes observées dans les bancs eux-mêmes) ; un autre essai en parallèle les aggrave [Estimation] | un seul essai à la fois ; `free -m` |
 
 ## Sources
 

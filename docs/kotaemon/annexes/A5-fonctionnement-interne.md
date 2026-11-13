@@ -4,7 +4,7 @@
 > **Prérequis** : avoir lu le [chapitre 01](../manuel/01-decouvrir-kotaemon.md) et le [glossaire](../../glossaire.md).
 > **Version décrite** : Kotaemon 0.12.0 (image `ghcr.io/cinnamon/kotaemon:main-full@sha256:cb4b7156…`, révision `9ad3e4e`), essais du 12 novembre 2026.
 > **Statut des informations** : [Vérifié] observé sur la machine d'essai ; [Source] lu dans le code source au tag `v0.12.0` (relevés `outils/resultats/kotaemon/cadrage-serveur.md` et `cadrage-interface.md`, avec fichier et ligne) ; [Estimation] calcul expliqué ; [À tester] ni lu ni essayé.
-> **Précautions** : la base de données de Kotaemon contient en clair la clé du service de modèles (spécifications des modèles) et les empreintes des mots de passe ; ne pas partager le dossier de données.
+> **Précautions** : la base de données de Kotaemon contient en clair la clé du service de modèles [Source] (spécifications des modèles) et les empreintes des mots de passe ; ne pas partager le dossier de données.
 
 ## Sommaire
 
@@ -69,7 +69,7 @@ flowchart LR
 | Port publié | `127.0.0.1:7860->7860/tcp` [Vérifié] (`outils/resultats/kotaemon/ports-publies-2026-11-12.txt`) |
 | Réseaux | `llm-net` (service de modèles), `rag-local` (captures Playwright) |
 | Appels sortants du conteneur | page des nouveautés sur `api.github.com` à chaque démarrage [Source] `help.py:94-114` ; données NLTK sur `utic-public-cf.s3.amazonaws.com` (403) [Vérifié] ; service en ligne `r.jina.ai` pour « Use Web Links » [Source] `web_loader.py:12-23` ; télémétrie de Chroma et d'unstructured coupée par variables (`compose.yml`) |
-| Appels sortants du navigateur | scripts sur `cdn.skypack.dev`, `cdnjs`, `jsdelivr`, polices Google [Source] `app.py:186-197` ; la visionneuse PDF dépend de `cdn.skypack.dev/pdfjs-viewer-element`, qui renvoie une erreur de construction [Vérifié] (`incident-2026-11-12-visionneuse-pdf.txt`) |
+| Appels sortants du navigateur | scripts sur `cdn.skypack.dev`, `cdnjs`, `jsdelivr` [Source] `app.py:186-197` ; la visionneuse PDF dépend de `cdn.skypack.dev/pdfjs-viewer-element`, qui renvoie une erreur de construction [Vérifié] (`incident-2026-11-12-visionneuse-pdf.txt`) |
 
 ## 5. Du document au passage
 
@@ -95,7 +95,7 @@ flowchart LR
 
 - [Source] Kotaemon n'envoie pas `chat_template_kwargs` : la réflexion de `chat` reste active, sans moyen de la couper depuis l'interface (`openai.py:307-329`).
 - [Source] La réflexion revient à part (`reasoning_content`) et n'est pas affichée ; seul le texte de la réponse l'est (`openai.py:163-268`).
-- [Vérifié] Les réponses arrivent en 16 à 45 secondes environ sur carte graphique, réflexion comprise (annexe A1). Le plafond `max_tokens: 6144` et le délai `timeout: 600` évitent les réponses coupées.
+- [Vérifié] Les réponses arrivent en 12 à 50 secondes pour la plupart sur carte graphique, réflexion comprise, avec des pointes de 70 à 110 s (annexe A1) ; une réponse vide a été relevée après 110 s (Q24, `banc-2026-11-12-docling-rerank.json`). Le plafond `max_tokens: 6144` et le délai `timeout: 600` sont là pour limiter les coupures [Estimation].
 
 ## 9. Réglages : base, `.env` et interface
 

@@ -1,0 +1,35 @@
+== Relevé de fin de mission 2026-11-13T01:52:50+01:00
+-- docker stats
+rag-kotaemon 745.8MiB / 31.35GiB
+llm-central 735.9MiB / 31.35GiB
+llm-swap 5.358GiB / 31.35GiB
+llm-speaches 1.291GiB / 31.35GiB
+-- nvidia-smi
+7730 MiB, 16380 MiB
+-- disque
+1.1G	donnees/kotaemon
+1007M	donnees/sauvegardes
+-- journal du conteneur : extraits (depuis le dernier démarrage et 3 h)
+      3     (r_idx, float(re_0_10_rating(result)) / self.normalize)
+      3   File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 80, in re_0_10_rating
+     37 /app/launch.sh: 20: ollama: not found
+      3 AssertionError
+     12 KeyError: 'index.options.4.reader_mode'
+     15 Running on local URL:  http://0.0.0.0:7860
+      2 openai.RateLimitError: Error code: 429 - {'error': {'message': 'litellm.RateLimitError: RateLimitError: Hosted_vllmException - {"src":"llama-swap","error":{"message":"Too many requests","type":"rate_limit_error","param":null,"code":"concurrency_limit"}}\n\nLiteLLM: model group \'chat\' failed with the error above. No fallback was attempted.', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+-- trace AssertionError (notation par le modèle)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 167, in <listcomp>
+    (r_idx, float(re_0_10_rating(result)) / self.normalize)
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 80, in re_0_10_rating
+    raise AssertionError
+AssertionError
+Document is not pdf
+--
+  File "/app/.venv/lib/python3.10/site-packages/kotaemon/indices/rankings/llm_trulens.py", line 167, in <listcomp>
+-- question de suite : réponse affichée après attente (essai Playwright du 13 novembre, captures/12-cas-pratiques/02-client-suite.txt)
+Et quel numéro appeler pour le service après-vente ?
+Pour contacter le service après-vente, vous devez appeler le numéro 02 40 00 12 34.
+-- modèles de Docling (dans le conteneur)
+1.1G	/app/ktem_app_data/huggingface
+-- réglages revenus aux valeurs par défaut après création d'une collection (13 novembre, avant nouvel enregistrement) : sonde Playwright
+lang English ctx 32000 ; score llm True chunks 10 (sortie de la sonde, recopiée de la session)

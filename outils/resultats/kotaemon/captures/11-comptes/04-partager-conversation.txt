@@ -13,6 +13,8 @@ LightRAG Collection
 ▼
 Documents partagés
 ▼
+NanoGraphRAG Collection
+▼
 Quick Upload
 ▼
 File
@@ -37,15 +39,15 @@ Report
 
 Qui est la présidente de Vélanor ?
 
-D'après les documents fournis, la présidente de Vélanor est Hélène Marchais.
+La présidente de Vélanor est Hélène Marchais.
 
-Voici les détails et les sources qui confirment cette information :
+Voici les détails et les preuves tirées des documents fournis pour confirmer cette information :
 
-Rapport annuel 2025 (Page 2) : Dans la section intitulée "Mot de la présidente", le texte précise explicitement : « La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. »
-Compte rendu du CSE (14 octobre 2025) : Le document mentionne les participants à la réunion du Comité Social et Économique, où figure « Hélène Marchais (présidente) ».
-Contrat avec Batterix : Dans le contrat signé en février 2025, la signature de Vélanor est apposée par « Hélène Marchais », ce qui corrobrole son rôle de dirigeante.
+Rapport annuel 2025 (Page 2) : Dans la section « Mot de la présidente », le texte indique explicitement : « La présidente, Hélène Marchais, dirige l'entreprise depuis 2019 ». C'est la source la plus directe confirmant son titre et sa date d'arrivée au poste.
+Compte rendu de la réunion du CSE (cse-2025-10-14.md) : Dans les participants de la réunion du 14 octobre 2025, elle est listée avec le titre « Hélène Marchais (présidente) ».
+Contrat avec Batterix : Le document de signature du contrat (contrat-batterix-scan.pdf) montre que l'entreprise Vélanor a été signée pour Hélène Marchais, ce qui corrobrole son rôle de représentant légal ou dirigeant.
 
-Ainsi, selon les documents fictifs fournis, c'est Hélène Marchais qui occupe le poste de présidente depuis 2019.
+En résumé, selon les documents, Hélène Marchais est la présidente depuis 2019 et elle dirige actuellement l'entreprise basée à Nantes.
 
 MultimodalTextbox
 Dropdown
@@ -60,27 +62,10 @@ Dropdown
 Dropdown
 Information panel
 ▼
-[Page 1] rapport-annuel-2025.pdf [Preview]
+Image from [Page 2] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 7.8
 
 
-
-Vélanor SAS — document fictif — page 1 Vélanor SAS — Rapport annuel 2025 Document fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente — 2. Chiffres clés — 3. Chiffre d'affaires trimestriel — 4. Production par modèle — 5. Effectifs — 6. Environnement — 7. Fournisseurs — 8. Risques — 9. Perspectives 2026.
-
-
-
-
-
-[Page 1] supplier-audit-batterix-en.pdf [Preview]
-
-
-
-Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
-
-
-
-
-
-[Page 2] rapport-annuel-2025.pdf [Preview]
 
 
 
@@ -90,25 +75,54 @@ Vélanor SAS — document fictif — page 2 1. Mot de la présidente Fondée en 
 
 
 
-[Page 2] contrat-batterix-scan.pdf [Preview]
-
-Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
-
+[Page 1] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
 
 
-[Page 1] supplier-audit-batterix-en.pdf [Preview]
-
-Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
-
-
-
-[Page 1] rapport-annuel-2025.pdf [Preview]
 
 Vélanor SAS — document fictif — page 1 Vélanor SAS — Rapport annuel 2025 Document fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente — 2. Chiffres clés — 3. Chiffre d'affaires trimestriel — 4. Production par modèle — 5. Effectifs — 6. Environnement — 7. Fournisseurs — 8. Risques — 9. Perspectives 2026.
 
 
 
-cse-2025-10-14.md
+Image from [Page 1] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+
+
+Vélanor SAS — document fictif — page 1 Vélanor SAS — Rapport annuel 2025 Document fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente — 2. Chiffres clés — 3. Chiffre d'affaires trimestriel — 4. Production par modèle — 5. Effectifs — 6. Environnement — 7. Fournisseurs — 8. Risques — 9. Perspectives 2026.
+
+
+
+
+
+Image from [Page 1] supplier-audit-batterix-en.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+[Page 2] contrat-batterix-scan.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+cse-2025-10-14.md [score: 0.0]
+ Relevance score: 0.0
+
+
 
 Compte rendu de la réunion du CSE du 14 octobre 2025
 
@@ -132,3 +146,7 @@ La question des horaires d'été de l'atelier de Cholet est reportée à la réu
 
 
 version: 0.0.1
+
+Info
+Conversation: Untitled - 2026-11-13 01:00:10 is public.
+×

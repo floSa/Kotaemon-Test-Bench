@@ -42,48 +42,6 @@
   "heure": "22:32:37"
  },
  {
-  "capture": "07-reglages/03-methodes.png",
-  "pastilles": [
-   [
-    1,
-    "Reasoning options"
-   ],
-   [
-    2,
-    "Create Mindmap"
-   ],
-   [
-    3,
-    "Create Embeddings Visualization"
-   ],
-   [
-    4,
-    "Use Multimodal Input"
-   ]
-  ],
-  "note": "",
-  "heure": "22:34:39"
- },
- {
-  "capture": "07-reglages/04-complex.png",
-  "pastilles": [
-   [
-    1,
-    "complex"
-   ],
-   [
-    2,
-    "Complex QA"
-   ],
-   [
-    3,
-    "Decompose Prompt"
-   ]
-  ],
-  "note": "",
-  "heure": "22:34:41"
- },
- {
   "capture": "07-reglages/05-consignes.png",
   "pastilles": [
    [
@@ -105,36 +63,6 @@
   ],
   "note": "",
   "heure": "22:34:46"
- },
- {
-  "capture": "07-reglages/06-methode-conversation.png",
-  "pastilles": [
-   [
-    1,
-    "Reasoning method : complex"
-   ],
-   [
-    2,
-    "Search All"
-   ]
-  ],
-  "note": "",
-  "heure": "22:35:33"
- },
- {
-  "capture": "07-reglages/07-reponse-decomposee.png",
-  "pastilles": [
-   [
-    1,
-    "réponse"
-   ],
-   [
-    2,
-    "Information panel"
-   ]
-  ],
-  "note": "",
-  "heure": "22:35:48"
  },
  {
   "capture": "07-reglages/08-notation-llm.png",
@@ -169,5 +97,65 @@
   ],
   "note": "",
   "heure": "22:37:04"
+ },
+ {
+  "capture": "07-reglages/06-methode-conversation.png",
+  "pastilles": [
+   [
+    1,
+    "Reasoning method : complex"
+   ],
+   [
+    2,
+    "Search All"
+   ]
+  ],
+  "note": "",
+  "heure": "01:04:40"
+ },
+ {
+  "capture": "07-reglages/07-reponse-decomposee.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ],
+   [
+    2,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "01:05:35"
+ },
+ {
+  "capture": "07-reglages/03-methodes.png",
+  "pastilles": [
+   [
+    1,
+    "Reasoning options"
+   ],
+   [
+    2,
+    "Create Mindmap"
+   ],
+   [
+    3,
+    "Create Embeddings Visualization"
+   ]
+  ],
+  "note": "",
+  "heure": "01:05:59"
+ },
+ {
+  "capture": "07-reglages/04-complex.png",
+  "pastilles": [
+   [
+    1,
+    "Decompose Prompt"
+   ]
+  ],
+  "note": "",
+  "heure": "01:06:04"
  }
 ]

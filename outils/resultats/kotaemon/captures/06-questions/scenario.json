@@ -53,21 +53,6 @@
   "heure": "22:22:41"
  },
  {
-  "capture": "06-questions/07-carte-mentale.png",
-  "pastilles": [
-   [
-    1,
-    "Mindmap (on)"
-   ],
-   [
-    2,
-    "carte mentale"
-   ]
-  ],
-  "note": "",
-  "heure": "22:27:31"
- },
- {
   "capture": "06-questions/08-parcourir.png",
   "pastilles": [
    [
@@ -194,7 +179,7 @@
    ]
   ],
   "note": "",
-  "heure": "22:30:30"
+  "heure": "00:55:46"
  },
  {
   "capture": "06-questions/05-citation-en-ligne.png",
@@ -209,21 +194,32 @@
    ]
   ],
   "note": "",
-  "heure": "22:32:18"
+  "heure": "00:57:32"
  },
  {
   "capture": "06-questions/06-detail-scores.png",
   "pastilles": [
    [
     1,
-    "Relevance score"
-   ],
-   [
-    2,
-    "détail des notes"
+    "Relevance score et détail des notes"
    ]
   ],
   "note": "",
-  "heure": "22:32:20"
+  "heure": "00:57:34"
+ },
+ {
+  "capture": "06-questions/07-carte-mentale.png",
+  "pastilles": [
+   [
+    1,
+    "Mindmap (on)"
+   ],
+   [
+    2,
+    "carte mentale"
+   ]
+  ],
+  "note": "",
+  "heure": "00:58:42"
  }
 ]

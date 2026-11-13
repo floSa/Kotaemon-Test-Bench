@@ -20,7 +20,7 @@ Kotaemon propose quatre **méthodes de raisonnement** :
 | `ReAct` | agent qui alterne réflexion et recherche, pas à pas (chapitre 08) | questions qui demandent plusieurs recherches enchaînées |
 | `ReWOO` | agent qui prépare d'abord un plan de recherches, puis rédige (chapitre 08) | même usage, avec un plan lisible |
 
-Les réglages conseillés pour le service de modèles de ce poste sont ceux du chapitre 03 : 10 passages, recherche `hybrid`, tri par `llm-service-rerank`, notation par le modèle désactivée, 8 000 jetons de passages au plus.
+Les réglages conseillés pour le service de modèles de ce poste sont ceux du chapitre 03 (recherche `hybrid`, tri par `llm-service-rerank`, notation par le modèle désactivée, 8 000 jetons de passages au plus), avec **3 à 5 passages** plutôt que 10 : sur le jeu d'essai, 3 passages donnent un peu plus de bonnes réponses, un peu plus vite (« Number of document chunks to retrieve », chapitre 03, étape 11).
 
 ## Régler la recherche
 
@@ -70,23 +70,20 @@ Les autres réglages de « File Collection » sont décrits au chapitre 03 (éta
 | 1 | « Reasoning options » | méthode utilisée par défaut : `simple`, `complex`, `ReAct`, `ReWOO` |
 | 2 | « Create Mindmap » | carte mentale de chaque réponse (la case « Mindmap » du chat l'emporte) |
 | 3 | « Create Embeddings Visualization » | graphique qui situe la question et les passages les uns par rapport aux autres |
-| 4 | « Use Multimodal Input » | envoie aussi les images des figures au modèle ; prévu pour un service Azure, sans effet ici |
 
-*Résultat* : la page montre aussi « Language model » et « Citation style » (chapitre 03 et chapitre 06).
+*Résultat* : la page montre aussi « Language model » et « Citation style » (chapitre 03 et chapitre 06), et, plus bas, la case « Use Multimodal Input », qui envoie aussi les images des figures au modèle ; prévue pour un service Azure, elle est sans effet ici.
 
 **Étape 4. Choisir la méthode `complex`**
 *Où* : même écran ; cliquer sur `complex` dans « Reasoning options ».
 
 ![Méthode complex](../img/07-reglages/04-complex.png)
-*Écran : « Reasoning settings », méthode `complex` choisie.*
+*Écran : « Reasoning settings », bas des options de la méthode `complex`.*
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `complex` | méthode par décomposition |
-| 2 | « Complex QA » | description de la méthode |
-| 3 | « Decompose Prompt » | consigne qui demande au modèle de découper la question en sous-questions |
+| 1 | « Decompose Prompt » | consigne qui demande au modèle de découper la question en sous-questions (option propre à `complex`) |
 
-*Résultat* : les options de la méthode `complex` s'affichent. Pour garder `simple` par défaut, cliquer de nouveau sur `simple` avant « Save & Close » ; la méthode se choisit alors conversation par conversation (étape 6).
+*Résultat* : les options de la méthode `complex` s'affichent, précédées de sa description « Complex QA » ; elles reprennent celles de `simple`, plus « Decompose Prompt » en bas. Pour garder `simple` par défaut, cliquer de nouveau sur `simple` avant « Save & Close » ; la méthode se choisit alors conversation par conversation (étape 6).
 
 **Étape 5. Lire les consignes et l'historique**
 *Où* : même écran, plus bas, méthode `simple`.
@@ -131,7 +128,7 @@ Choisir `complex` dans « Reasoning method », cliquer sur « Search All », pui
 | 1 | « Sub questions and their answers » | chaque sous-question, suivie de sa réponse, puis la réponse d'ensemble |
 | 2 | « Information panel » | passages de toutes les sous-questions |
 
-*Résultat* : la réponse est plus longue à venir (une recherche et une réponse par sous-question) mais traite chaque partie de la question.
+*Résultat* : la réponse est plus longue à venir (une recherche et une réponse par sous-question) mais traite chaque partie : sous-question 1, délai contractuel de 21 jours après la commande (contrat, page 2) ; pour le délai constaté, l'audit ne donne pas de valeur, ce que la réponse dit (ce délai figure en réalité dans le classeur des stocks).
 
 ## Faire noter les passages par le modèle
 
@@ -168,7 +165,7 @@ Poser une question dont la réponse n'est pas dans les documents : `Combien de t
 
 ## Bon à savoir
 
-- Mesures faites sur ce poste : avec 3 passages au lieu de 10, la qualité ne baisse pas sur le jeu d'essai et les réponses sont un peu plus rapides ; le tri par `llm-service-rerank` ne change pas le nombre de bonnes réponses (annexe A1).
+- Mesures faites sur ce poste : avec 3 passages au lieu de 10, une bonne réponse de plus sur 34 et des réponses un peu plus rapides ; le tri par `llm-service-rerank` ne change pas le nombre de bonnes réponses (annexe A1).
 - Après un changement de réglage, une nouvelle conversation évite de mélanger les effets avec l'historique.
 - Les consignes modifiées s'appliquent au compte seulement ; les autres comptes gardent les leurs.
 

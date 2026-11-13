@@ -11,7 +11,7 @@
 Ajouter un document se fait en deux temps : Kotaemon le **lit** (le transforme en texte), puis l'**indexe** (le découpe en passages et calcule leur représentation). La lecture est confiée à un **lecteur de fichiers** :
 
 - **le lecteur intégré** (« Default (open-source) ») : il fait partie de Kotaemon et sert par défaut. Il lit le texte des PDF page par page (avec une vignette de chaque page), les fichiers Word et PowerPoint, les classeurs Excel, les pages HTML, les fichiers Markdown et texte. Il **ne lit pas** le texte contenu dans une image : un PDF scanné reste presque vide ;
-- **Docling** : un second lecteur, réservé aux PDF, choisi dans les réglages. Il reconnaît la mise en page et les tableaux, et lit le texte des pages scannées (lecture optique, ou OCR). Il est plus lent et télécharge environ 540 Mo de modèles à sa première utilisation.
+- **Docling** : un second lecteur, réservé aux PDF, choisi dans les réglages. Il reconnaît la mise en page et les tableaux, et lit le texte des pages scannées (lecture optique, ou OCR). Il est plus lent et télécharge environ 1 Go de modèles à sa première utilisation.
 
 Docling n'est donc pas indispensable : il est utile pour les PDF scannés ou les tableaux complexes. Dans l'installation de ce manuel, il est fourni **à l'intérieur** de l'image de Kotaemon (version « full ») et tourne dans le même conteneur. Kotaemon sait aussi confier la lecture à un programme extérieur (un serveur Docling ou PaddleOCR installé à part) ; ce branchement demande d'écrire un petit module de réglage et n'est pas fait dans ce manuel (voir « Bon à savoir »).
 
@@ -22,7 +22,7 @@ Les fichiers audio et vidéo ne sont pas lus. Les pages web s'ajoutent par leur 
 **Étape 1. Choisir les fichiers**
 *Où* : barre des onglets › « Files » › « File Collection » › « Upload Files ».
 
-Cliquer dans la zone de dépôt et choisir plusieurs fichiers à la fois dans la fenêtre de Windows (touche Ctrl enfoncée), ou les glisser ensemble dans la zone. L'exemple prend les huit documents lisibles du dossier `corpus/documents/`.
+Cliquer dans la zone de dépôt et choisir plusieurs fichiers à la fois dans la fenêtre de Windows (touche Ctrl enfoncée), ou les glisser ensemble dans la zone. L'exemple prend les huit documents lisibles du dossier `corpus/documents/` (tous sauf `message-vocal-production.mp3`).
 
 ![Plusieurs fichiers choisis](../img/05-documents/01-plusieurs-fichiers.png)
 *Écran : « Upload Files », huit fichiers choisis.*
@@ -47,7 +47,7 @@ Cliquer sur « Upload and Index », puis attendre la fin.
 | 1 | « Upload result » | une ligne par fichier, avec une coche verte s'il a été indexé |
 | 2 | « Upload info » | détail de chaque fichier : conversion, découpage, calcul des représentations |
 
-*Résultat* : en une quinzaine de secondes, le message « Successfully index 7 files » apparaît. Un fichier déjà présent dans la collection (ici le contrat scanné) est ignoré : pour le relire, cocher « Force reindex file » (étape 9).
+*Résultat* : en une quinzaine de secondes, le message « Successfully index 7 files » apparaît. Un fichier déjà présent dans la collection (pour le lecteur qui suit ce manuel : le rapport annuel, ajouté au chapitre 04) est ignoré : pour le relire, cocher « Force reindex file » (étape 9). Les captures de ce chapitre ont été prises à des moments où d'autres collections (« Documents partagés », « NanoGraphRAG Collection », chapitres 09 et 10) et d'autres fichiers existaient déjà : ne pas en tenir compte.
 
 ## Ajouter des pages web
 
@@ -95,7 +95,7 @@ Cliquer sur « Upload and Index », puis attendre la fin.
 | 5 | « Close » | referme la fiche |
 | 6 | type de passages | choix des passages affichés : `all`, `text`, `table`, `image`, `thumbnail` |
 
-*Résultat* : sous la liste « all », chaque passage du fichier s'affiche sur une ligne (« [1/1] … ») ; un clic sur une ligne déplie son texte. C'est le moyen de vérifier ce que Kotaemon a réellement lu dans un document.
+*Résultat* : en faisant défiler la page sous la liste « all », chaque passage du fichier s'affiche sur une ligne (« [1/1] … ») ; un clic sur une ligne déplie son texte. C'est le moyen de vérifier ce que Kotaemon a réellement lu dans un document.
 
 ## Regrouper des fichiers
 
@@ -104,7 +104,7 @@ Un **groupe** est une liste nommée de fichiers d'une collection. Il sert à lim
 **Étape 6. Créer un groupe**
 *Où* : « Files » › « File Collection » › « Groups » › « Add ».
 
-Saisir le nom dans « Group name », choisir les fichiers dans « Attached files » (un clic par fichier dans la liste qui s'ouvre), puis cliquer sur « Save ».
+Saisir `Fournisseur Batterix` dans « Group name », choisir `contrat-batterix-scan.pdf` puis `supplier-audit-batterix-en.pdf` dans « Attached files » (un clic par fichier dans la liste qui s'ouvre), puis cliquer sur « Save ».
 
 ![Création d'un groupe](../img/05-documents/06-groupe-creer.png)
 *Écran : « Groups », formulaire « Add new group ».*
@@ -133,13 +133,13 @@ Saisir le nom dans « Group name », choisir les fichiers dans « Attached files
 
 ## Tout supprimer, forcer la relecture
 
-**Étape 8. Supprimer tous les fichiers**
+**Étape 8. Repérer la suppression de tous les fichiers**
 *Où* : « Files » › « File Collection » › sous-onglet « Files » › « Advance options » (en bas).
 
-Cliquer sur « Advance options », puis sur « Delete all files ».
+Cliquer sur « Advance options », puis sur « Delete all files » : Kotaemon demande une confirmation. **Pour suivre la suite du manuel, cliquer sur « Cancel »** : les chapitres suivants utilisent les fichiers de la collection.
 
 ![Options avancées de la liste](../img/05-documents/08-options-avancees.png)
-*Écran : « Advance options » ouvert, confirmation demandée.*
+*Écran : « Advance options » ouvert, confirmation demandée (la liste contient ici un fichier MP3 d'un essai antérieur).*
 
 | N° | Élément | Rôle |
 |---|---|---|
@@ -148,7 +148,7 @@ Cliquer sur « Advance options », puis sur « Delete all files ».
 | 3 | « Confirm delete » | confirme la suppression de tous les fichiers |
 | 4 | « Cancel » | annule |
 
-*Résultat* : après « Confirm delete », un message « File … has been deleted » apparaît pour chaque fichier. Les groupes de la collection restent, vides.
+*Résultat* : avec « Cancel », rien ne change. Avec « Confirm delete », un message « File … has been deleted » apparaît pour chaque fichier et les groupes de la collection restent, vides ; il faut alors tout réajouter (étape 1). C'est utile pour repartir de zéro.
 
 **Étape 9. Forcer la relecture d'un fichier déjà présent**
 *Où* : « Files » › « File Collection » › « Upload Files » › « Advanced indexing options ».
@@ -168,7 +168,13 @@ Cliquer sur « Advance options », puis sur « Delete all files ».
 **Étape 10. Utiliser « Quick Upload »**
 *Où* : barre des onglets › « Chat » › colonne de gauche › « Quick Upload ».
 
-Cliquer dans la zone « Quick Upload » et choisir un fichier (l'exemple prend une copie de la note du CSE, `note-rapide-cse.md`).
+Préparer d'abord une copie de la note du comité social et économique (CSE) sous un autre nom, dans le terminal Ubuntu, dossier du dépôt :
+
+```bash
+cp corpus/documents/cse-2025-10-14.md /mnt/c/Users/Public/note-rapide-cse.md
+```
+
+Cliquer ensuite dans la zone « Quick Upload » et choisir ce fichier (`C:\Users\Public\note-rapide-cse.md` dans la fenêtre de Windows).
 
 ![Ajout rapide depuis le chat](../img/05-documents/10-ajout-rapide.png)
 *Écran : « Chat », ajout rapide en cours.*
@@ -239,7 +245,7 @@ Choisir `contrat-batterix-scan.pdf`, cocher « Force reindex file » (étape 9),
 | 1 | « Selected file: » | fichier sélectionné : vérifier son nom avant de continuer |
 | 2 | « Delete » | supprime le fichier aussitôt |
 
-*Résultat* : le message « File cse-2025-10-14.md has been deleted » apparaît et le fichier disparaît de la liste. Pour le récupérer, il faut l'ajouter de nouveau (étape 1) ; c'est ce qui a été fait ici, ainsi que la suppression de la copie `note-rapide-cse.md` de l'étape 10.
+*Résultat* : le message « File cse-2025-10-14.md has been deleted » apparaît et le fichier disparaît de la liste. **Ajouter de nouveau `cse-2025-10-14.md`** (étape 1) : il sert aux chapitres suivants. Supprimer de la même façon la copie `note-rapide-cse.md` de l'étape 10, devenue inutile.
 
 ## Réparer un groupe après une relecture forcée
 

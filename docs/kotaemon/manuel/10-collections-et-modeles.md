@@ -90,7 +90,7 @@ outils/kotaemon/demarrer.sh
 *Résultat* : après `Kotaemon prêt`, recharger la page du navigateur : « Documents partagés » apparaît comme sous-onglet de « Files » et comme section dans la colonne de gauche du chat. Elle sert au chapitre 11.
 
 **Étape 4. Enregistrer de nouveau les réglages**
-*Où* : « Settings » › « Reasoning settings ».
+*Où* : « Settings » › « Reasoning settings », puis « Settings » › « Retrieval settings ».
 
 Après la création d'une collection, Kotaemon ne sait plus relire les réglages enregistrés de chaque compte (il manque ceux de la nouvelle collection) : l'interface revient en silence aux valeurs par défaut (« Language » `English`, « Max context length (LLM) » `32000`, « Use LLM relevant scoring » coché). Refaire les étapes 10 et 11 du chapitre 03 (langue `French`, `8000`, notation décochée), puis « Save & Close » : les réglages sont de nouveau enregistrés au complet, nouvelle collection comprise.
 
@@ -110,18 +110,18 @@ Après la création d'une collection, Kotaemon ne sait plus relire les réglages
 ## Supprimer un modèle inutile
 
 **Étape 5. Supprimer un modèle en ligne**
-*Où* : « Resources » › « LLMs » › « View » ; cliquer sur la ligne `groq`, puis sur « Delete » (en bas de la fiche).
+*Où* : « Resources » › « LLMs » › « View » ; cliquer sur la ligne d'un modèle en ligne préinstallé, par exemple `mistral`, puis sur « Delete » (en bas de la fiche).
 
 ![Suppression d'un modèle](../img/10-ressources/04-supprimer-modele.png)
-*Écran : fiche du modèle `groq`, confirmation demandée.*
+*Écran : fiche du modèle `mistral`, confirmation demandée.*
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | `groq` | modèle en ligne préinstallé, inutilisable sans clé |
+| 1 | nom du modèle (`mistral`) | modèle en ligne préinstallé, inutilisable sans clé |
 | 2 | « Confirm Delete » | confirme la suppression |
 | 3 | « Cancel » | annule |
 
-*Résultat* : après « Confirm Delete », la ligne `groq` disparaît de la liste. La même démarche vaut pour « openai », « claude », « google », « cohere » et « mistral ». Ne jamais supprimer le modèle marqué `true` dans la colonne « default ».
+*Résultat* : après « Confirm Delete », la ligne `mistral` disparaît de la liste. La même démarche vaut pour « openai », « claude », « google », « groq » et « cohere » (`groq` a été supprimé de la même façon pendant les essais). Ne jamais supprimer le modèle marqué `true` dans la colonne « default ».
 
 ## Relire les modèles d'embedding et de tri
 

@@ -2,3 +2,4 @@
 2026-11-12 22:46:59 spécification proposée : embedding: default | supported_file_types: .pdf, .txt | max_file_size: 1000 | max_number_of_files: 0 | private: false | chunk_size: 0 | chunk_overlap: 0 | 
 2026-11-12 22:47:03 ajout collection : toasts ['Info\nIndex "Documents partagés" created successfully. Please restart the app!\n×']
 2026-11-12 22:47:15 suppression groq : toasts []
+2026-11-13 00:59:58 suppression mistral : toasts []

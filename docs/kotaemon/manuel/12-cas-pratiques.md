@@ -24,7 +24,7 @@ Choisir `group: 'Fournisseur Batterix'` dans la liste des fichiers (chapitre 06,
 |---|---|---|
 | 1 | groupe « Fournisseur Batterix » | recherche limitée au contrat et à l'audit |
 | 2 | réponse | sous-questions et réponses : prix 212 euros HT, délai 21 jours après commande, score 87 sur 100 |
-| 3 | sources : contrat et audit | passages du contrat (pages 1 et 2) et de l'audit, phrases surlignées |
+| 3 | sources : contrat et audit | passages retenus ; en tête l'audit, puis, plus bas dans le panneau, les pages 1 et 2 du contrat, phrases surlignées |
 
 *Résultat* : en un peu plus d'une minute, chaque partie de la question a sa réponse et sa source. Vérifier : le passage « Prix unitaire 212 euros HT, révisable une fois par an » est surligné dans `contrat-batterix-scan.pdf`, page 1.
 
@@ -44,8 +44,8 @@ Poser `Quelle est la durée de garantie du cadre ?`, attendre que la réponse so
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | première réponse | « la durée de garantie du cadre est de 7 ans », d'après `faq-sav.html` |
-| 2 | question de suite | « Et quel numéro… » : Kotaemon comprend qu'il s'agit du même service grâce à la question précédente |
+| 1 | question de suite | « Et quel numéro… » : Kotaemon comprend qu'il s'agit du même service grâce à la question précédente (au-dessus, la première réponse : « 7 ans ») |
+| 2 | réponse à la question de suite | « 02 40 00 12 34 », du lundi au vendredi de 9 h à 18 h |
 | 3 | source : `faq-sav.html` | passage de la foire aux questions surligné |
 
 *Résultat* : la seconde réponse donne « 02 40 00 12 34 ». Une question de suite envoyée trop tôt, pendant que Kotaemon termine la carte mentale et le nom de la conversation, reste sans réponse affichée : il suffit d'attendre que le nom de la conversation remplace « Untitled » avant de continuer.
@@ -79,7 +79,7 @@ Le compte rendu a été ajouté par l'administrateur dans « Documents partagés
 
 | Symptôme | Cause | Que faire |
 |---|---|---|
-| le contrat n'est pas trouvé avec le groupe | groupe privé du fichier après une relecture forcée | réparer le groupe (chapitre 05) |
+| le contrat n'est pas trouvé avec le groupe | le groupe a perdu le fichier après une relecture forcée | réparer le groupe (chapitre 05) |
 | la question de suite ne reçoit pas de réponse | envoyée avant la fin de la réponse précédente | attendre le nom de la conversation, puis reposer la question |
 | Camille ne trouve pas le document | document dans « File Collection » (privée) | l'ajouter à « Documents partagés » |
 

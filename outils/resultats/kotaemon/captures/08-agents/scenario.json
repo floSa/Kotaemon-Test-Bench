@@ -15,56 +15,6 @@
   "heure": "22:43:58"
  },
  {
-  "capture": "08-agents/01-reglages-react.png",
-  "pastilles": [
-   [
-    1,
-    "ReAct"
-   ],
-   [
-    2,
-    "Language model"
-   ],
-   [
-    3,
-    "Tools for knowledge retrieval"
-   ],
-   [
-    4,
-    "Maximum number of iterations the LLM can go through"
-   ]
-  ],
-  "note": "",
-  "heure": "22:44:16"
- },
- {
-  "capture": "08-agents/02-reglages-rewoo.png",
-  "pastilles": [
-   [
-    1,
-    "ReWOO"
-   ],
-   [
-    2,
-    "Language model for Planner"
-   ],
-   [
-    3,
-    "Language model for Solver"
-   ],
-   [
-    4,
-    "Highlight Citation"
-   ],
-   [
-    5,
-    "Tools for knowledge retrieval"
-   ]
-  ],
-  "note": "",
-  "heure": "22:44:19"
- },
- {
   "capture": "08-agents/04-reponse-rewoo.png",
   "pastilles": [
    [
@@ -101,5 +51,51 @@
   ],
   "note": "",
   "heure": "22:46:34"
+ },
+ {
+  "capture": "08-agents/01-reglages-react.png",
+  "pastilles": [
+   [
+    1,
+    "ReAct"
+   ],
+   [
+    2,
+    "Language model"
+   ],
+   [
+    3,
+    "Tools for knowledge retrieval"
+   ],
+   [
+    4,
+    "Maximum number of iterations the LLM can go through"
+   ]
+  ],
+  "note": "",
+  "heure": "00:59:38"
+ },
+ {
+  "capture": "08-agents/02-reglages-rewoo.png",
+  "pastilles": [
+   [
+    1,
+    "ReWOO"
+   ],
+   [
+    2,
+    "Language model for Planner"
+   ],
+   [
+    3,
+    "Language model for Solver"
+   ],
+   [
+    4,
+    "Highlight Citation"
+   ]
+  ],
+  "note": "",
+  "heure": "00:59:41"
  }
 ]

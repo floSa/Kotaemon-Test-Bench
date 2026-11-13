@@ -11,6 +11,10 @@ GraphRAG Collection
 ▼
 LightRAG Collection
 ▼
+Documents partagés
+▼
+NanoGraphRAG Collection
+▼
 Quick Upload
 ▼
 File
