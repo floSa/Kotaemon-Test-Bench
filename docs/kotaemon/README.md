@@ -66,6 +66,9 @@ Pour choisir, dimensionner, automatiser ou exploiter ; rien de cette partie n'es
 
 ## Décisions en attente
 
-1. Essayer un serveur Docling externe (docling-serve) branché par `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` : image hors de l'enveloppe de la mission, à lancer sur accord.
-2. Modèle de réponse plus léger, ou alias sans réflexion de `chat`, dans LLM-Service : hors mission.
-3. Garder ou supprimer la sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo).
+Choix qui restent à faire par la personne qui gère le poste ; aucun n'empêche de suivre le manuel.
+
+1. Essayer un lecteur Docling installé comme service séparé, hors de Kotaemon (méthode décrite dans l'annexe A3) : demande de télécharger un logiciel supplémentaire, non prévu pour ces essais.
+2. Faire servir par le service de modèles une version de `chat` qui répond sans réfléchir d'abord, ou un modèle plus léger : réponses plus rapides ; c'est un réglage du service de modèles, pas de Kotaemon.
+3. Garder ou supprimer la sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo) ; elle contient la clé du service de modèles.
+4. Changer la clé du service de modèles : un fragment de 6 caractères en est resté dans l'historique du dépôt (annexe A6).

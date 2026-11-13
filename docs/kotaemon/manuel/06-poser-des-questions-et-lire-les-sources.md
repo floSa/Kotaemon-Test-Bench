@@ -176,7 +176,7 @@ Saisir le nouveau nom dans le champ qui apparaît, puis Entrée.
 
 | N° | Élément | Rôle |
 |---|---|---|
-| 1 | « Conversation name » | nouveau nom ; Entrée l'enregistre (« (Enter) to save ») |
+| 1 | champ de saisie du nouveau nom | au-dessus, « (Enter) to save » : Entrée enregistre le nom |
 
 *Résultat* : le message « Conversation renamed. » apparaît et la liste affiche le nouveau nom.
 
