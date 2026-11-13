@@ -70,7 +70,7 @@ Les lignes qui commencent par `Traceback` ou qui contiennent `Error` décrivent 
 | 2 | « 0 chunks » | aucun passage : le fichier ne sert à rien |
 | 3 | « Delete » | le retire (sans confirmation) |
 
-*Résultat* : le fichier disparaît de la liste. Sans ce retrait, un nouvel essai d'ajout répond « File … already indexed. Please rerun with reindex=True to force reindexing. ». Même chose pour un DOCX ou un PPTX en échec avec « HTTP Error 403: Forbidden » : relancer `outils/kotaemon/installer.sh` (il fournit les données manquantes), puis relire le fichier avec « Force reindex file » (chapitre 05, étape 9).
+*Résultat* : le fichier disparaît de la liste. Sans ce retrait, un nouvel essai d'ajout répond « File … already indexed. Please rerun with reindex=True to force reindexing. ». Même chose pour un DOCX ou un PPTX en échec avec « HTTP Error 403: Forbidden » : relancer `outils/kotaemon/installer.sh` (il fournit les données manquantes) ; ce script ne recrée le conteneur que si sa configuration a changé, et si LightRAG affiche ensuite « No module named 'pipmaster' », relancer `outils/kotaemon/completer_lightrag.sh` (et `outils/kotaemon/installer_nanographrag.sh` si NanoGraphRAG était installé, chapitre 09), puis relire le fichier avec « Force reindex file » (chapitre 05, étape 9).
 
 ## Réponse sans document
 

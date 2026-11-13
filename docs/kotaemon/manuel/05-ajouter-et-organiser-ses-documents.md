@@ -284,7 +284,7 @@ Cliquer dans « Attached files », choisir `contrat-batterix-scan.pdf`, puis cli
 - Formats acceptés : PDF, images (PNG, JPEG, TIFF), Word (`.doc`, `.docx`), Excel (`.xls`, `.xlsx`), PowerPoint (`.pptx`), CSV, HTML, MHTML, texte, Markdown et archives ZIP ; taille maximale 1000 Mo par fichier.
 - Les collections sont privées par défaut : chaque compte ne voit que les fichiers qu'il a ajoutés (chapitre 11).
 - **Lecteur extérieur** : Kotaemon accepte qu'un lecteur écrit à part remplace le sien pour une extension donnée (réglage `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` de son fichier de configuration `flowsettings.py`). C'est par ce moyen qu'un serveur Docling ou PaddleOCR installé hors de Kotaemon peut lire les PDF : un petit module Python envoie le fichier au serveur et rend le texte page par page. Ce branchement n'est pas réalisé dans ce manuel ; la méthode est décrite dans l'[annexe A3](../annexes/A3-automatiser-par-la-bibliotheque.md).
-- Un fichier Word ou PowerPoint qui échoue avec « HTTP Error 403: Forbidden » signale des données de découpage manquantes : relancer le script d'installation (chapitre 02), puis forcer la relecture (étape 9).
+- Un fichier Word ou PowerPoint qui échoue avec « HTTP Error 403: Forbidden » signale des données de découpage manquantes : relancer le script d'installation (chapitre 02), puis forcer la relecture (étape 9) ; voir le chapitre 13 (étape 4) pour LightRAG et NanoGraphRAG après une réinstallation.
 
 ## En cas de problème
 

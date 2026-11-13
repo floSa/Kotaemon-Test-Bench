@@ -146,7 +146,7 @@ Se connecter avec `camille` et son mot de passe (chapitre 03, étape 1).
 ## Bon à savoir
 
 - Un administrateur peut donner les droits d'administration à un autre compte (case « Admin », étape 2).
-- Les réglages (« Settings ») sont propres à chaque compte : le nouveau compte repart des valeurs par défaut, sauf les modèles, communs à tous ; lui faire régler « Language » (`French`), « Max context length (LLM) » (`8000`) et « Use LLM relevant scoring » (décoché) comme au chapitre 03.
+- Les réglages (« Settings ») sont propres à chaque compte : le nouveau compte repart des valeurs par défaut, sauf les modèles, communs à tous ; lui faire régler « Language » (`French`), « Max context length (LLM) » (`8000`), puis, dans les sous-onglets « File Collection » et « Documents partagés » de « Retrieval settings », « Use LLM relevant scoring » (décoché) et « Number of document chunks to retrieve » (`3`), comme aux chapitres 03 et 07.
 - Une collection partagée convient aux documents de référence (procédures, comptes rendus) ; les documents personnels restent dans « File Collection ».
 
 ## En cas de problème

@@ -40,7 +40,7 @@ L'image de Kotaemon 0.12.0 contient LightRAG, mais il lui manque une petite bibl
 outils/kotaemon/completer_lightrag.sh
 ```
 
-*Résultat* : le script ajoute `pipmaster` dans le conteneur et affiche son emplacement. Il est à relancer chaque fois que le conteneur est recréé (réinstallation, chapitre 02, ou option NanoGraphRAG, étape 4). Un arrêt puis un redémarrage par `outils/kotaemon/arreter.sh` et `outils/kotaemon/demarrer.sh` (chapitres 02 et 10) gardent le conteneur : inutile alors de relancer le script.
+*Résultat* : le script ajoute `pipmaster` dans le conteneur et affiche son emplacement. Il est à relancer chaque fois que le conteneur est recréé (option NanoGraphRAG, étape 4, ou réinstallation après une modification de la configuration). Un arrêt puis un redémarrage par `outils/kotaemon/arreter.sh` et `outils/kotaemon/demarrer.sh` (chapitres 02 et 10) gardent le conteneur : inutile alors de relancer le script.
 
 ## Indexer et interroger avec LightRAG
 
