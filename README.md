@@ -160,14 +160,16 @@ Corpus fictif (entreprise Vélanor) : 9 documents (`corpus/MANIFEST.json`) et 38
 
 ## Résultats
 
-| Réglage | Exactes | Refus pièges | p50 |
-|---|---|---|---|
-| lecteur intégré, 10 passages, sans tri | 25/34 (26 au comptage automatique) | 4/4 | 25,8 s |
-| idem avec tri `rerank` | 25/34 (26 au comptage automatique) | 4/4 | 24,0 s |
-| scan lu par Docling, tri `rerank` | 30/34 | 4/4 | 23,4 s |
-| idem, 3 passages | 31/34 | 4/4 | 22,0 s |
+Banc de 38 questions (34 avec réponse, 4 pièges), modèles du service central : Qwen3.5-4B avec réflexion, bge-m3, bge-reranker-v2-m3.
 
-Détail : [annexe A1](docs/kotaemon/annexes/A1-evaluation-qualite-et-performances.md).
+| Réglage | OCR | Recherche | Passages | Reranker | Exactes /34 | Pièges refusés /4 | Médiane | Pic RAM de l'application |
+|---|---|---|---|---|---|---|---|---|
+| défaut | aucun | hybride | 10 | aucun | 25 | 4 | 25,8 s | 1,9 Go |
+| meilleur | Docling dans le conteneur | hybride | 3 | bge-reranker-v2-m3 | 31 | 4 | 22,0 s | 1,7 Go |
+
+Défaut : le comptage automatique donne 26, une réponse qui refuse (Q17) y est comptée juste à tort. Kotaemon ne lit pas l'audio : 2 questions perdues quel que soit le réglage.
+
+Toutes les variantes : [annexe A1](docs/kotaemon/annexes/A1-evaluation-qualite-et-performances.md). Méthode et preuves : [annexe A6](docs/kotaemon/annexes/A6-rapport-d-essais.md). Bilan : [RAPPORT-kotaemon.md](RAPPORT-kotaemon.md). Comparaison avec les quatre autres solutions : [index de la série](docs/README.md).
 
 ## Versions
 

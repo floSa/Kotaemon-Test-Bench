@@ -52,3 +52,9 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 - Branchement : `outils/kotaemon/docling_externe/` (lecteur `LecteurDoclingServe`, copie de `flowsettings.py` avec `FILE_INDEX_PIPELINE_FILE_EXTRACTORS`, `brancher.sh`, `debrancher.sh`) et `compose.docling-externe.yml`.
 - Résultat : contrat scanné relu en 10 à 14 s (contre 47 s avec le Docling intégré), colonne « loader » `LecteurDoclingServe`, texte des pages lu ; « File loader » inchangé (`docling-externe-2026-11-13.log`, scénario `captures/c05_docling_externe.py`, capture 18 du chapitre 05). Groupe « Fournisseur Batterix » réparé ; serveur débranché, Kotaemon revenu à sa configuration (HTTP 200).
 - Documentation : chapitre 05 (explication Docling intégré ou séparé, étapes 17 et 18), annexe A3 §5, A6, README, RAPPORT.
+
+### 2026-11-13 — Uniformisation de la série
+
+- `docs/README.md` remplacé par l'index commun aux cinq dépôts (Open Notebook, RAGFlow, AnythingLLM, Kotaemon, Open WebUI) : modèles utilisés, services déportables (OCR, audio, reranker), comparatif à deux lignes par solution (défaut, meilleur réglage). Chiffres repris des résultats bruts du 12 et du 13 novembre, aucun nouveau banc.
+- README : section « Résultats » au même format que les autres dépôts.
+- `verifier_docs.py` : 0 point.
