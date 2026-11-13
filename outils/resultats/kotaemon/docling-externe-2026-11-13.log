@@ -55,3 +55,4 @@ rag-ragflow-nats Exited (0) 19 hours ago
 rag-open-notebook-surrealdb Exited (0) 19 hours ago 
 rag-speaches Exited (0) 19 hours ago 
 /app/ktem_app_data 
+image docling-serve supprimée le 2026-11-13 08:22:33 (docker rmi), conteneur rag-docling-serve absent

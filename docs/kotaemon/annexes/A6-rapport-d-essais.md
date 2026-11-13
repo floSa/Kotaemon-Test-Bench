@@ -34,7 +34,7 @@
 | Kotaemon | 0.12.0 (31 mai 2026), dernière version stable ; aucune image numérotée publiée, d'où `main-full` figée par empreinte | [Vérifié] (`versions-2026-11-12.json`) |
 | Service de modèles | LiteLLM v1.109.0, llama-swap v272 (CUDA, llama.cpp b12282), speaches 0.8.3 ; noms fixes `chat` (Qwen3.5-4B), `embed` (bge-m3), `rerank` (bge-reranker-v2-m3) | [Vérifié] (`sante-2026-11-12-debut.txt`) |
 | Projet | 25 906 étoiles, 39 contributeurs, aucune modification sur 90 jours au 12 novembre 2026 | [Vérifié] (`identite-github-2026-11-12.json`) |
-| Serveur Docling séparé (essai du chapitre 05) | docling-serve v1.38.2, image `quay.io/docling-project/docling-serve-cpu` figée par empreinte `sha256:7a480a16…`, 5,06 Go ; arrêté et supprimé après l'essai | [Vérifié] (`docling-externe-2026-11-13.log`) |
+| Serveur Docling séparé (essai du chapitre 05) | docling-serve v1.38.2, image `quay.io/docling-project/docling-serve-cpu` figée par empreinte `sha256:7a480a16…`, 5,06 Go ; conteneur et image supprimés après l'essai | [Vérifié] (`docling-externe-2026-11-13.log`) |
 | Paquets ajoutés dans le conteneur | `pipmaster` 1.2.2 (LightRAG), `nano-graphrag` 0.0.8.2 (option du chapitre 09), données NLTK `punkt_tab` et `averaged_perceptron_tagger_eng` | [Vérifié] |
 
 ## 3. Preuves par chapitre
