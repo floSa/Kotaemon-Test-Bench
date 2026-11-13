@@ -12,7 +12,7 @@ Quand un document est ajouté, Kotaemon le lit, le découpe en **passages** (des
 
 Les captures de ce chapitre montrent dans la colonne de gauche deux collections de plus (« Documents partagés », « NanoGraphRAG Collection »), créées plus loin dans le manuel : ne pas en tenir compte.
 
-L'exemple utilise `rapport-annuel-2025.pdf`, le rapport annuel d'une entreprise fictive, Vélanor, fourni dans le dossier `corpus/documents/` du dépôt. Depuis Windows, ce dossier s'ouvre dans l'Explorateur à l'adresse `\\wsl$\Ubuntu\home\<nom d'utilisateur>\Kotaemon-Test-Bench\corpus\documents` (adapter le chemin au dossier où le dépôt a été cloné).
+L'exemple utilise `rapport-annuel-2025.pdf`, le rapport annuel d'une entreprise fictive, Vélanor, fourni dans le dossier `corpus/documents/` du dépôt. Depuis Windows, ce dossier s'ouvre dans l'Explorateur à l'adresse `\\wsl$\Ubuntu\home\<nom d'utilisateur>\Kotaemon-Test-Bench\corpus\documents` (adapter le chemin au nom de la distribution et au dossier où le dépôt a été cloné). Plus simple : dans le terminal Ubuntu, depuis le dossier du dépôt, la commande `explorer.exe corpus/documents` ouvre ce dossier dans l'Explorateur de Windows.
 
 ## Ajouter un document
 

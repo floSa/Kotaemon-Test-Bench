@@ -120,6 +120,8 @@ Se connecter avec `camille` et son mot de passe (chapitre 03, étape 1).
 **Étape 7. Ouvrir la conversation partagée**
 *Où* : « Chat » › liste des conversations.
 
+La conversation partagée se reconnaît au nom affiché dans le message « Conversation: … is public. » de l'étape 4 (son nom peut ensuite changer : la renommer avant de la partager, chapitre 06, étape 10, évite toute confusion).
+
 ![Conversation partagée vue par un autre compte](../img/11-comptes/07-conversation-partagee-vue.png)
 *Écran : « Chat » du compte `camille`, liste des conversations ouverte.*
 

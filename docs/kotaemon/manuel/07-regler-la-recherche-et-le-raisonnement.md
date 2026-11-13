@@ -83,7 +83,7 @@ Les autres réglages de « File Collection » sont décrits au chapitre 03 (éta
 |---|---|---|
 | 1 | « Decompose Prompt » | consigne qui demande au modèle de découper la question en sous-questions (option propre à `complex`) |
 
-*Résultat* : les options de la méthode `complex` s'affichent, précédées de sa description « Complex QA » ; elles reprennent celles de `simple`, plus « Decompose Prompt » en bas. Pour garder `simple` par défaut, cliquer de nouveau sur `simple` avant « Save & Close » ; la méthode se choisit alors conversation par conversation (étape 6).
+*Résultat* : les options de la méthode `complex` s'affichent, précédées de sa description « Complex QA » ; elles reprennent celles de `simple`, plus « Decompose Prompt » en bas. Cliquer ensuite de nouveau sur `simple` (ne pas enregistrer `complex` comme méthode par défaut : la suite du manuel suppose `simple`) ; la méthode `complex` se choisit conversation par conversation (étape 6).
 
 **Étape 5. Lire les consignes et l'historique**
 *Où* : même écran, plus bas, méthode `simple`.

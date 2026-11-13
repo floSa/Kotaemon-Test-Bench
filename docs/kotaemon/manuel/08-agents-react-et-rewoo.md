@@ -34,7 +34,7 @@ Les agents sont en général plus lents que la méthode `simple` (souvent une mi
 | 3 | « Tools for knowledge retrieval » | outils permis : `SearchDoc` et `LLM` cochés par défaut, `Wikipedia` et `Google` décochés |
 | 4 | « Maximum number of iterations the LLM can go through » | nombre maximal de tours réflexion-action (5) |
 
-*Résultat* : ces réglages s'enregistrent avec « Save & Close ». Pour laisser `simple` par défaut, cliquer de nouveau sur `simple` avant d'enregistrer : l'agent se choisit alors conversation par conversation (étape 3).
+*Résultat* : ces réglages s'enregistrent avec « Save & Close ». Cliquer ensuite de nouveau sur `simple` avant « Save & Close » (ne pas enregistrer un agent comme méthode par défaut : la suite du manuel suppose `simple`) ; l'agent se choisit conversation par conversation (étape 3).
 
 **Étape 2. Lire les réglages de ReWOO**
 *Où* : même écran ; cliquer sur `ReWOO`.
