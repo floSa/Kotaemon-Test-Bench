@@ -68,3 +68,7 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 ### 2026-11-13 — Docling déporté partagé
 
 - `brancher.sh` réutilise un serveur `rag-docling-serve` déjà démarré (partagé avec Open WebUI) au lieu d'échouer sur le nom du conteneur ; `debrancher.sh` ne supprime le serveur que s'il a été lancé par Kotaemon. [Testée] dans les deux sens. Manuel 05, étape 17 : une phrase sur ce cas.
+
+### 2026-11-13 — Index de la série : comparatif complété
+
+- Lignes « meilleur, Docling déporté » de RAGFlow et Kotaemon ajoutées au comparatif ; reranker de RAGFlow expliqué (essayé, sans gain) ; « Conventions » renommé « Étiquettes des annexes ».
