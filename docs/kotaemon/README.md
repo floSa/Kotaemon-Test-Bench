@@ -49,7 +49,7 @@ Pour choisir, dimensionner, automatiser ou exploiter ; rien de cette partie n'es
 | Besoin | Chapitres |
 |---|---|
 | Essayer en une heure | 01, 02, 03, 04 |
-| Interroger un fonds documentaire et vérifier les sources | 01 à 07, puis 12 |
+| Interroger un fonds documentaire et vérifier les sources | 01 à 07, puis 12 (cas 1 et 2 ; le cas 3 demande aussi les chapitres 10 et 11) |
 | Mettre l'outil à disposition d'une petite équipe | 01 à 04, 10, 11, puis annexe A4 |
 | Comparer avec d'autres outils ou dimensionner un poste | 01, annexes A1 et A2 |
 

@@ -66,7 +66,7 @@ Poser `Quel est le délai de livraison contractuel de Batterix et quel délai mo
 | 1 | réponse de l'agent | réponse finale de l'agent |
 | 2 | étapes et sources | chaque étape : « Step 1 », action choisie (`docsearch`), texte cherché, passages obtenus |
 
-*Résultat* : en 26 secondes, l'agent fait une recherche (`docsearch`), obtient la page de l'audit, celle des fournisseurs du rapport annuel et même la page 2 du contrat (« 21 jours »), puis répond « (Sorry, I don't know) » alors que la réponse est sous ses yeux. Avec le modèle de ce poste, ReAct s'arrête souvent ainsi : il ne sait pas tirer la réponse des passages trouvés.
+*Résultat* : en 26 secondes, l'agent fait une recherche (`docsearch`, nom que prend l'outil `SearchDoc` dans les étapes affichées), obtient la page de l'audit, celle des fournisseurs du rapport annuel et même la page 2 du contrat (« 21 jours »), puis répond « (Sorry, I don't know) » alors que la réponse est sous ses yeux. Avec le modèle de ce poste, ReAct s'arrête souvent ainsi : il ne sait pas tirer la réponse des passages trouvés.
 
 **Étape 4. Interroger l'agent ReWOO**
 *Où* : nouvelle conversation, « Reasoning method » : `ReWOO`, mêmes réglages, même question.

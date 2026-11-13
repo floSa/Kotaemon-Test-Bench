@@ -218,6 +218,8 @@ Cliquer sur « Feedback » pour l'ouvrir, choisir « The answer is correct » (o
 **Étape 13. Passer en mode sombre et agrandir les zones**
 *Où* : barre des onglets, à droite (mode sombre) ; coins des zones de discussion et d'information (flèches).
 
+Cliquer sur l'icône du mode sombre (pastille 1), puis, au besoin, sur les flèches d'agrandissement (pastilles 2 et 3).
+
 ![Mode sombre et agrandissement](../img/06-questions/13-mode-sombre.png)
 *Écran : « Chat » en mode sombre.*
 

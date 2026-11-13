@@ -59,7 +59,7 @@ Saisir `camille` dans « Username », puis le mot de passe dans « Password » e
 **Étape 3. Ajouter un document dans la collection partagée**
 *Où* : « Files » › « Documents partagés » › « Upload Files ».
 
-Ajouter `cse-2025-10-14.md` comme au chapitre 05 (étape 1).
+Ajouter `cse-2025-10-14.md` comme au chapitre 05 (étapes 1 et 2 : choisir le fichier, puis « Upload and Index »).
 
 ![Document dans la collection partagée](../img/11-comptes/03-collection-partagee.png)
 *Écran : « Files », collection « Documents partagés ».*
