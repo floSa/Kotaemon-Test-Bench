@@ -1,0 +1,75 @@
+ChatFilesResourcesSettingsHelp
+About
+▼
+
+Version: 0.0.1
+
+About Kotaemon
+
+An open-source tool for chatting with your documents. Built with both end users and developers in mind.
+
+Source Code | HF Space
+
+Installation Guide | Developer Guide | Feedback
+
+User Guide
+▼
+1. Add your AI models
+
+The tool uses Large Language Model (LLMs) to perform various tasks in a QA pipeline. So, you need to provide the application with access to the LLMs you want to use.
+You only need to provide at least one. However, it is recommended that you include all the LLMs that you have access to, you will be able to switch between them while using the application.
+
+To add a model:
+
+Navigate to the Resources tab.
+Select the LLMs sub-tab.
+Select the Add sub-tab.
+Config the model to add:
+Give it a name.
+Pick a vendor/provider (e.g. ChatOpenAI).
+Provide the specifications.
+(Optional) Set the model as default.
+Click Add to add the model.
+Select Embedding Models sub-tab and repeat the step 3 to 5 to add an embedding model.
+(Optional) Configure model via the .env file
+2. Upload your documents
+
+In order to do QA on your documents, you need to upload them to the application first. Navigate to the File Index tab and you will see 2 sections:
+
+File upload:
+Drag and drop your file to the UI or select it from your file system. Then click Upload and Index.
+The application will take some time to process the file and show a message once it is done.
+File list:
+This section shows the list of files that have been uploaded to the application and allows users to delete them.
+3. Chat with your documents
+
+Now navigate back to the Chat tab. The chat tab is divided into 3 regions:
+
+Conversation Settings Panel
+Here you can select, create, rename, and delete conversations.
+By default, a new conversation is created automatically if no conversation is selected.
+Below that you have the file index, where you can choose whether to disable, select all files, or select which files to retrieve references from.
+If you choose "Disabled", no files will be considered as context during chat.
+If you choose "Search All", all files will be considered during chat.
+If you choose "Select", a dropdown will appear for you to select the files to be considered during chat. If no files are selected, then no files will be considered during chat.
+Chat Panel
+This is where you can chat with the chatbot.
+Information Panel
+
+Supporting information such as the retrieved evidence and reference will be displayed here.
+
+Direct citation for the answer produced by the LLM is highlighted.
+
+The confidence score of the answer and relevant scores of evidences are displayed to quickly assess the quality of the answer and retrieved content.
+
+Meaning of the score displayed:
+
+Answer confidence: answer confidence level from the LLM model.
+Relevance score: overall relevant score between evidence and user question.
+Vectorstore score: relevant score from vector embedding similarity calculation (show full-text search if retrieved from full-text search DB).
+LLM relevant score: relevant score from LLM model (which judge relevancy between question and evidence using specific prompt).
+Reranking score: relevant score from Cohere reranking model.
+
+Generally, the score quality is LLM relevant score > Reranking score > Vectorscore. By default, overall relevance score is taken directly from LLM relevant score. Evidences are sorted based on their overall relevance score and whether they have citation or not.
+
+version: 0.0.1

@@ -89,9 +89,27 @@ outils/kotaemon/demarrer.sh
 
 *Résultat* : après `Kotaemon prêt`, recharger la page du navigateur : « Documents partagés » apparaît comme sous-onglet de « Files » et comme section dans la colonne de gauche du chat. Elle sert au chapitre 11.
 
+**Étape 4. Enregistrer de nouveau les réglages**
+*Où* : « Settings » › « Reasoning settings ».
+
+Après la création d'une collection, Kotaemon ne sait plus relire les réglages enregistrés de chaque compte (il manque ceux de la nouvelle collection) : l'interface revient en silence aux valeurs par défaut (« Language » `English`, « Max context length (LLM) » `32000`, « Use LLM relevant scoring » coché). Refaire les étapes 10 et 11 du chapitre 03 (langue `French`, `8000`, notation décochée), puis « Save & Close » : les réglages sont de nouveau enregistrés au complet, nouvelle collection comprise.
+
+![Réglages de raisonnement à enregistrer de nouveau](../img/03-premiers-pas/07-reglages-raisonnement.png)
+*Écran : « Settings » › « Reasoning settings » (même écran qu'au chapitre 03).*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | « Reasoning settings » | réglages de la rédaction |
+| 2 | « Language » | à remettre sur `French` |
+| 3 | « Max context length (LLM) » | à remettre sur `8000` |
+| 4 | « Language model » | `llm-service-chat` |
+| 5 | « Save & Close » | enregistre l'ensemble des réglages |
+
+*Résultat* : « Setting saved » ; à la visite suivante, les réglages sont relus correctement. Chaque compte doit faire cette étape.
+
 ## Supprimer un modèle inutile
 
-**Étape 4. Supprimer un modèle en ligne**
+**Étape 5. Supprimer un modèle en ligne**
 *Où* : « Resources » › « LLMs » › « View » ; cliquer sur la ligne `groq`, puis sur « Delete » (en bas de la fiche).
 
 ![Suppression d'un modèle](../img/10-ressources/04-supprimer-modele.png)
@@ -107,7 +125,7 @@ outils/kotaemon/demarrer.sh
 
 ## Relire les modèles d'embedding et de tri
 
-**Étape 5. Lire la liste des modèles d'embedding**
+**Étape 6. Lire la liste des modèles d'embedding**
 *Où* : « Resources » › « Embeddings » › « View ».
 
 ![Liste des modèles d'embedding](../img/10-ressources/05-embeddings-liste.png)
@@ -120,7 +138,7 @@ outils/kotaemon/demarrer.sh
 
 *Résultat* : un seul modèle est marqué par défaut ; c'est lui qui représente les passages de toutes les collections réglées sur `embedding: default`.
 
-**Étape 6. Lire la liste des modèles de tri**
+**Étape 7. Lire la liste des modèles de tri**
 *Où* : « Resources » › « Rerankings » › « View ».
 
 ![Liste des modèles de tri](../img/10-ressources/06-rerankings-liste.png)
@@ -143,6 +161,7 @@ outils/kotaemon/demarrer.sh
 | Symptôme | Cause | Que faire |
 |---|---|---|
 | la nouvelle collection n'apparaît pas | Kotaemon pas redémarré | étape 3, puis recharger la page |
+| après une création de collection, réponses en anglais et réglages revenus aux valeurs par défaut | réglages enregistrés incomplets | étape 4 |
 | un type de fichier est refusé dans la collection | `supported_file_types` incomplet | corriger la spécification (« Index config », « Save »), redémarrer |
 | plus aucune réponse après une suppression de modèle | modèle par défaut supprimé | déclarer de nouveau le modèle (chapitre 03) et cocher « Set default » |
 

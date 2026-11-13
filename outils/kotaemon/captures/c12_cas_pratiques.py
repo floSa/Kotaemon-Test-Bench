@@ -9,7 +9,7 @@ CH = "12-cas-pratiques"
 
 def nouvelle(s, methode=None):
     p = s.page
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.nouvelle_conversation()
     s.reglage_session("Language", "French")
     if methode:
         s.reglage_session("Reasoning method", methode)
@@ -26,7 +26,7 @@ def fournisseur(s):
     p.keyboard.press("Escape")
     t0 = time.time()
     s.poser("Pour préparer la renégociation avec Batterix : quel prix unitaire et quel délai de livraison le contrat fixe-t-il, "
-            "et quel score et quel délai moyen l'audit a-t-il constatés ?")
+            "et quel score l'audit a-t-il attribué ?", stable=12)
     s.note(f"fournisseur ({time.time() - t0:.0f} s) : " + p.locator("#main-chat-bot .message").last.inner_text()[:900].replace("\n", " "))
     s.cap_souple("01-fournisseur-reponse", [(zone, "groupe Fournisseur Batterix"), (p.locator("#main-chat-bot .message").last, "réponse"),
                                             (p.locator("#html-info-panel"), "sources : contrat et audit")])
@@ -36,7 +36,11 @@ def client(s):
     p = s.page
     nouvelle(s)
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
+    s.reglage_session("Reasoning method", "simple")
     s.poser("Quelle est la durée de garantie du cadre ?")
+    # Kotaemon termine encore la carte mentale et le nom de la conversation après l'affichage de la réponse : une
+    # question envoyée trop tôt reste sans réponse affichée (essai du 13 novembre 2026)
+    p.wait_for_timeout(30000)
     s.poser("Et quel numéro appeler pour le service après-vente ?")
     s.note("client : " + p.locator("#main-chat-bot").inner_text()[:1200].replace("\n", " "))
     s.cap_souple("02-client-suite", [(p.locator("#main-chat-bot .message").nth(1), "première réponse"),

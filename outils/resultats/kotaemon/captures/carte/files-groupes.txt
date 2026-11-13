@@ -1,0 +1,52 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Documents partagés
+NanoGraphRAG Collection
+Upload Files
+Use Web Links
+Input web URLs
+
+(separated by new line)
+
+Advanced indexing options
+▼
+Upload and Index
+Files
+Groups
+id
+	
+name
+	
+files
+	
+date_created
+
+
+b3bc9cb6-3d1c-42c3-aec7-8992bec5e49d
+	
+Fournisseur Batterix
+	
+[2 items] 'supplier-audit-batte..', 'contrat-batterix-sca..'
+	
+2026-11-12 20:49:00
+id
+	
+name
+	
+files
+	
+date_created
+
+
+b3bc9cb6-3d1c-42c3-aec7-8992bec5e49d
+	
+Fournisseur Batterix
+	
+[2 items] 'supplier-audit-batte..', 'contrat-batterix-sca..'
+	
+2026-11-12 20:49:00
+Add
+
+version: 0.0.1

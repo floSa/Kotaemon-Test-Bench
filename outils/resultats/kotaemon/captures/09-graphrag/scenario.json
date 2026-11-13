@@ -36,5 +36,81 @@
   ],
   "note": "",
   "heure": "23:00:50"
+ },
+ {
+  "capture": "09-graphrag/03-lightrag-indexation.png",
+  "pastilles": [
+   [
+    1,
+    "LightRAG Collection"
+   ],
+   [
+    2,
+    "Upload result"
+   ],
+   [
+    3,
+    "Upload info"
+   ]
+  ],
+  "note": "",
+  "heure": "23:11:07"
+ },
+ {
+  "capture": "09-graphrag/04-lightrag-question.png",
+  "pastilles": [
+   [
+    1,
+    "LightRAG Collection (Search All)"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "entités, relations et passages"
+   ]
+  ],
+  "note": "",
+  "heure": "23:12:11"
+ },
+ {
+  "capture": "09-graphrag/05-nanographrag-indexation.png",
+  "pastilles": [
+   [
+    1,
+    "NanoGraphRAG Collection"
+   ],
+   [
+    2,
+    "Upload result"
+   ],
+   [
+    3,
+    "Upload info"
+   ]
+  ],
+  "note": "",
+  "heure": "23:37:34"
+ },
+ {
+  "capture": "09-graphrag/07-msgraphrag-erreur.png",
+  "pastilles": [
+   [
+    1,
+    "GraphRAG Collection"
+   ],
+   [
+    2,
+    "Upload result"
+   ],
+   [
+    3,
+    "Upload info"
+   ]
+  ],
+  "note": "",
+  "heure": "23:38:35"
  }
 ]

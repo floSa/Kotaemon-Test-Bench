@@ -1,0 +1,15 @@
+2026-11-13 00:20:10 clé fausse : - Connection failed. Got error: Error code: 400 - {'error': {'message': 'No connected db.', 'type': 'no_db_connection', 'param': None, 'code': '400'}}
+2026-11-13 00:20:22 après dépôt mp3 : toasts [] ; page : ChatFilesResourcesSettingsHelp File Collection GraphRAG Collection LightRAG Collection Documents partagés NanoGraphRAG Collection Upload Files Use Web Links File message-vocal-production .mp3 144.4 KB ⇣ Supported file types: .png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, .pptx, .csv
+2026-11-13 00:20:27 03-format-refuse : élément absent « message »
+2026-11-13 00:21:25 après dépôt mp3 : toasts ['Info\nStart indexing 1 files...\n×'] ; ❌ | message-vocal-production.mp3: Invalid file /app/ktem_app_data/gradio_tmp/1d6030ed27a6b4a0c71c7458c33eaaa49983eb4e/message-vocal-production.mp3. The FileType.UNK file type is not supported in partition. | Indexing [1/1]: message-vocal-production.mp3 /  => Converting message-vocal-production.mp3 to text | 
+2026-11-13 00:22:25 après dépôt mp3 : toasts ['Info\nStart indexing 1 files...\n×'] ; ❌ | message-vocal-production.mp3: File message-vocal-production.mp3 already indexed. Please rerun with reindex=True to force reindexing. | Indexing [1/1]: message-vocal-production.mp3 | 
+2026-11-13 00:22:34 retrait du MP3 : toasts []
+2026-11-13 00:24:19 sans recherche : (Sorry, I don't know) ; panneau : No evidence found.
+2026-11-13 00:26:32 blocage : D'après les documents fournis, le taux de retour sous garantie est de 1,8 % des vélos vendus.
+
+Cette information est explicitement mentionnée dans la section "Chiffres clés 2025" du rapport annuel de 
+2026-11-13 00:26:43 question de 82542 caractères
+2026-11-13 00:26:55 dépassement : Résume ce texte : # Compte rendu de la réunion du CSE du 14 octobre 2025  Document fictif.  Participants  Hélène Marchais (présidente), Sophie Le Gall (secrétaire du CSE), sept élus.  Décisions Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026. Télétravail : jusqu'à 2 jours  ; toasts []
+2026-11-13 00:27:00 07-depassement-contexte : élément absent « message d'erreur »
+2026-11-13 00:27:40 après dépôt mp3 : toasts ['Info\nStart indexing 1 files...\n×'] ; ❌ | message-vocal-production.mp3: Invalid file /app/ktem_app_data/gradio_tmp/1d6030ed27a6b4a0c71c7458c33eaaa49983eb4e/message-vocal-production.mp3. The FileType.UNK file type is not supported in partition. | Indexing [1/1]: message-vocal-production.mp3 /  => Converting message-vocal-production.mp3 to text | 
+2026-11-13 00:27:49 retrait du MP3 : toasts []

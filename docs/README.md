@@ -1,6 +1,6 @@
 # Index de la série
 
-Manuels vérifiés de solutions de RAG local sous Windows 11 + WSL2. Chaque solution a son dépôt ; ce dépôt décrit AnythingLLM et reprend les résultats des solutions déjà passées au banc.
+Manuels vérifiés de solutions de RAG local sous Windows 11 + WSL2. Chaque solution a son dépôt ; ce dépôt décrit Kotaemon et reprend les résultats des solutions déjà passées au banc.
 
 ## Solutions décrites
 
@@ -8,7 +8,8 @@ Manuels vérifiés de solutions de RAG local sous Windows 11 + WSL2. Chaque solu
 |---|---|---|---|---|---|
 | Open Notebook | 1.15.1 | 2026-11-08, 2026-11-09 et 2026-11-12 | Intel Core Ultra 7 255H sans GPU NVIDIA, puis Ryzen 5 9600X, RTX 4060 Ti 16 Go | français (langue du navigateur) | dépôt https://github.com/floSa/Open-Notebook-Test-Bench |
 | RAGFlow | v1.0.0 | 2026-11-09 au 2026-11-12 | Ryzen 5 9600X, 32 Go (WSL), RTX 4060 Ti 16 Go | français (sélecteur de l'en-tête) | dépôt https://github.com/floSa/RAGFlow-Test-Bench |
-| AnythingLLM | 1.19.0 | 2026-11-12 | Ryzen 5 9600X, 32 Go (WSL), RTX 4060 Ti 16 Go ; service LLM central en profil `gpu` | français partiel (langue du navigateur, environ un quart des libellés en anglais) | [manuel utilisateur](anythingllm/README.md) |
+| AnythingLLM | 1.19.0 | 2026-11-12 | Ryzen 5 9600X, 32 Go (WSL), RTX 4060 Ti 16 Go ; service LLM central en profil `gpu` | français partiel (langue du navigateur, environ un quart des libellés en anglais) | dépôt https://github.com/floSa/AnythingLLM-Test-Bench |
+| Kotaemon | 0.12.0 | 2026-11-12 et 2026-11-13 | Ryzen 5 9600X, 32 Go (WSL), RTX 4060 Ti 16 Go ; service LLM central en profil `gpu` | anglais seulement (réponses en français) | [manuel utilisateur](kotaemon/README.md) |
 
 ## Comparatif du banc
 
@@ -29,6 +30,10 @@ Mêmes 38 questions ([corpus/questions.json](../corpus/questions.json) : 34 avec
 | AnythingLLM | [serre-top2](../outils/resultats/anythingllm/banc-2026-11-12-serre-top2.json) | chat, embedder embed | mode query, topN 2, seuil 0.25, recherche default | 31/34 | 4/4 | 32 | non exposée | 13.43 | 34.71 | 0.2 | 1568 |
 | AnythingLLM | [top8-rerank-natif](../outils/resultats/anythingllm/banc-2026-11-12-top8-rerank-natif.json) | chat, embedder embed | mode query, topN 8, seuil 0.25, recherche rerank | 34/34 | 4/4 | 34 | non exposée | 10.69 | 37.64 | - | 1573 |
 | AnythingLLM | [top8](../outils/resultats/anythingllm/banc-2026-11-12-top8.json) | chat, embedder embed | mode query, topN 8, seuil 0.25, recherche default | 34/34 | 4/4 | 34 | non exposée | 13.55 | 28.56 | - | 1559 |
+| Kotaemon | [defaut-sans-rerank](../outils/resultats/kotaemon/banc-2026-11-12-defaut-sans-rerank.json) | chat, embed | lecteur intégré, 10 passages, hybride, sans tri | 26/34 (25 après relecture) | 4/4 | 27 | 20/20 | 25.84 | 38.21 | - | 1946 |
+| Kotaemon | [rerank](../outils/resultats/kotaemon/banc-2026-11-12-rerank.json) | chat, embed, rerank | lecteur intégré, 10 passages, hybride, tri rerank | 26/34 (25 après relecture) | 4/4 | 28 | 20/20 | 23.97 | 41.86 | - | 1505 |
+| Kotaemon | [docling-rerank](../outils/resultats/kotaemon/banc-2026-11-12-docling-rerank.json) | chat, embed, rerank | scan lu par Docling, 10 passages, tri rerank | 30/34 | 4/4 | 32 | 25/25 | 23.36 | 41.34 | - | 1710 |
+| Kotaemon | [docling-rerank-serre-top3](../outils/resultats/kotaemon/banc-2026-11-12-docling-rerank-serre-top3.json) | chat, embed, rerank | scan lu par Docling, 3 passages, tri rerank | 31/34 | 4/4 | 32 | 25/25 | 21.95 | 38.67 | - | 1710 |
 
 ### Ancienne pile (Ollama ou vLLM, autres modèles) — modèles différents, non comparable tel quel
 
@@ -41,19 +46,20 @@ Mêmes 38 questions ([corpus/questions.json](../corpus/questions.json) : 34 avec
 
 Lecture :
 
-- « Bonne page » : seul RAGFlow expose la page du passage cité ; AnythingLLM et Open Notebook citent le document et le passage.
+- « Bonne page » : RAGFlow et Kotaemon exposent la page du passage cité (Kotaemon pour les PDF) ; AnythingLLM et Open Notebook citent le document et le passage.
 - AnythingLLM atteint 34/34 et 4/4 avec son tri de précision intégré ou 8 passages, comme RAGFlow avec ses meilleurs réglages, pour environ 1,5 Gio de mémoire contre 5 Gio pour RAGFlow. Il n'accepte pas le reranker externe `rerank`, que RAGFlow utilise.
 - Avec l'embedder intégré d'AnythingLLM (surtout anglais), le résultat tombe à 25/34 : le modèle d'embedding du service central est indispensable sur ce corpus français.
-- Les temps de réponse sont du même ordre pour les trois solutions sur le service central (médiane 8 à 14 s), car le modèle `chat` réfléchit avant de répondre.
+- Kotaemon atteint 30 à 31 sur 34 quand le contrat scanné est lu par Docling (25 avec son lecteur intégré, sans lecture optique) ; le tri `rerank` ne change pas son score ; il ne lit pas l'audio (2 questions perdues). Sa médiane est plus longue (22 à 26 s) : citations surlignées et carte mentale demandent des appels de plus au modèle.
+- Les temps de réponse sont du même ordre pour les trois premières solutions sur le service central (médiane 8 à 14 s), car le modèle `chat` réfléchit avant de répondre.
 
 ## Parcours de lecture conseillés
 
 | Profil | Parcours |
 |---|---|
-| Découvrir le RAG local | [glossaire](glossaire.md), puis [Découvrir AnythingLLM](anythingllm/manuel/01-decouvrir-anythingllm.md), puis l'annexe [Fonctionnement interne](anythingllm/annexes/A5-fonctionnement-interne.md) |
-| Installer et essayer rapidement | chapitres [01 à 04 du manuel AnythingLLM](anythingllm/README.md#par-où-commencer) |
-| Choisir entre solutions | comparatif ci-dessus, puis annexes [Qualité et performances](anythingllm/annexes/A1-evaluation-qualite-et-performances.md) et [Matériel et modèles](anythingllm/annexes/A2-choisir-son-materiel-et-ses-modeles.md) |
-| Automatiser | [Automatiser par l'API](anythingllm/annexes/A3-automatiser-par-l-api.md) |
+| Découvrir le RAG local | [glossaire](glossaire.md), puis [Découvrir Kotaemon](kotaemon/manuel/01-decouvrir-kotaemon.md), puis l'annexe [Fonctionnement interne](kotaemon/annexes/A5-fonctionnement-interne.md) |
+| Installer et essayer rapidement | chapitres [01 à 04 du manuel Kotaemon](kotaemon/README.md#par-où-commencer) |
+| Choisir entre solutions | comparatif ci-dessus, puis annexes [Qualité et performances](kotaemon/annexes/A1-evaluation-qualite-et-performances.md) et [Matériel et modèles](kotaemon/annexes/A2-choisir-son-materiel-et-ses-modeles.md) |
+| Automatiser | [Automatiser par la bibliothèque Python](kotaemon/annexes/A3-automatiser-par-la-bibliotheque.md) |
 
 ## Conventions
 

@@ -1,0 +1,14 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+
+Current user: admin
+
+Logout
+New password
+Confirm password
+Change password
+
+version: 0.0.1

@@ -164,7 +164,7 @@ Poser une question dont la réponse n'est pas dans les documents : `Combien de t
 |---|---|---|
 | 1 | réponse | la réponse dit ne pas trouver l'information dans les documents |
 
-*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : avec le modèle de ce poste, la note du modèle reste à 0 pour chaque passage. Cette option n'apporte donc rien ici : revenir ensuite aux réglages du chapitre 03 (10 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
+*Résultat* : la réponse est juste (refus), mais l'alerte prévue par Kotaemon (« WARNING! Context relevance score is low. ») n'apparaît pas : le modèle de ce poste ne renvoie pas sa note sous la forme attendue par Kotaemon, la notation échoue sans message à l'écran (une erreur « AssertionError » apparaît seulement dans le journal du conteneur) et chaque passage garde « LLM relevant score: 0.0 ». Cette option n'apporte donc rien ici : revenir ensuite aux réglages du chapitre 03 (10 passages, « Use LLM relevant scoring » décoché, « Save & Close »).
 
 ## Bon à savoir
 

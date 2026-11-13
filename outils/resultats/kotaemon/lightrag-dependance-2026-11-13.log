@@ -1,0 +1,7 @@
+== completer_lightrag.sh 2026-11-13T00:32:14+01:00
+Resolved 4 packages in 392ms
+Prepared 2 packages in 57ms
+Installed 2 packages in 6ms
+ + ascii-colors==0.13.1
+ + pipmaster==1.2.2
+pipmaster /app/.venv/lib/python3.10/site-packages/pipmaster/__init__.py

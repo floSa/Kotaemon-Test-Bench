@@ -1,0 +1,196 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Radio
+Search All
+Search In File(s)
+Documents partagés
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Quels sont les sites de Vélanor et combien de salariés compte chacun ?
+
+D'après le contexte fourni, notamment la section « Effectifs par site » dans Source #0 (page 5) et les informations détaillées dans la table des Relations, voici les sites de Vélanor SAS et le nombre de salariés que compte chacun :
+
+Nantes : Siège social et assemblage (268 salariés)
+Cholet : Site de fabrication des cadres (97 salariés)
+Lyon : Agence commerciale (31 salariés)
+Bruxelles : Filiale Benelux (16 salariés)
+
+Le total effectif enregistré au 31 décembre 2025 est de 412 salariés.
+
+(Note : Saint-Nazaire est mentionné comme un site d'assemblage qui ouvrira en septembre 2026 avec 70 embauches prévues, mais il ne compte pas encore de salariés dans les données actuelles).
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Reasoning method
+Model
+Language
+Dropdown
+Dropdown
+Dropdown
+Information panel
+▼
+Plot
+Erdre Cargo
+Vélanor SAS
+Sèvre Trail
+Brière Kid
+Nantes
+Loire Urban
+Cholet
+Bruxelles
+Recylo
+Saint-Nazaire
+Lyon
+Vilaine Compact
+Lancement du modèle compact
+Ouverture dusine à Saint-Nazaire
+Risque de change
+Concurrence des marques asiatiques
+Hausse du prix de laluminium
+Batteries
+Batterix GmbH
+Freins
+Stopline
+Gomma Ouest
+Pneus
+Moteurs
+Motodrive Co.
+Brême
+Italie
+France
+Taïwan
+enfant
+VTT
+cargo
+2
+4
+6
+8
+10
+12
+14
+16
+Entities
+entity	description
+Vélanor SAS	A company planning financial targets and manufacturing expansion for 2026.A fictional company producing bicycles, managing multiple sites including headquarters in Nantes and a Benelux subsidiary in Bruxelles.A fictitious French company specializing in electric bikes, founded in 2014, headquartered in Nantes.Vélanor SAS is the main company producing bicycles and managing multiple sites including headquarters in Nantes.Vélanor SAS is a company planning financial targets and manufacturing expansion for 2026.
+Lyon	A commercial agency location for Vélanor SAS.
+Nantes	The city in France where Vélanor SAS is headquartered at 12 quai de la Fosse.The headquarters location of Vélanor SAS where assembly operations take place.The headquarters location of Vélanor SAS where assembly takes place.
+Hélène Marchais	The President of Vélanor SAS who has directed the company since 2019.
+Bruxelles	The location of the Benelux subsidiary of Vélanor SAS.
+Batterix GmbH	A German battery supplier based in Brême that supplies batteries to Vélanor SAS.A German supplier of batteries for Vélanors bicycles, located in Brême.
+Vélos à assistance électrique	The primary product category manufactured by Vélanor SAS, consisting of electric bikes.
+Sèvre Trail	A VTT (mountain bike) model produced by Vélanor SAS with 15400 units produced and priced at 3150€ TTC.A VTT (mountain bike) model produced by Vélanor SAS.
+Stopline	An Italian supplier of brakes for Vélanors bicycle models.
+Gomma Ouest	A French supplier of tires for Vélanors bicycles.
+Pneus	Tires supplied by Gomma Ouest used on Vélanors bicycles.
+Recylo	A recycling partner that collaborates with Vélanor SAS to collect and recycle used batteries at a 96% rate.A recycling partner that collaborates with Vélanor SAS to collect and recycle used batteries.
+Motodrive Co.	A Taiwanese company that supplies engines for Vélanors bicycles.
+Batteries	A component supplied by Batterix GmbH used in Vélanors bicycles.
+Freins	A component supplied by Stopline for braking systems on Vélanors bicycles.
+Erdre Cargo	A cargo bicycle model produced by Vélanor SAS that is the most expensive in the range, priced at 4290€ TTC.A cargo bicycle model produced by Vélanor SAS that is the most expensive in the range.
+Loire Urban	A bicycle model produced by Vélanor SAS that is the most sold in the range, priced at 1890€ TTC.A bicycle model produced by Vélanor SAS that is the most sold in the range.
+Moteurs	A component supplied by Motodrive Co. installed in Vélanors bicycles.
+Brière Kid	A bicycle model designed for children produced by Vélanor SAS, priced at 990€ TTC.A bicycle model designed for children produced by Vélanor SAS.
+Effectifs	A category tracking the number of employees, recorded at 412 as of December 31, 2025.
+Saint-Nazaire	Saint-Nazaire is the location where a new assembly plant will open in September 2026.The location where a second assembly plant will open in September 2026.
+Ouverture dusine à Saint-Nazaire	The event involves opening a second assembly plant with 70 planned hires in September 2026.
+Ouvrir une usine dassemblage	The event involves opening a second assembly plant with 70 planned hires in September 2026.
+Vilaine Compact	A new compact model product launched by the company in April 2026.Vilaine Compact is a new compact model product launched by the company in April 2026.
+Cholet	A manufacturing site in France responsible for frame fabrication.
+Résultat net	A financial metric representing the companys net profit, totaling 3.1 M€ in 2025.
+Chiffre daffaires	A financial metric representing the companys revenue, totaling 48.6 M€ in 2025.
+Lancement du modèle compact	The event involves launching the Vilaine Compact model in April 2026.
+Fondée en 2014	The founding event of the company, marking its establishment in 2014.
+VTT	The category of mountain bike represented by the Sèvre Trail model.
+Brême	The city in Germany where Batterix GmbH is located.
+Allemagne	The country associated with Batterix GmbHs location in Brême.
+cargo	The type of bicycle model focused on utility and transport, represented by Erdre Cargo.The type of bicycle model focused on utility and transport.
+Taïwan	The country where Motodrive Co. is based.
+Risques	A category covering potential risks to the company, including tensions on battery cells.
+
+
+Relationships
+source	target	description
+Erdre Cargo	Vélanor SAS	Erdre Cargo is a product model manufactured and sold by Vélanor SAS.Vélanor SAS manufactures and sells the Erdre Cargo model, which is the most expensive in the range.
+Sèvre Trail	Vélanor SAS	Vélanor SAS manufactures and sells the Sèvre Trail VTT model.
+Brière Kid	Vélanor SAS	Vélanor SAS manufactures and sells the Brière Kid model targeted at children.
+Nantes	Vélanor SAS	Vélanor SAS has its headquarters and assembly operations located in Nantes.
+Loire Urban	Vélanor SAS	Loire Urban is a product model manufactured and sold by Vélanor SAS.Vélanor SAS manufactures and sells the Loire Urban model, which is the most sold in their range.
+Cholet	Vélanor SAS	Vélanor SAS operates a frame fabrication site in Cholet with 97 employees.Vélanor SAS operates a frame fabrication site in Cholet.
+Bruxelles	Vélanor SAS	Vélanor SAS has a Benelux subsidiary located in Bruxelles with 16 employees.Vélanor SAS has a Benelux subsidiary located in Bruxelles.
+Recylo	Vélanor SAS	Recylo partners with Vélanor SAS to collect and recycle used batteries at a 96% rate.Recylo partners with Vélanor SAS to collect and recycle used batteries.
+Saint-Nazaire	Vélanor SAS	Vélanor SAS is planning to open an assembly plant in Saint-Nazaire.
+Lyon	Vélanor SAS	Vélanor SAS maintains a commercial agency in Lyon with 31 employees.Vélanor SAS maintains a commercial agency in Lyon.
+Vilaine Compact	Vélanor SAS	Vélanor SAS is launching the Vilaine Compact model as a new product.
+Lancement du modèle compact	Vélanor SAS	Vélanor SAS is executing the launch of the Vilaine Compact model.
+Ouverture dusine à Saint-Nazaire	Vélanor SAS	Vélanor SAS is executing the event of opening a plant in Saint-Nazaire.
+Risque de change	Vélanor SAS	Vélanor SAS faces exchange rate risks regarding engine purchases in US dollars.
+Concurrence des marques asiatiques	Vélanor SAS	Asian low-price brands pose a competitive threat to Vélanor SAS.
+Hausse du prix de laluminium	Vélanor SAS	Rising aluminum prices are identified as a key operational risk for the company.
+Batteries	Batterix GmbH	Batterix GmbH is the supplier of batteries for Vélanors bicycles.
+Freins	Stopline	Stopline is the supplier of brakes for Vélanors bicycles.
+Gomma Ouest	Pneus	Gomma Ouest supplies tires for Vélanors bicycles.
+Moteurs	Motodrive Co.	Motodrive Co. supplies engines used in Vélanors bicycles.
+Batterix GmbH	Brême	Batterix GmbH is located in the city of Brême, Germany.
+Italie	Stopline	Stopline is located in Italy.
+France	Gomma Ouest	Gomma Ouest is located in France.
+Motodrive Co.	Taïwan	Motodrive Co. is based in Taïwan.
+Brière Kid	enfant	The Brière Kid model is designed specifically for children (enfants).
+Sèvre Trail	VTT	The Sèvre Trail model belongs to the VTT category of mountain bikes.
+Erdre Cargo	cargo	The Erdre Cargo model falls under the cargo category of utility bicycles.
+
+
+Sources
+Source #0
+
+Vélanor SAS — document fictif — page 5 4. Production par modèle Modèle Usage Unités produites Prix public TTC Loire Urban ville 24 300 1 890 € Sèvre Trail VTT 15 400 3 150 € Brière Kid enfant 13 200 990 € Erdre Cargo cargo 8 900 4 290 € Total 61 800 Le modèle cargo Erdre Cargo est le plus cher de la gamme ; le Loire Urban est le plus vendu.
+
+Vélanor SAS — document fictif — page 6 5. Effectifs par site Site Activité Salariés au 31/12/2025 Nantes siège et assemblage 268 Cholet fabrication des cadres 97 Lyon agence commerciale 31 Bruxelles filiale Benelux 16 Total 412 L'âge moyen des salariés est de 36 ans. 41 % des postes d'encadrement sont occupés par des femmes.
+
+Vélanor SAS — document fictif — page 7 6. Environnement Les cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au partenariat avec la filière de collecte Recylo.
+
+Vélanor SAS — document fictif — page 8 7. Fournisseurs principaux Composant Fournisseur Pays Batteries Batterix GmbH Allemagne (Brême) Moteurs Motodrive Co. Taïwan Freins Stopline Italie Pneus Gomma Ouest France Le contrat d'approvisionnement en batteries avec Batterix a été renouvelé en mars 2025.
+
+Source #1
+
+Vélanor SAS — document fictif — page 9 8. Risques Les principaux risques identifiés sont la pénurie de cellules lithium-ion, la hausse du prix de l'aluminium et la concurrence des marques asiatiques à bas prix. Un stock de sécurité de batteries a été mis en place. Le risque de change concerne surtout les achats de moteurs, réglés en dollars américains.
+
+Vélanor SAS — document fictif — page 10 9. Perspectives 2026 Vélanor vise un chiffre d'affaires de 55 M€ en 2026. Une seconde usine d'assemblage ouvrira à Saint-Nazaire en septembre 2026, avec 70 embauches prévues. Un nouveau modèle compact, le Vilaine Compact, sera lancé en avril 2026.
+
+Source #2
+
+Vélanor SAS — document fictif — page 1 Vélanor SAS — Rapport annuel 2025 Document fictif généré pour des essais. Toute ressemblance serait fortuite. Sommaire : 1. Mot de la présidente — 2. Chiffres clés — 3. Chiffre d'affaires trimestriel — 4. Production par modèle — 5. Effectifs — 6. Environnement — 7. Fournisseurs — 8. Risques — 9. Perspectives 2026.
+
+Vélanor SAS — document fictif — page 2 1. Mot de la présidente Fondée en 2014 à Nantes, Vélanor conçoit et assemble des vélos à assistance électrique. Son siège est situé au 12 quai de la Fosse, à Nantes. La présidente, Hélène Marchais, dirige l'entreprise depuis 2019. L'année 2025 a été marquée par une croissance soutenue malgré les tensions sur les cellules de batterie. L'entreprise a franchi pour la première fois le seuil de 60 000 vélos produits dans l'année.
+
+Vélanor SAS — document fictif — page 3 2. Chiffres clés 2025 Indicateur 2025 Évolution Chiffre d'affaires 48,6 M€ +12,4 % Résultat net 3,1 M€ +0,6 M€ Vélos produits 61 800 +9 % Effectif au 31/12/2025 412 salariés +38 Part de l'export 27 % +4 points Le taux de retour sous garantie s'établit à 1,8 % des vélos vendus.
+
+Vélanor SAS — document fictif — page 4 3. Chiffre d'affaires trimestriel Trimestre Chiffre d'affaires (M€) Part du total T1 2025 9,8 20 % T2 2025 13,7 28 % T3 2025 14,2 29 % T4 2025 10,9 22 % Total 48,6 100 % Le troisième trimestre est le plus élevé de l'année, porté par la saison estivale.
+
+
+
+
+version: 0.0.1

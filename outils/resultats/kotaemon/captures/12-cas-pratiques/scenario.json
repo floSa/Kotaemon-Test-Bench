@@ -1,0 +1,59 @@
+[
+ {
+  "capture": "12-cas-pratiques/03-equipe-reponse.png",
+  "pastilles": [
+   [
+    1,
+    "Documents partagés (Search All)"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "source : cse-2025-10-14.md"
+   ]
+  ],
+  "note": "",
+  "heure": "23:40:35"
+ },
+ {
+  "capture": "12-cas-pratiques/01-fournisseur-reponse.png",
+  "pastilles": [
+   [
+    1,
+    "groupe Fournisseur Batterix"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "sources : contrat et audit"
+   ]
+  ],
+  "note": "",
+  "heure": "23:43:18"
+ },
+ {
+  "capture": "12-cas-pratiques/02-client-suite.png",
+  "pastilles": [
+   [
+    1,
+    "première réponse"
+   ],
+   [
+    2,
+    "réponse à la question de suite"
+   ],
+   [
+    3,
+    "source : faq-sav.html"
+   ]
+  ],
+  "note": "",
+  "heure": "00:19:33"
+ }
+]

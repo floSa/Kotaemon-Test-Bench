@@ -1,0 +1,146 @@
+[
+ {
+  "capture": "carte/welcome.png",
+  "pastilles": [],
+  "note": "repérage : connexion",
+  "heure": "00:27:59"
+ },
+ {
+  "capture": "carte/chat.png",
+  "pastilles": [],
+  "note": "repérage : Chat",
+  "heure": "00:30:13"
+ },
+ {
+  "capture": "carte/files-upload.png",
+  "pastilles": [],
+  "note": "repérage : Files › File Collection › Upload Files",
+  "heure": "00:30:18"
+ },
+ {
+  "capture": "carte/files-liens.png",
+  "pastilles": [],
+  "note": "repérage : Files › File Collection › Use Web Links",
+  "heure": "00:30:24"
+ },
+ {
+  "capture": "carte/files-groupes.png",
+  "pastilles": [],
+  "note": "repérage : Files › File Collection › Groups",
+  "heure": "00:30:29"
+ },
+ {
+  "capture": "carte/files-graphrag.png",
+  "pastilles": [],
+  "note": "repérage : Files › GraphRAG Collection",
+  "heure": "00:30:34"
+ },
+ {
+  "capture": "carte/files-lightrag.png",
+  "pastilles": [],
+  "note": "repérage : Files › LightRAG Collection",
+  "heure": "00:30:38"
+ },
+ {
+  "capture": "carte/resources-collections.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Index Collections › View",
+  "heure": "00:30:44"
+ },
+ {
+  "capture": "carte/resources-collections-ajout.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Index Collections › Add",
+  "heure": "00:30:49"
+ },
+ {
+  "capture": "carte/resources-llms.png",
+  "pastilles": [],
+  "note": "repérage : Resources › LLMs › View",
+  "heure": "00:30:55"
+ },
+ {
+  "capture": "carte/resources-llms-ajout.png",
+  "pastilles": [],
+  "note": "repérage : Resources › LLMs › Add",
+  "heure": "00:31:00"
+ },
+ {
+  "capture": "carte/resources-embeddings.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Embeddings › View",
+  "heure": "00:31:06"
+ },
+ {
+  "capture": "carte/resources-embeddings-ajout.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Embeddings › Add",
+  "heure": "00:31:11"
+ },
+ {
+  "capture": "carte/resources-rerankings.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Rerankings › View",
+  "heure": "00:31:17"
+ },
+ {
+  "capture": "carte/resources-rerankings-ajout.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Rerankings › Add",
+  "heure": "00:31:23"
+ },
+ {
+  "capture": "carte/resources-mcp.png",
+  "pastilles": [],
+  "note": "repérage : Resources › MCP Servers › View",
+  "heure": "00:31:28"
+ },
+ {
+  "capture": "carte/resources-mcp-ajout.png",
+  "pastilles": [],
+  "note": "repérage : Resources › MCP Servers › Add",
+  "heure": "00:31:34"
+ },
+ {
+  "capture": "carte/resources-users.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Users › User list",
+  "heure": "00:31:39"
+ },
+ {
+  "capture": "carte/resources-users-creer.png",
+  "pastilles": [],
+  "note": "repérage : Resources › Users › Create user",
+  "heure": "00:31:45"
+ },
+ {
+  "capture": "carte/settings-user.png",
+  "pastilles": [],
+  "note": "repérage : Settings › User settings",
+  "heure": "00:31:49"
+ },
+ {
+  "capture": "carte/settings-retrieval.png",
+  "pastilles": [],
+  "note": "repérage : Settings › Retrieval settings › File Collection",
+  "heure": "00:31:55"
+ },
+ {
+  "capture": "carte/settings-retrieval-lightrag.png",
+  "pastilles": [],
+  "note": "repérage : Settings › Retrieval settings › LightRAG Collection",
+  "heure": "00:32:00"
+ },
+ {
+  "capture": "carte/settings-reasoning.png",
+  "pastilles": [],
+  "note": "repérage : Settings › Reasoning settings",
+  "heure": "00:32:05"
+ },
+ {
+  "capture": "carte/help.png",
+  "pastilles": [],
+  "note": "repérage : Help",
+  "heure": "00:32:08"
+ }
+]

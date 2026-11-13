@@ -55,4 +55,17 @@ Pour choisir, dimensionner, automatiser ou exploiter ; rien de cette partie n'es
 
 ## Ce qui reste ouvert
 
-Section complétée en fin de mission.
+| Sujet | État |
+|---|---|
+| Lecteur Docling ou PaddleOCR installé hors de Kotaemon | possible par le réglage `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` de `flowsettings.py` et un petit module Python ; méthode décrite dans l'annexe A3, non essayée |
+| Image « lite », plus légère | non essayée ; perd probablement la lecture des DOCX et PPTX |
+| Poste sans carte graphique | temps estimés à partir des mesures du service de modèles (annexe A2), non mesurés avec Kotaemon |
+| Serveurs MCP, liens web, `@WebSearch` | formulaires montrés ; services en ligne ou serveurs tiers non branchés |
+| Visionneuse PDF, notation par le modèle, Microsoft GraphRAG, NanoGraphRAG | défauts constatés (chapitres 04, 07, 09, 13), sans correction possible depuis l'interface |
+| Second modèle de réponse (`gemma-4-e4b`) | exposé par le service de modèles, non passé au banc |
+
+## Décisions en attente
+
+1. Essayer un serveur Docling externe (docling-serve) branché par `FILE_INDEX_PIPELINE_FILE_EXTRACTORS` : image hors de l'enveloppe de la mission, à lancer sur accord.
+2. Modèle de réponse plus léger, ou alias sans réflexion de `chat`, dans LLM-Service : hors mission.
+3. Garder ou supprimer la sauvegarde d'essai `donnees/sauvegardes/kotaemon-20261113-013435.tar.gz` (1 007 Mo).

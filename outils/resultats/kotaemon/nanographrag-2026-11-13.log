@@ -1,0 +1,114 @@
+== installer_nanographrag.sh 2026-11-13T00:22:23+01:00
+ Container rag-kotaemon Recreate 
+ Container rag-kotaemon Recreated 
+ Container rag-kotaemon Starting 
+ Container rag-kotaemon Started 
+Kotaemon prêt : http://127.0.0.1:7860 (20 s)
+  File "<string>", line 1
+    import importlib.metadata as m; print("\n".join(sorted(f"{d.metadata["Name"]}=={d.version}" for d in m.distributions())))
+                                                                          ^^^^
+SyntaxError: f-string: unmatched '['
+== installer_nanographrag.sh 2026-11-13T00:23:01+01:00
+ Container rag-kotaemon Running 
+Kotaemon prêt : http://127.0.0.1:7860 (2 s)
+Resolved 79 packages in 2.25s
+   Building hnswlib==0.8.0
+Downloading dspy (1.1MiB)
+Downloading pydantic-core (2.0MiB)
+ Downloaded pydantic-core
+ Downloaded dspy
+      Built hnswlib==0.8.0
+Prepared 12 packages in 12.95s
+Uninstalled 5 packages in 23ms
+Installed 12 packages in 29ms
+ - certifi==2025.8.3
+ + certifi==2026.10.23
+ + cloudpickle==3.1.2
+ + dspy==3.5.0
+ + dspy-ai==3.5.0
+ + gepa==0.1.4
+ + hnswlib==0.8.0
+ - json-repair==0.28.4
+ + json-repair==0.64.9
+ + nano-graphrag==0.0.8.2
+ + neo4j==6.4.1
+ - pydantic==2.10.6
+ + pydantic==2.13.5
+ - pydantic-core==2.27.2
+ + pydantic-core==2.46.5
+ - umap-learn==0.5.5
+ + umap-learn==0.5.12
+durée d'installation : 16 s
+54c54
+< certifi==2025.8.3
+---
+> certifi==2026.10.23
+61a62
+> cloudpickle==3.1.2
+87a89,90
+> dspy-ai==3.5.0
+> dspy==3.5.0
+113a117
+> gepa==0.1.4
+135a140
+> hnswlib==0.8.0
+161c166
+< json_repair==0.28.4
+---
+> json_repair==0.64.9
+237a243
+> nano-graphrag==0.0.8.2
+238a245
+> neo4j==6.4.1
+325,326c332,333
+< pydantic==2.10.6
+< pydantic_core==2.27.2
+---
+> pydantic==2.13.5
+> pydantic_core==2.46.5
+429c436
+< umap-learn==0.5.5
+---
+> umap-learn==0.5.12
+AttributeError: type object 'hnswlib.Index' has no attribute 'file_handle_count'
+AttributeError: type object 'hnswlib.Index' has no attribute 'file_handle_count'
+AttributeError: type object 'hnswlib.Index' has no attribute 'file_handle_count'
+AttributeError: type object 'hnswlib.Index' has no attribute 'file_handle_count'
+AttributeError: type object 'hnswlib.Index' has no attribute 'file_handle_count'
+Kotaemon redémarré avec NanoGraphRAG : http://127.0.0.1:7860
+== correction hnswlib 2026-11-13T00:28:45+01:00
+Uninstalled 2 packages in 13ms
+ - chroma-hnswlib==0.7.6
+ - hnswlib==0.8.0
+Resolved 2 packages in 244ms
+Downloading chroma-hnswlib (2.3MiB)
+ Downloaded chroma-hnswlib
+Prepared 1 package in 113ms
+Installed 1 package in 4ms
+ + chroma-hnswlib==0.7.6
+rag-kotaemon
+  File "/app/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 187, in __call__
+  File "/app/.venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 165, in __call__
+TypeError: argument of type 'bool' is not iterable
+    raise ValueError(
+ValueError: When localhost is not accessible, a shareable link must be created. Please set share=True or check your proxy settings to allow access to localhost.
+== retour de pydantic 2026-11-13T00:32:24+01:00
+Resolved 4 packages in 89ms
+Downloading pydantic-core (1.9MiB)
+ Downloaded pydantic-core
+Prepared 2 packages in 83ms
+Uninstalled 2 packages in 2ms
+Installed 2 packages in 7ms
+ - pydantic==2.13.5
+ + pydantic==2.10.6
+ - pydantic-core==2.46.5
+ + pydantic-core==2.27.2
+rag-kotaemon
+page OK après 14 s
+TypeError: argument of type 'bool' is not iterable
+    raise ValueError(
+ValueError: When localhost is not accessible, a shareable link must be created. Please set share=True or check your proxy settings to allow access to localhost.
+ImportError: cannot import name 'is_stdlib_dataclass' from 'pydantic._internal._dataclasses' (/app/.venv/lib/python3.10/site-packages/pydantic/_internal/_dataclasses.py)
+Running on local URL:  http://0.0.0.0:7860
+nano_graphrag 0.0.8.2 import OK
+== redémarrage propre 2026-11-13T00:33:58+01:00 : « Running on local URL », /config 200, /info 200 ; plus de message « Nano-GraphRAG dependencies not installed »

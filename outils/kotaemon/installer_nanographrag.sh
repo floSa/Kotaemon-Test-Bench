@@ -17,11 +17,21 @@ mkdir -p donnees/kotaemon
 touch donnees/kotaemon/options.env
 grep -q '^USE_NANO_GRAPHRAG=' donnees/kotaemon/options.env || echo 'USE_NANO_GRAPHRAG=true' >> donnees/kotaemon/options.env
 outils/kotaemon/demarrer.sh
-docker exec rag-kotaemon sh -c '/app/.venv/bin/python -c "import importlib.metadata as m; print(\"\n\".join(sorted(f\"{d.metadata[\"Name\"]}=={d.version}\" for d in m.distributions())))" > /tmp/avant.txt'
+paquets() { docker exec -i rag-kotaemon /app/.venv/bin/python - <<'PY'
+import importlib.metadata as m
+print("\n".join(sorted(d.metadata["Name"] + "==" + d.version for d in m.distributions())))
+PY
+}
+paquets > /tmp/kotaemon-paquets-avant.txt
 debut=$(date +%s)
 docker exec rag-kotaemon uv pip install --python /app/.venv "nano-graphrag==$VERSION"
 echo "durée d'installation : $(( $(date +%s) - debut )) s"
-docker exec rag-kotaemon sh -c '/app/.venv/bin/python -c "import importlib.metadata as m; print(\"\n\".join(sorted(f\"{d.metadata[\"Name\"]}=={d.version}\" for d in m.distributions())))" > /tmp/apres.txt; diff /tmp/avant.txt /tmp/apres.txt || true'
+paquets > /tmp/kotaemon-paquets-apres.txt; diff /tmp/kotaemon-paquets-avant.txt /tmp/kotaemon-paquets-apres.txt || true
+# Conflit connu (README de Kotaemon, issue 440) : nano-graphrag installe hnswlib, dont le module « hnswlib » remplace
+# celui de chroma-hnswlib ; Chroma échoue alors (« hnswlib.Index has no attribute 'file_handle_count' »).
+# Remède du README : retirer les deux, remettre chroma-hnswlib (version d'origine de l'image).
+docker exec rag-kotaemon uv pip uninstall --python /app/.venv hnswlib chroma-hnswlib
+docker exec rag-kotaemon uv pip install --python /app/.venv "chroma-hnswlib==0.7.6"
 docker restart rag-kotaemon >/dev/null
 for i in $(seq 1 150); do [ "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:7860/)" = 200 ] && break; sleep 2; done
 docker logs --since 5m rag-kotaemon 2>&1 | grep -i "graphrag\|error" | grep -v alts | tail -5 || true

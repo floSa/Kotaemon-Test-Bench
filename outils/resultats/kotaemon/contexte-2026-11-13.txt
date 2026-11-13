@@ -1,0 +1,8 @@
+    self._dataset_mut.delete(where)
+  File "/app/.venv/lib/python3.10/site-packages/lance/dataset.py", line 997, in delete
+    self._ds.delete(predicate)
+OSError: LanceError(IO): sql parser error: Expected an expression:, found: ), /home/runner/work/lance/lance/rust/lance-datafusion/src/sql.rs:100:8
+User-id: 0e6518632cb84638a8b00711507d4469, can see public conversations: True
+Session reasoning type simple use mindmap True use citation highlight language fr
+Session LLM 
+Question de 82 542 caractères (compte rendu du CSE répété), posée dans l'interface : aucune réponse affichée ; erreur ci-dessus dans le journal du conteneur (recherche plein texte LanceDB). Scénario : outils/kotaemon/captures/c13_problemes.py, étape contexte.

@@ -112,13 +112,16 @@ class Scenario:
                             timeout=delai, polling=1000)
         p.wait_for_timeout(1500)
 
-    def attendre_reponse(self, delai=600, stable=4):
+    def attendre_reponse(self, delai=600, stable=4, apres=None, question=None):
         """Attend que la dernière réponse du chat soit écrite : texte différent de « Thinking ... » et inchangé pendant
         `stable` relevés de 2 s. Renvoie le texte (None si délai dépassé)."""
         p, avant, n = self.page, None, 0
         for _ in range(delai // 2):
             p.wait_for_timeout(2000)
-            t = p.evaluate("() => ([...document.querySelectorAll('#main-chat-bot .message')].pop() || {innerText: ''}).innerText")
+            n_msg, t = p.evaluate("() => { const m = [...document.querySelectorAll('#main-chat-bot .message')]; return [m.length, (m.pop() || {innerText: ''}).innerText]; }")
+            if (apres is not None and n_msg < apres + 1) or (question and t.strip().startswith(question.strip()[:40])):
+                avant, n = t, 0
+                continue
             if t and t.strip() not in ("Thinking ...", "") and t == avant:
                 n += 1
                 if n >= stable:
@@ -128,6 +131,16 @@ class Scenario:
             avant = t
         self.note(f"réponse non terminée après {delai} s : {str(avant)[:200]!r}")
         return None
+
+    def nouvelle_conversation(self):
+        """Bouton « nouvelle conversation » ; recliqué tant que la zone de discussion n'est pas vide (un clic pendant la
+        fin d'une réponse est ignoré)."""
+        p = self.page
+        for _ in range(10):
+            p.locator("#new-conv-button").click(); p.wait_for_timeout(2500)
+            if p.locator("#main-chat-bot .message").count() == 0:
+                return
+        self.note("nouvelle conversation : la zone de discussion n'a pas été vidée")
 
     def reglage_session(self, quoi, valeur):
         """Chat settings (accordéon sous la zone de saisie) : quoi = « Reasoning method », « Model » ou « Language »."""
@@ -149,8 +162,9 @@ class Scenario:
         zone = p.locator("#chat-input textarea")
         zone.fill(question)
         if envoyer:
+            n0 = p.locator("#main-chat-bot .message").count()
             zone.press("Enter")
-            self.attendre_reponse(stable=stable)
+            self.attendre_reponse(stable=stable, apres=n0, question=question)
         return zone
 
     def zone_depot(self):

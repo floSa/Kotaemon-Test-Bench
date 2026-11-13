@@ -6,13 +6,23 @@ Save & Close
 File Collection
 GraphRAG Collection
 LightRAG Collection
+Documents partagés
+NanoGraphRAG Collection
+Erreur
 File loader
+Erreur
 LLM for relevant scoring
+Erreur
 Number of document chunks to retrieve
+Erreur
 Retrieval mode
+Erreur
 Prioritize table
+Erreur
 Use MMR
+Erreur
 Use reranking
+Erreur
 Use LLM relevant scoring
 
 version: 0.0.1

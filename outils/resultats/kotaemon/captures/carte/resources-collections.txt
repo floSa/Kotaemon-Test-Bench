@@ -1,0 +1,63 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+id
+	
+name
+	
+index type
+
+
+1
+	
+NanoGraphRAG Collection
+	
+NanoGraphRAGIndex
+id
+	
+name
+	
+index type
+
+
+1
+	
+File Collection
+	
+FileIndex
+
+
+2
+	
+GraphRAG Collection
+	
+GraphRAGIndex
+
+
+3
+	
+LightRAG Collection
+	
+LightRAGIndex
+
+
+4
+	
+Documents partagés
+	
+FileIndex
+
+
+5
+	
+NanoGraphRAG Collection
+	
+NanoGraphRAGIndex
+
+version: 0.0.1

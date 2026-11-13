@@ -1,0 +1,80 @@
+ChatFilesResourcesSettingsHelp
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Documents partagés
+NanoGraphRAG Collection
+Upload Files
+Use Web Links
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Supported file types: .png, .jpeg, .jpg, .tiff, .tif, .pdf, .xls, .xlsx, .doc, .docx, .pptx, .csv, .html, .mhtml, .txt, .md, .zip
+Maximum file size: 1000 MB
+Advanced indexing options
+▼
+Upload and Index
+Upload Progress
+Upload result
+Upload info
+Clear Upload Info and Close
+Files
+Groups
+Filter by name:
+(1) Case-insensitive. (2) Search with empty string to show all files.
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+e4ba5900-bf78-403b-901a-65c01c25cab2
+	
+procedure-batteries.docx
+	
+36KB
+	
+226
+	
+UnstructuredReader
+	
+2026-11-12 23:33:22
+id
+	
+name
+	
+size
+	
+tokens
+	
+loader
+	
+date_created
+
+
+e4ba5900-bf78-403b-901a-65c01c25cab2
+	
+procedure-batteries.docx
+	
+36KB
+	
+226
+	
+UnstructuredReader
+	
+2026-11-12 23:33:22
+
+Selected file: (please select above)
+
+Advance options
+▼
+
+version: 0.0.1

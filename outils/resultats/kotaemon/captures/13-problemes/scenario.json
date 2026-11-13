@@ -1,0 +1,107 @@
+[
+ {
+  "capture": "13-problemes/01-mot-de-passe-refuse.png",
+  "pastilles": [
+   [
+    1,
+    "message d'erreur"
+   ],
+   [
+    2,
+    "Login"
+   ]
+  ],
+  "note": "",
+  "heure": "00:19:44"
+ },
+ {
+  "capture": "13-problemes/02-cle-refusee.png",
+  "pastilles": [
+   [
+    1,
+    "Connection failed … 401"
+   ]
+  ],
+  "note": "",
+  "heure": "00:20:11"
+ },
+ {
+  "capture": "13-problemes/05-sans-recherche.png",
+  "pastilles": [
+   [
+    1,
+    "aucun choix (ni Search All ni Search In File(s))"
+   ],
+   [
+    2,
+    "réponse sans document"
+   ],
+   [
+    3,
+    "Information panel"
+   ]
+  ],
+  "note": "",
+  "heure": "00:24:20"
+ },
+ {
+  "capture": "13-problemes/06-reponse-bloquee.png",
+  "pastilles": [
+   [
+    1,
+    "Thinking ..."
+   ],
+   [
+    2,
+    "passages trouvés"
+   ]
+  ],
+  "note": "",
+  "heure": "00:26:33"
+ },
+ {
+  "capture": "13-problemes/07-depassement-contexte.png",
+  "pastilles": [
+   [
+    1,
+    "réponse"
+   ]
+  ],
+  "note": "",
+  "heure": "00:27:00"
+ },
+ {
+  "capture": "13-problemes/03-format-refuse.png",
+  "pastilles": [
+   [
+    1,
+    "Upload result"
+   ],
+   [
+    2,
+    "Upload info"
+   ]
+  ],
+  "note": "",
+  "heure": "00:27:41"
+ },
+ {
+  "capture": "13-problemes/04-fichier-en-echec.png",
+  "pastilles": [
+   [
+    1,
+    "message-vocal-production.mp3"
+   ],
+   [
+    2,
+    "aucun passage"
+   ],
+   [
+    3,
+    "Delete"
+   ]
+  ],
+  "note": "",
+  "heure": "00:27:47"
+ }
+]

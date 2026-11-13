@@ -50,7 +50,7 @@ Cliquer sur « Search In File(s) » (pastille 1), puis dans la liste qui appara�
 | 2 | réponse | réponse en deux parties, une par sous-question |
 | 3 | « Information panel » | passages retenus, ici la page 1 de l'audit, phrase « Overall score: 87 out of 100 » surlignée |
 
-*Résultat* : la réponse donne le score de l'audit (87 sur 100) mais dit ne pas trouver le prix du contrat. La question mêle deux documents : seuls les passages de l'audit ont été retenus. Pour ce type de question, la méthode « complex » (chapitre 07) cherche chaque partie séparément ; poser deux questions simples marche aussi.
+*Résultat* : la réponse donne le score de l'audit (87 sur 100) mais dit ne pas trouver le prix du contrat, et le panneau ne montre que l'audit. La cause : le contrat avait été relu par Docling après la création du groupe, et le groupe l'avait perdu (chapitre 05, étapes 15 et 16). Une fois le groupe réparé, la même recherche trouve le prix (212 euros HT, chapitre 12, cas 1).
 
 **Étape 3. Désigner un fichier dans la question**
 *Où* : zone de saisie.
@@ -159,7 +159,7 @@ Poser `Quelles sont les perspectives 2026 de Vélanor ?`.
 | 1 | crayon | renomme la conversation ouverte |
 | 2 | corbeille rouge | supprime la conversation ouverte |
 | 3 | crayon dans un carré vert | ouvre une nouvelle conversation |
-| 4 | « Suggest chat » | interrupteur des suggestions de questions ; sans effet dans cette installation (fonction désactivée par défaut côté serveur) |
+| 4 | « Suggest chat » | interrupteur des suggestions de questions, une fonction que Kotaemon laisse désactivée par défaut |
 
 *Résultat* : les trois boutons agissent sur la conversation affichée dans la liste.
 
@@ -205,7 +205,7 @@ Cliquer sur « Feedback » pour l'ouvrir.
 | 1 | « The answer is correct » | la réponse est juste (l'autre choix : « The answer is incorrect ») |
 | 2 | « The evidence is incorrect » | les sources citées ne conviennent pas (autre case : « The answer is offensive ») |
 | 3 | zone « More detail » | explication libre (ce qui est faux, la bonne réponse) |
-| 4 | « Report » | enregistre l'avis dans la base de Kotaemon (message « Thank you for your feedback ») |
+| 4 | « Report » | enregistre l'avis dans la base de Kotaemon |
 | 5 | « Share this conversation » | rend la conversation visible des autres comptes (chapitre 11) |
 
 *Résultat* : l'avis est enregistré sur le poste ; il n'est envoyé nulle part. Les pouces sous chaque réponse servent au même usage, en un clic.

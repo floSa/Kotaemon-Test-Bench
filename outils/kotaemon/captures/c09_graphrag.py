@@ -61,7 +61,7 @@ def nano(s):
 
 
 def question_nano(s):
-    question(s, 3, "NanoGraphRAG Collection", "06-nanographrag-question",
+    question(s, 4, "NanoGraphRAG Collection", "06-nanographrag-question",
              "À quelle température les batteries doivent-elles être stockées ?")
 
 

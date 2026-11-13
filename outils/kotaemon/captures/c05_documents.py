@@ -107,6 +107,24 @@ def rapide(s):
                                           (p.locator("#index-0"), "File Collection")])
 
 
+def reparer_groupe(s):
+    """Après « Force reindex file », le fichier relu reçoit un nouvel identifiant : le groupe garde l'ancien et perd le
+    fichier. On rouvre le groupe, on remet le fichier et on enregistre."""
+    p = s.page
+    ouvrir_files(s); s.onglet("Groups")
+    s.ligne("Fournisseur Batterix").click(); p.wait_for_timeout(2000)
+    champ = p.locator("label").filter(has_text="Attached files").locator("input").locator("visible=true").first
+    s.cap_souple("16-groupe-incomplet", [(s.ligne("Fournisseur Batterix"), "Fournisseur Batterix"),
+                                         (p.locator("label").filter(has_text="Attached files").locator("visible=true").first, "Attached files")])
+    champ.click(); p.wait_for_timeout(800)
+    p.get_by_role("option", name="contrat-batterix-scan.pdf", exact=True).locator("visible=true").first.click(); p.wait_for_timeout(800)
+    p.locator("body").click(position={"x": 1300, "y": 850}); p.wait_for_timeout(600)
+    s.cap_souple("17-groupe-repare", [(p.locator("label").filter(has_text="Attached files").locator("visible=true").first, "Attached files"),
+                                      (s.bouton("Save"), "Save")])
+    s.bouton("Save").click(); p.wait_for_timeout(2500)
+    s.note("réparation du groupe : toasts " + repr(s.toasts()))
+
+
 def supprimer(s):
     """Supprime la note du CSE (aucune confirmation n'est demandée), puis la remet par « Upload and Index »."""
     p = s.page
@@ -158,6 +176,6 @@ def lecteur(s):
 if __name__ == "__main__":
     s = Scenario(CH)
     try:
-        etapes([avance, plusieurs, liens, fiche, groupes, rapide, supprimer, lecteur], s)
+        etapes([avance, plusieurs, liens, fiche, groupes, rapide, supprimer, lecteur, reparer_groupe], s)
     finally:
         s.fermer()

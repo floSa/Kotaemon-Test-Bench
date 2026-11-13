@@ -1,0 +1,38 @@
+== nano
+NOTE NanoGraphRAG Collection : indexation de procedure-batteries.docx en 188 s ; toasts []
+NOTE NanoGraphRAG Collection upload info : ✅ | procedure-batteries.docx | Indexing [1/1]: procedure-batteries.docx /  => Converting procedure-batteries.docx to text /  => Converted procedure-batteries.docx to text /  => [procedure-batteries.docx] Processed 1 chunks /  => Finished indexing procedure-batteries.docx / [GraphRAG] Creating/Updating index... This can take a long time. / [GraphRAG] Creating index: 0 / 1 documents. / Error: EmptyNetworkError | 
+capture /depot/docs/kotaemon/img/09-graphrag/05-nanographrag-indexation.png [(1, 'NanoGraphRAG Collection'), (2, 'Upload result'), (3, 'Upload info')]
+== question_nano
+Traceback (most recent call last):
+  File "/depot/outils/kotaemon/captures/c09_graphrag.py", line 75, in <module>
+    etapes([lightrag, question_lightrag, nano, question_nano, msgraphrag], s)
+  File "/depot/outils/kotaemon/captures/ui.py", line 277, in etapes
+    f(scenario)
+  File "/depot/outils/kotaemon/captures/c09_graphrag.py", line 64, in question_nano
+    question(s, 4, "NanoGraphRAG Collection", "06-nanographrag-question",
+  File "/depot/outils/kotaemon/captures/c09_graphrag.py", line 44, in question
+    acc.get_by_text(nom, exact=True).first.click(); p.wait_for_timeout(1000)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pw/site/playwright/sync_api/_generated.py", line 11045, in click
+    self._sync(
+  File "/pw/site/playwright/_impl/_sync_base.py", line 124, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/pw/site/playwright/_impl/locator.py", line 222, in click
+    return await self._frame.click(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pw/site/playwright/_impl/frame.py", line 587, in click
+    return await self._channel.click(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pw/site/playwright/_impl/channel_owner.py", line 387, in finish
+    raise e from None
+  File "/pw/site/playwright/_impl/channel_owner.py", line 352, in finish
+    result = await zone.run_async(lambda: awaitable)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/pw/site/playwright/_impl/utils/zones.py", line 58, in run_async
+    return await func()
+           ^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#index-3").get_by_text("NanoGraphRAG Collection", exact=True).first
+

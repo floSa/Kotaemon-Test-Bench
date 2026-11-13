@@ -1,0 +1,11 @@
+Welcome
+Welcome to Kotaemon!
+Username
+Password
+Login
+
+version: 0.0.1
+
+Warning
+Invalid username or password
+×

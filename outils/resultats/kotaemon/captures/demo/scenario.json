@@ -1,0 +1,21 @@
+[
+ {
+  "capture": "demo/01-demo.png",
+  "pastilles": [
+   [
+    1,
+    "conversation de démonstration"
+   ],
+   [
+    2,
+    "réponse"
+   ],
+   [
+    3,
+    "sources"
+   ]
+  ],
+  "note": "",
+  "heure": "00:45:49"
+ }
+]

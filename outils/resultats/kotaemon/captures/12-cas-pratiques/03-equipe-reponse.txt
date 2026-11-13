@@ -1,0 +1,76 @@
+ChatFilesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Documents partagés
+▼
+Radio
+Search All
+Search In File(s)
+NanoGraphRAG Collection
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Quel est le montant de la prime d'intéressement 2025 ?
+
+D'après le contenu du document fourni, spécifiquement la section « Décisions » du compte rendu de la réunion du CSE du 14 octobre 2025, le montant de la prime d'intéressement pour l'année 2025 est fixé à 1 150 euros par salarié.
+
+Le document précise également que cette somme sera versée en avril 2026.
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Reasoning method
+Model
+Language
+Dropdown
+Dropdown
+Dropdown
+Information panel
+▼
+cse-2025-10-14.md [score: 1.0]
+ Relevance score: 1.0
+
+
+
+Compte rendu de la réunion du CSE du 14 octobre 2025
+
+Document fictif.
+
+Participants
+
+Hélène Marchais (présidente), Sophie Le Gall (secrétaire du CSE), sept élus.
+
+Décisions
+
+Prime d'intéressement 2025 : 1 150 euros par salarié, versée en avril 2026.
+Télétravail : jusqu'à 2 jours par semaine pour les postes compatibles.
+Le nouveau restaurant d'entreprise du site de Nantes ouvrira en janvier 2026.
+
+Points reportés
+
+La question des horaires d'été de l'atelier de Cholet est reportée à la réunion de décembre.
+
+
+
+
+version: 0.0.1

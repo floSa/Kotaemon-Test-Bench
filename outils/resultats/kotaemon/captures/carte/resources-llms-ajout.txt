@@ -1,0 +1,23 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+LLM name
+Must be unique. The name will be used to identify the LLM.
+LLM vendors
+Choose the vendor for the LLM. Each vendor has different specification.
+Specification
+Specification of the LLM in YAML format
+Set this LLM as default. This default LLM will be used by default across the application.
+Set default
+Add LLM
+Spec description
+
+Select an LLM to view the spec description.
+
+version: 0.0.1

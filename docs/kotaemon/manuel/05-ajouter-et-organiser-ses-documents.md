@@ -1,6 +1,6 @@
 # 05. Ajouter et organiser ses documents
 
-> Ce chapitre apprend à ajouter plusieurs documents d'un coup, à consulter les passages d'un fichier, à regrouper des fichiers, à supprimer, à ajouter un fichier depuis le chat, et à choisir le lecteur de fichiers (lecteur intégré ou Docling) selon le type de document.
+> Ce chapitre apprend à ajouter plusieurs documents d'un coup, à consulter les passages d'un fichier, à regrouper des fichiers, à supprimer, à ajouter un fichier depuis le chat, à choisir le lecteur de fichiers (lecteur intégré ou Docling) selon le type de document, et à réparer un groupe après une relecture.
 > **Point de départ** : Kotaemon ouvert, session administrateur, modèles déclarés (chapitre 03).
 > **Durée** : environ 20 minutes. **Avant** : chapitre 04.
 
@@ -241,6 +241,38 @@ Choisir `contrat-batterix-scan.pdf`, cocher « Force reindex file » (étape 9),
 
 *Résultat* : le message « File cse-2025-10-14.md has been deleted » apparaît et le fichier disparaît de la liste. Pour le récupérer, il faut l'ajouter de nouveau (étape 1) ; c'est ce qui a été fait ici, ainsi que la suppression de la copie `note-rapide-cse.md` de l'étape 10.
 
+## Réparer un groupe après une relecture forcée
+
+Une relecture forcée (étape 9 ou 13) remplace le fichier par une nouvelle version, avec un nouvel identifiant interne. Les groupes qui contenaient ce fichier gardent l'ancien identifiant : le fichier en disparaît sans aucun message.
+
+**Étape 15. Repérer le groupe incomplet**
+*Où* : « Files » › « File Collection » › « Groups » ; cliquer sur la ligne `Fournisseur Batterix`.
+
+![Groupe qui a perdu un fichier](../img/05-documents/16-groupe-incomplet.png)
+*Écran : fiche du groupe `Fournisseur Batterix` après la relecture du contrat par Docling.*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | `Fournisseur Batterix` | la colonne « files » affiche « [2 items] '-', 'supplier-audit-batte..' » : le premier fichier n'existe plus sous cet identifiant |
+| 2 | « Attached files » | seul l'audit reste ; le contrat a disparu du groupe |
+
+*Résultat* : le défaut est visible ; une question limitée à ce groupe ne trouverait plus le contrat.
+
+**Étape 16. Remettre le fichier dans le groupe**
+*Où* : même fiche.
+
+Cliquer dans « Attached files », choisir `contrat-batterix-scan.pdf`, puis cliquer sur « Save ».
+
+![Groupe réparé](../img/05-documents/17-groupe-repare.png)
+*Écran : fiche du groupe, contrat remis.*
+
+| N° | Élément | Rôle |
+|---|---|---|
+| 1 | « Attached files » | le contrat et l'audit |
+| 2 | « Save » | enregistre le groupe |
+
+*Résultat* : le message « Group Fournisseur Batterix has been saved » apparaît ; le groupe contient de nouveau ses deux fichiers.
+
 ## Bon à savoir
 
 - Formats acceptés : PDF, images (PNG, JPEG, TIFF), Word (`.doc`, `.docx`), Excel (`.xls`, `.xlsx`), PowerPoint (`.pptx`), CSV, HTML, MHTML, texte, Markdown et archives ZIP ; taille maximale 1000 Mo par fichier.
@@ -256,6 +288,7 @@ Choisir `contrat-batterix-scan.pdf`, cocher « Force reindex file » (étape 9),
 | un PDF scanné ne donne aucune réponse | lecteur intégré sans lecture optique | lecteur Docling et relecture forcée (étapes 12 et 13) |
 | un fichier déjà présent n'est pas relu | Kotaemon ignore les fichiers déjà indexés | cocher « Force reindex file » (étape 9) |
 | un fichier a disparu | clic sur « Delete » dans sa fiche | l'ajouter de nouveau (étape 1) |
+| un groupe ne trouve plus un fichier | fichier relu par « Force reindex file » | le remettre dans le groupe (étapes 15 et 16) |
 
 ---
 *Version décrite : Kotaemon 0.12.0, essais du 12 novembre 2026. Détails et preuves : [rapport d'essais](../annexes/A6-rapport-d-essais.md).*

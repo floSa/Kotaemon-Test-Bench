@@ -1,0 +1,17 @@
+KeyError: 'index.options.4.reader_mode'
+GraphRAG embedding dim 1024
+Indexing GraphRAG with LLM ChatOpenAI(api_key=sk-local-nxMcTJ..., base_url=http://llm-cent..., frequency_penalty=None, logit_bias=None, logprobs=None, max_retries=None, max_retries_=2, max_tokens=6144, model=chat, n=1, organization=None, presence_penalty=None, stop=None, temperature=0, timeout=600, tool_choice=None, tools=None, top_logprobs=None, top_p=None) and Embedding OpenAIEmbeddings(api_key=sk-local-nxMcTJ..., base_url=http://llm-cent..., context_length=None, dimensions=None, max_retries=None, max_retries_=2, model=embed, organization=None, timeout=120)...
+INFO:nano-graphrag:Load KV full_docs with 0 data
+INFO:nano-graphrag:Load KV text_chunks with 0 data
+INFO:nano-graphrag:Load KV llm_response_cache with 0 data
+INFO:nano-graphrag:Load KV community_reports with 0 data
+INFO:nano-vectordb:Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': '/app/ktem_app_data/user_data/files/nano_graphrag/81192c77-f097-4004-ba07-2dc70733a104/input/vdb_entities.json'} 0 data
+INFO:nano-graphrag:Creating a new event loop in a sub-thread.
+INFO:nano-graphrag:[New Docs] inserting 1 docs
+INFO:nano-graphrag:[New Chunks] inserting 1 chunks
+INFO:nano-graphrag:[Entity Extraction]...
+INFO:nano-graphrag:Inserting 6 vectors to entities
+INFO:nano-graphrag:[Community Report]...
+INFO:nano-graphrag:Writing graph with 6 nodes, 0 edges
+KeyError: 'index.options.4.reader_mode'
+/usr/local/bin/python: Error while finding module specification for 'graphrag.index' (ModuleNotFoundError: No module named 'graphrag')

@@ -32,7 +32,7 @@ def cle(s):
     s.bouton("Test").click(); p.wait_for_timeout(8000)
     res = p.get_by_text("Connection failed").locator("visible=true").first
     s.note("clé fausse : " + (res.inner_text()[:400] if res.count() else "?"))
-    s.cap_souple("02-cle-refusee", [(res, "Connection failed … 401")])
+    s.cap_souple("02-cle-refusee", [(res, "Connection failed (clé refusée)")])
     s.bouton("Delete").click(); p.wait_for_timeout(800)
     s.bouton("Confirm Delete").click(); p.wait_for_timeout(2000)
 
@@ -44,19 +44,31 @@ def format(s):
         s.deposer([RACINE / "corpus/documents/message-vocal-production.mp3"])
     except Exception as e:
         s.note(f"dépôt mp3 : {e}")
-    p.wait_for_timeout(2000)
-    s.note("après dépôt mp3 : toasts " + repr(s.toasts()) + " ; page : " + p.locator("body").inner_text()[:300].replace("\n", " "))
-    s.cap_souple("03-format-refuse", [(p.locator(".toast-body").first, "message"), (s.zone_depot(), "zone de dépôt")])
+    s.bouton("Upload and Index").click(); p.wait_for_timeout(3000); s.attendre_fin()
+    p.get_by_text("Upload Progress").locator("visible=true").first.wait_for()
+    infos = p.locator("textarea").locator("visible=true")
+    s.note("après dépôt mp3 : toasts " + repr(s.toasts()) + " ; " + " | ".join(t.input_value()[:400] for t in infos.all()).replace("\n", " / "))
+    s.sans_toasts()
+    s.cap_souple("03-format-refuse", [(infos.first, "Upload result"), (infos.nth(1), "Upload info")])
+    s.bouton("Clear Upload Info and Close").click(); p.wait_for_timeout(1500)
+    # le fichier en échec reste inscrit dans la liste, sans passage : on le retire
+    s.onglet("Files")
+    s.ligne("message-vocal-production.mp3").click(); p.wait_for_timeout(2000)
+    s.cap_souple("04-fichier-en-echec", [(s.ligne("message-vocal-production.mp3"), "message-vocal-production.mp3"),
+                                         (s.texte("0 chunks"), "aucun passage"), (s.bouton("Delete"), "Delete")])
+    s.bouton("Delete").click(); p.wait_for_timeout(2000)
+    s.note("retrait du MP3 : toasts " + repr(s.toasts())); s.sans_toasts()
 
 
 def sans_recherche(s):
     p = s.page
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.onglet("Chat")
+    s.nouvelle_conversation()
     s.reglage_session("Language", "French")
     s.poser("Quel est le prix public du modèle Erdre Cargo ?")
     s.note("sans recherche : " + p.locator("#main-chat-bot .message").last.inner_text()[:500].replace("\n", " ")
            + " ; panneau : " + p.locator("#html-info-panel").inner_text()[:200])
-    s.cap_souple("04-sans-recherche", [(p.locator("#index-0"), "aucun choix (ni Search All ni Search In File(s))"),
+    s.cap_souple("05-sans-recherche", [(p.locator("#index-0"), "aucun choix (ni Search All ni Search In File(s))"),
                                        (p.locator("#main-chat-bot .message").last, "réponse sans document"),
                                        (p.locator("#html-info-panel"), "Information panel")])
 
@@ -68,13 +80,14 @@ def blocage(s):
     sc = p.get_by_label("Use LLM relevant scoring").locator("visible=true").first
     sc.check(); p.locator("#save-setting-btn").click(); p.wait_for_timeout(2500)
     s.onglet("Chat")
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.onglet("Chat")
+    s.nouvelle_conversation()
     s.reglage_session("Language", "French")
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
     s.poser("Quel est le taux de retour sous garantie ?", envoyer=False).press("Enter")
     p.wait_for_timeout(120000)
     s.note("blocage : " + p.locator("#main-chat-bot .message").last.inner_text()[:200])
-    s.cap_souple("05-reponse-bloquee", [(p.locator("#main-chat-bot .message").last, "Thinking ..."), (p.locator("#html-info-panel"), "passages trouvés")])
+    s.cap_souple("06-reponse-bloquee", [(p.locator("#main-chat-bot .message").last, "Thinking ..."), (p.locator("#html-info-panel"), "passages trouvés")])
     s.onglet("Settings"); s.onglet("Retrieval settings")
     sc = p.get_by_label("Use LLM relevant scoring").locator("visible=true").first
     sc.uncheck(); p.locator("#save-setting-btn").click(); p.wait_for_timeout(2500)
@@ -84,7 +97,8 @@ def contexte(s):
     """Dépassement volontaire : une question de plus de 80 000 caractères (environ 20 000 jetons), au-delà des
     16 384 jetons du modèle chat et des 8 192 jetons par requête d'embed."""
     p = s.page
-    p.locator("#new-conv-button").click(); p.wait_for_timeout(1500)
+    s.onglet("Chat")
+    s.nouvelle_conversation()
     s.reglage_session("Language", "French")
     p.locator("#index-0").get_by_text("Search All", exact=True).click()
     bloc = (RACINE / "corpus/documents/cse-2025-10-14.md").read_text()
@@ -97,7 +111,7 @@ def contexte(s):
     s.attendre_reponse(delai=300, stable=4)
     s.note("dépassement : " + p.locator("#main-chat-bot .message").last.inner_text()[:300].replace("\n", " ")
            + " ; toasts " + repr(s.toasts()))
-    s.cap_souple("06-depassement-contexte", [(p.locator("#main-chat-bot .message").last, "réponse"), (p.locator(".toast-body").first, "message d'erreur")])
+    s.cap_souple("07-depassement-contexte", [(p.locator("#main-chat-bot .message").last, "réponse"), (p.locator(".toast-body").first, "message d'erreur")])
 
 
 if __name__ == "__main__":

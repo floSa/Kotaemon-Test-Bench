@@ -1,0 +1,23 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+Name
+Must be unique and non-empty. The name will be used to identify the embedding model.
+Vendors
+Choose the vendor of the Embedding model. Each vendor has different specification.
+Specification
+Specification of the Embedding model in YAML format.
+Set this Embedding model as default. This default Embedding will be used by other components by default if no Embedding is specified for such components.
+Set default
+Add
+Spec description
+
+Select a model to view the spec description.
+
+version: 0.0.1

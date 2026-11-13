@@ -1,0 +1,173 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+Files
+group: 'Fournisseur Batterix'
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Documents partagés
+▼
+NanoGraphRAG Collection
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Pour préparer la renégociation avec Batterix : quel prix unitaire et quel délai de livraison le contrat fixe-t-il, et quel score l'audit a-t-il attribué ?
+
+Sub questions and their answers
+
+Sub-question 1
+quel est le prix unitaire spécifié dans le contrat avec Batterix ?
+Answer
+Selon le contexte fourni, le prix unitaire spécifié dans le contrat avec Batterix est de **212 euros HT** (hors taxes).
+
+Cette information se trouve dans le document « contrat-batterix-scan.pdf », plus précisément à la page 1, sous l'Article 4 (Prix). Le texte indique explicitement : « Prix unitaire 212 euros HT, révisable une fois par an ».
+Sub-question 2
+quel délai de livraison est spécifié dans le contrat avec Batterix ?
+Answer
+Selon les documents fournis, le délai de livraison spécifié dans le contrat avec Batterix est de 21 jours après la commande.
+
+Voici l'explication détaillée basée sur le contexte :
+
+Source de l'information : Cette information se trouve dans le document intitulé "contrat-batterix-scan.pdf", plus précisément à la Page 2.
+Article concerné : Il s'agit de l'Article 5 du contrat, qui porte sur les "Délais de livraison".
+Contenu exact : Le texte stipule : "Le Fournisseur livre sous 21 jours après la commande".
+Contexte contractuel : Ce délai est encadré par des pénalités de retard (Article 6), qui s'élèvent à 0,5 % du montant de la commande par jour de retard, plafonnées à 8 %.
+
+Ainsi, pour le contrat d'approvisionnement n° BX-2025-117 entre Vélanor SAS et Batterix GmbH, la livraison doit être effectuée dans un délai maximum de 21 jours suivant la réception de la commande.
+Sub-question 3
+quel score l'audit a-t-il attribué à Batterix ?
+Answer
+D'après les documents fournis, l'audit attribué à Batterix (Batterix GmbH) a obtenu un score global de 87 sur 100.
+
+Voici l'explication détaillée basée sur le contexte :
+
+Source de l'information : Cette donnée provient du document intitulé "supplier-audit-batterix-en.pdf", spécifiquement la page 1.
+Mention exacte : Dans la section "Overall score", le texte indique explicitement : "87 out of 100".
+Contexte de l'audit : L'audit a été réalisé le 18 juin 2025 par Laura Fischer (équipe qualité de Vélanor). Bien que deux non-conformités mineures aient été relevées (étiquetage incomplet des palettes et manques de bracelets ESD), le fournisseur est approuvé pour une autre année avec ce score.
+
+Aucune autre mention du score d'audit n'apparaît dans les autres extraits de contrats fournis.
+
+Main question
+Pour préparer la renégociation avec Batterix : quel prix unitaire et quel délai de livraison le contrat fixe-t-il, et quel score l'audit a-t-il attribué ?
+Answer
+
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Reasoning method
+Model
+Language
+Dropdown
+Dropdown
+Dropdown
+Information panel
+▼
+[Page 1] supplier-audit-batterix-en.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+[Page 1] contrat-batterix-scan.pdf [Preview]
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+[Page 2] contrat-batterix-scan.pdf [Preview]
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+[Page 1] supplier-audit-batterix-en.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+[Page 2] contrat-batterix-scan.pdf [Preview]
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+[Page 1] contrat-batterix-scan.pdf [Preview]
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+[Page 1] supplier-audit-batterix-en.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+[Page 2] contrat-batterix-scan.pdf [Preview]
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+[Page 1] contrat-batterix-scan.pdf [Preview]
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+[Page 1] supplier-audit-batterix-en.pdf [Preview]
+
+
+
+Vélanor SAS — document fictif — page 1 Supplier Quality Audit — Batterix GmbH, Bremen Fictional document. Audit date: 18 June 2025. Lead auditor: Laura Fischer (Vélanor quality team). Overall score: 87 out of 100. The supplier is approved for another year. Two minor non-conformities were found: incomplete labelling of pallets, and missing ESD wrist straps at one assembly station. The measured cell defect rate is 0.3 %. The next audit is scheduled for June 2026.
+
+
+
+
+
+[Page 1] contrat-batterix-scan.pdf [Preview]
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+[Page 2] contrat-batterix-scan.pdf [Preview]
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+
+version: 0.0.1

@@ -1,0 +1,21 @@
+ChatFilesResourcesSettingsHelp
+User settings
+Retrieval settings
+Reasoning settings
+Save & Close
+File Collection
+GraphRAG Collection
+LightRAG Collection
+Documents partagés
+NanoGraphRAG Collection
+File loader
+Index batch size (reduce if you have rate limit issues)
+Prompt for 'entity_extraction'
+Prompt for 'summarize_entity_descriptions'
+Prompt for 'entity_continue_extraction'
+Prompt for 'entity_if_loop_extraction'
+Prompt for 'keywords_extraction'
+Prompt for 'similarity_check'
+Search type
+
+version: 0.0.1

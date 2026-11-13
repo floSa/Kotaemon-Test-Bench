@@ -1,0 +1,27 @@
+ChatFilesResourcesSettingsHelp
+Index Collections
+LLMs
+Embeddings
+Rerankings
+MCP Servers
+Users
+View
+Add
+name
+	
+config
+
+
+-
+	
+-
+name
+	
+config
+
+
+-
+	
+-
+
+version: 0.0.1

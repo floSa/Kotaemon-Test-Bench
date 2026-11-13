@@ -1,0 +1,141 @@
+ChatFilesResourcesSettingsHelp
+Conversations
+Chat sessions
+Suggest chat
+File Collection
+▼
+Radio
+Search All
+Search In File(s)
+GraphRAG Collection
+▼
+LightRAG Collection
+▼
+Documents partagés
+▼
+NanoGraphRAG Collection
+▼
+Quick Upload
+▼
+File
+Déposer le Fichier Ici
+- ou -
+Cliquer pour Télécharger
+Textbox
+Feedback
+▼
+
+Quelle est la durée de garantie du cadre et quel numéro appeler pour le service après-vente ?
+
+D'après les documents fournis, voici les informations détaillées concernant la garantie du cadre et le contact pour le service après-vente :
+
+1. Durée de garantie du cadre :
+La durée de garantie applicable au cadre est de 7 ans.
+
+Source : Le document faq-sav.html (Page 1), dans la section "Quelle est la durée de la garantie ?", indique explicitement : « Le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans. »
+
+2. Numéro de téléphone pour le service après-vente :
+Pour joindre le service après-vente, il faut appeler le numéro 02 40 00 12 34.
+
+Source : Le document faq-sav.html (Page 1), dans la section "Comment joindre le service après-vente ?", précise : « Par téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site. »
+
+En résumé, vous bénéficiez d'une garantie de 7 ans sur le cadre et vous pouvez contacter le service après-vente au 02 40 00 12 34.
+
+MultimodalTextbox
+Dropdown
+Mindmap (on)
+Chat settings
+▼
+Reasoning method
+Model
+Language
+Dropdown
+Dropdown
+Dropdown
+Information panel
+▼
+Mindmap [Expand] [Export]
+### Numéro téléphone : 02 40 00 12 34
+### Horaires : Lundi au vendredi, 9 h à 18 h
+### Autre moyen : Formulaire du site
+### Valeur : 7 ans
+### Source : FAQ Service Après-Vente (faq-sav.html)
+
+Contact Service Après-Vente
+Durée de garantie du cadre
+Garantie du cadre et Contact SAV
+
+
+[Page 1] faq-sav.html [score: 0.0]
+ Relevance score: 4.1
+
+
+
+FAQ du service après-vente
+
+Document fictif.
+
+Quelle est la durée de la garantie ?
+
+Le cadre est garanti 7 ans. La batterie et le moteur sont garantis 2 ans.
+
+Quel est le délai de réparation ?
+
+Une réparation en atelier prend 10 jours ouvrés en moyenne. Le diagnostic est gratuit.
+
+Comment joindre le service après-vente ?
+
+Par téléphone au 02 40 00 12 34, du lundi au vendredi de 9 h à 18 h, ou par le formulaire du site.
+
+Peut-on remplacer soi-même la batterie ?
+
+Oui, la batterie se retire avec la clé fournie. Seule une batterie d'origine Vélanor est couverte par la garantie.
+
+
+
+[Page 1] contrat-batterix-scan.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+CONTRAT D'APPROVISIONNEMENT N' BX-2025-117 Entre Et Vélanor SAS, 12 de la Fosse, 44000 Nantes (l'Acheteur) quai Batterix GmbH Brême Allemagne (le Fournisseur) Article 1 Objet Fourniture de batteries 48 V 14 Ah, référence BAT-48V-14Ah. Article 2 Durée Trois ans à compter du ler mars 2025 Article 3 Volumes Volume minimal annuel Article 4 Prix Prix unitaire 212 euros HT, révisable une fois par an 40 000 batteries-
+
+
+
+stocks-octobre-2025.xlsx [score: 0.0]
+ Relevance score: 0.0
+
+
+
+BAT-48V-14Ah Batterie 48 V 14 Ah 1240 1500 Nantes MOT-250W Moteur roue arrière 250 W 2105 1200 Nantes CAD-ALU-L Cadre aluminium taille L 860 600 Cholet CAD-ALU-M Cadre aluminium taille M 1020 600 Cholet FRN-HYD-02 Frein hydraulique 3400 2000 Nantes PNU-700-38 Pneu 700x38 5150 3000 Nantes Batterix GmbH Batteries 24 Motodrive Co. Moteurs 45 Stopline Freins 12 Gomma Ouest Pneus 6
+
+
+
+Image from [Page 7] rapport-annuel-2025.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+
+
+Vélanor SAS — document fictif — page 7 6. Environnement Les cadres sont fabriqués à partir d'aluminium recyclé à 82 %. La consommation électrique des sites a atteint 3,4 GWh en 2025. Vélanor vise la neutralité carbone de ses sites en 2030. Le taux de recyclage des batteries usagées collectées atteint 96 %, grâce au partenariat avec la filière de collecte Recylo.
+
+
+
+
+
+[Page 2] contrat-batterix-scan.pdf [score: 0.0] [Preview]
+ Relevance score: 0.0
+
+
+
+Article 5 Délais de livraison Le Fournisseur livre sous 21 jours après la commande Pénalités de retard Article 6 0,5 % du montant de la commande par jour de retard, plafonnées à 8 % du montant de la commande. Article 7 Garantie 5 ans ou 1 000 de charge, au premier terme atteint. cycles Article 8 Litiges Tribunal de commerce de Nantes Fait à Nantes, le 14 février 2025- Vélanor Pour Hélène Marchais Pour Batterix 2 Jonas Weber
+
+
+
+
+version: 0.0.1
+
+Info
+Conversation renamed.
+×

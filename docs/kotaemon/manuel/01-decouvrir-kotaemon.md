@@ -50,7 +50,7 @@ Réponses : **Oui**, **Non**, ou **Partiel** avec la limite en une phrase.
 | Ollama en direct | Oui |
 | Fournisseurs en ligne (OpenAI, Azure, Anthropic, Google, Cohere, Mistral, Groq) | Oui |
 | Tri des passages par un modèle de tri (reranker) | Oui, y compris celui du service de modèles (type `CohereReranking`) |
-| Notation des passages par le modèle de réponse | Partiel : fonctionne, mais envoie dix demandes à la fois, que le service de modèles refuse au-delà de quatre |
+| Notation des passages par le modèle de réponse | Non dans cette installation : la note du modèle n'est pas comprise par Kotaemon, et dix demandes à la fois dépassent ce que le service de modèles accepte |
 | Couper la réflexion du modèle | Non : aucun réglage ne le permet |
 | Transcription de l'audio | Non |
 
@@ -72,10 +72,10 @@ Réponses : **Oui**, **Non**, ou **Partiel** avec la limite en une phrase.
 | Numéro de page du passage cité | Oui, pour les PDF |
 | Phrases de la source surlignées et notes de pertinence | Oui |
 | Visionneuse PDF ouverte à la page citée | Non dans la version décrite : la visionneuse reste vide |
-| Alerte quand les passages sont peu pertinents | Partiel : seulement avec la notation par le modèle de réponse |
+| Alerte quand les passages sont peu pertinents | Non dans cette installation : elle dépend de la notation par le modèle |
 | Décomposition des questions composées | Oui |
 | Agents ReAct et ReWOO | Oui |
-| Graphes de connaissances (GraphRAG) | Partiel : LightRAG fonctionne ; NanoGraphRAG demande une installation de plus ; Microsoft GraphRAG ne fonctionne pas avec le service de modèles |
+| Graphes de connaissances (GraphRAG) | Partiel : LightRAG fonctionne (après une petite correction) ; NanoGraphRAG s'installe mais échoue à construire le graphe ; Microsoft GraphRAG ne démarre pas |
 | Carte mentale de la réponse | Oui |
 
 ### Installation et exploitation
@@ -83,7 +83,7 @@ Réponses : **Oui**, **Non**, ou **Partiel** avec la limite en une phrase.
 | Fonction | Réponse |
 |---|---|
 | Installation | Docker, un seul conteneur (image de 12,7 Go) |
-| Mémoire nécessaire, hors modèles d'IA | XX |
+| Mémoire nécessaire, hors modèles d'IA | 0,5 à 0,9 Go au repos, 1,5 à 1,9 Go pendant les questions |
 | Interface en français | Non : anglais seulement |
 | Comptes et rôles | Oui : administrateur ou utilisateur ; collections privées ou partagées ; conversations partageables |
 | API REST | Non : pilotage possible par la bibliothèque Python de Kotaemon |
@@ -98,18 +98,18 @@ Le matériel se partage entre le service de modèles (le plus gros) et Kotaemon.
 | Élément | Minimum |
 |---|---|
 | Processeur | 8 cœurs récents |
-| Mémoire vive | 16 Go : environ 4,3 Go pour le service de modèles, XX pour Kotaemon, le reste pour Windows et WSL |
+| Mémoire vive | 16 Go : environ 4,3 Go pour le service de modèles, 1 à 2 Go pour Kotaemon, le reste pour Windows et WSL |
 | Disque libre | 25 Go : 12,7 Go pour l'image de Kotaemon, environ 5 Go pour les modèles du service, le reste pour les documents |
-| Temps d'attente | le modèle produit environ 14 jetons par seconde, cinq fois moins qu'avec une carte graphique : XX |
+| Temps d'attente | le modèle produit environ 14 jetons par seconde, cinq fois moins qu'avec une carte graphique : compter environ 2 minutes par réponse, réflexion comprise (estimation, annexe A2) |
 
 ### Avec une carte graphique NVIDIA
 
 | Élément | Minimum |
 |---|---|
 | Carte graphique | 8 Go de mémoire (7 Go pris par les trois modèles permanents) ; 16 Go sur le poste d'essai |
-| Mémoire vive | 16 Go : environ 5,4 Go pour le service de modèles, XX pour Kotaemon |
+| Mémoire vive | 16 Go : environ 5,4 Go pour le service de modèles, 1 à 2 Go pour Kotaemon |
 | Disque libre | 25 Go |
-| Temps d'attente | XX |
+| Temps d'attente | environ 68 jetons par seconde : la plupart des réponses arrivent en 20 à 26 secondes, réflexion comprise, les plus longues en 40 secondes ; un graphe de connaissances demande environ une minute par page à construire |
 
 Le volume de documents n'est pas limité par la mémoire : Kotaemon ne transmet au modèle que les passages utiles (10 au plus, environ 8 000 jetons avec les réglages du chapitre 03), quelle que soit la taille de la collection.
 
@@ -119,7 +119,11 @@ Test sur 38 questions dont la réponse est connue, posées à 9 documents d'une 
 
 | Mesure | Résultat |
 |---|---|
-| XX | XX |
+| Réponses justes (34 questions ont une réponse dans les documents, 4 n'en ont pas) | 25 sur 34 avec le lecteur intégré ; 30 sur 34 quand le contrat scanné est lu par Docling ; 31 sur 34 en ne transmettant que 3 passages au modèle |
+| Questions sans réponse dans les documents | 4 refus sur 4 dans tous les réglages, aucune réponse inventée |
+| Source citée | quand le passage vient d'un PDF, la page citée est toujours la bonne |
+| Échecs restants | les 2 questions sur le message vocal (audio non lu), une question qui croise deux documents |
+| Temps de réponse | 22 à 26 secondes en médiane, réflexion du modèle comprise ; ajout de 8 documents en 13 secondes, lecture d'un scan de 2 pages par Docling en 50 secondes |
 
 Détail : [annexe A1](../annexes/A1-evaluation-qualite-et-performances.md).
 

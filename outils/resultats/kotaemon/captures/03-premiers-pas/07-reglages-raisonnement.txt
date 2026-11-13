@@ -3,9 +3,12 @@ User settings
 Retrieval settings
 Reasoning settings
 Save & Close
+Erreur
 Language
+Erreur
 Max context length (LLM)
 Reasoning-specific settings
+Erreur
 Reasoning options
 simple
 complex
@@ -14,17 +17,26 @@ ReWOO
 
 Simple QA: Simple RAG-based question answering pipeline. This pipeline can perform both keyword search and similarity search to retrieve the context. After that it includes that context to generate the answer.
 
+Erreur
 Language model
+Erreur
 Citation style
 citation: highlight
 citation: inline
 no citation
+Erreur
 Create Mindmap
+Erreur
 Create Embeddings Visualization
+Erreur
 Use Multimodal Input
+Erreur
 System Prompt
+Erreur
 QA Prompt (contains {context}, {question}, {lang})
+Erreur
 Number of interactions to include
+Erreur
 Maximum message length for context rewriting
 
 version: 0.0.1
