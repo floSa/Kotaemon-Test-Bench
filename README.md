@@ -74,7 +74,8 @@ Réseaux : `llm-net` (externe, créé par LLM-Service) et `rag-local` (captures)
 Prérequis : Windows 11 + WSL2, Docker Desktop, LLM-Service installé et démarré, 20 Go de disque libre.
 
 ```bash
-cp .env.example .env            # puis y mettre LLM_CENTRAL_KEY (clé du service LLM central)
+cp .env.example .env
+~/mes_projets/Projet-IA/LLM-Service/scripts/cle.sh creer kotaemon-test-bench --dans "$PWD/.env" --noms LLM_CENTRAL_URL,LLM_CENTRAL_KEY   # clé propre au banc, écrite sans affichage
 outils/communs/llm_central_sante.sh --essai
 outils/kotaemon/installer.sh
 ```

@@ -88,3 +88,10 @@ Mission : `kit/PROMPT.md` pour la fiche `kit/fiches/03-kotaemon.md`. Une entrée
 ### 2026-11-13 — Index de la série : tableaux de même largeur, ligne Docling
 
 - Tableaux en HTML à largeurs fixes (200 px puis 5 × 150 px), tous de la même largeur. Lecture des PDF : une ligne « Docling » (conteneur, déporté) et une ligne « OCR intégré, autre que Docling » ; Docling expliqué ; ligne « OCR utilisé au banc » retirée (elle est dans le détail du meilleur réglage).
+
+### 2026-11-14 — Clé propre au banc pour LLM-Service
+
+- Fait : clé propre au banc créée dans LLM-Service (nom `kotaemon-test-bench`) et écrite dans `LLM_CENTRAL_KEY` du `.env` par `~/mes_projets/Projet-IA/LLM-Service/scripts/cle.sh creer kotaemon-test-bench --dans <dépôt>/.env --noms LLM_CENTRAL_URL,LLM_CENTRAL_KEY` (procédure : `docs/brancher-une-application.md` de LLM-Service). La clé maîtresse de LLM-Service n'est plus utilisée par ce banc.
+- Essai : `outils/communs/llm_central_sante.sh --essai` avec la nouvelle clé : `models`, `chat`, `embed` (1024 dimensions), `rerank` et `transcribe` répondent ; 4 requêtes comptées sur la clé du banc (`cle.sh lister`).
+- Documentation : `.env.example`, README et chapitre 02 du manuel donnent désormais la commande `cle.sh` au lieu de recopier `LITELLM_MASTER_KEY`. Chapitre 03 : la clé à mettre dans les spécifications est celle du banc.
+- Conteneurs : aucun ne tournait, aucun relancé. Reste à faire au prochain lancement : la clé recopiée dans les spécifications des modèles de Kotaemon (base `donnees/kotaemon/`, chapitre 03, `api_key` et `cohere_api_key`) est encore la clé maîtresse ; la remplacer par celle du `.env` dans « Specification », puis « Save » et tester. La décision 4 (changer la clé maîtresse dont un fragment est dans l'historique) reste ouverte côté utilisateur.

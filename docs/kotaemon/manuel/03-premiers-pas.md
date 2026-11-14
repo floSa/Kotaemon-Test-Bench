@@ -100,7 +100,7 @@ Saisir un nom dans « LLM name » (pastille 3), par exemple `llm-service-chat`, 
 **Étape 5. Écrire la spécification et ajouter le modèle**
 *Où* : même écran.
 
-Remplacer le contenu de « Specification » (pastille 1) par les lignes suivantes, en mettant la clé du service de modèles à la place de `CLE_DU_SERVICE` :
+Remplacer le contenu de « Specification » (pastille 1) par les lignes suivantes, en mettant la clé du banc (valeur de `LLM_CENTRAL_KEY` du fichier `.env`, créée au chapitre 02) à la place de `CLE_DU_SERVICE` :
 
 ```yaml
 api_key: CLE_DU_SERVICE
